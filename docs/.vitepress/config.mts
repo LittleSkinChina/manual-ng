@@ -27,11 +27,21 @@ export default defineConfig({
       { text: '捐助支持', link: 'https://afdian.net/a/tnqzh123' }
     ],
 
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    returnToTopLabel: '回到顶部',
+    externalLinkIcon: true,
+    lastUpdated: {
+      text: '上次更新于'
+    },
     outline: {
       'label': '在此页面上'
     },
     editLink: {
-      pattern: 'https://github.com/LittleSkinChina/manual-ng/edit/main/docs/:path'
+      pattern: 'https://github.com/LittleSkinChina/manual-ng/edit/main/docs/:path',
+      text: '帮助我们完善这个页面'
     },
     search: {
       provider: 'local',
@@ -62,7 +72,7 @@ export default defineConfig({
       '/': [
         {
           text: '用户使用手册',
-          link: '/README',
+          link: '/',
           items: [
             {
               text: '政策条款',
@@ -105,7 +115,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+      { icon: 'github', link: 'https://github.com/LittleSkinChina/manual' },
     ],
   },
   vite: {
