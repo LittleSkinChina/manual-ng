@@ -1,5 +1,5 @@
 // @ts-ignore: 2307
-import { h } from 'vue' 
+import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
 import type { Theme as ThemeConfig } from 'vitepress'
 
@@ -19,6 +19,9 @@ import {
 } from '@nolebase/vitepress-plugin-highlight-targeted-heading'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/dist/style.css'
 
+import BSButton from '../../../components/BSButton.vue'
+import BSSection from '../../../components/BSSection.vue'
+
 
 export const Theme: ThemeConfig = {
     extends: DefaultTheme,
@@ -31,7 +34,7 @@ export const Theme: ThemeConfig = {
             // vitepress-plugin-highlight-targeted-heading
             'layout-top': () => [
                 h(NolebaseHighlightTargetedHeading),
-            ], 
+            ],
         })
     },
     enhanceApp({ app }) {
@@ -39,7 +42,9 @@ export const Theme: ThemeConfig = {
             spotlight: {
                 defaultToggle: true,
             }
-        } as Options) 
+        } as Options)
+            .component('BSButton', BSButton)
+            .component('BSSection', BSSection)
     }
 }
 export default Theme
