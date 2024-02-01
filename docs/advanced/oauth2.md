@@ -66,8 +66,8 @@ https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redire
 
 | 参数            | 值                             |
 | --------------- | ------------------------------ |
-| `client_id`     | /                              |
-| `redirect_uri`  | /                              |
+| `client_id`     | ...                            |
+| `redirect_uri`  | ...                            |
 | `response_type` | 固定值 `code`                  |
 | `scope`         | 支持的 scope 列表，以 `,` 分隔 |
 
@@ -82,15 +82,24 @@ https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redire
 客户端构造 URL 并发起 POST 请求。
 
 ``` http
-POST https://littleskin.cn/oauth/access_token?client_id={client_id}&client_secret={client_secret}&redirect_uri={redirect_uri}&grant_type=authorization_code&code={code}
+POST https://littleskin.cn/oauth/access_token
+Content-Type: application/x-www-form-urlencoded
+
+{
+    "grant_type": "authorization_code",
+    "client_id": "{client_id}",
+    "client_secret": "{client_secret}",
+    "redirect_uri": "{redirect_uri}",
+    "code": "{code}"
+}
 ```
 
 | 参数            | 值                          |
 | --------------- | --------------------------- |
 | `grant_type`    | 固定值 `authorization_code` |
-| `client_id`     | /                           |
-| `client_secret` | /                           |
-| `redirect_uri`  | /                           |
+| `client_id`     | ...                         |
+| `client_secret` | ...                         |
+| `redirect_uri`  | ...                         |
 | `code`          | 上一步获取到的 `code`       |
 
 请求成功后将返回 JSON 响应。
@@ -123,4 +132,4 @@ Authorization: Bearer {access_token}
 
 如果一切在预料之中，这个请求会正确地返回用户的基本信息。
 
-欲了解更多内容，请访问 [参考文档](#参考文档)。
+欲了解更多内容，请访问 [参考文档](#参考文档) 及 [LittleSkin API](./api.md)。
