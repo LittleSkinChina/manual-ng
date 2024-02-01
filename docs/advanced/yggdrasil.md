@@ -5,9 +5,10 @@ LittleSkin 提供 Yggdrasil 验证鉴权服务。你可以配合 [authlib-inject
 你可以在 [https://authlib-injector.yushi.moe/~download/](https://authlib-injector.yushi.moe/~download/) 下载到最新版本的 authlib-injector。
 
 ## Yggdrasil API 地址
+
 LittleSkin 的 Yggdrasil API 的地址是：
 
-```
+``` http
 https://littleskin.cn/api/yggdrasil
 ```
 
