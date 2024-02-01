@@ -100,7 +100,7 @@ export default defineConfig({
               items: [
                 { text: 'Yggdrasil', link: '/advanced/yggdrasil' },
                 { text: 'OAuth 2', link: '/advanced/oauth2' },
-                { text: 'Blessing Skin API', link: '/advanced/api' },
+                { text: 'LittleSkin API', link: '/advanced/api' },
               ]
             },
             { text: '积分系统', link: '/score' },
