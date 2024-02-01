@@ -2,6 +2,9 @@
 outline: [1, 2]
 ---
 
+<script setup>
+import { faUsers, faPlus } from '@fortawesome/free-solid-svg-icons'
+</script>
 
 # 创建角色
 
@@ -12,9 +15,9 @@ LittleSkin 支持的皮肤 Mod 都是通过角色名来识别玩家身份并加�
 在创建角色前请确保你的积分足够，否则你将无法创建角色。
 :::
 
-你可以在用户中心的<BSSection>角色管理</BSSection>页面创建和管理你的角色：
+你可以在用户中心的<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>页面创建和管理你的角色：
 
-1. 点击用户中心左侧菜单栏中的<BSSection>角色管理</BSSection>，在打开的页面中点击<BSButton>+  添加新角色</BSButton>
+1. 点击用户中心左侧菜单栏中的<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>，在打开的页面中点击<BSButton><FA :icon="faPlus" />  添加新角色</BSButton>
 
     ![open-page](./assets/player/1-add-player.webp)
 
@@ -41,7 +44,7 @@ LittleSkin 支持的皮肤 Mod 都是通过角色名来识别玩家身份并加�
 
 如果你拥有正版 Minecraft，你可以将其绑定至你的 LittleSkin 账号。
 
-你可以在角色管理的下方找到<BSSection>正版验证 & 绑定</BSSection>一栏（如果没有这一栏，请尝试刷新页面），点击下方的<BSButton>验证并绑定</BSButton>按钮。此时页面会跳转到 Microsoft 的 OAuth 登录页面，在其中登录你的 Microsoft 账号并授权即可完成绑定。
+你可以在<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>页面的下方找到<BSSection>正版验证 & 绑定</BSSection>一栏（如果没有这一栏，请尝试刷新页面），点击下方的<BSButton>验证并绑定</BSButton>按钮。此时页面会跳转到 Microsoft 的 OAuth 登录页面，在其中登录你的 Microsoft 账号并授权即可完成绑定。
 
 绑定后会自动在你的账号中添加和你的正版 Minecraft 账号同名的角色（如果站内已有同名角色，则该角色将会被强制转移至你的账户下），并可以获得积分奖励。同时，若需取回最新的正版角色名或是删除角色后需要重建角色，可点击下方的<BSButton>更新绑定角色</BSButton>来完成。
 

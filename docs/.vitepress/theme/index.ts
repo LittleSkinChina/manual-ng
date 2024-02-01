@@ -19,6 +19,8 @@ import {
 } from '@nolebase/vitepress-plugin-highlight-targeted-heading'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/dist/style.css'
 
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+
 import BSButton from '../../../components/BSButton.vue'
 import BSSection from '../../../components/BSSection.vue'
 
@@ -43,6 +45,7 @@ export const Theme: ThemeConfig = {
                 defaultToggle: true,
             }
         } as Options)
+            .component('FA', FontAwesomeIcon)
             .component('BSButton', BSButton)
             .component('BSSection', BSSection)
     }

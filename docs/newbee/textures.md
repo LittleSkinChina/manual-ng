@@ -1,3 +1,11 @@
+---
+outline: [1, 3]
+---
+
+<script setup>
+import { faArchive, faUpload, faStar } from '@fortawesome/free-solid-svg-icons'
+</script>
+
 # 设定材质
 
 创建好角色后，你就可以将材质应用到角色上了。
@@ -36,11 +44,11 @@ LittleSkin 支持上传以下材质
 
 ![open-page](./assets/textures/1-open-page.webp)
 
-1. 进入皮肤库，点击页面顶部菜单栏中的<BSSection>上传新皮肤</BSSection>
+1. 进入<BSSection><FA :icon="faArchive"/> 皮肤库</BSSection>，点击页面顶部菜单栏中的<BSButton style="background-color: #17a2b8;"><FA :icon="faUpload"/> 上传新皮肤</BSButton>
 
 2. 在打开的页面中设置材质名称，选择材质类型，选择材质文件，选择是否设置为私密。
     你可以在右侧查看你的材质的预览。
-    材质信息设置完成后，点击<BSButton>确认上传</BSButton>按钮。
+    材质信息设置完成后，点击<BSButton style="background-color: #28a745;">确认上传</BSButton>按钮。
 
     ::: danger 谨记
     LittleSkin 不允许上传包括但不限于如下内容的敏感材质（包括含有争议性的材质）：
@@ -52,10 +60,11 @@ LittleSkin 支持上传以下材质
     对于敏感材质，你需要在上传时将其设为私密材质，否则一经发现，相关材质将被删除，且你将被 LittleSkin 永久封禁。
     :::
 
-你的材质就上传完成啦~
+:sparkles: 你的材质就上传完成啦~
 
-材质上传完成后，会自动跳转到你刚刚上传的材质的详情页面。  
-你上传的材质会被自动添加到你的衣柜，你可以直接前往<BSSection>我的衣柜</BSSection>页面查看并设置到你的角色上。
+材质上传完成后，会自动跳转到你刚刚上传的材质的详情页面。
+
+你上传的材质会被自动添加到你的衣柜，你可以直接前往<BSSection><FA :icon="faStar"/> 我的衣柜</BSSection>页面查看并设置到你的角色上。
 
 ## 从皮肤库中添加材质到衣柜
 
@@ -67,28 +76,29 @@ LittleSkin 支持上传以下材质
 
 ![add-to-closet](./assets/textures/2-add-to-closet.webp)
 
-1. 进入材质详情页面，点击材质预览下方左侧的<BSButton>添加至衣柜</BSButton>
+1. 进入材质详情页面，点击材质预览下方左侧的<BSButton style="background-color: transparent; color: #007bff; border-color: #007bff;">添加至衣柜</BSButton>
 
 2. 在弹出的对话框中设置衣柜物品的名字，点击<BSButton>确定</BSButton>
 
-材质就被成功添加到衣柜啦~
+:sparkles: 材质就被成功添加到衣柜啦~
+
 添加完成后，你也可以直接在材质详情页面将材质设置到角色。
 
 ## 将材质设置到角色
 
 将材质添加到衣柜后，就可以将材质设置到角色上了。
 
-你可以在用户中心的<BSSection>我的衣柜</BSSection>页面管理衣柜物品和将材质设置到角色上。
+你可以在用户中心的<BSSection><FA :icon="faStar"/> 我的衣柜</BSSection>页面管理衣柜物品和将材质设置到角色上。
 
 ![set-to-player](./assets/textures/3-set-to-player.webp)
 
-1. 点击用户中心左侧菜单栏中的<BSSection>我的衣柜</BSSection>
+1. 点击用户中心左侧菜单栏中的<BSSection><FA :icon="faStar"/> 我的衣柜</BSSection>
 
 2. 在打开的页面的左侧上方选择材质的分类<BSSection>皮肤</BSSection><BSSection>披风</BSSection>，选择你要使用的材质，点击右侧材质预览下方左侧的<BSButton>使用...</BSButton>
 
 3. 在弹出的窗口中选择需要设置材质的角色
 
-4. 材质已经被设置到角色啦~
+:sparkles: 材质已经被设置到角色啦~
 
 如果你以后还想要更换材质，或者想为其他角色设置材质，也可以按照这份文档中所述的方法来操作。
 
