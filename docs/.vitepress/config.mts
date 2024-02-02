@@ -103,6 +103,14 @@ export default defineConfig({
                 { text: 'LittleSkin API', link: '/advanced/api' },
               ]
             },
+            {
+              text: 'Yggdrasil 外置登录',
+              link: '/yggdrasil/index.md',
+              items: [
+                { text: '配置客户端', link: '/yggdrasil/client' },
+                { text: '配置服务端', link: '/yggdrasil/server' }
+              ]
+            },
             { text: '积分系统', link: '/score' },
             { text: '常见问题解答', link: '/faq' },
             { text: '报告问题的正确姿势', link: '/report' },
