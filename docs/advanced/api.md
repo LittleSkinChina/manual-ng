@@ -37,7 +37,7 @@ GET https://littleskin.cn/api/announcements
 
 ::: details Schema 和示例数据
 
-我们提供 [OpenAPI 文档](./assets/littleskin-api-announcements.openapi3_1.yaml)。
+我们提供 [OpenAPI 文档](/littleskin-api-announcements.openapi3_1.yaml)。
 
 | 值          | 简要解释                                        |
 | ----------- | ----------------------------------------------- |

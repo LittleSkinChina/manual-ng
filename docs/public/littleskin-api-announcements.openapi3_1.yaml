@@ -6,7 +6,7 @@ info:
     name: General Support
     url: https://manual.littlesk.in/report.html#%E6%88%91%E8%AF%A5%E5%8E%BB%E5%93%AA%E9%87%8C%E6%8F%90%E9%97%AE
     email: support@littlesk.in
-  version: 0.1.1
+  version: 0.1.2
 servers:
 - url: https://littleskin.cn/api
   description: Prod
@@ -57,6 +57,14 @@ components:
           type: integer
           minimum: 0
           title: Priority
+        severity:
+          type: string
+          description: severity of the announcement
+          enum:
+            - fatal
+            - warning
+            - info
+          title: Severity
         expand:
           type: boolean
           title: Expand
@@ -78,6 +86,7 @@ components:
         - content
         - color
         - priority
+        - severity
         - expand
         - timestamp
         - id
