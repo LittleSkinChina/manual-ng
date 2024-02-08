@@ -10,7 +10,9 @@
 
 `https://littleskin.cn/api/yggdrasil` 为 LittleSkin 的 Yggdrasil API 地址
 
-::: warning **实际填写的路径两边没有大括号！**大括号只是表明必须正确指定这个参数的值，但是实际上并不需要填入大括号。
+::: warning
+
+**实际填写的路径两边没有大括号！** 大括号只是表明必须正确指定这个参数的值，但是实际上并不需要填入大括号。
 :::
 
 ::: tip
