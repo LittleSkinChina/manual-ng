@@ -4,11 +4,7 @@ outline: [2, 3]
 
 # OAuth 2
 
-::: tip 提示
-这篇文档是面向开发者的，普通用户可能无法理解。
-
-如果你看不懂这个页面在说些什么，直接关闭这篇文档或者浏览其它文档即可，忽略这部分内容不会影响你正常使用 LittleSkin 的基础功能。
-:::
+<!--@include: ./for-experts.template.md-->
 
 LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用 LittleSkin 账户登录」这样的功能。
 

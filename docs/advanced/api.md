@@ -4,11 +4,7 @@ outline: [2, 3]
 
 # LittleSkin API
 
-::: tip 提示
-这篇文档是面向开发者的，普通用户可能无法理解。
-
-如果你看不懂这个页面在说些什么，直接关闭这篇文档或者浏览其它文档即可，忽略这部分内容不会影响你正常使用 LittleSkin 的基础功能。
-:::
+<!--@include: ./for-experts.template.md-->
 
 ::: warning 注意
 当前 Blessing Skin Server API 和我们的部分 API 正处于试验阶段，API 不稳定并随时可能发生破坏性变更，敬请留意。
@@ -34,6 +30,8 @@ GET https://littleskin.cn/api/announcements
 ```
 
 返回站点公告的列表。
+
+将来将遵守启动器联盟规范。<Badge type="info" text="不成熟的" />
 
 ::: details Schema 和示例数据
 

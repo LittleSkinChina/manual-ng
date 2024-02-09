@@ -1,5 +1,7 @@
 # 高级功能
 
+<!--@include: ./for-experts.template.md-->
+
 本章节介绍了如何使用 LittleSkin 的高级功能。
 
 这里的功能很不适合普通用户阅读，相反，这是提供给诸如开发者之类的用户的。
