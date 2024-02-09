@@ -14,7 +14,7 @@ export default defineConfig({
   appearance: true,
 
   markdown: {
-    theme: { light: 'catppuccin-latte', dark: 'one-dark-pro' }
+    theme: { light: 'catppuccin-latte', dark: 'one-dark-pro' },
   },
 
   cleanUrls: true,
@@ -76,19 +76,15 @@ export default defineConfig({
           items: [
             {
               text: '政策条款',
+              link: '/policies/',
               items: [
-                {
-                  text: '用户服务条款',
-                  link: '/policies/tos'
-                },
-                {
-                  text: '隐私声明',
-                  link: '/policies/privacy'
-                }
+                { text: '用户服务条款', link: '/policies/tos' },
+                { text: '隐私声明', link: '/policies/privacy' }
               ]
             },
             {
               text: '新手指引',
+              link: '/newbee/',
               items: [
                 { text: '创建角色', link: '/newbee/player' },
                 { text: '设定材质', link: '/newbee/textures' },
@@ -97,6 +93,7 @@ export default defineConfig({
             },
             {
               text: '高级功能',
+              link: '/advanced/',
               items: [
                 { text: 'Yggdrasil', link: '/advanced/yggdrasil' },
                 { text: 'OAuth 2', link: '/advanced/oauth2' },
@@ -105,7 +102,7 @@ export default defineConfig({
             },
             {
               text: 'Yggdrasil 外置登录',
-              link: '/yggdrasil/index.md',
+              link: '/yggdrasil/',
               items: [
                 { text: '配置客户端', link: '/yggdrasil/client' },
                 { text: '配置服务端', link: '/yggdrasil/server' }
