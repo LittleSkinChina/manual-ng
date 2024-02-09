@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   title: 'LittleSkin 用户使用手册',
   description: 'LittleSkin 用户使用手册',
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
 
   lastUpdated: true,
   sitemap: {
@@ -20,6 +21,7 @@ export default defineConfig({
   cleanUrls: true,
 
   themeConfig: {
+    logo: '/favicon.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '返回 LittleSkin', link: 'https://littlesk.in/' },
@@ -27,11 +29,23 @@ export default defineConfig({
       { text: '捐助支持', link: 'https://afdian.net/a/tnqzh123' }
     ],
 
+    locales: {
+      root: {
+        label: '中文',
+        lang: 'zh'
+      },
+    },
+
     docFooter: {
       prev: '上一页',
       next: '下一页'
     },
+    langMenuLabel: '多语言',
     returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式',
     externalLinkIcon: true,
     lastUpdated: {
       text: '上次更新于'
@@ -40,13 +54,12 @@ export default defineConfig({
       'label': '在此页面上'
     },
     editLink: {
-      pattern: 'https://github.com/LittleSkinChina/manual-ng/edit/main/docs/:path',
+      pattern: 'https://github.com/LittleSkinCommspt/manual-ng/edit/main/docs/:path',
       text: '帮助我们完善这个页面'
     },
     search: {
       provider: 'local',
       options: {
-        // this is broken
         locales: {
           zh: {
             translations: {
@@ -115,13 +128,13 @@ export default defineConfig({
             { text: '用户交流群', link: '/user-group' }
           ]
         },
-
       ]
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/LittleSkinChina/manual' },
+      { icon: 'github', link: 'https://github.com/LittleSkinCommspt/manual-ng' },
     ],
+
   },
   vite: {
     ssr: {

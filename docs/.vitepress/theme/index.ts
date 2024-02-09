@@ -41,6 +41,9 @@ export const Theme: ThemeConfig = {
     },
     enhanceApp({ app }) {
         app.provide(InjectionKey, {
+            layoutSwitch: {
+                defaultMode: 1
+            },
             spotlight: {
                 defaultToggle: true,
             }
