@@ -18,7 +18,7 @@ outline: [2, 3]
 
 ::: code-group
 
-``` yaml:line-numbers [multilogin/services/offical.yml]
+```yaml:line-numbers [multilogin/services/offical.yml]
 # Below, only the most basic configuration is provided.
 # You can refer to the template file to complete all configurations.
 
@@ -30,7 +30,7 @@ name: 'Official'
 serviceType: OFFICIAL
 ```
 
-``` yaml:line-numbers [multilogin/services/littleskin.yml]
+```yaml:line-numbers [multilogin/services/littleskin.yml]
 # Below, only the most basic configuration is provided.
 # You can refer to the template file to complete all configurations.
 
@@ -69,14 +69,14 @@ yggdrasilAuth:
 
 ### 配置 Velocity 转发
 
-<!--@include: ./authlib-injector.md{57,93}-->
+<!--@include: ./authlib-injector.md{59,93}-->
 
 ### 配置 MultiLogin
 
 - 对于 Velocity
-  
-  - 安装 MultiLogin 插件，并按照[MultiLogin的官方文档](https://github.com/CaaMoe/MultiLogin/wiki)正确配置插件配置文件。
+
+  - 安装 MultiLogin 插件，并按照 [MultiLogin 的官方文档](https://github.com/CaaMoe/MultiLogin/wiki)正确配置插件配置文件。
 
 - 对于以上所有
 
-仅需在 Velocity 正确配置 MultiLogin 插件即可，无需对子服进行修改。
+  - 仅需在 Velocity 正确配置 MultiLogin 插件即可，无需对子服进行修改。
