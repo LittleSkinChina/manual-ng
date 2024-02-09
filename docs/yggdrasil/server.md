@@ -174,6 +174,14 @@ BungeeCord 和 WaterFall 属于亲兄弟好姐妹，因此，以下配置同样�
     ```
 
     :::
+::: warning
+
+**实际填写的路径两边没有大括号！** 大括号只是表明必须正确指定这个参数的值，但是实际上并不需要填入大括号。
+:::
+
+::: tip
+如果你使用 BungeeCord，你需要在所有服务端（包括 BungeeCord 和所有子服）中加载 authlib-injector（方法见上），但只有 BungeeCord 可以打开 `online-mode`，其他服务端应该关闭 `online-mode`。
+:::
 
 ## MultiLogin
 
