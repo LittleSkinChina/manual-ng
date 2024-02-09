@@ -152,11 +152,11 @@ SkinPort 仅适用于 Minecraft 1.7.10。对于更低版本，目前没有方法
 
 配置文件位于 `.minecraft/config/skinport.cfg`。请使用记事本或者任意代码编辑器将其打开，将原有的所有内容替换成以下内容：
 
-``` txt
+``` java
 client {
     S:hostCustomServer=http://example.com
-    S:hostCustomServer2Cape=https://littleskin.cn/cape/%name%.png
-    S:hostCustomServer2Skin=https://littleskin.cn/skin/%name%.png
+    S:hostCustomServer2Cape=https://littleskin.cn/cape/%name%.png  // [!code focus] // [!code warning]
+    S:hostCustomServer2Skin=https://littleskin.cn/skin/%name%.png  // [!code focus] // [!code warning]
     B:useCrafatar=false
     B:useCustomServer=false
     B:useCustomServer2=true
