@@ -32,10 +32,9 @@ LittleSkin 已在全站启用 authlib-injector 的 API 地址指示（ALI）功�
 
 > authlib-injector 为玩家提供统一的非 Mojang 游戏外登录体验。几乎所有外置登录都使用 authlib-injector 来实现。
 
-你可以在 <https://authlib-injector.yushi.moe/> 下载到最新版本的 authlib-injector。
+你可以在 <https://authlib-injector.yushi.moe/> 或 [BMCLAPI](https://bmclapi2.bangbang93.com/mirrors/authlib-injector/) 下载到最新版本的 authlib-injector。
 
 开发者文档：[GitHub / authlib-injector / wiki](https://github.com/yushijinhun/authlib-injector/wiki)
-
 
 ## MultiLogin
 
