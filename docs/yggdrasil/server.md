@@ -190,7 +190,7 @@ BungeeCord 和 WaterFall 属于亲兄弟好姐妹，因此，以下配置同样�
 
 此插件专为服务端设计。服务器管理员可参考此文档：[GitHub / MultiLogin / wiki](https://github.com/CaaMoe/MultiLogin/wiki)
 
-#### 单服务端
+### 单服务端
 
 关于最简单的配置方式，MultiLogin 已经在[它的 Github Wiki 文档]([Home · CaaMoe/MultiLogin Wiki · GitHub](https://github.com/CaaMoe/MultiLogin/wiki))中写得很明白了，参考官方文档是更好的选择。并且本插件在`examples`文件夹中预留了 LittleSkin 的 Service 文件，您无需专门编写配置文件，只需将其复制到`services`目录，并修改ID即可使用。
 
@@ -210,7 +210,7 @@ id: 0
 id: 1
 :::
 
-#### Velocity <Badge type="tip" text="Minecraft 1.13 +" />
+### Velocity <Badge type="tip" text="Minecraft 1.13 +" />
 
 ::: tip
 
