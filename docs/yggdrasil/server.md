@@ -93,7 +93,7 @@ authlib-injector 当前最新版本：`{{ versionAI }}` <Badge type="tip" text="
     ``` yaml:line-numbers=96 [config/paper-global.yaml]
       velocity:
         enabled: true
-        online-mode: true
+        online-mode: true  # [!code focus]
         secret: '************'
     ```
 
