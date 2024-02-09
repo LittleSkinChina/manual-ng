@@ -20,21 +20,21 @@ export default defineConfig({
 
   cleanUrls: true,
 
+  locales: {
+    root: {
+      label: '中文',
+      lang: 'zh'
+    }
+  },
+
   themeConfig: {
     logo: '/favicon.png',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '返回 LittleSkin', link: 'https://littlesk.in/' },
       { text: '社区支持机器人', link: 'https://bot-manual.commspt.littlesk.in/' },
-      { text: '捐助支持', link: 'https://afdian.net/a/tnqzh123' }
+      { text: '赞助支持', link: 'https://afdian.net/a/tnqzh123' }
     ],
-
-    locales: {
-      root: {
-        label: '中文',
-        lang: 'zh'
-      },
-    },
 
     docFooter: {
       prev: '上一页',
@@ -104,28 +104,45 @@ export default defineConfig({
                 { text: '配置 Mod', link: '/newbee/mod' }
               ]
             },
-            {
-              text: '高级功能',
-              link: '/advanced/',
-              items: [
-                { text: 'Yggdrasil', link: '/advanced/yggdrasil' },
-                { text: 'OAuth 2', link: '/advanced/oauth2' },
-                { text: 'LittleSkin API', link: '/advanced/api' },
-              ]
-            },
+            { text: '积分系统', link: '/score' },
             {
               text: 'Yggdrasil 外置登录',
               link: '/yggdrasil/',
               items: [
                 { text: '配置客户端', link: '/yggdrasil/client' },
-                { text: '配置服务端', link: '/yggdrasil/server' }
+                {
+                  text: '配置服务端',
+                  link: '/yggdrasil/server',
+                  items: [
+                    { text: 'authlib-injector', link: '/yggdrasil/authlib-injector' },
+                    { text: 'MultiLogin', link: '/yggdrasil/multilogin' }
+                  ]
+                }
               ]
             },
-            { text: '积分系统', link: '/score' },
+          ]
+        },
+        {
+          text: '疑难解答',
+          items: [
             { text: '常见问题解答', link: '/faq' },
             { text: '报告问题的正确姿势', link: '/report' },
-            { text: '邮件工单', link: '/email' },
-            { text: '用户交流群', link: '/user-group' }
+
+          ]
+        },
+        {
+          text: '沟通和交流',
+          items: [
+            { text: '用户交流群', link: '/user-group' },
+            { text: '邮件工单', link: '/email' }
+          ]
+        },
+        {
+          text: '高级功能',
+          link: '/advanced/',
+          items: [
+            { text: 'OAuth 2', link: '/advanced/oauth2' },
+            { text: 'LittleSkin API', link: '/advanced/api' },
           ]
         },
       ]
