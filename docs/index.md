@@ -1,3 +1,11 @@
+---
+title: LittleSkin 用户使用手册
+head:
+  - - meta
+    - name: keywords
+      content: littleskin minecraft skin yggdrasil 我的世界 皮肤 披风 皮肤站 外置登录
+---
+
 # 欢迎浏览 LittleSkin 用户使用手册！ <Badge type="tip" text="测试" />
 
 请查看左侧的目录，或是使用右上角的搜索，来寻找你想要的内容。
