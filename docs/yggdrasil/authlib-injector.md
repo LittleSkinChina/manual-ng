@@ -9,7 +9,9 @@ fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.jso
 
 # authlib-injector
 
-<!--@include: ./index.md{33,35}-->
+<!--@include: ./index.md{42,46}-->
+
+---
 
 authlib-injector 当前最新版本：`{{ versionAI }}` <Badge type="tip" text="测试功能" />
 

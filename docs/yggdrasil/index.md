@@ -22,6 +22,15 @@ LittleSkin 已在全站启用 authlib-injector 的 API 地址指示（ALI）功�
 
 ---
 
+<NCard title="在客户端使用" link="./client" >
+在 Minecraft 游戏中使用 Yggdrasil 外置登录，进行多人游戏鉴权和材质加载
+</NCard>
+<NCard title="在服务端使用" link="./server" >
+为各类 Minecraft 服务端配置 Yggdrasil 外置登录
+</NCard>
+
+---
+
 ::: warning 有点高级
 以下部分是面向开发者和多人游戏服务器管理员的，普通用户可能无法理解。
 
