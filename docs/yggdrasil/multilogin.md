@@ -67,16 +67,16 @@ yggdrasilAuth:
 
 :::
 
-### 配置 Velocity 转发
+### 1. 配置 Velocity 转发
 
-<!--@include: ./authlib-injector.md{57,93}-->
+<!--@include: ./velocity.template.md-->
 
-### 配置 MultiLogin
+### 2. 配置 MultiLogin
 
 - 对于 Velocity
   
   安装 MultiLogin 插件，并按照 [MultiLogin 的官方文档](https://github.com/CaaMoe/MultiLogin/wiki)正确配置插件配置文件。
 
-- 对于以上所有
+- 对于子服务器
 
   仅需在 Velocity 正确配置 MultiLogin 插件即可，无需对子服进行修改。
