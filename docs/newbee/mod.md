@@ -2,6 +2,10 @@
 outline: [2, 3]
 ---
 
+<script setup>
+import GetCSL from '../../components/GetCSL.vue'
+</script>
+
 # 配置 Mod
 
 LittleSkin 仅提供材质的上传、存储、检索和分享的功能。想要在 Minecraft 中显示你在 LittleSkin 设置的材质的话，你需要在 Minecraft 客户端中安装皮肤 Mod 并修改相应的配置文件。
@@ -30,7 +34,7 @@ CustomSkinLoader 是我们最推荐的皮肤 Mod，也被称为 **CSL** 或 **�
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/customskinloader)
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/883.html)
 
-你也可以在 [开发者提供的网站](https://3-3.dev/csl-download) 上选择并下载合适版本的 CustomSkinLoader。
+<GetCSL />
 
 ### 14.7 +
 

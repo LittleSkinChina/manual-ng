@@ -23,14 +23,13 @@ const props = defineProps<{
 .ncard {
     border: 1px solid #ebedf0;
     box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, .15);
-    /* background-color: #f7f7f7; */
     margin-bottom: 2em;
     border-radius: 8px;
+    transition: all 200ms ease;
 }
 
 .ncard:hover {
     border: 1px solid var(--vp-c-brand);
-    transition: all 200ms ease;
 }
 
 .ncardBody {
@@ -44,7 +43,7 @@ a {
 
 .card-title {
     font-size: 1.5em;
-    margin-bottom: 14px;
+    margin-bottom: .8em;
 }
 
 .card-text {

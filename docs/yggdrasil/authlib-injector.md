@@ -1,17 +1,14 @@
 <script setup>
-import { ref } from 'vue'
-const versionAI = ref('1.2.4')
-
-fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.json()).then(r => {
-    versionAI.value = r.version
-})
+import GetAuthlibInjector from '../../components/GetAuthlibInjector.vue'
 </script>
 
 # authlib-injector
 
-<!--@include: ./index.md{42,44}-->
+> authlib-injector 为玩家提供统一的非 Mojang 登录体验。大多数的外置登录都使用 authlib-injector 来实现。
 
-authlib-injector 当前最新版本：`{{ versionAI }}` <Badge type="tip" text="测试功能" />
+---
+
+<GetAuthlibInjector />
 
 ## 单服务端
 
