@@ -75,7 +75,7 @@ yggdrasilAuth:
 
 - 对于 Velocity
   
-  - 安装 MultiLogin 插件，并按照 [MultiLogin 的官方文档](https://github.com/CaaMoe/MultiLogin/wiki)正确配置插件配置文件。
+  安装 MultiLogin 插件，并按照 [MultiLogin 的官方文档](https://github.com/CaaMoe/MultiLogin/wiki)正确配置插件配置文件。
 
 - 对于以上所有
 
