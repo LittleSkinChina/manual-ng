@@ -17,7 +17,7 @@ LittleSkin 仅提供材质的上传、存储、检索和分享的功能。想要
 :::
 
 ::: warning 注意
-你也可以选择 [Yggdrasil 外置登录](/advanced/yggdrasil.md) 加载材质。但是，除 SkinPort 外，请不要同时使用 Yggdrasil 外置登录和皮肤 Mod，否则可能无法正常加载材质。
+你也可以选择 [Yggdrasil 外置登录](/yggdrasil/index.md) 加载材质。但是，除 SkinPort 外，请不要同时使用 Yggdrasil 外置登录和皮肤 Mod，否则可能无法正常加载材质。
 :::
 
 ## CustomSkinLoader

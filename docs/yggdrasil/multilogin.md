@@ -75,8 +75,8 @@ yggdrasilAuth:
 
 - 对于 Velocity
   
-  - 安装 MultiLogin 插件，并按照[MultiLogin的官方文档](https://github.com/CaaMoe/MultiLogin/wiki)正确配置插件配置文件。
+  安装 MultiLogin 插件，并按照 [MultiLogin的官方文档](https://github.com/CaaMoe/MultiLogin/wiki) 正确配置插件配置文件。
 
 - 对于以上所有
 
-仅需在 Velocity 正确配置 MultiLogin 插件即可，无需对子服进行修改。
+  仅需在 Velocity 正确配置 MultiLogin 插件即可，无需对子服进行修改。
