@@ -6,7 +6,6 @@
 
 <style scope>
 .bs-section {
-  background-color: var(--vp-c-bg);
   box-shadow: none;
   color: var(--vp-c-text-1);
   border: 1px solid var(--vp-c-text-1);

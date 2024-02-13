@@ -123,10 +123,10 @@ export default defineConfig({
           ]
         },
         {
-          text: '疑难解答',
+          text: '疑难杂症',
+          link: '/problems',
           items: [
-            { text: '常见问题解答', link: '/faq' },
-            { text: '报告问题的正确姿势', link: '/report' },
+            { text: '常见问题解答', link: '/faq/' },
 
           ]
         },

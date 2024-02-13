@@ -1,16 +1,16 @@
-# 报告问题的正确姿势
+# 遇到问题了咋办
 
-任何事物都不可能尽善尽美，LittleSkin 也是如此。
+> 任何事物都不可能尽善尽美，LittleSkin 也是如此。
 
-如果你在使用 LittleSkin 的过程中遇到了任何问题（包括但不限于材质无法显示、网站出现错误等），不要心急，也不要气急败坏，请认真阅读并充分理解下述内容后，正确提问。
+如果你在使用 LittleSkin 的过程中遇到了任何问题（包括但不限于材质无法显示、网站出现错误等），请认真阅读并充分理解下述内容，这会对你有帮助。
 
 ## 遇到问题后的第一反应
 
-> DON'T PANIC.
+<div align="center" style="line-height: 1.5em; font-size: 1.5em; padding: 2em 1em; margin: 2em 0; border: 1px solid var(--vp-c-text-1); border-radius: 8px">不要急，也不要慌，更不要气急败坏。</div>
 
 大部分情况下，LittleSkin 是可以正常运行的。所以在遇到问题时，你应该检查一下是不是你自己的问题，比如：网络错误、操作错误，甚至你自己的浏览器都可能导致你无法正常使用 LittleSkin。所以，在提问之前，请先以自己的经验判断一下，这是不是你自己的问题。
 
-其次，你应该阅读一遍 [常见问题解答](/faq.html)。很多情况下你遇到的问题也曾经困扰过很多人，并且已经被总结出了解决方案。这种情况下，直接查阅 FAQ 能更快解决你的问题。
+其次，你应该阅读一遍 :point_right: [常见问题解答 (FAQ)](/faq.html) :point_left:。很多情况下你遇到的问题也曾经困扰过很多人，并且已经被总结出了解决方案。这种情况下，直接查阅 FAQ 能更快解决你的问题。
 
 如果你确定不是你自己的问题，并且你遇到的问题并未列举在 FAQ 中，你可以着手准备报告问题了。
 
@@ -28,9 +28,16 @@
 
 那就让我们来告诉你们一个真理吧：
 
-> 不管是谁，不可能通过你们的只言片语快速定位你的问题！
+<div align="center" style="padding: 2em; margin: 2em 0; border: 1px solid var(--vp-c-text-1); border-radius: 8px">
+<p align="left">Troubleshooting any problem without the error log is like driving with your eyes closed.</p>
+<p align="right" style="font-size: 1.15em">在没有错误日志的情况下诊断任何问题无异于闭眼开车。</p>
+</div>
+
+也就是说，不管是谁，都**很难通过只言片语快速定位你的问题**！
 
 所以，在每一次报告问题时，不要只丢下一句「皮肤站出错了」、「无法加载皮肤」就跑了。在没有日志、报错截图等信息的辅助下，我们 **不可能** 知道网线对面的你到底遇到了什么问题。
+
+为了得到高效且愉悦的帮助，建议你按照以下步骤来报告问题 :point_down:
 
 ## 我应该提供哪些信息？
 
@@ -75,4 +82,11 @@
 
 ## 我该去哪里提问？
 
-你可以加入我们的 [官方用户交流群](/user-group.html) 来提问，也可以 [通过邮件发送工单](/email.html)。
+<p style="margin-bottom: 2em"></p>
+
+<NCard title="加入用户交流群" link="/user-group" >
+你可以加入我们的官方用户交流群来提问
+</NCard>
+<NCard title="通过邮件发送工单" link="/email" >
+也可以给我们发送邮件工单
+</NCard>

@@ -7,7 +7,7 @@
 <NCard title="用户服务条款" link="./tos" >
 阅读我们的用户服务条款
 </NCard>
-<NCard title="隐私政策" link="./api" >
+<NCard title="隐私政策" link="./privacy" >
 阅读我们的隐私政策
 </NCard>
 
