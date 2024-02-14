@@ -59,7 +59,7 @@ outline: [2, 3]
 ### 主用户群
 
 - QQ 群：[586146922](https://jq.qq.com/?_wv=1027&k=5uVljsY) `[user@LittleSkin ~/group/QQ]$`
-- Telegram 群组：`[@littleskin](https://t.me/littleskin)
+- Telegram 群组：[@littleskin](https://t.me/littleskin)
 
 主用户群主要用于解决用户在使用 LittleSkin 时遇到的问题，以及各种反馈，原则上不允许讨论与 LittleSkin 无关的事务，大水怪将收到管理员送出的禁言套餐。如需闲聊，请加入咖啡馆。
 
