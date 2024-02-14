@@ -41,6 +41,10 @@ a {
     text-decoration-line: none;
 }
 
+a::after {
+    content: none !important;
+}
+
 .card-title {
     font-size: 1.5em;
     margin-bottom: .8em;

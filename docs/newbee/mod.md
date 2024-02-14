@@ -100,23 +100,7 @@ https://skin.prinzeugen.net/cape/*.png
 
 ::: details 配置文件: `CustomSkinLoader.json`
 
-```json
-{
-    "enable": true,
-    "loadlist": [
-        {
-            "name": "LittleSkin",
-            "type": "CustomSkinAPI",
-            "root": "https://littleskin.cn/csl/"
-
-        },
-        {
-            "name": "Mojang",
-            "type": "MojangAPI"
-        }
-    ]
-}
-```
+<<< @/public/CustomSkinLoader.json{4-8 json:line-numbers}
 
 :::
 

@@ -8,7 +8,7 @@ export default defineConfig({
 
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://manual.littlesk.in'
+    hostname: 'https://ls-manual-ng.pages.dev'
   },
 
   lang: 'zh',
@@ -42,7 +42,7 @@ export default defineConfig({
     },
     langMenuLabel: '多语言',
     returnToTopLabel: '回到顶部',
-    sidebarMenuLabel: '菜单',
+    sidebarMenuLabel: '目录',
     darkModeSwitchLabel: '主题',
     lightModeSwitchTitle: '切换到浅色模式',
     darkModeSwitchTitle: '切换到深色模式',
@@ -126,7 +126,14 @@ export default defineConfig({
           text: '疑难杂症',
           link: '/problems',
           items: [
-            { text: '常见问题解答', link: '/faq/' },
+            {
+              text: '常见问题解答',
+              link: '/faq/',
+              items: [
+                { text: '站点使用相关', link: '/faq/site' },
+                { text: '游戏内使用相关', link: '/faq/in-game' },
+              ]
+            },
 
           ]
         },
