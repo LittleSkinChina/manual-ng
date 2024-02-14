@@ -65,11 +65,11 @@ import GetAuthlibInjector from '../../components/GetAuthlibInjector.vue'
     -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil
     ```
 
-    ``` bash-vue [完整的启动指令示例 (Velocity)]
+    ``` bash-vue [Velocity 完整的启动指令示例]
     java "-Dauthlibinjector.disableHttpd" -Xms512M -Xmx512M -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil -jar velocity-3.3.0-SNAPSHOT-351.jar 
     ```
 
-    ``` bash-vue [完整的启动指令示例 (Paper 子服务器)]
+    ``` bash-vue [Paper 子服务器 完整的启动指令示例]
     java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
     ```
 
@@ -79,11 +79,11 @@ import GetAuthlibInjector from '../../components/GetAuthlibInjector.vue'
   - `https://littleskin.cn/api/yggdrasil` 为 LittleSkin 的 Yggdrasil API 地址
   - 对于 Velocity，`-Dauthlibinjector.disableHttpd` 用于禁用 authlib-injector 内建的 HTTP 服务器，这会导致部分功能不可用，但可以有效解决目前存在的 [身份验证服务宕机问题 - #234](https://github.com/yushijinhun/authlib-injector/issues/234)。
 
-## WaterFall <Badge type="warning" text="不再推荐" />
+## Waterfall / BungeeCord <Badge type="warning" text="不再推荐" />
 
-BungeeCord 和 WaterFall 属于亲兄弟好姐妹，因此，以下配置同样适用于 BungeeCord。
+BungeeCord 和 Waterfall 属于亲兄弟好姐妹，因此，以下配置同时适用于两者。
 
-- 对于 BungeeCord / WaterFall
+- 对于  Waterfall / BungeeCord
   
   检查 `config.yml`，确保 `online-mode` 项的值为 **`true`** :point_left:
 
@@ -119,11 +119,11 @@ BungeeCord 和 WaterFall 属于亲兄弟好姐妹，因此，以下配置同样�
     -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil
     ```
 
-    ``` bash-vue [完整的启动指令示例 (WaterFall)]
+    ``` bash-vue [Waterfall / BungeeCord 完整的启动指令示例]
     java -Xms512M -Xmx512M -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil -jar waterfall-562.jar
     ```
 
-    ``` bash-vue [完整的启动指令示例 (Paper 子服务器)]
+    ``` bash-vue [Paper 子服务器 完整的启动指令示例]
     java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
     ```
 
