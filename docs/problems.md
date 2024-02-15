@@ -94,3 +94,6 @@ outline: [2, 3]
 <NCard title="通过邮件发送工单" link="/email" >
 也可以给我们发送邮件工单
 </NCard>
+<NCard title="一对一技术支持" link="https://afdian.net/a/tnqzh123" >
+也可以通过 <strong>赞助支持</strong> 来获取高质量的一对一技术支持服务
+</NCard>

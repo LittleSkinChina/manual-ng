@@ -16,7 +16,9 @@ outline: [2, 3]
 
 :::
 
-**请确保你已认真阅读并理解** :point_right: [遇到问题怎么办](/problems.md) :point_left: 中的内容。
+<NCard title="寻求帮助的正确姿势" link="./problems">
+<strong>喂！先别急着进群提问！</strong>在加群之前，请务必看看这个。
+</NCard>
 
 ### 入群前
 
