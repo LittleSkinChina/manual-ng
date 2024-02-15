@@ -1,5 +1,16 @@
 <script setup>
+import { ref } from 'vue'
 import GetAuthlibInjector from '../../components/GetAuthlibInjector.vue'
+
+const latest = ref('')
+const updated = ref('')
+const download = ref('')
+
+fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.json()).then(r => {
+    latest.value = r.version
+    updated.value = new Date(r.release_time).toLocaleString()
+    download.value = r.download_url
+})
 </script>
 
 # authlib-injector
@@ -8,7 +19,7 @@ import GetAuthlibInjector from '../../components/GetAuthlibInjector.vue'
 
 ---
 
-<GetAuthlibInjector />
+<GetAuthlibInjector :latest="latest" :updated="updated" :download="download" />
 
 ## 单服务端
 
@@ -27,16 +38,16 @@ import GetAuthlibInjector from '../../components/GetAuthlibInjector.vue'
     ::: code-group
 
     ``` bash-vue [需要添加的内容]
-    -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil
+    -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil
     ```
 
     ``` bash-vue [完整的启动指令示例]
-    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
+    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
     ```
 
     :::
 
-    - `authlib-injector-{{ versionAI }}.jar` 为指向 authlib-injector 的 `jar` 的路径或文件名
+    - `authlib-injector-{{ latest }}.jar` 为指向 authlib-injector 的 `jar` 的路径或文件名
     - `https://littleskin.cn/api/yggdrasil` 为 LittleSkin 的 Yggdrasil API 地址
 
 ## Velocity <Badge type="tip" text="Minecraft 1.13 +" />
@@ -62,20 +73,20 @@ import GetAuthlibInjector from '../../components/GetAuthlibInjector.vue'
     ::: code-group
 
     ``` bash-vue [需要添加的内容]
-    -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil
+    -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil
     ```
 
     ``` bash-vue [Velocity 完整的启动指令示例]
-    java "-Dauthlibinjector.disableHttpd" -Xms512M -Xmx512M -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil -jar velocity-3.3.0-SNAPSHOT-351.jar 
+    java "-Dauthlibinjector.disableHttpd" -Xms512M -Xmx512M -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar velocity-3.3.0-SNAPSHOT-351.jar 
     ```
 
     ``` bash-vue [Paper 子服务器 完整的启动指令示例]
-    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
+    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
     ```
 
     :::
 
-  - `authlib-injector-{{ versionAI }}.jar` 为指向 authlib-injector 的 `jar` 的路径或文件名
+  - `authlib-injector-{{ latest }}.jar` 为指向 authlib-injector 的 `jar` 的路径或文件名
   - `https://littleskin.cn/api/yggdrasil` 为 LittleSkin 的 Yggdrasil API 地址
   - 对于 Velocity，`-Dauthlibinjector.disableHttpd` 用于禁用 authlib-injector 内建的 HTTP 服务器，这会导致部分功能不可用，但可以有效解决目前存在的 [身份验证服务宕机问题 - #234](https://github.com/yushijinhun/authlib-injector/issues/234)。
 
@@ -116,23 +127,15 @@ BungeeCord 和 Waterfall 属于亲兄弟好姐妹，因此，以下配置同时�
     ::: code-group
 
     ``` bash-vue [需要添加的内容]
-    -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil
+    -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil
     ```
 
     ``` bash-vue [Waterfall / BungeeCord 完整的启动指令示例]
-    java -Xms512M -Xmx512M -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil -jar waterfall-562.jar
+    java -Xms512M -Xmx512M -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar waterfall-562.jar
     ```
 
     ``` bash-vue [Paper 子服务器 完整的启动指令示例]
-    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ versionAI }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
+    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
     ```
 
     :::
-::: warning
-
-**实际填写的路径两边没有大括号！** 大括号只是表明必须正确指定这个参数的值，但是实际上并不需要填入大括号。
-:::
-
-::: tip
-如果你使用 BungeeCord，你需要在所有服务端（包括 BungeeCord 和所有子服）中加载 authlib-injector（方法见上），但只有 BungeeCord 可以打开 `online-mode`，其他服务端应该关闭 `online-mode`。
-:::

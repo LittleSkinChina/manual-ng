@@ -1,18 +1,17 @@
 <script setup>
-import { ref } from 'vue'
-const latest = ref('')
-const updated = ref('')
-const download = ref('')
-const downloadMirror = ref('')
+import { computed } from 'vue'
+
+const props = defineProps({
+    latest: String,
+    updated: String,
+    download: String,
+})
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 
-fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.json()).then(r => {
-    latest.value = r.version
-    updated.value = new Date(r.release_time).toLocaleString()
-    download.value = r.download_url
-    downloadMirror.value = r.download_url.replace('https://authlib-injector.yushi.moe/', 'https://bmclapi2.bangbang93.com/mirrors/authlib-injector/')
+const downloadMirror = computed(() => {
+    return props.download.replace('https://authlib-injector.yushi.moe/', 'https://bmclapi2.bangbang93.com/mirrors/authlib-injector/')
 })
 </script>
 
@@ -21,8 +20,8 @@ fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.jso
         <div class="ncardBody">
             <div class="card-title text">获取最新版本的 authlib-injector</div>
             <div class="card-text text">
-                <p><code>authlib-injector-{{ latest }}.jar</code> , 更新于 {{ updated }}</p>
-                <a class="download-button" target="_blank" :href="download">
+                <p><code>authlib-injector-{{ props.latest }}.jar</code> , 更新于 {{ props.updated }}</p>
+                <a class="download-button" target="_blank" :href="props.download">
                     <FontAwesomeIcon :icon="faFileArrowDown" />&nbsp;&nbsp;开发者提供的网站
                 </a><a class="download-button" target="_blank" :href="downloadMirror">
                     <FontAwesomeIcon :icon="faFileArrowDown" />&nbsp;&nbsp;BMCLAPI
