@@ -100,12 +100,11 @@ https://skin.prinzeugen.net/cape/*.png
 
 ::: details 配置文件: `CustomSkinLoader.json`
 
-<<< @/public/CustomSkinLoader.json{4-8 json:line-numbers}
+<<< @/public/CustomSkinLoader.json{4-9 json:line-numbers}
 
 :::
 
 保存退出，再次打开 Minecraft 之后，你应该就能看到你在 LittleSkin 中设置的材质了。
-
 
 ### CompatibilityLayerForCustomSkinLoader
 
@@ -140,7 +139,7 @@ SkinPort 仅适用于 Minecraft 1.7.10。对于更低版本，目前没有方法
 
 配置文件位于 `.minecraft/config/skinport.cfg`。请使用记事本或者任意代码编辑器将其打开，将原有的所有内容替换成以下内容：
 
-``` java
+``` java:line-numbers
 client {
     S:hostCustomServer=http://example.com
     S:hostCustomServer2Cape=https://littleskin.cn/cape/%name%.png  // [!code focus] // [!code warning]

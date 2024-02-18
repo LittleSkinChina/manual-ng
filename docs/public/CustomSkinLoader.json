@@ -4,7 +4,8 @@
     {
       "name": "LittleSkin",
       "type": "CustomSkinAPI",
-      "root": "https://littleskin.cn/csl/"
+      "root": "https://littleskin.cn/csl/",
+      "userAgent": "CustomSkinLoader/ltsk-manual-edited"
     },
     {
       "name": "Mojang",
