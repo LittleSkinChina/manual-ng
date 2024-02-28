@@ -30,7 +30,6 @@ CustomSkinLoader 是我们最推荐的皮肤 Mod，也被称为 **CSL** 或 **�
 
 你可以在以下网站获取到关于 CustomSkinLoader 的更多信息
 
-- [MCBBS](https://www.mcbbs.net/thread-269807-1-1.html)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/customskinloader)
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/883.html)
 
@@ -112,7 +111,6 @@ https://skin.prinzeugen.net/cape/*.png
 
 你可以在以下网站获取到关于 CompatibilityLayerForCustomSkinLoader 的更多信息
 
-- [MCBBS](https://www.mcbbs.net/thread-1109996-1-1.html)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/compatibilitylayerforcustomskinloader)
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/4160.html)
 
