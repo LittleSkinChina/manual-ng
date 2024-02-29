@@ -49,7 +49,7 @@ PCL 2 已将 LittleSkin 添加为默认选项，因此无需再手动添加认�
 
 :::
 
-这里是来自 [@TT702](https://space.bilibili.com/515094) 的视频教程 [BakaXL 使用指南 | 创建第三方验证模式 Minecraft 用户档案的窍门](https://www.bilibili.com/video/BV1W741197Bv/)
+这里是来自 BakaXL 开发者的视频教程 [BakaXL 使用指南 | 创建第三方验证模式 Minecraft 用户档案的窍门](https://www.bilibili.com/video/BV1W741197Bv/)
 
 1. 进入本体设置，选择 `账户与档案`，在 `Minecraft 游戏档案` 一栏中选择 `新建一个档案`
 2. 将游戏启动模式改为 `外置登录(authlib-injector)`，在验证服务器一栏中填入 LittleSkin 的验证服务器地址，输入您的邮箱与密码后，点击左侧 `进行验证并返回` 按钮
