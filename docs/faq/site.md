@@ -72,7 +72,9 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 - [Google Chrome](https://www.google.cn/chrome)
 - [Mozilla Firefox](https://www.mozilla.org/firefox/new)
 
-如果你将浏览器更新到最新版本或更换至推荐的浏览器后仍然无法正常显示页面，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，向站点管理员反馈。
+在极少数情况下，你使用的设备的显卡不支持 LittleSkin 页面中的使用的技术（如 WebGL）也会导致此问题。你可能需要更新显卡驱动或更换至新的显卡才能彻底解决。
+
+如果你还是没有什么头绪，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，向站点管理员反馈。
 
 ## 不是有效的披风文件 {#invalid-cape}
 

@@ -1,5 +1,13 @@
 # 新手指引
 
+作为一名 LittleSkin 的用户，你使用 LittleSkin 的目的无非就是：
+
+- 在 LittleSkin 上分享你制作的皮肤或披风材质
+- 借助 LittleSkin 在离线登录的游戏中显示自己的皮肤或披风
+- 使用 LittleSkin 作为外置登录服务并加入特定的服务器
+
+这份手册将帮助你了解如何使用 LittleSkin，并解决在此过程中你遇到的各种问题。
+
 ---
 
 <p style="margin-bottom: 2em"></p>
@@ -11,13 +19,8 @@
 为你的角色设置皮肤和披风
 </NCard>
 <NCard title="配置 Mod" link="./mod" >
-在 Minecraft 游戏中显示你的角色的材质
+（使用皮肤 Mod）在 Minecraft 游戏中显示你的角色的材质
 </NCard>
-
----
-
-任何事物都不可能尽善尽美，LittleSkin 也是如此。
-
-若你在此过程中遇到了麻烦，欢迎加入 [用户交流群](../user-group.md) 向我们寻求帮助。
-
-但是，在此之前，请务必先阅读 [遇到问题怎么办](../problems.md)，读完后，问题说不定就迎刃而解了。
+<NCard title="遇到问题了？" link="/faq/">
+看看这个，说不定就茅塞顿开。
+</NCard>

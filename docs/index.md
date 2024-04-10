@@ -6,13 +6,22 @@ head:
       content: littleskin minecraft mc skin cape yggdrasil 我的世界 皮肤 披风 皮肤站 外置登录
 ---
 
-# 欢迎浏览 LittleSkin 用户使用手册！ <Badge type="tip" text="开发分支" />
+# 欢迎浏览 LittleSkin 用户使用手册！ <Badge type="tip" text="新版公测" />
 
 请查看左侧的目录，或是使用页面顶部的搜索，来寻找你想要的内容。
 
 在阅读过程中，页面右侧的「在此页面上」会列出本页大纲，可以帮助你快速定位到想要的内容。
 
 对于移动端用户，目录位于页面左上角，大纲则位于页面右上角。阅读增强功能在移动端不可用。
+
+---
+
+<NCard title="新手指引" link="/newbee/">
+第一次使用 LittleSkin 而且晕头转向？来看看这份新手指引吧！
+</NCard>
+<NCard title="遇到问题了？" link="/problems/">
+读读这个，你的问题说不定会迎刃而解。
+</NCard>
 
 ---
 

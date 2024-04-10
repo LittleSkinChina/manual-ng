@@ -11,7 +11,7 @@ head:
 
 [[toc]]
 
-## 这不是我自己设置的皮肤 {#not-my-skin}
+## <Badge type="info">皮肤 Mod</Badge> 这不是我自己设置的皮肤 {#not-my-skin}
 
 这个问题通常出现在使用皮肤 Mod（如 _CustomSkinLoader_）加载皮肤的用户当中。
 
@@ -20,13 +20,13 @@ head:
 
 要解决此问题，可以参照 [新手指引 > 配置 Mod > 手动修改配置文件](/newbee/mod.md#edit-csl-config) 章节手动调整加载顺序。
 
-## 别人看不到我的材质 {#no-skin-by-other-players}
+## <Badge type="info">皮肤 Mod</Badge> 别人看不到我的材质 {#no-skin-by-other-players}
 
 只有 **正确安装并配置** 皮肤 Mod 后才能加载来自 LittleSkin 的材质。
 
 如果你想让别人也看见你的材质，请让他们也正确安装并配置皮肤 Mod。
 
-## 为什么我在网站上设置好了材质，但是在游戏中不显示 / 没更新？ {#no-skin}
+## <Badge type="info">皮肤 Mod</Badge> 为什么我在网站上设置好了材质，但是在游戏中不显示 / 没更新？ {#no-skin}
 
 这是个很常见的问题。大多数情况下，这个问题是以下四个原因引起的：
 
@@ -48,11 +48,18 @@ head:
 
 如果你确定你的问题不是以上原因引起的，或者你按照以上的解决方案做了之后你的角色的材质依然没有显示或更新，请在详细阅读 [遇到问题怎么办](/problems.md) 后带上你的皮肤 Mod 的日志，加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md) 询问，或直接购买一对一远程技术支持服务。
 
-## 单人游戏中可以正常显示皮肤，但在多人游戏中就不行 {#no-skin-in-server}
+## <Badge type="info">外置登录</Badge> 单人游戏中可以正常显示皮肤，但在多人游戏中就不行 {#no-skin-in-server}
 
 这种情况往往在使用 Yggdrasil 外置登录进行服务器联机时出现。
 
-由于 Minecraft 的材质加载机制，在多人游戏中，只有服务端启用了在线模式（`online-mode`）才可以加载材质。如果你游玩的服务器没有加载 authlib-injector 并正确配置 LittleSkin 的 Yggdrasil API，那么在服务器联机时就不会加载材质。
+由于 Minecraft 的材质加载机制，在多人游戏中，只有正确配置了外置登录（即满足以下条件），才能正常地在多人游戏中显示你在 LittleSkin 上设置的材质：
+
+- 服务端启用了在线模式（`online-mode=true`）
+- [在服务端配置了 Yggdrasil 外置登录](/yggdrasil/server.md)
+
+否则，就会出现如同标题中描述的问题。
+
+值得注意的是，若你希望采取外置登录的方式在服务器中加载皮肤，则必须
 
 如果你有在服务器联机中加载材质的需求，并且你是服主，请在服务端也加载并正确配置 authlib-injector；否则请使用皮肤 Mod 加载材质。
 
@@ -60,13 +67,13 @@ head:
 
 由于一些技术上的原因，LittleSkin 自 2020 年 1 月起不再支持 UniSkinAPI。你仍然可以通过传统加载方式加载材质，但我们建议使用 Universal Skin Mod 加载材质的用户尽快更换到 CustomSkinLoader。
 
-## 启动器下载 authlib-injector 失败  {#authlib-injector-failed-to-download}
+## <Badge type="info">外置登录</Badge> 启动器下载 authlib-injector 失败  {#authlib-injector-failed-to-download}
 
 虽然可能有多种报错，但一般都是网络原因引起的，请在启动器中更换下载源后再试。
 
 如果你使用 HMCL 3，如果更换下载源后仍然报错，请手动下载 authlib-injector，将其放入 `%appdata%\.hmcl\`（Windows）或 `$HOME/.hmcl/`（Linux 和 macOS）中并重命名为 `authlib-injector.jar`。使用其他启动器的用户请咨询启动器作者。
 
-## 外置登录进入服务器时提示「无效的会话」/ accessToken 无效  {#invalid-session}
+## <Badge type="info">外置登录</Badge> 外置登录进入服务器时提示「无效的会话」/ accessToken 无效  {#invalid-session}
 
 请先尝试退出游戏并在启动器中删除账号，然后重新登录。
 
