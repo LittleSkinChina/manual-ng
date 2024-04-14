@@ -124,14 +124,14 @@ export default defineConfig({
         },
         {
           text: '疑难杂症',
-          link: '/problems',
           items: [
+            { text: '遇到问题了咋办', link: '/problems' },
             {
               text: '常见问题解答',
               link: '/faq/',
               items: [
                 { text: '站点使用相关', link: '/faq/site' },
-                { text: '游戏内使用相关', link: '/faq/in-game' },
+                { text: '游戏内加载相关', link: '/faq/in-game' },
               ]
             },
 

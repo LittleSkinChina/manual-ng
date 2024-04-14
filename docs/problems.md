@@ -101,5 +101,5 @@ outline: [2, 3]
 也可以给我们发送邮件工单
 </NCard>
 <NCard title="一对一技术支持" link="https://afdian.net/a/tnqzh123" >
-也可以通过 <strong>赞助支持</strong> 来获取高质量的一对一技术支持服务
+也可以通过 <strong>💰赞助支持</strong> 来获取高质量的一对一技术支持服务
 </NCard>

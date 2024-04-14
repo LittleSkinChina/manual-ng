@@ -26,5 +26,8 @@ outline: false
 <p style="margin-bottom: 2em"></p>
 
 <NCard title="直接向我们寻求帮助" link="/problems#运营团队-或是帮助你的人-并不是神" >
-但是在此之前，为了更好地帮助你解决问题，请务必认真阅读一下这篇文章。
+但是在此之前，为了更好地帮助你解决问题，请务必认真阅读一下这篇文章 👉
+</NCard>
+<NCard title="一对一技术支持" link="https://afdian.net/a/tnqzh123" >
+也可以通过 <strong>💰赞助支持</strong> 来获取高质量的一对一技术支持服务
 </NCard>

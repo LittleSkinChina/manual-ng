@@ -7,7 +7,7 @@ head:
       content: mc skin cape 我的世界 faq littleskin 万用皮肤补丁 csl 外置登录 皮肤站 披风 报错 打不开 加载 不显示 无效的会话 看不见 邮件 邮箱
 ---
 
-# 游戏加载相关
+# 游戏内加载相关
 
 [[toc]]
 
@@ -28,42 +28,57 @@ head:
 
 ## <Badge type="info">皮肤 Mod</Badge> 为什么我在网站上设置好了材质，但是在游戏中不显示 / 没更新？ {#no-skin}
 
-这是个很常见的问题。大多数情况下，这个问题是以下四个原因引起的：
+对于使用皮肤 Mod 加载材质的用户，这是个很常见的问题。大多数情况下，这个问题是以下四个原因引起的：
 
-1. 你没有正确地安装和配置皮肤 Mod；
-2. 你安装的其它 Mod（如 _NonUpdate_）干扰了皮肤 Mod 与 LittleSkin 之间的连接；
-3. 你的材质被你的皮肤 Mod 缓存了；
-4. 你使用了 Alex 模型的皮肤，并且你的 Minecraft 版本低于 1.8。
+::: details 1. 你没有正确地安装和配置皮肤 Mod
 
-解决方案分别是：
+解决方案：正确安装并配置皮肤 Mod。
 
-1. 正确安装并配置皮肤 Mod。你可以在 [新手指引 > 配置 Mod](/newbee/mod.md) 中学习如何正确配置皮肤 Mod；
-2. 删除这些 Mod，或让它们绕过皮肤 Mod 与 LittleSkin 之间的连接；
-3. 等待几分钟后再试。如果还是没有更新，尝试清除你的皮肤 Mod 的缓存，即删除对应的文件夹：
-    - CustomSkinLoader 的缓存文件夹为 `.minecraft/CustomSkinLoader/caches`；
-    - SkinPort 的缓存文件夹为 `.minecraft/cachedImages`
-4. 更换皮肤 Mod，或更换为 Steve 模型的材质：
-    - 对于 1.7.10，请使用 SkinPort 加载材质；
-    - 对于更低版本，目前无解，请更换为 Steve 模型的皮肤。
+你可以在 [新手指引 > 配置 Mod](/newbee/mod.md) 中学习如何正确配置皮肤 Mod；
+:::
 
-如果你确定你的问题不是以上原因引起的，或者你按照以上的解决方案做了之后你的角色的材质依然没有显示或更新，请在详细阅读 [遇到问题怎么办](/problems.md) 后带上你的皮肤 Mod 的日志，加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md) 询问，或直接购买一对一远程技术支持服务。
+::: details 2. 你安装的其它 Mod（如 _NonUpdate_）干扰了皮肤 Mod 与 LittleSkin 之间的连接
+
+解决方案：删除这些 Mod，或让它们绕过皮肤 Mod 与 LittleSkin 之间的连接。
+:::
+
+::: details 3. 你的材质被皮肤 Mod 缓存了
+解决方案：等待几分钟后再试。
+
+如果还是没有更新，尝试清除皮肤 Mod 的缓存，即**直接删除**对应的文件夹：
+
+- CustomSkinLoader 的缓存文件夹为 `.minecraft/CustomSkinLoader/caches`
+- SkinPort 的缓存文件夹为 `.minecraft/cachedImages`
+:::
+
+::: details 4. 你使用了 Alex 模型的皮肤，并且你的 Minecraft 版本低于 1.8
+解决方案：
+
+- 对于 1.7.10，请使用 SkinPort 加载材质。SkinPort 在 1.7.10 上提供了对 Alex 模型的支持。  
+  参考 [新手指引 > 配置 Mod > SkinPort](/newbee/mod.md#skinport) 进行配置。
+- 对于更低版本，目前无解，你只能更换为 Steve 模型的皮肤。
+:::
+
+::: info 使用的是外置登录，但在多人游戏中不显示皮肤？
+如果你使用外置登录的方式加载材质，并遇到了如标题所说的问题，请阅读 [下一条👇](#no-skin-in-server)。
+:::
+
+如果你确定你的问题不是以上原因引起的，或者你按照以上的解决方案做了之后你的角色的材质依然没有显示或更新，请在详细阅读 [👉 遇到问题怎么办](/problems.md) 以后，带上你的皮肤 Mod 的日志，加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md) 询问，或直接购买一对一远程技术支持服务。
 
 ## <Badge type="info">外置登录</Badge> 单人游戏中可以正常显示皮肤，但在多人游戏中就不行 {#no-skin-in-server}
 
 这种情况往往在使用 Yggdrasil 外置登录进行服务器联机时出现。
 
-由于 Minecraft 的材质加载机制，在多人游戏中，只有正确配置了外置登录（即满足以下条件），才能正常地在多人游戏中显示你在 LittleSkin 上设置的材质：
+由于 Minecraft 的材质加载机制，在多人游戏中，只有正确配置了外置登录（即**同时满足以下全部条件**），才能正常地在多人游戏中显示你在 LittleSkin 上设置的材质：
 
-- 服务端启用了在线模式（`online-mode=true`）
+- 服务端启用了在线模式（`server.properties` 中 `online-mode=true`）
 - [在服务端配置了 Yggdrasil 外置登录](/yggdrasil/server.md)
 
 否则，就会出现如同标题中描述的问题。
 
-值得注意的是，若你希望采取外置登录的方式在服务器中加载皮肤，则必须
-
 如果你有在服务器联机中加载材质的需求，并且你是服主，请在服务端也加载并正确配置 authlib-injector；否则请使用皮肤 Mod 加载材质。
 
-## 为什么我无法使用 Universal Skin Mod 加载材质了？ {#universal-skin-mod}
+## <Badge type="info">皮肤 Mod</Badge> 为什么我无法使用 Universal Skin Mod 加载材质了？ {#universal-skin-mod}
 
 由于一些技术上的原因，LittleSkin 自 2020 年 1 月起不再支持 UniSkinAPI。你仍然可以通过传统加载方式加载材质，但我们建议使用 Universal Skin Mod 加载材质的用户尽快更换到 CustomSkinLoader。
 
