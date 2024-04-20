@@ -30,9 +30,8 @@ CustomSkinLoader 是我们最推荐的皮肤 Mod，也被称为 **CSL** 或 **�
 
 你可以在以下网站获取到关于 CustomSkinLoader 的更多信息
 
-- [MCBBS](https://www.mcbbs.net/thread-269807-1-1.html)
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/customskinloader)
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/883.html)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/customskinloader)
 
 <GetCSL />
 
@@ -46,9 +45,9 @@ LittleSkin 自 CustomSkinLoader 14.7 起被添加到了 CustomSkinLoader 的默�
 
 ::: warning 注意
 
-我们不再推荐使用以下远古版本的 CustomSkinLoader。
+我们不再推荐使用以下远古版本的 CustomSkinLoader，即低于 14.7 的版本。
 
-- 对于 Minecraft 1.7.10，你可以同时安装 [CustomSkinLoader](#customskinloader) 和 [CompatibilityLayerForCustomSkinLoader](#compatibilitylayerforcustomskinloader) 。
+- 对于 Minecraft 1.7.10，你可以同时安装 [CustomSkinLoader](#customskinloader) 和 [CompatibilityLayerForCustomSkinLoader](#clfcsl) 。
 
 - 对于更低版本，目前并没有很好的解决方案。
 
@@ -90,31 +89,47 @@ https://skin.prinzeugen.net/cape/*.png
 
 ### 手动修改配置文件 {#edit-csl-config}
 
-配置文件默认存放于 `.minecraft/CustomSkinLoader/` 目录中，仅有一个配置文件，文件名为 `CustomSkinLoader.json`。
+::: info 什么情况下需要手动修改 CustomSkinLoader 配置文件？
+👉 **一般来说，你只需要简单地安装 CustomSkinLoader Mod 即可，无需进行任何额外的配置。**
+
+然而有时事与愿违，游戏中你的皮肤可能并不是你所期望的那个。
+
+当你在这个手册上或者是其他地方得知，「你需要手动修改配置文件」时，那就是时候照着下面的步骤来做了。
+:::
+
+💡 配置文件默认存放于 `.minecraft/CustomSkinLoader/` 目录中，仅有一个配置文件，文件名为 `CustomSkinLoader.json`。
+
+::: details 图示：配置文件的具体位置
+![CustomSkinLoader 文件夹所处位置](./assets/mods/csl-folder.webp)
+
+![CustomSkinLoader 的配置文件和日志文件](./assets/mods/csl-files.webp)
+:::
 
 ::: tip 提示
 你可以从 [👉 这里 👈](/CustomSkinLoader.json) 下载到为 LittleSkin 量身定制的配置文件，此文件的内容与下面的内容一致。你只需将此文件覆盖原有配置文件即可。
 :::
 
-你也可以使用记事本或者任意编辑器将其打开，将配置文件原有的所有内容替换成以下内容：
+你也可以使用记事本或者任意编辑器将其打开，将配置文件原有的所有内容替换成以下内容。
 
-::: details 配置文件: `CustomSkinLoader.json`
+修改完成后别忘了先保存再退出。再次启动 Minecraft 之后，你应该就能在游戏里看到你在 LittleSkin 中设置的材质了。
+
+配置文件: `CustomSkinLoader.json`
 
 <<< @/public/CustomSkinLoader.json{4-9 json:line-numbers}
 
-:::
 
-保存退出，再次打开 Minecraft 之后，你应该就能看到你在 LittleSkin 中设置的材质了。
+### CompatibilityLayerForCustomSkinLoader {#clfcsl}
 
-### CompatibilityLayerForCustomSkinLoader
+> 由于新版 CustomSkinLoader 从 14.7 以来就已经放弃对 Minecraft 1.7.10 的支持，但是相较后续的 Minecraft 版本而言，从网络获取皮肤的过程并没有发生太大的变化。
+>
+> 有了这个 Mod，就可以让新版 CSL 能够被 Forge 1.7.10 加载。
 
-> 由于新版 CustomSkinLoader 从 14.7 以来就已经放弃对 Minecraft 1.7.10 的支持，但是 1.7.10 和 1.8 相比，从网络获取皮肤的过程并没有发生太大的变化，因此这个 Mod 的作用是让新版 CSL 能够被 Forge 1.7.10 加载。
+名称意为 CSL 兼容层。借助此 Mod，你可以在 Minecraft 1.7.10 中使用新版本的 CustomSkinLoader（仅限 _ForgeActive_ 通道）。
 
-你可以在以下网站获取到关于 CompatibilityLayerForCustomSkinLoader 的更多信息
+你可以在以下网站获取到关于 CompatibilityLayerForCustomSkinLoader 的更多信息。
 
-- [MCBBS](https://www.mcbbs.net/thread-1109996-1-1.html)
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/compatibilitylayerforcustomskinloader)
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/4160.html)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/compatibilitylayerforcustomskinloader)
 
 ## SkinPort
 
@@ -122,13 +137,14 @@ https://skin.prinzeugen.net/cape/*.png
 
 你可以在以下网站获取到关于 SkinPort 的更多信息
 
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/skinport)
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/2700.html)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/skinport)
+- [GitHub Release](https://github.com/zlainsama/SkinPort/releases/latest)
 
 ::: tip 提示
 LittleSkin 仅支持 `1.7.10-v10a` 或更高版本的 SkinPort。
 
-如果你使用 Yggdrasil 外置登录加载材质，则只需要安装任意版本的 SkinPort 即可，无需修改配置文件。
+如果你使用 Yggdrasil 外置登录加载 Alex 材质，则只需要安装 SkinPort 即可，无需修改配置文件。
 :::
 
 ::: danger 谨记
@@ -142,8 +158,8 @@ SkinPort 仅适用于 Minecraft 1.7.10。对于更低版本，目前没有方法
 ``` java:line-numbers
 client {
     S:hostCustomServer=http://example.com
-    S:hostCustomServer2Cape=https://littleskin.cn/cape/%name%.png  // [!code focus] // [!code warning]
-    S:hostCustomServer2Skin=https://littleskin.cn/skin/%name%.png  // [!code focus] // [!code warning]
+    S:hostCustomServer2Cape=https://littleskin.cn/cape/%name%.png  // [!code focus] 
+    S:hostCustomServer2Skin=https://littleskin.cn/skin/%name%.png  // [!code focus] 
     B:useCrafatar=false
     B:useCustomServer=false
     B:useCustomServer2=true
