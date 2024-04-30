@@ -21,7 +21,7 @@ export default defineConfig({
 
   lastUpdated: true,
   sitemap: {
-    hostname: 'https://ls-manual-ng.pages.dev'
+    hostname: 'https://manual.littlesk.in'
   },
 
   lang: 'zh',
@@ -67,7 +67,7 @@ export default defineConfig({
       'label': '在此页面上'
     },
     editLink: {
-      pattern: 'https://github.com/LittleSkinCommspt/manual-ng/edit/main/docs/:path',
+      pattern: 'https://github.com/LittleSkinChina/manual-ng/edit/master/docs/:path',
       text: '帮助我们完善这个页面'
     },
     search: {
@@ -198,7 +198,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/LittleSkinCommspt/manual-ng' },
+      { icon: 'github', link: 'https://github.com/LittleSkinChina/manual-ng' },
     ],
 
   },
