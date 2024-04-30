@@ -1,10 +1,23 @@
 import { defineConfig } from 'vitepress';
 
+let GTAG_ID = 'G-TBCY5W7YVR';
+
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'LittleSkin 用户使用手册',
   description: 'LittleSkin 用户使用手册',
-  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.png' }],
+    ['script', 
+      { async: '', src: `https://www.googletagmanager.com/gtag/js?id=${GTAG_ID}` }
+    ],
+    ['script', {},
+      `window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${GTAG_ID}');`
+    ]
+  ],
 
   lastUpdated: true,
   sitemap: {
