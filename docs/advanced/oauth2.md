@@ -32,15 +32,14 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 
 如果你正在进行开发，下述的信息可能会有所帮助。
 
-Blessing Skin Server 并不提供 OIDC 兼容，以下表达方式只是便于展示。
+### API 端点
 
-``` json
-{
-    "authorization_endpoint": "https://littleskin.cn/oauth/authorize",
-    "token_endpoint": "https://littleskin.cn/oauth/access_token",
-    "userinfo_endpoint": "https://littleskin.cn/api/user",
-}
-```
+| API 端点 Endpoint      | URL                                        |
+| ---------------------- | ------------------------------------------ |
+| 授权 Authorize         | `https://littleskin.cn/oauth/authorize`    |
+| 令牌 Token             | `https://littleskin.cn/oauth/access_token` |
+| 用户信息 User Info     | `https://littleskin.cn/api/user`           |
+| 刷新令牌 Refresh Token | `https://littleskin.cn/api/auth/refresh`   |
 
 ### 支持的 Scope
 
@@ -54,10 +53,14 @@ Blessing Skin Server 并不提供 OIDC 兼容，以下表达方式只是便于�
 
 ### 授权
 
-客户端构造 Authorize URL 并引导用户在浏览器中访问。
+客户端构造 Authorize URL 并引导用户在**浏览器**中访问。
 
 ``` http
-https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&response_type=code&scope=
+GET https://littleskin.cn/oauth/authorize
+    ?client_id={client_id}
+    &redirect_uri={redirect_uri}
+    &response_type=code
+    &scope=
 ```
 
 | 参数            | 值                             |
@@ -129,3 +132,24 @@ Authorization: Bearer {access_token}
 如果一切在预料之中，这个请求会正确地返回用户的基本信息。
 
 欲了解更多内容，请访问 [参考文档](#参考文档) 及 [LittleSkin API](./api.md)。
+
+### 刷新 Access Token
+
+为了在刷新 Access Token 的过期时间，可在 Access Token 有效期内请求更新有效期。
+
+``` http
+POST https://littleskin.cn/api/auth/refresh
+Authorization: Bearer {access_token}
+```
+
+请求成功后将返回 JSON 响应。
+
+``` jsonc
+{
+    "token": "***J.W.T***"
+}
+```
+
+| 值      | 解释                          |
+| ------- | ----------------------------- |
+| `token` | 新的 Access Token  (JWT 格式) |
