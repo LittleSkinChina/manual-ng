@@ -23,9 +23,15 @@ LittleSkin 使用 Blessing Skin 最新开发版本，支持通过 Blessing Skin 
 
 ## LittleSkin 特有的 API
 
+### OpenAPI 文档
+
+我们提供 [OpenAPI 文档](/littleskin-api.openapi3_1.yaml)，你可以使用 [Swagger Editor](https://editor-next.swagger.io/) 等工具进行查看。
+
+若 OpenAPI 文档中的表述与此文档不一致，以 OpenAPI 文档为准。
+
 ### 站点公告 Announcements <Badge type="info" text="🔓 无需鉴权" />
 
-``` http
+```http
 GET https://littleskin.cn/api/announcements
 ```
 
@@ -33,9 +39,7 @@ GET https://littleskin.cn/api/announcements
 
 将来将遵守启动器联盟规范。<Badge type="info" text="不成熟的" />
 
-::: details Schema 和示例数据
-
-我们提供 [OpenAPI 文档](/littleskin-api-announcements.openapi3_1.yaml)，你可以使用 Swagger Editor 等工具进行查看。
+::: details 说明
 
 以下只是对 OpenAPI 文档的额外补充说明。
 
@@ -50,7 +54,7 @@ GET https://littleskin.cn/api/announcements
 | `timestamp` | Unix 时间戳，单位为秒                           |
 | `id`        | UUID v4，对公告进行了修改不会改变               |
 
-``` json
+```json
 [
   {
     "title": "string",
@@ -63,6 +67,36 @@ GET https://littleskin.cn/api/announcements
     "id": "70c90f09-9f77-4d78-b7e4-92b4e86d8f6c"
   }
 ]
+```
+
+:::
+
+### 查询正版验证状态 PremiumVerification <Badge type="tip" text="🔒 需要鉴权" />
+
+```http
+GET https://littleskin.cn/api/premium-verification
+```
+
+返回用户正版验证状态。
+
+需要在 [OAuth2](./oauth2.md) 阶段提供 `PremiumVerification.Read` Scope。
+
+::: details 说明
+
+以下只是对 OpenAPI 文档的额外补充说明。
+
+| 值         | 简要解释                        |
+| ---------- | ------------------------------- |
+| `code`     | 状态码，目前只有 `0`            |
+| `verified` | 是否已验证正版                  |
+| `uuid`     | 无符号的正版 UUID，当存在时返回 |
+
+```json
+{
+  "code": 0,
+  "verified": true,
+  "uuid": "69e535e98159409e93c8d649d7355279"
+}
 ```
 
 :::

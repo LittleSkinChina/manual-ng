@@ -1,0 +1,181 @@
+openapi: 3.1.0
+info:
+  title: LittleSkin API
+  description: https://manual.littlesk.in/advanced/api
+  contact:
+    name: Support Team
+    url: https://manual.littlesk.in/problems#%E6%88%91%E8%AF%A5%E5%8E%BB%E5%93%AA%E9%87%8C%E6%8F%90%E9%97%AE
+    email: support@littlesk.in
+  version: 0.1.3
+servers:
+- url: https://littleskin.cn/api
+  description: Prod
+paths:
+  /announcements/:
+    get:
+      tags:
+        - Announcements
+      summary: Get All Announcements
+      description: Get all announcements.
+      operationId: get_all_announcements
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Announcement'
+                type: array
+                title: Response Get All Announcements
+  /premium-verification/:
+    get:
+      tags:
+        - Pro
+      summary: Get premium verification status
+      description: |
+        Check whether the user is verified as a Pro user.
+
+        Scope: `PremiumVerification.Read`
+      operationId: get_premium_verification
+      security:
+        - LittleSkinOAuth2: [PremiumVerification.Read]
+      responses:
+        '401':
+          $ref: '#/components/responses/UnauthorizedError'
+        '200':
+          description: Verified
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/IsPro'
+                type: array
+                title: Response Pro verified
+        '404':
+          description: Not Verified
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/NotPro'
+                type: array
+                title: Response Pro not verified
+        
+
+components:
+  securitySchemes:
+    LittleSkinOAuth2:
+      type: oauth2
+      description: LittleSkin OAuth2 - [Docs](https://manual.littlesk.in/advanced/oauth2)
+      flows:
+        authorizationCode:
+          authorizationUrl: https://littleskin.cn/oauth/authorize
+          tokenUrl: https://littleskin.cn/oauth/access_token
+          refreshUrl : https://littleskin.cn/api/auth/refresh
+          scopes:
+            PremiumVerification.Read: Read Premium Verification status
+
+  schemas:
+    Announcement:
+      properties:
+        title:
+          type: string
+          title: Title
+        content:
+          type: string
+          description: with some simple html tags such as `<p>` `<ul>`, and some simple inline CSS styles.
+          title: Content
+        color:
+          type: string
+          description: colors from Bootstrap
+          enum:
+            - blue
+            - gray
+            - green
+            - red
+            - yellow
+            - cyan
+            - light
+            - dark
+            - white
+          title: Color
+        priority:
+          type: integer
+          minimum: 0
+          title: Priority
+        severity:
+          type: string
+          description: severity of the announcement
+          enum:
+            - fatal
+            - warning
+            - info
+          title: Severity
+        expand:
+          type: boolean
+          title: Expand
+          description: whether expand
+        timestamp:
+          type: number
+          format: timestamp
+          title: Timestamp
+          examples:
+            - 1706369054.135084
+        id:
+          type: string
+          format: uuid4
+          title: Id
+          description: Announcement Id
+          examples:
+            - 70c90f09-9f77-4d78-b7e4-92b4e86d8f6c
+      type: object
+      required:
+        - title
+        - content
+        - color
+        - priority
+        - severity
+        - expand
+        - timestamp
+        - id
+      title: Announcement
+    IsPro:
+      properties:
+        code:
+          type: integer
+          default: 0
+          description: Status Code, always `0`
+        verified:
+          type: boolean
+          default: true
+          description: Whether Pro is Verified, `true` here
+        uuid:
+          type: string
+          format: uuid4
+          description: Player UUID from Minecraft Official
+          examples:
+            - 69e535e98159409e93c8d649d7355279
+      type: object
+      required:
+        - verified
+        - uuid
+      title: Pro Status - Verified
+    NotPro:
+      properties:
+        code:
+          type: integer
+          default: 0
+          description: Status Code, always `0`
+        verified:
+          type: boolean
+          default: false
+          description: Whether Pro is Verified, `false` here
+      type: object
+      required:
+        - verified
+      title: Pro Status - Not Verified
+    
+  responses: 
+    UnauthorizedError:
+      description: Unauthenticated
