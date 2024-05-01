@@ -25,9 +25,10 @@ LittleSkin 使用 Blessing Skin 最新开发版本，支持通过 Blessing Skin 
 
 ### OpenAPI 文档
 
-我们提供 [OpenAPI 文档](/littleskin-api.openapi3_1.yaml)，你可以使用 [Swagger Editor](https://editor-next.swagger.io/) 等工具进行查看。
-
+<br/>
+<NCard title="🏂 使用 SwaggerUI 查看" link="https://petstore.swagger.io/?url=https://manual.littlesk.in/littleskin-api.openapi3_1.yaml">
 若 OpenAPI 文档中的表述与此文档不一致，以 OpenAPI 文档为准。
+</NCard>
 
 ### 站点公告 Announcements <Badge type="info" text="🔓 无需鉴权" />
 
