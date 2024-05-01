@@ -102,17 +102,15 @@ CustomSkinLoader 的日志位于 `.minecraft/CustomSkinLoader/CustomSkinLoader.l
 
 #### <Badge type="info">外置登录</Badge> authlib-injector
 
-如果是 Yggdrasil 外置登录的问题，请在添加 JVM 参数 `-Dauthlibinjector.debug` 并复现问题后，提供以下日志：
-  
-- 服务端从开始到出错的所有日志（最后一次运行服务端生成的日志位于 `logs/latest.log`）
+::: warning
 
-- 客户端游戏从开始到出错的所有日志（最后一次游戏生成的日志位于 `.minecraft/logs/latest.log` 或 `.minecraft/versions/{versions}/logs/latest.log`）
+如果是 authlib-injector 的问题，请务必添加 JVM 参数 `-Dauthlibinjector.debug` 并复现问题后，再提供相关日志。
 
-  - 如果有，请优先使用启动器的 <BSSection>测试游戏</BSSection> 功能导出的日志
+:::
 
-- 服务端和客户端的 authlib-injector 日志（最后一次生成的日志位于游戏目录下的 `authlib-injector.log`）
+对于服务端，你需要提供其从开始到出错的所有日志，以及其 authlib-injector 日志。它们分别位于 `logs/latest.log` 和游戏目录下的 `authlib-injector.log`。
 
-- 启动器日志（请咨询启动器作者以获取日志位置）
+对于客户端，你不仅需要提供从开始到出错的所有日志和 authlib-injector 日志，还需要提供启动器日志。如果你不知道启动器日志在哪里，请咨询对应的启动器的作者。
 
 提供日志时，请直接发送日志文件，而不是提供日志截图。如果没有这些日志，请在提问时说明清楚；如果你提问后被要求提供更多信息，请提供我们要求的信息以帮助我们查找问题。
 
