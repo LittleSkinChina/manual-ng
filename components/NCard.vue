@@ -22,7 +22,7 @@ const props = defineProps<{
 <style scoped>
 .ncard {
     border: 1px solid #ebedf0;
-    box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, .15);
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, .15);
     margin-bottom: 2em;
     border-radius: 8px;
     transition: all 200ms ease;
@@ -30,6 +30,7 @@ const props = defineProps<{
 
 .ncard:hover {
     border: 1px solid var(--vp-c-brand);
+    box-shadow: 2px 2px 1px 0 rgba(0, 0, 0, .1);
 }
 
 .ncardBody {
