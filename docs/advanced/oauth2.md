@@ -37,7 +37,7 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 | API 端点 Endpoint      | URL                                        |
 | ---------------------- | ------------------------------------------ |
 | 授权 Authorize         | `https://littleskin.cn/oauth/authorize`    |
-| 令牌 Token             | `https://littleskin.cn/oauth/access_token` |
+| 令牌 Token             | `https://littleskin.cn/oauth/token` |
 | 用户信息 User Info     | `https://littleskin.cn/api/user`           |
 | 刷新令牌 Refresh Token | `https://littleskin.cn/api/auth/refresh`   |
 
@@ -81,7 +81,7 @@ GET https://littleskin.cn/oauth/authorize
 客户端构造 URL 并发起 POST 请求。
 
 ``` http
-POST https://littleskin.cn/oauth/access_token
+POST https://littleskin.cn/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
 {
