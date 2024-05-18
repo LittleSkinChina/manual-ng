@@ -4,25 +4,31 @@ outline: [2, 3]
 
 <script setup>
 import GetCSL from '../../components/GetCSL.vue'
+import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 </script>
 
 # 配置 Mod
 
-LittleSkin 仅提供材质的上传、存储、检索和分享的功能。想要在 Minecraft 中显示你在 LittleSkin 设置的材质的话，你需要在 Minecraft 客户端中安装皮肤 Mod 并修改相应的配置文件。
+若想要在 Minecraft 中显示你在 LittleSkin 设置的材质，你需要在 Minecraft 客户端中安装皮肤 Mod 并对其进行配置。
 
-::: tip 提示
-如何安装 Mod 请自行搜索，本文不会说明如何安装皮肤 Mod，仅说明如何配置皮肤 Mod，使其从 LittleSkin 加载材质。
+[[toc]]
 
-在一些情况下，安装皮肤 Mod 后，可能需要启动一次游戏并进入存档，Mod 才会自动生成配置文件；如果你在启动器中启用了版本隔离，配置文件的路径可能有所不同。
-:::
+> [!INFO] 本文不会说明「如何安装 Mod」
+> 如果你确实不会，请将本文分享给你的朋友或其他愿意帮助你的人士，让他们指导你操作。
 
-::: danger 谨记
-只需要使用一种皮肤 Mod 即可。请不要同时安装多个皮肤 Mod，否则，轻则无法正常加载材质，重则导致游戏崩溃。
-:::
+> [!INFO] 找不到下文中说的配置文件？
+> 在大多数情况下，安装皮肤 Mod 后需要启动一次游戏并进入存档，配置文件才会被自动生成。
+>
+> 如果你在启动器中启用了版本隔离，配置文件的路径还可能与本文中描述的有所不同。
 
-::: warning 注意
-你也可以选择 [Yggdrasil 外置登录](/yggdrasil/index.md) 加载材质。但是，除 SkinPort 外，请不要同时使用 Yggdrasil 外置登录和皮肤 Mod，否则可能无法正常加载材质。
-:::
+> [!IMPORTANT] 不要同时安装多个皮肤 Mod
+> 否则，轻则无法正常加载材质，重则导致游戏崩溃。  
+> 但并不是没有例外，比如：
+>
+> 1. CompatibilityLayerForCustomSkinLoader 需要与 CustomSkinLoader 一起安装
+
+> [!TIP] 其他加载材质的方式
+> 你也可以选择 [Yggdrasil 外置登录](/yggdrasil/index.md) 加载材质。但是，除 SkinPort 外，请不要同时使用 Yggdrasil 外置登录和皮肤 Mod，否则可能无法正常加载材质。
 
 ## CustomSkinLoader
 
@@ -35,7 +41,9 @@ CustomSkinLoader 是我们最推荐的皮肤 Mod，也被称为 **CSL** 或 **�
 
 <GetCSL />
 
-### 14.7 +
+<!-- #TODO 解释 CustomSkinLoader 加载流程 -->
+
+### 14.7+ <Badge type="tip" text="✨ 当前版本" />
 
 LittleSkin 自 CustomSkinLoader 14.7 起被添加到了 CustomSkinLoader 的默认加载列表中，加载顺序仅次于正版皮肤，在大部分情况下，安装完成后你无需进行任何修改即可加载来自 LittleSkin 的材质。:tada:
 
@@ -43,19 +51,14 @@ LittleSkin 自 CustomSkinLoader 14.7 起被添加到了 CustomSkinLoader 的默�
 
 ### 早期版本 <Badge type="danger" text="👎 不再推荐" />
 
-::: warning 注意
+> [!WARNING] 注意
+> 我们不再推荐使用以下远古版本的 CustomSkinLoader，即低于 14.7 的版本。
+>
+> - 对于 Minecraft 1.7.10，你可以同时安装 [CustomSkinLoader](#customskinloader) 和 [CompatibilityLayerForCustomSkinLoader](#clfcsl) 。
+>
+> - 对于更低版本，目前并没有很好的解决方案。
 
-我们不再推荐使用以下远古版本的 CustomSkinLoader，即低于 14.7 的版本。
-
-- 对于 Minecraft 1.7.10，你可以同时安装 [CustomSkinLoader](#customskinloader) 和 [CompatibilityLayerForCustomSkinLoader](#clfcsl) 。
-
-- 对于更低版本，目前并没有很好的解决方案。
-
-:::
-
-#### 13.1 ~ 14.6a
-
-::: details 使用 ExtraList
+::: details 使用 ExtraList：13.1 ~ 14.6a
 
 CustomSkinLoader 14.4 起支持通过 ExtraList 的方式添加皮肤站，这也是我们推荐的方法之一。你可以在用户中心的「皮肤 Mod」页面下载到 LittleSkin 的 ExtraList 文件，将其放入 `.minecraft/CustomSkinLoader/ExtraList/` 目录下即可。
 
@@ -63,9 +66,7 @@ CustomSkinLoader 14.4 起支持通过 ExtraList 的方式添加皮肤站，这�
 
 :::
 
-#### 12.9 -
-
-::: details 修改配置文件
+::: details 修改配置文件：12.9-  
 
 配置文件存放于 `.minecraft/CustomSkinLoader/` 目录中，共有两个配置文件，文件名分别为 `skinurls.txt` 和 `capeurls.txt`。
 
@@ -89,13 +90,12 @@ https://skin.prinzeugen.net/cape/*.png
 
 ### 手动修改配置文件 {#edit-csl-config}
 
-::: info 什么情况下需要手动修改 CustomSkinLoader 配置文件？
-👉 **一般来说，你只需要简单地安装 CustomSkinLoader Mod 即可，无需进行任何额外的配置。**
-
-然而有时事与愿违，游戏中你的皮肤可能并不是你所期望的那个。
-
-当你在这个手册上或者是其他地方得知，「你需要手动修改配置文件」时，那就是时候照着下面的步骤来做了。
-:::
+> [!TIP] 什么情况下需要手动修改 CustomSkinLoader 配置文件？
+> 👉 **一般来说，你只需要简单地安装 CustomSkinLoader Mod 即可，无需进行任何额外的配置。**
+>
+> 然而有时事与愿违，游戏中你的皮肤可能并不是你所期望的那个。
+>
+> 当你在这个手册上或者是其他地方得知，「你需要手动修改配置文件」时，那就是时候照着下面的步骤来做了。
 
 💡 配置文件默认存放于 `.minecraft/CustomSkinLoader/` 目录中，仅有一个配置文件，文件名为 `CustomSkinLoader.json`。
 
@@ -105,18 +105,16 @@ https://skin.prinzeugen.net/cape/*.png
 ![CustomSkinLoader 的配置文件和日志文件](./assets/mods/csl-files.webp)
 :::
 
-::: tip 提示
-你可以从 [👉 这里 👈](/CustomSkinLoader.json) 下载到为 LittleSkin 量身定制的配置文件，此文件的内容与下面的内容一致。你只需将此文件覆盖原有配置文件即可。
-:::
-
 你也可以使用记事本或者任意编辑器将其打开，将配置文件原有的所有内容替换成以下内容。
 
 修改完成后别忘了先保存再退出。再次启动 Minecraft 之后，你应该就能在游戏里看到你在 LittleSkin 中设置的材质了。
 
-配置文件: `CustomSkinLoader.json`
+配置文件: `CustomSkinLoader.json` [<BSButton><FA :icon="faFileArrowDown" /> 下载此文件 </BSButton>](/CustomSkinLoader.json)
+
+> [!IMPORTANT] 直接下载 CustomSkinLoader 配置文件
+> 你可以下载到为 LittleSkin 量身定制的配置文件，此文件的内容与下面的内容一致。你只需将此文件覆盖原有文件即可。
 
 <<< @/public/CustomSkinLoader.json{4-9 json:line-numbers}
-
 
 ### CompatibilityLayerForCustomSkinLoader {#clfcsl}
 
