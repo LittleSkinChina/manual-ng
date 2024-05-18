@@ -49,8 +49,6 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 保险起见，建议使用官方启动器启动一次最新版本的 Minecraft 再尝试绑定正版账号。
 
-如果你确定你购买了正版 Minecraft，并且你可以通过官方启动器启动最新版本的 Minecraft，但仍然无法绑定正版账号，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，向站点管理员反馈。
-
 ::: tip 提示
 Microsoft 服务器在中国大陆部分地区的连接质量较差，验证时可能会遇到网络问题，你可以等待一段时间再重新尝试或者切换一下网络环境。
 :::
@@ -59,7 +57,7 @@ Microsoft 服务器在中国大陆部分地区的连接质量较差，验证时�
 由于 Mojang 账号已全面迁移至 Microsoft 账号，我们已不再支持通过 Mojang 账号绑定正版 Minecraft 账号。
 :::
 
-如果你无论怎样都无法绑定正版账号，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，联系站点管理员处理。
+如果你确定你购买了正版 Minecraft，并且你可以通过官方启动器启动最新版本的 Minecraft，但仍然无法在 LittleSkin 绑定正版账号，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，向站点管理员反馈。
 
 ## 无法正常显示某些页面 / 图片？ {#broken-webpage}
 
