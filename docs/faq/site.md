@@ -45,15 +45,18 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 ## 无法绑定正版账号？ {#microsoft-failed-to-link}
 
-对于 Microsoft 账号用户：  
-请确保您输入了正确的微软账户名与密码，并且通过了账户的二次验证（如果有）。
+请先确定你购买了正版 Minecraft 并且为你的正版 Java 版 Minecraft 账号设置了 ID（档案名称 / Profile Name）。你可以在 [Minecraft 官网](https://minecraft.net) 设置 ID。
+
+保险起见，建议使用官方启动器启动一次最新版本的 Minecraft 再尝试绑定正版账号。
+
+如果你确定你购买了正版 Minecraft，并且你可以通过官方启动器启动最新版本的 Minecraft，但仍然无法绑定正版账号，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，向站点管理员反馈。
 
 ::: tip 提示
-微软服务器在中国大陆部分地区的连接质量较差，验证时可能会遇到网络问题，您可以等待一段时间再重新尝试或者切换一下网络环境。
+Microsoft 服务器在中国大陆部分地区的连接质量较差，验证时可能会遇到网络问题，你可以等待一段时间再重新尝试或者切换一下网络环境。
 :::
 
 ::: warning 注意
-我们已经不再支持传统 Mojang 账号的绑定。
+由于 Mojang 账号已全面迁移至 Microsoft 账号，我们已不再支持通过 Mojang 账号绑定正版 Minecraft 账号。
 :::
 
 如果你无论怎样都无法绑定正版账号，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，联系站点管理员处理。
@@ -84,7 +87,9 @@ LittleSkin 对材质格式有着严格的要求，请按照 Minecraft 官方的�
 
 ## 发生严重错误 {#server-error}
 
-如果你在使用 LittleSkin 时遇到了红色的「严重错误」的弹窗，请将其截图并加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，联系站点管理员处理。
+如果你在使用 LittleSkin 时遇到了红色的「严重错误」的弹窗，别着急。错误可能是临时性的，你可以稍等一会儿再试试看。
+
+如果长时间等待后错误仍未解决，请将其截图并加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，联系站点管理员处理。
 
 ## 什么时候会举办活动呀？活动的内容有什么呢？ {#activities}
 
