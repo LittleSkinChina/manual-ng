@@ -1,7 +1,3 @@
----
-outline: [1, 2]
----
-
 <script setup>
 import { faUsers, faPlus } from '@fortawesome/free-solid-svg-icons'
 </script>
@@ -15,41 +11,49 @@ LittleSkin 支持的皮肤 Mod 都是通过角色名来识别玩家身份并加�
 在创建角色前请确保你的积分足够，否则你将无法创建角色。
 :::
 
-你可以在用户中心的<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>页面创建和管理你的角色：
+你可以在用户中心的 [<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>](https://littleskin.cn/user/player) 页面创建和管理你的角色：
 
-1. 点击用户中心左侧菜单栏中的<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>，在打开的页面中点击<BSButton><FA :icon="faPlus" />  添加新角色</BSButton>
+1. 点击用户中心左侧菜单栏中的 [<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>](https://littleskin.cn/user/player) ，在打开的页面中点击<BSButton><FA :icon="faPlus" />  添加新角色</BSButton>
 
     ![open-page](./assets/player/1-add-player.webp)
 
-2. 在弹出的窗口中输入你的角色名，点击<BSButton>确定</BSButton>按钮：
+2. 在弹出的窗口中输入你的角色名，点击<BSButton>确定</BSButton>按钮。
 
-    ::: tip 提示
-    角色名可使用中日韩统一表意文字（中文、日文、韩文）、大小写英文字母、阿拉伯数字及以下特殊符号：
+    角色名长度要求最短 3 字符，最长不超过 16 字符，可使用中日韩统一表意文字（中文、日文、韩文）、大小写英文字母、阿拉伯数字及以下特殊符号：
 
-    - 下划线（`_`）、连字符（`-`）；
-    - 逗号（`,`）、点号（`.`）；
-    - 方括号（`[]`）、花括号（`{}`）；
-    - 加号（`+`）、等号（`=`）、脱字符（`^`）。
+    | 符号名称 | 符号 |
+    | -------- | ---- |
+    | 下划线   | `_`  |
+    | 连字符   | `-`  |
+    | 逗号     | `,`  |
+    | 点号     | `.`  |
+    | 方括号   | `[]` |
+    | 花括号   | `{}` |
+    | 加号     | `+`  |
+    | 等号     | `=`  |
+    | 脱字符   | `^`  |
 
-    角色名长度要求最短 3 字符，最长不超过 16 字符。
-    :::
+![input-player-name](./assets/player/2-input-name.webp)
 
-    ![input-player-name](./assets/player/2-input-name.webp)
+✨ 你的第一个角色就创建好啦~ 
 
-3. 你的第一个角色就创建好啦~
+---
 
-如果以后你还想创建更多角色，也可以按照这份文档中所述的方法操作。
+> [!TIP] 名称已被占用？
+> 若出现此提示，则说明有其他用户已经使用了这个角色名。
+>
+> **若你符合下述全部条件**，👉 [绑定正版 Minecraft](./premium) 即可解决你的烦恼。
+>
+> 1. 你希望使用的角色名已被占用
+> 2. 你拥有正版 Minecraft
+> 3. 你的正版 Minecraft ID 就是那个被占用的角色名
+>
+> 若你不满足上述条件，很遗憾，你无法添加被占用的角色名。
 
-## 绑定正版角色
+<NCard title="😢 角色被别人占用了怎么办？" link="/faq/site#player-already-exists" >
+前去查看常见问题解答 FAQ 中的相关内容
+</NCard>
 
-如果你拥有正版 Minecraft，你可以将其绑定至你的 LittleSkin 账号。
-
-你可以在<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>页面的下方找到<BSSection>正版验证 & 绑定</BSSection>一栏（如果没有这一栏，请尝试刷新页面），点击下方的<BSButton>验证并绑定</BSButton>按钮。此时页面会跳转到 Microsoft 的 OAuth 登录页面，在其中登录你的 Microsoft 账号并授权即可完成绑定。
-
-绑定后会自动在你的账号中添加和你的正版 Minecraft 账号同名的角色（如果站内已有同名角色，则该角色将会被强制转移至你的账户下），并可以获得积分奖励。同时，若需取回最新的正版角色名或是删除角色后需要重建角色，可点击下方的<BSButton>更新绑定角色</BSButton>来完成。
-
-每个 LittleSkin 账户只能绑定一个正版 Minecraft 账号，且绑定后不允许解绑正版 Minecraft 账号，除非删除 LittleSkin 账号。
-
-::: warning 注意
-绑定正版 Minecraft 账号后将同时绑定你的 Microsoft 账户，且与正版 Minecraft 账号一样不允许解绑，除非删除 LittleSkin 账号。请谨慎考虑后再绑定。
-:::
+<NCard title="🔗 绑定正版 Minecraft" link="./premium" >
+了解如何取回被占用的角色名
+</NCard>
