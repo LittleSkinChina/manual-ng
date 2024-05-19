@@ -18,7 +18,10 @@
 <NCard title="设定材质" link="./textures" >
 为你的角色设置皮肤和披风
 </NCard>
-<NCard title="配置 Mod" link="./mod" >
+<NCard title="配置 CustomSkinLoader" link="./csl" >
+✨ 使用 CustomSkinLoader在 Minecraft 游戏中显示你的角色的材质
+</NCard>
+<NCard title="配置其他 Mod" link="./mod" >
 （使用皮肤 Mod）在 Minecraft 游戏中显示你的角色的材质
 </NCard>
 <NCard title="遇到问题了？" link="/faq/">

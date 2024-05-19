@@ -143,7 +143,8 @@ export default defineConfig({
               items: [
                 { text: '创建角色', link: '/newbee/player' },
                 { text: '设定材质', link: '/newbee/textures' },
-                { text: '配置 Mod', link: '/newbee/mod' },
+                { text: '配置 CustomSkinLoader', link: '/newbee/csl' },
+                { text: '配置其他 Mod', link: '/newbee/mod' },
                 { text: '绑定正版', link: '/newbee/premium' },
               ]
             },
