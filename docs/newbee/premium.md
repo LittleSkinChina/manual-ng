@@ -19,7 +19,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 一旦绑定成功，你将获得以下好处：
 
 - 🪙 获得 1000 积分奖励！
-- 🏅 获得一个 <BSSection style="background-color:#6f42c1; color:#ffffff">正版</BSSection> 的徽标，并显示在用户中心和皮肤库页面
+- 🏅 获得一个 <BSSection style="background-color:#6f42c1; color:#ffffff; border: none">正版</BSSection> 的徽标，并显示在用户中心和皮肤库页面
 - ✨ 一个以你的正版 Minecraft 账号的 ID 命名的角色将被添加至你的 LittleSkin 账号
 
 > [!IMPORTANT] 取回被占用的正版 ID
