@@ -18,7 +18,7 @@ head:
 以 CustomSkinLoader 为例，它的默认加载顺序为 _Mojang_ > _LittleSkin_。  
 所以，如果你的角色名与某位正版用户相同，那么 CustomSkinLoader 会优先加载那位正版用户的皮肤。
 
-要解决此问题，可以参照 [新手指引 > 配置 Mod > 手动修改配置文件](/newbee/mod.md#edit-csl-config) 章节手动调整加载顺序。
+要解决此问题，可以参照 [新手指引 > 配置 Mod > 手动修改配置文件](/newbee/csl#edit-csl-config) 章节手动调整加载顺序。
 
 ## <Badge type="info">皮肤 Mod</Badge> 别人看不到我的材质 {#no-skin-by-other-players}
 
@@ -34,7 +34,7 @@ head:
 
 解决方案：正确安装并配置皮肤 Mod。
 
-你可以在 [新手指引 > 配置 Mod](/newbee/mod.md) 中学习如何正确配置皮肤 Mod；
+你可以在 [新手指引 > 配置 Mod](/newbee/mod) 中学习如何正确配置皮肤 Mod；
 :::
 
 ::: details 2. 你安装的其它 Mod（如 _NonUpdate_）干扰了皮肤 Mod 与 LittleSkin 之间的连接
@@ -55,7 +55,7 @@ head:
 解决方案：
 
 - 对于 1.7.10，请使用 SkinPort 加载材质。SkinPort 在 1.7.10 上提供了对 Alex 模型的支持。  
-  参考 [新手指引 > 配置 Mod > SkinPort](/newbee/mod.md#skinport) 进行配置。
+  参考 [新手指引 > 配置 Mod > SkinPort](/newbee/mod#skinport) 进行配置。
 - 对于更低版本，目前无解，你只能更换为 Steve 模型的皮肤。
 :::
 
@@ -63,7 +63,7 @@ head:
 如果你使用外置登录的方式加载材质，并遇到了如标题所说的问题，请阅读 [下一条👇](#no-skin-in-server)。
 :::
 
-如果你确定你的问题不是以上原因引起的，或者你按照以上的解决方案做了之后你的角色的材质依然没有显示或更新，请在详细阅读 [👉 遇到问题怎么办](/problems.md) 以后，带上你的皮肤 Mod 的日志，加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md) 询问，或直接购买一对一远程技术支持服务。
+如果你确定你的问题不是以上原因引起的，或者你按照以上的解决方案做了之后你的角色的材质依然没有显示或更新，请在详细阅读 [👉 遇到问题怎么办](/problems) 以后，带上你的皮肤 Mod 的日志，加入 [官方用户交流群](/user-group) 或 [发送邮件工单](/email) 询问，或直接购买一对一远程技术支持服务。
 
 ## <Badge type="info">外置登录</Badge> 单人游戏中可以正常显示皮肤，但在多人游戏中就不行 {#no-skin-in-server}
 
@@ -72,7 +72,7 @@ head:
 由于 Minecraft 的材质加载机制，在多人游戏中，只有正确配置了外置登录（即**同时满足以下全部条件**），才能正常地在多人游戏中显示你在 LittleSkin 上设置的材质：
 
 - 服务端启用了在线模式（`server.properties` 中 `online-mode=true`）
-- [在服务端配置了 Yggdrasil 外置登录](/yggdrasil/server.md)
+- [在服务端配置了 Yggdrasil 外置登录](/yggdrasil/server)
 
 否则，就会出现如同标题中描述的问题。
 
@@ -94,7 +94,7 @@ head:
 
 如果重新登录无法解决问题，请检查你在 LittleSkin 绑定的邮箱中是否存在大写英文字母，如果有，请将其更改为全小写字母，然后再次在启动器中重新登录。
 
-如果以上操作均无法解决问题，请在完整阅读并理解 [遇到问题怎么办](/problems.md) 后，加入 [官方用户交流群](/user-group.md#主用户群) 询问。
+如果以上操作均无法解决问题，请在完整阅读并理解 [遇到问题怎么办](/problems) 后，加入 [官方用户交流群](/user-group#主用户群) 询问。
 
 ## LittleSkin 支持 Minecraft 中国版（国服）吗？ {#about-netease}
 
