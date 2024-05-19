@@ -45,7 +45,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 ## 无法绑定正版账号？ {#microsoft-failed-to-link}
 
-请先确定你购买了正版 Minecraft 并且为你的正版 Java 版 Minecraft 账号设置了 ID（档案名称 / Profile Name）。你可以在 [Minecraft 官网](https://minecraft.net) 设置 ID。
+请先确定你购买了正版 Minecraft 并且为你的正版 Java 版 Minecraft 账号设置了 ID（档案名称 / Profile Name）。你可以在 [Minecraft 官网](https://www.minecraft.net/msaprofile/mygames/editprofile) 设置 ID。
 
 保险起见，建议使用官方启动器启动一次最新版本的 Minecraft 再尝试绑定正版账号。
 
