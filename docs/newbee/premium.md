@@ -45,6 +45,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 1. 你已拥有正版的 **Java 版** Minecraft
 2. 你的正版 Minecraft 账号是 **Microsoft 账号**，而不是 Mojang 账号
 3. 你已为你的正版 Minecraft **设置 档案名称 / Profile Name**（也被称为玩家 ID）
+4. 你已经在 **官方启动器** 上启动过一次 Minecraft
 
 ::: details <Badge type="tip">帮助</Badge> 如何设置 _档案名称_ / _Profile Name_？
 可前往 [Minecraft 官网 > Java Edition：编辑档案名称](https://www.minecraft.net/msaprofile/mygames/editprofile)
