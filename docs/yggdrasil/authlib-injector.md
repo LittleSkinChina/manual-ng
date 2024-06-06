@@ -52,15 +52,14 @@ fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.jso
 
 ## Velocity <Badge type="tip" text="Minecraft 1.13 +" />
 
-新式转发 (modern forwarding) 是 Velocity 支持的一种独创格式。它以高效的二进制格式转发所有玩家信息。但是，它仅适用于 Minecraft 1.13 或更高版本。
+摩登转发 (modern forwarding) 是 Velocity 支持的一种独创格式。它以高效的二进制格式转发所有玩家信息。但是，它仅适用于 Minecraft 1.13 或更高版本。
 
-::: tip 提示
-本文仅会对「为新式转发配置 LittleSkin Yggdrasil 外置登录」做出说明。
-
-本案例使用 Velocity modern forwarding + Paper 作为示例。
-
-具体的 Velocity 配置请结合参考 [Velocity 文档](https://docs.papermc.io/velocity/player-information-forwarding#configuring-modern-forwarding)。
-:::
+> [!TIP] 提示
+> 本文仅会对「为 Velocity 摩登转发配置 LittleSkin 外置登录」做出说明。
+>
+> 本案例使用 Velocity + Paper 作为示例。
+>
+> 具体的 Velocity 配置请结合参考 [Velocity 文档](https://docs.papermc.io/velocity/player-information-forwarding#configuring-modern-forwarding)。
 
 <!--@include: ./velocity.template.md-->
 
