@@ -1,9 +1,9 @@
 {
   "devDependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.5.1",
-    "@fortawesome/vue-fontawesome": "^3.0.6",
-    "@nolebase/vitepress-plugin-enhanced-readabilities": "^1.22.0",
-    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^1.22.0",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^1.28.0",
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^1.28.0",
     "vitepress": "1.1.4"
   },
   "scripts": {
