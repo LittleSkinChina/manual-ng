@@ -205,6 +205,11 @@ export default defineConfig({
 
   },
   vite: {
+    optimizeDeps: {
+      exclude: [
+        '@nolebase/vitepress-plugin-enhanced-readabilities/client',
+      ],
+    },
     ssr: {
       noExternal: [
         // If there are other packages that need to be processed by Vite, you can add them here.
