@@ -49,25 +49,16 @@ yggdrasilAuth:
 
 ## Velocity <Badge type="tip" text="Minecraft 1.13 +" />
 
-::: tip 提示
-
-本文采用的测试环境如下：
-
-- Velocity `3.3.0-SNAPSHOT git-53923ed8-b351`
-
-- Paper `1.20.1 git-Paper-196`
-
-- MultiLogin `git:dba4e6c`
-
-:::
-
-::: warning 警告
-
-截至发稿时，MultiLogin 的最新正式版本仍无法在 Velocity 3.3.0 上运行，故采用开发版本进行测试。
-
-:::
-
 ### 1. 配置 Velocity 转发
+
+Modern forwarding 是 Velocity 支持的一种独创格式。它以高效的二进制格式转发所有玩家信息。但是，它仅适用于 Minecraft 1.13 或更高版本。
+
+> [!TIP] 提示
+> 本文仅会对「为 Velocity modern forwarding 配置 LittleSkin 外置登录」做出说明。
+>
+> 本案例使用 Velocity + Paper + MultiLogin 作为示例。
+>
+> 具体的 Velocity 配置请结合参考 [Velocity 文档](https://docs.papermc.io/velocity/player-information-forwarding#configuring-modern-forwarding)。
 
 <!--@include: ./velocity.template.md-->
 
