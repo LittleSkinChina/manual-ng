@@ -24,9 +24,9 @@ LittleSkin 自 CustomSkinLoader 14.7 起被添加到了 CustomSkinLoader 的默�
 
 <!--@include: ./mod-tips.template.md-->
 
-## 版本：14.7+ <Badge type="tip" text="✨ 当前版本" />
+## 版本：14.7+ <Badge type="tip" text="✨ 当前版本" /> {#14.7+}
 
-如果不存在与你同名的正版角色导致冲突的问题，一般无需修改 CustomSkinLoader 的配置文件。
+如果不存在与你同名的正版角色导致冲突的问题，<mark>一般无需修改 CustomSkinLoader 的配置文件</mark>。
 
 以下是同名冲突在游戏内的典型表现：
 
@@ -77,36 +77,33 @@ https://skin.prinzeugen.net/cape/*.png
 ## 手动修改配置文件 {#edit-csl-config}
 
 > [!NOTE] 什么情况下需要手动修改 CustomSkinLoader 配置文件？
-> 👉 **一般来说，你只需要简单地安装 CustomSkinLoader Mod 即可，无需进行任何额外的配置。**
+> 一般来说，你只需要简单地安装 CustomSkinLoader Mod 即可，无需进行任何额外的配置。
 >
-> 然而有时事与愿违，游戏中你的皮肤可能并不是你所期望的那个。
->
-> 当你在这个手册上或者是其他地方得知，「你需要手动修改配置文件」时，那就是时候照着下面的步骤来做了。
-
----
-
-你可以使用记事本或者任意编辑器将其打开，将配置文件原有的所有内容替换成以下内容。
-
-修改完成后别忘了先保存再退出。
-
-再次启动 Minecraft 之后，你应该就能在游戏里看到你在 LittleSkin 中设置的材质了。
+> 然而有时事与愿违，如果你在使用过程中遇到了如 [同名冲突](#14.7+) 这样的情况，那就是时候照着下面的步骤来做了。
 
 ---
 
 配置文件: `CustomSkinLoader.json` [<BSButton style="background-color: var(--vp-c-success-3)"><FA :icon="faFileArrowDown" /> 下载此文件 </BSButton>](/CustomSkinLoader.json)
 
 > [!IMPORTANT] ✅ 建议直接下载 CustomSkinLoader 配置文件
-> 你可以下载到为 LittleSkin 量身定制的配置文件，此文件的内容与下面的内容一致。
+> 你可以下载到为 LittleSkin 量身定制的配置文件，此文件的内容与下方代码块的内容一致。
 >
-> 你只需将下载到的文件覆盖掉原有的文件即可，而无需对原文件进行编辑。
+> 👉 你只需将下载到的文件<mark>覆盖（替换）掉原有的文件</mark>即可，而无需对原文件进行编辑。
 
-> [!TIP] 配置文件的位置
+> [!TIP] 📍 配置文件的位置
 > 配置文件默认存放于 `.minecraft/CustomSkinLoader/` 目录中，仅有一个配置文件，文件名为 `CustomSkinLoader.json`。
+>
+> 在大多数情况下，安装皮肤 Mod 后需要启动一次游戏并进入存档，配置文件才会被自动生成。
 
-> [!NOTE] 需要重启游戏
+> [!TIP] 🔁 需要重启游戏
 > 完成配置文件的修改后，你需要重启游戏才能使其生效。
 
-::: details 🤔 找不到配置文件的具体位置？
+> [!NOTE] 🥰 有关版本隔离
+> 如果你在启动器中启用了版本隔离，配置文件的路径还可能与上述有少许不同。
+>
+> 善用启动器的 <BSSection>打开模组文件夹</BSSection> 等类似功能，结合下方图示，再给予自己一些信心，你能够找到它的。
+
+::: details 🤔 找不到配置文件的具体位置？来看看图示
 ![CustomSkinLoader 文件夹所处位置](./assets/mods/csl-folder.webp)
 
 ![CustomSkinLoader 的配置文件和日志文件](./assets/mods/csl-files.webp)
@@ -164,7 +161,7 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 
 名称意为 _CustomSkinLoader 兼容层_。
 
-借助此 Mod，你可以在 Minecraft 1.7.10 中使用新版本的 CustomSkinLoader（仅限 _ForgeActive_ 通道）。
+借助此 Mod，你可以<mark>在 Minecraft 1.7.10 中使用新版本的 CustomSkinLoader</mark>（仅限 _ForgeActive_ 通道）。
 
 你可以在以下网站获取到关于 CompatibilityLayerForCustomSkinLoader 的更多信息。
 

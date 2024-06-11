@@ -8,7 +8,14 @@ outline: [2, 3]
 
 [[toc]]
 
+---
+
 <!--@include: ./mod-tips.template.md-->
+
+<NCard title="🗝️ 在寻找 CustomSkinLoader 嘛？" link="./csl" >
+<p><mark>CustomSkinLoader 是我们最推荐的皮肤 Mod</mark>，也被称为 <strong>CSL</strong> 或 <strong>万用皮肤补丁</strong>。</p>
+它现如今被单独放在一篇文章中说明，前去查看具体信息 👉
+</NCard>
 
 ## SkinPort
 
@@ -48,7 +55,7 @@ client {
 
 保存退出，再次打开 Minecraft 之后，你应该就能看到你在 LittleSkin 中设置的材质了。
 
-## 传统加载 <Badge type="danger" text="👎 不再推荐" />
+## 传统加载 API
 
 ``` http
 # 皮肤查询 API
@@ -61,4 +68,28 @@ https://littleskin.cn/cape/{playername}.png
 
 请将以上两个查询 API 填入你的皮肤 Mod 的配置文件的对应位置。其中 `{playername}` 为角色名，请将其替换为对应的占位符。
 
-你也可以分享出你的皮肤 Mod 的配置方法，非常欢迎你帮助我们完善这个页面。
+你也可以分享出你的皮肤 Mod 或相关服务器插件的配置方法，非常欢迎你帮助我们完善这个页面。
+
+### Citizens 2 <Badge type="info" text="服务器插件" />
+
+> Citizens 是用于在 Minecraft 服务器中创建栩栩如生的 NPC 的一个插件。
+
+Citizens 2 为提供了一个 [`/npc skin`](https://wiki.citizensnpcs.co/Skins) 指令来为你的 NPC 设置皮肤。
+
+示例：将某 NPC 的皮肤设置为 LittleSkin 角色 `aabbccdd` 的皮肤：
+
+```plain
+/npc skin --url https://littleskin.cn/skin/aabbccdd.png
+```
+
+### SkinsRestorer <Badge type="info" text="服务器插件" />
+
+> SkinsRestorer 是一个插件，可以恢复离线模式服务器和网络的皮肤，让玩家能够通过指令来更改他们的皮肤。
+
+SkinsRestorer 提供了一个 [`/skin url`](https://skinsrestorer.net/docs/configuration/commands-permissions#player-commands:~:text=command.set.other-,/skin%20url%20%3Curl%3E,-Changes%20your%20skin) 指令来为游戏中的玩家设置皮肤。
+
+示例：将自己的皮肤设置为 LittleSkin 角色 `aabbccdd` 的皮肤：
+
+```plain
+/skin url https://littleskin.cn/skin/aabbccdd.png
+```
