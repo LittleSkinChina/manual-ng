@@ -116,12 +116,12 @@ CustomSkinLoader 的日志位于 `.minecraft/CustomSkinLoader/CustomSkinLoader.l
 
 <p style="margin-bottom: 2em"></p>
 
-<NCard title="加入用户交流群" link="/user-group" >
+<NCard title="🙋 加入用户交流群" link="/user-group" >
 你可以加入我们的官方用户交流群来提问
 </NCard>
-<NCard title="通过邮件发送工单" link="/email" >
+<NCard title="📬️ 通过邮件发送工单" link="/email" >
 也可以给我们发送邮件工单
 </NCard>
-<NCard title="一对一技术支持" link="https://afdian.net/a/tnqzh123" >
+<NCard title="🧑‍🔬 一对一技术支持" link="https://afdian.net/a/tnqzh123" >
 也可以通过 <strong>💰赞助支持</strong> 来获取高质量的一对一技术支持服务
 </NCard>

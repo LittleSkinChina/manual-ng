@@ -28,7 +28,7 @@
 <strong>请不要发送无意义邮件。</strong>若我们认为你的邮件没有回复的必要，你不会收到任何通知或回信。
 </NCard>
 
-我们建议你通过你在 LittleSkin 绑定的邮箱发送邮件，这有助于我们确认用户身份以提高效率。
+我们<mark>建议你通过你在 LittleSkin 绑定的邮箱发送邮件</mark>，这有助于我们确认用户身份以提高效率。
 
 发送到这个邮箱的邮件都会且只会被 运营组 和 社区支持组 看到。我们会尽快回复我们认为需要回复的邮件。
 
@@ -60,10 +60,10 @@
 
 <p style="margin-bottom: 2em"></p>
 
-<NCard title="获取即时的支持" link="/user-group" >
+<NCard title="🙋 获取即时的支持" link="/user-group" >
 如果你需要高时效性的技术支持，请加入我们的 <strong>官方用户交流群</strong> 来提问，而不是发送邮件工单。
 </NCard>
 
-<NCard title="一对一技术支持" link="https://afdian.net/a/tnqzh123" >
+<NCard title="🧑‍🔬 一对一技术支持" link="https://afdian.net/a/tnqzh123" >
 你也可以通过 <strong>💰赞助支持</strong> 来获取高质量的一对一技术支持服务。
 </NCard>
