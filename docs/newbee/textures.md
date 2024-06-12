@@ -62,7 +62,7 @@ LittleSkin 支持上传以下材质
    > [!IMPORTANT] 关于版权声明
    > LittleSkin 于 2024年6月 新增了<BSSection>材质来源</BSSection>机制，<mark>新上传的材质必须声明其版权</mark>，以尽可能解决皮肤库中的不规范转载现象。
    >
-   > 👉 有关版权声明的详细信息，可参考 [版权保护](../newbee/materials) 章节。
+   > 👉 有关版权声明的详细信息，可参考 [版权保护](../copyrights) 章节。
 
 4. 材质信息设置完成后，点击<BSButton style="background-color: #28a745;">确认上传</BSButton>按钮。
 
