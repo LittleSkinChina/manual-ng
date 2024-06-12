@@ -76,7 +76,6 @@ LittleSkin 支持上传以下材质
 
 > [!IMPORTANT] 提示
 每收藏一件材质至衣柜需要花费 10 积分。在衣柜中删除材质时会返还积分。
-::::
 
 ![add-to-closet](./assets/textures/2-add-to-closet.webp)
 
