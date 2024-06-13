@@ -111,7 +111,7 @@ https://skin.prinzeugen.net/cape/*.png
 
 <<< @/public/CustomSkinLoader.json{4-9 json:line-numbers}
 
-## 工作原理
+## 工作原理 {#how-it-works}
 
 CustomSkinLoader 会使用游戏内的玩家名查询不同的服务器，以此加载皮肤。
 
