@@ -1,14 +1,22 @@
 <script setup lang="ts">
 // @ts-ignore: 2307
-const props = defineProps<{
-    title: string,
-    link: string
-}>()
+import { withDefaults } from 'vue'
+const props = withDefaults(
+    // @ts-ignore: 2307
+    defineProps<{
+        title: string,
+        link: string,
+        target?: string
+    }>(),
+    {
+        target: '_self'
+    }
+)
 </script>
 
 <template>
     <div class="ncard">
-        <a :href="props.link">
+        <a :href="props.link" :target="props.target">
             <div class="ncardBody">
                 <div class="card-title text">{{ props.title }}</div>
                 <div class="card-text text">
