@@ -11,39 +11,50 @@ head:
 
 [[toc]]
 
-## <Badge type="info">皮肤 Mod</Badge> 这不是我自己设置的皮肤 {#not-my-skin}
+## <Badge type="info">皮肤 Mod</Badge> <Badge type="tip" text="常见" /> 这不是我自己设置的皮肤 {#not-my-skin}
 
 这个问题通常出现在使用皮肤 Mod（如 _CustomSkinLoader_）加载皮肤的用户当中。
 
 以 CustomSkinLoader 为例，它的默认加载顺序为 _Mojang_ > _LittleSkin_。  
-所以，如果你的角色名与某位正版用户相同，那么 CustomSkinLoader 会优先加载那位正版用户的皮肤。
+所以，<mark>如果你的角色名与某位正版用户相同，那么 CustomSkinLoader 会优先加载那位正版用户的皮肤</mark>。
 
-要解决此问题，可以参照 [新手指引 > 配置 Mod > 手动修改配置文件](/newbee/csl#edit-csl-config) 章节手动调整加载顺序。
+你可以在 [新手指引 > 配置 CustomSkinLoader > 工作原理](/newbee/csl#how-it-works) 章节中了解到 CustomSkinLoader 的工作流程和原理。
 
-## <Badge type="info">皮肤 Mod</Badge> 别人看不到我的材质 {#no-skin-by-other-players}
+🛠️ 要解决此问题，可以参照 [新手指引 > 配置 CustomSkinLoader > 手动修改配置文件](/newbee/csl#edit-csl-config) 章节进行操作。
 
-只有 **正确安装并配置** 皮肤 Mod 后才能加载来自 LittleSkin 的材质。
+## <Badge type="info">皮肤 Mod</Badge> <Badge type="tip" text="常见" /> 别人看不到我的材质 {#no-skin-by-other-players}
 
-如果你想让别人也看见你的材质，请让他们也正确安装并配置皮肤 Mod。
+通常，只有在多人游戏中使用皮肤 Mod 时才会遇到此问题。
 
-## <Badge type="info">皮肤 Mod</Badge> 为什么我在网站上设置好了材质，但是在游戏中不显示 / 没更新？ {#no-skin}
+在此情境下，只有 **正确安装并配置** 皮肤 Mod 后才能加载来自 LittleSkin 的材质。
+
+🛠️ 如果你想让别人也看见你的材质，请让他们也正确安装并配置皮肤 Mod。
+
+## <Badge type="info">皮肤 Mod</Badge> <Badge type="tip" text="常见" /> 为什么我在网站上设置好了材质，但是在游戏中不显示 / 没更新？ {#no-skin}
+
+> [!TIP] 需要重新进入游戏
+> 当你在 LittleSkin 中更新了角色的材质，大多数的皮肤 Mod 都需要重新进入游戏。
+>
+> 只有这样，Mod 才会重新从 LittleSkin 获取角色的材质信息。
+>
+> 除此之外，皮肤 Mod 还可能会将你的材质信息进行缓存，这种情况请参考下方的解决方案。
 
 对于使用皮肤 Mod 加载材质的用户，这是个很常见的问题。大多数情况下，这个问题是以下四个原因引起的：
 
 ::: details 1. 你没有正确地安装和配置皮肤 Mod
 
-解决方案：正确安装并配置皮肤 Mod。
+🛠️ 解决方案：正确安装并配置皮肤 Mod。
 
 你可以在 [新手指引 > 配置 Mod](/newbee/mod) 中学习如何正确配置皮肤 Mod；
 :::
 
 ::: details 2. 你安装的其它 Mod（如 _NonUpdate_）干扰了皮肤 Mod 与 LittleSkin 之间的连接
 
-解决方案：删除这些 Mod，或让它们绕过皮肤 Mod 与 LittleSkin 之间的连接。
+🛠️ 解决方案：删除这些 Mod，或让它们绕过皮肤 Mod 与 LittleSkin 之间的连接。
 :::
 
-::: details 3. 你的材质被皮肤 Mod 缓存了
-解决方案：等待几分钟后再试。
+::: details 3. 你的材质被皮肤 Mod 缓存了 <Badge type="tip" text="🎯 最为常见" />
+🛠️ 解决方案：等待几分钟后再试。
 
 如果还是没有更新，尝试清除皮肤 Mod 的缓存，即**直接删除**对应的文件夹：
 
@@ -52,7 +63,7 @@ head:
 :::
 
 ::: details 4. 你使用了 Alex 模型的皮肤，并且你的 Minecraft 版本低于 1.8
-解决方案：
+🛠️ 解决方案：
 
 - 对于 1.7.10，请使用 SkinPort 加载材质。SkinPort 在 1.7.10 上提供了对 Alex 模型的支持。  
   参考 [新手指引 > 配置 Mod > SkinPort](/newbee/mod#skinport) 进行配置。
@@ -65,7 +76,7 @@ head:
 
 如果你确定你的问题不是以上原因引起的，或者你按照以上的解决方案做了之后你的角色的材质依然没有显示或更新，请在详细阅读 [👉 遇到问题怎么办](/problems) 以后，带上你的皮肤 Mod 的日志，加入 [官方用户交流群](/user-group) 或 [发送邮件工单](/email) 询问，或直接购买一对一远程技术支持服务。
 
-## <Badge type="info">外置登录</Badge> 单人游戏中可以正常显示皮肤，但在多人游戏中就不行 {#no-skin-in-server}
+## <Badge type="info">外置登录</Badge> <Badge type="tip" text="常见" /> 单人游戏中可以正常显示皮肤，但在多人游戏中就不行 {#no-skin-in-server}
 
 这种情况往往在使用 Yggdrasil 外置登录进行服务器联机时出现。
 
@@ -76,25 +87,25 @@ head:
 
 否则，就会出现如同标题中描述的问题。
 
-如果你有在服务器联机中加载材质的需求，并且你是服主，请在服务端也加载并正确配置 authlib-injector；否则请使用皮肤 Mod 加载材质。
+🛠️ 如果你有在服务器联机中加载材质的需求，并且你是服主，请在服务端也加载并正确配置 authlib-injector；否则请使用皮肤 Mod 加载材质。
 
-## <Badge type="info">皮肤 Mod</Badge> 为什么我无法使用 Universal Skin Mod 加载材质了？ {#universal-skin-mod}
+## <Badge type="info">外置登录</Badge> <Badge type="tip" text="常见" /> 外置登录进入服务器时提示「无效的会话」/ accessToken 无效  {#invalid-session}
+
+🛠️ 请先尝试退出游戏并在启动器中删除账号，然后重新登录。
+
+🛠️ 如果重新登录无法解决问题，请检查你在 LittleSkin <mark>绑定的邮箱中是否存在大写英文字母</mark>，如果有，请将其更改为全小写字母，然后再次在启动器中重新登录。
+
+如果以上操作均无法解决问题，请在完整阅读并理解 [遇到问题怎么办](/problems) 后，加入 [官方用户交流群](/user-group#主用户群) 询问。
+
+## <Badge type="info" text="皮肤 Mod" /> 为什么我无法使用 Universal Skin Mod 加载材质了？ {#universal-skin-mod}
 
 由于一些技术上的原因，LittleSkin 自 2020 年 1 月起不再支持 UniSkinAPI。你仍然可以通过传统加载方式加载材质，但我们建议使用 Universal Skin Mod 加载材质的用户尽快更换到 CustomSkinLoader。
 
-## <Badge type="info">外置登录</Badge> 启动器下载 authlib-injector 失败  {#authlib-injector-failed-to-download}
+## <Badge type="info" text="外置登录" /> 启动器下载 authlib-injector 失败  {#authlib-injector-failed-to-download}
 
-虽然可能有多种报错，但一般都是网络原因引起的，请在启动器中更换下载源后再试。
+此问题比较罕见，但一般都是网络原因引起的，请在启动器中更换下载源后再试。
 
 如果你使用 HMCL 3，如果更换下载源后仍然报错，请手动下载 authlib-injector，将其放入 `%appdata%\.hmcl\`（Windows）或 `$HOME/.hmcl/`（Linux 和 macOS）中并重命名为 `authlib-injector.jar`。使用其他启动器的用户请咨询启动器作者。
-
-## <Badge type="info">外置登录</Badge> 外置登录进入服务器时提示「无效的会话」/ accessToken 无效  {#invalid-session}
-
-请先尝试退出游戏并在启动器中删除账号，然后重新登录。
-
-如果重新登录无法解决问题，请检查你在 LittleSkin 绑定的邮箱中是否存在大写英文字母，如果有，请将其更改为全小写字母，然后再次在启动器中重新登录。
-
-如果以上操作均无法解决问题，请在完整阅读并理解 [遇到问题怎么办](/problems) 后，加入 [官方用户交流群](/user-group#主用户群) 询问。
 
 ## LittleSkin 支持 Minecraft 中国版（国服）吗？ {#about-netease}
 

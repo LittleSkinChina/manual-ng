@@ -4,7 +4,7 @@ description: 任何事物都不可能尽善尽美，LittleSkin 也是如此。�
 head:
   - - meta
     - name: keywords
-      content: mc skin cape 我的世界 faq littleskin 万用皮肤补丁 csl 外置登录 皮肤站 披风 报错 打不开 加载 不显示 无效的会话 看不见 邮件 邮箱
+      content: mc skin cape 我的世界 faq littleskin 万用皮肤补丁 csl 外置登录 皮肤站 披风 报错 打不开 加载 不显示 无效的会话 看不见 邮件 邮箱 挂了
 ---
 
 <script setup>
@@ -15,7 +15,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 [[toc]]
 
-## 收不到验证邮件？ {#no-email}
+## <Badge type="tip" text="常见" /> 收不到验证邮件？ {#no-email}
 
 请优先检查你的账号绑定的邮箱是否正确，如果不正确，请在 <BSSection><FA :icon="faUser" /> 个人资料</BSSection> 页面中其更改为正确的邮箱。
 
@@ -23,7 +23,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 另外，如果你短时间内反复发送验证邮件，你的邮箱可能会被我们的邮件服务提供商封禁，这种情况下请向我们寻求帮助。
 
-如果你确定你绑定的邮箱正确，并且验证邮件不在你的邮箱的垃圾箱里，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，联系站点管理员处理。
+如果你确定你绑定的邮箱正确，并且验证邮件不在你的邮箱的垃圾箱里，请加入我们的 [官方用户交流群](/user-group) 或 [发送邮件工单](/email)，联系站点管理员处理。
 
 > [!IMPORTANT] 常见的错误邮箱
 > 我们经常遇到有用户填写了错误的邮箱，<mark>检查一下你是否犯了同样的错误</mark>。
@@ -42,13 +42,42 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 >     ✅ 正确做法是填写实际的邮箱地址
 > - ...
 
-## 我的角色被别人占用了，我可以要回来吗？ {#player-already-exists}
+## <Badge type="tip" text="常见" /> 我的角色被别人占用了，我可以要回来吗？ {#player-already-exists}
 
 不可以。重名的几率很大，随意更改角色所有者对双方都不公平，所以不管你是名声多大的主播还是某个影响力巨大的人物，我们都不会提供更改角色所有者的服务。
 
 如果你发现你的角色名被别人占用了，你可以先联系当前该角色的所有者进行协商，没准这事儿就成了，同时你还收获了一个朋友呢。如果你好好地和当前该角色的所有者商量（而不是一上来就用一种强硬的口气要求释放角色——这种情况大多不会有好结果），在大多数情况下，他们都可以是很好说话的。至于怎么联系？缘分到了就自然联系上了咯。
 
 有一个例外情况是你拥有正版 Minecraft 并且你的正版 ID 就是被他人占用的角色名。这种情况下，你可以通过 [绑定正版 Minecraft](/newbee/premium) 来强制获取这个角色的所有权。
+
+## <Badge type="warning" text="关键" /> 无法访问 LittleSkin 网站 {#server-down}
+
+你可能在尝试访问 LittleSkin 网站时遇到了类似于以下报错：
+
+- 503 Service Temporarily Unavailable
+- 502 Bad Gateway
+- Error 525, SSL handshake failed
+- Service Unavailable
+
+当你遇到这类情况时，请稍安勿躁。
+
+我们已在第一时间通过自动监测程序即时发现了问题，并正在全力以赴解决中。
+
+我们的紧迫感与你同样强烈，都在期待着尽快恢复正常服务。
+
+若在等待一段时间后依旧无法访问 LittleSkin 网站，你可以加入 [官方用户交流群](/user-group)，以便获取最新的进展情况和相互支持。
+
+## 注册账号时失败 {#ip-limit}
+
+若在注册账号时出现含有以下关键词的报错，则说明你的 IP 地址上注册的用户数已达上限：
+
+- **【IPL】**
+- 注册 IP 达到上限
+- 网络环境异常，请使用移动网络注册
+
+导致此问题的原因较为复杂，但解决方案很简单。
+
+🛠️ 使用移动通讯网络（如流量）进行注册即可。
 
 ## 无法绑定正版账号？ {#microsoft-failed-to-link}
 
@@ -64,13 +93,13 @@ Microsoft 服务器在中国大陆部分地区的连接质量较差，验证时�
 由于 Mojang 账号已全面迁移至 Microsoft 账号，我们已不再支持通过 Mojang 账号绑定正版 Minecraft 账号。
 :::
 
-如果你确定你购买了正版 Minecraft，并且你可以通过官方启动器启动最新版本的 Minecraft，但仍然无法在 LittleSkin 绑定正版账号，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，向站点管理员反馈。
+如果你确定你购买了正版 Minecraft，并且你可以通过官方启动器启动最新版本的 Minecraft，但仍然无法在 LittleSkin 绑定正版账号，请加入我们的 [官方用户交流群](/user-group) 或 [发送邮件工单](/email)，向站点管理员反馈。
 
 ## 无法正常显示某些页面 / 图片？ {#broken-webpage}
 
 大多数情况下，这是由你的浏览器导致的。
 
-请先尝试按下 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> （用于清除本地缓存并刷新页面），如果问题仍然存在，则说明你的浏览器过时了。
+请先尝试按下键盘上的 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> （即清除本地缓存并刷新页面），如果问题仍然存在，则说明你的浏览器过时了。
 
 很多过时的浏览器不支持 LittleSkin 使用的一些新技术，而你可能就正在使用这些过时的浏览器。你需要更新你的浏览器至最新版本。然而，有些浏览器即使更新到最新版本，其使用的浏览器内核仍然是过时的。
 
@@ -82,7 +111,7 @@ Microsoft 服务器在中国大陆部分地区的连接质量较差，验证时�
 
 在极少数情况下，你使用的设备的显卡不支持 LittleSkin 页面中的使用的技术（如 WebGL）也会导致此问题。你可能需要更新显卡驱动或更换至新的显卡才能彻底解决。
 
-如果你还是没有什么头绪，请加入我们的 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，向站点管理员反馈。
+如果你还是没有什么头绪，请加入我们的 [官方用户交流群](/user-group) 或 [发送邮件工单](/email)，向站点管理员反馈。
 
 ## 不是有效的披风文件 {#invalid-cape}
 
@@ -92,9 +121,9 @@ LittleSkin 对材质格式有着严格的要求，请按照 Minecraft 官方的�
 
 ## 发生严重错误 {#server-error}
 
-如果你在使用 LittleSkin 时遇到了红色的「严重错误」的弹窗，别着急。错误可能是临时性的，你可以稍等一会儿再试试看。
+如果你在使用 LittleSkin 时遇到了红色的 <BSButton style="background-color: #dc3545;">严重错误</BSButton> 弹窗，别着急。错误可能是临时性的，你可以稍等一会儿再试试看。
 
-如果长时间等待后错误仍未解决，请将其截图并加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，联系站点管理员处理。
+如果长时间等待后错误仍未解决，请将其截图并加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email)，联系站点管理员处理。
 
 ## 什么时候会举办活动呀？活动的内容有什么呢？ {#activities}
 
@@ -106,4 +135,4 @@ LittleSkin 会不定期举办站内活动。具体何时举办活动以及活动
 
 不可以。封禁是永久性的，除非是误封，就算你大额捐助并且手写书面保证书也不能给你解封。
 
-如果你确定是误封，请加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email.md)，联系站点管理员处理。
+如果你确定是误封，请加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email)，联系站点管理员处理。

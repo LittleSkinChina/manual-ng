@@ -48,13 +48,13 @@ outline: [2, 4]
 > [!NOTE] 感觉看不懂？
 > 如果你难以判断你需要提供哪些内容，请尽可能详细地描述你的问题，我们的支持团队会指导你提供相关信息。
 
-### 1. 报错截图 <Badge type="info">网站</Badge>
+### 1. 报错截图 <Badge type="info" text="网站" />
 
 如果是 LittleSkin 网站的问题，发生错误时，网站应该会给出相应的提示。可能是红色的弹窗，也可能是页面上的故障。
 
 **请把相关的提示乃至整个屏幕截图**，并在提问时提供。
 
-### 2. 复现步骤 <Badge type="info">网站</Badge><Badge type="info">游戏内</Badge>
+### 2. 复现步骤 <Badge type="info">网站</Badge><Badge type="info" text="游戏内" />
 
 许多问题只会在特定的操作下出现。提供复现步骤可以让我们了解你的问题是在何种操作下出现的，并快速定位问题所在和解决问题。
 
@@ -62,12 +62,12 @@ outline: [2, 4]
 
 1. 你想要进行什么操作？为的是达到什么目的？
 2. 在问题发生之前，你分别都进行了哪些操作？
-3. <Badge type="info">网站</Badge> 你正在使用什么浏览器？你的操作系统是什么？网络环境是什么？
-4. <Badge type="info">游戏内</Badge> 你的游戏版本是多少？是单人游戏还是多人游戏？有没有安装特殊的 Mod？
+3. <Badge type="info" text="网站" /> 你正在使用什么浏览器？你的操作系统是什么？网络环境是什么？
+4. <Badge type="info" text="游戏内" /> 你的游戏版本是多少？是单人游戏还是多人游戏？有没有安装特殊的 Mod？
 
 若能在提问时提供上述信息，则将极大提高我们提供精准服务的效率。
 
-### 3. 日志 <Badge type="info">游戏内</Badge>
+### 3. 日志 <Badge type="info" text="游戏内" />
 
 日志文件记录了程序在运行过程中的详细信息，包括操作记录、错误提示、警告信息等。
 
@@ -85,7 +85,7 @@ outline: [2, 4]
 > [!TIP] 启动器提供的便捷功能
 > 许多启动器都带有类似于 <BSSection>打开游戏文件夹</BSSection> 的功能，可以很方便地应对版本隔离的情况。
 
-#### <Badge type="info">皮肤 Mod</Badge> CustomSkinLoader
+#### <Badge type="info" text="皮肤 Mod" /> CustomSkinLoader
 
 CustomSkinLoader 的日志位于 `.minecraft/CustomSkinLoader/CustomSkinLoader.log`，  
 在使用版本隔离的情况下则为 `.minecraft/versions/{versions}/CustomSkinLoader/CustomSkinLoader.log`
@@ -96,7 +96,7 @@ CustomSkinLoader 的日志位于 `.minecraft/CustomSkinLoader/CustomSkinLoader.l
 ![CustomSkinLoader 的配置文件和日志文件](./newbee/assets/mods/csl-files.webp)
 :::
 
-#### <Badge type="info">外置登录</Badge> authlib-injector
+#### <Badge type="info" text="外置登录" /> authlib-injector
 
 如果是 Yggdrasil 外置登录的问题，请在添加 JVM 参数 `-Dauthlibinjector.debug` 并复现问题后，提供以下日志：
 
