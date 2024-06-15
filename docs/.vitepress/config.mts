@@ -149,6 +149,7 @@ export default defineConfig({
               ]
             },
             { text: '积分系统', link: '/score' },
+            { text: '版权保护', link: '/copyrights' },
             {
               text: 'Yggdrasil 外置登录',
               link: '/yggdrasil/',
