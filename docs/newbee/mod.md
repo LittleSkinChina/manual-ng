@@ -2,7 +2,7 @@
 outline: [2, 3]
 ---
 
-# 配置 Mod
+# 配置其他 Mod 或插件
 
 若想要在 Minecraft 中显示你在 LittleSkin 设置的材质，你需要在 Minecraft 客户端中安装皮肤 Mod 并对其进行配置。
 
