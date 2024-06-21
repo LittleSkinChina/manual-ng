@@ -29,6 +29,7 @@ export default defineConfig({
 
   markdown: {
     theme: { light: 'catppuccin-latte', dark: 'one-dark-pro' },
+    image: { lazyLoading: true },
   },
 
   cleanUrls: true,
