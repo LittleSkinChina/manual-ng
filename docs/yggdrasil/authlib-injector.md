@@ -87,7 +87,6 @@ Modern forwarding 是 Velocity 支持的一种独创格式。它以高效的二�
 
   - `authlib-injector-{{ latest }}.jar` 为指向 authlib-injector 的 `jar` 的路径或文件名
   - `https://littleskin.cn/api/yggdrasil` 为 LittleSkin 的 Yggdrasil API 地址
-  - 对于 Velocity，`-Dauthlibinjector.disableHttpd` 用于禁用 authlib-injector 内建的 HTTP 服务器，这会导致部分功能不可用，但可以有效解决目前存在的 [身份验证服务宕机问题 - #234](https://github.com/yushijinhun/authlib-injector/issues/234)。
 
 ## Waterfall / BungeeCord <Badge type="warning" text="不再推荐" />
 
