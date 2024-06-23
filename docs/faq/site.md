@@ -8,7 +8,7 @@ head:
 ---
 
 <script setup>
-import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faUser, faTrash } from '@fortawesome/free-solid-svg-icons'
 </script>
 
 # 站点使用相关
@@ -17,17 +17,20 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 ## <Badge type="tip" text="常见" /> 收不到验证邮件？ {#no-email}
 
-请优先检查你的账号绑定的邮箱是否正确，如果不正确，请在 <BSSection><FA :icon="faUser" /> 个人资料</BSSection> 页面中其更改为正确的邮箱。
+请优先检查你的账号绑定的邮箱是否正确。如果不正确，请在[<BSSection><FA :icon="faUser" /> 个人资料</BSSection>](https://littleskin.cn/user/profile)页面中将其更改为正确的邮箱。
 
-再看看你的邮箱的「垃圾箱」。如果垃圾箱中也没有验证邮件，可以尝试再发送一次验证邮件。
+再看看你的邮箱的<BSSection><FA :icon="faTrash" /> 垃圾箱</BSSection>。如果垃圾箱中也没有验证邮件，可以尝试再发送一次验证邮件。
 
-另外，如果你短时间内反复发送验证邮件，你的邮箱可能会被我们的邮件服务提供商封禁，这种情况下请向我们寻求帮助。
+如果你短时间内反复发送验证邮件，你的邮箱可能会被我们的邮件服务提供商封禁，这种情况下请向我们寻求帮助。
 
 如果你确定你绑定的邮箱正确，并且验证邮件不在你的邮箱的垃圾箱里，请加入我们的 [官方用户交流群](/user-group) 或 [发送邮件工单](/email)，联系站点管理员处理。
 
 > [!IMPORTANT] 常见的错误邮箱
 > 我们经常遇到有用户填写了错误的邮箱，<mark>检查一下你是否犯了同样的错误</mark>。
 >
+> - ❌ 使用 QQ 邮箱时将 QQ 号输入错误
+>
+>     ✅ 认真地、仔细地、一个一个数字地：比对检查你的 QQ 号
 > - ❌ 使用 QQ 邮箱时将手机号填写在 `@qq.com` 前
 >
 >     ✅ 正确的做法应该是 `你的QQ号@qq.com`
@@ -44,11 +47,16 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 ## <Badge type="tip" text="常见" /> 我的角色被别人占用了，我可以要回来吗？ {#player-already-exists}
 
-不可以。重名的几率很大，随意更改角色所有者对双方都不公平，所以不管你是名声多大的主播还是某个影响力巨大的人物，我们都不会提供更改角色所有者的服务。
+<mark>不可以</mark>。重名的几率很大，随意更改角色所有者对双方都不公平，所以不管你是名声多大的主播还是某个影响力巨大的人物，我们都不会提供更改角色所有者的服务。
 
 如果你发现你的角色名被别人占用了，你可以先联系当前该角色的所有者进行协商，没准这事儿就成了，同时你还收获了一个朋友呢。如果你好好地和当前该角色的所有者商量（而不是一上来就用一种强硬的口气要求释放角色——这种情况大多不会有好结果），在大多数情况下，他们都可以是很好说话的。至于怎么联系？缘分到了就自然联系上了咯。
 
-有一个例外情况是你拥有正版 Minecraft 并且你的正版 ID 就是被他人占用的角色名。这种情况下，你可以通过 [绑定正版 Minecraft](/newbee/premium) 来强制获取这个角色的所有权。
+> [!NOTE] 例外情况
+>
+> - 你拥有正版 Minecraft
+> - 你的正版 ID 就是那个被他人占用的角色名
+>
+> 这种情况下，你可以通过 [绑定正版 Minecraft](/newbee/premium) 来强制获取这个角色的所有权。
 
 ## <Badge type="warning" text="关键" /> 无法访问 LittleSkin 网站 {#server-down}
 
@@ -99,9 +107,9 @@ Microsoft 服务器在中国大陆部分地区的连接质量较差，验证时�
 
 大多数情况下，这是由你的浏览器导致的。
 
-请先尝试按下键盘上的 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> （即清除本地缓存并刷新页面），如果问题仍然存在，则说明你的浏览器过时了。
+请先尝试<mark>按下键盘上的 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd></mark>（即清除本地缓存并刷新页面），如果问题仍然存在，则说明你的浏览器过时了。
 
-很多过时的浏览器不支持 LittleSkin 使用的一些新技术，而你可能就正在使用这些过时的浏览器。你需要更新你的浏览器至最新版本。然而，有些浏览器即使更新到最新版本，其使用的浏览器内核仍然是过时的。
+很多过时的浏览器不支持 LittleSkin 使用的一些新技术，而你可能就正在使用这些过时的浏览器。你需要<mark>更新你的浏览器至最新版本</mark>。然而，有些浏览器即使更新到最新版本，其使用的浏览器内核仍然是过时的。
 
 经测试，LittleSkin 在以下浏览器的最新版本上都能正常工作：
 
@@ -121,7 +129,9 @@ LittleSkin 对材质格式有着严格的要求，请按照 Minecraft 官方的�
 
 ## 发生严重错误 {#server-error}
 
-如果你在使用 LittleSkin 时遇到了红色的 <BSButton style="background-color: #dc3545;">严重错误</BSButton> 弹窗，别着急。错误可能是临时性的，你可以稍等一会儿再试试看。
+如果你在使用 LittleSkin 时遇到了红色的 <BSButton style="background-color: #dc3545;">严重错误</BSButton> 弹窗，别着急。
+
+错误可能是临时性的，你可以稍等一会儿再试试看。
 
 如果长时间等待后错误仍未解决，请将其截图并加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email)，联系站点管理员处理。
 

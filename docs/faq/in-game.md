@@ -28,7 +28,7 @@ head:
 
 在此情境下，只有 **正确安装并配置** 皮肤 Mod 后才能加载来自 LittleSkin 的材质。
 
-🛠️ 如果你想让别人也看见你的材质，请让他们也正确安装并配置皮肤 Mod。
+🛠️ 如果你想让别人也看见你的材质，请<mark>让他们也正确安装并配置皮肤 Mod</mark>。
 
 ## <Badge type="info">皮肤 Mod</Badge> <Badge type="tip" text="常见" /> 为什么我在网站上设置好了材质，但是在游戏中不显示 / 没更新？ {#no-skin}
 
@@ -85,9 +85,16 @@ head:
 - 服务端启用了在线模式（`server.properties` 中 `online-mode=true`）
 - [在服务端配置了 Yggdrasil 外置登录](/yggdrasil/server)
 
-否则，就会出现如同标题中描述的问题。
+🛠️ 如果你有在服务器联机中加载材质的需求，并且你是服主，请在服务端正确配置 Yggdrasil 外置登录
 
-🛠️ 如果你有在服务器联机中加载材质的需求，并且你是服主，请在服务端也加载并正确配置 authlib-injector；否则请使用皮肤 Mod 加载材质。
+> [!IMPORTANT] 😕 只是一个普通的服务器玩家？
+> 如果你并不是服主或服务器管理员，你可能无法在服务端配置 Yggdrasil 外置登录。
+>
+> 这种情况下，<mark>你可以安装皮肤 Mod</mark>，虽然这样只能使你自己看到自己或他人的皮肤。
+>
+> 🛠️ 推荐你<mark>安装 CustomSkinLoader</mark>。此外，你可能还需要<mark>「手动修改配置文件」</mark>。
+>
+> 幸运的是，这份手册中详细介绍了 [CustomSkinLoader 的配置方法](/newbee/csl)。
 
 ## <Badge type="info">外置登录</Badge> <Badge type="tip" text="常见" /> 外置登录进入服务器时提示「无效的会话」/ accessToken 无效  {#invalid-session}
 
