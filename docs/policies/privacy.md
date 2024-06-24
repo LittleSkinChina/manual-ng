@@ -51,20 +51,20 @@
 为更好地提供服务，LittleSkin 大量引入了第三方提供的服务。这些服务的提供者可能会收集和使用更多信息，且不受 LittleSkin 的控制。请查看以下内容来了解对应的主体的隐私政策：
 
 - **Algolia**：[Privacy Policy](https://www.algolia.com/policies/privacy/)
-    - 我们使用了 Algolia 的文档搜索服务（DocSearch）；
+  - 我们使用了 Algolia 的文档搜索服务（DocSearch）；
 - **Cloudflare**：[Privacy Policy](https://www.cloudflare.com/privacypolicy/)
-    - 我们使用了 Cloudflare 的域名解析（DNS）服务、网络应用防火墙（WAF）服务、内容分发网络（CDN）服务和性能分析服务（Browser Insights）；
+  - 我们使用了 Cloudflare 的域名解析（DNS）服务、网络应用防火墙（WAF）服务、内容分发网络（CDN）服务和性能分析服务（Browser Insights）；
 - **GitHub**：[隐私声明](https://docs.github.com/github/site-policy/github-privacy-statement)
-    - 我们使用了 GitHub 的代码托管（Git）服务、持续集成（CI）服务和静态网站托管服务（Pages）；
+  - 我们使用了 GitHub 的代码托管（Git）服务、持续集成（CI）服务和静态网站托管服务（Pages）；
 - **Google**：[隐私权和条款](https://policies.google.com/privacy)
-    - 我们使用了 Google 的数据分析服务（Analytics）和人机验证服务（reCAPTCHA）；
+  - 我们使用了 Google 的数据分析服务（Analytics）和人机验证服务（reCAPTCHA）；
 - **jsDelivr**：[Privacy Policy - cdn.jsdelivr.net](https://www.jsdelivr.com/privacy-policy-jsdelivr-net)
-    - 我们使用了 jsDelivr 的内容分发网络（CDN）服务；
+  - 我们使用了 jsDelivr 的内容分发网络（CDN）服务；
 - **Microsoft**：[隐私声明](https://privacy.microsoft.com/privacystatement)
-    - 我们使用了 Microsoft Azure 的内容分发网络（CDN）服务和 Active Directory 中的 OAuth 登录验证服务，还在站点运营工作中使用了 Microsoft 365（包括 Office 365 专业增强版和 Exchange Online 等）服务；
+  - 我们使用了 Microsoft Azure 的内容分发网络（CDN）服务和 Active Directory 中的 OAuth 登录验证服务，还在站点运营工作中使用了 Microsoft 365（包括 Office 365 专业增强版和 Exchange Online 等）服务；
 - **Twilio**：[Privacy Statement](https://www.twilio.com/legal/privacy)
-    - 我们使用了 Twilio 旗下的 SendGrid 的邮件发送服务；
+  - 我们使用了 Twilio 旗下的 SendGrid 的邮件发送服务；
 - **Vercel**：[Privacy Policy](https://vercel.com/legal/privacy-policy)
-    - 我们使用了 Vercel 的域名解析（DNS）服务和无服务器函数（Serverless Functions）服务；
+  - 我们使用了 Vercel 的域名解析（DNS）服务和无服务器函数（Serverless Functions）服务；
 - **腾讯云**：[隐私声明](https://cloud.tencent.com/document/product/301/11470)
-    - 我们使用了腾讯云的域名解析（DNS）服务、内容分发网络（CDN）服务和云对象存储（COS）服务，以及其旗下的 CODING 的代码托管（Git）服务和静态网站托管服务（Pages）。
+  - 我们使用了腾讯云的域名解析（DNS）服务、内容分发网络（CDN）服务和云对象存储（COS）服务，以及其旗下的 CODING 的代码托管（Git）服务和静态网站托管服务（Pages）。

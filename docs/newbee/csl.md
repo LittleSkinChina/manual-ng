@@ -52,20 +52,20 @@ CustomSkinLoader 14.4 起支持通过 ExtraList 的方式添加皮肤站，这�
 
 :::
 
-::: details 修改配置文件：12.9-  
+::: details 修改配置文件：12.9-
 
 配置文件存放于 `.minecraft/CustomSkinLoader/` 目录中，共有两个配置文件，文件名分别为 `skinurls.txt` 和 `capeurls.txt`。
 
 首先请使用记事本或者任意代码编辑器打开 `skinurls.txt`，将原有的所有内容替换为以下内容：
 
-```
+```http
 https://littleskin.cn/skin/*.png
 https://skin.prinzeugen.net/skin/*.png
 ```
 
 保存退出后再使用记事本或任意代码编辑器打开 `capeurls.txt`，将原有的所有内容替换为以下内容：
 
-```
+```http
 https://littleskin.cn/cape/*.png
 https://skin.prinzeugen.net/cape/*.png
 ```
@@ -76,10 +76,14 @@ https://skin.prinzeugen.net/cape/*.png
 
 ## 手动修改配置文件 {#edit-csl-config}
 
+<!-- markdownlint-disable MD051 -->
+
 > [!NOTE] 什么情况下需要手动修改 CustomSkinLoader 配置文件？
 > 一般来说，你只需要简单地安装 CustomSkinLoader Mod 即可，无需进行任何额外的配置。
 >
 > 然而有时事与愿违，如果你在使用过程中遇到了如 [同名冲突](#14.7+) 这样的情况，那就是时候照着下面的步骤来做了。
+
+<!-- markdownlint-restore -->
 
 ---
 
@@ -165,5 +169,5 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 
 你可以在以下网站获取到关于 CompatibilityLayerForCustomSkinLoader 的更多信息。
 
-- [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/4160.html)
+- [MC 百科 (mcmod.cn)](https://www.mcmod.cn/class/4160.html)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/compatibilitylayerforcustomskinloader)

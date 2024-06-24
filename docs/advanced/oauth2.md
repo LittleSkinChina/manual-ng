@@ -34,12 +34,12 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 
 ### API 端点
 
-| API 端点 Endpoint      | URL                                        |
-| ---------------------- | ------------------------------------------ |
-| 授权 Authorize         | `https://littleskin.cn/oauth/authorize`    |
-| 令牌 Token             | `https://littleskin.cn/oauth/token` |
-| 用户信息 User Info     | `https://littleskin.cn/api/user`           |
-| 刷新令牌 Refresh Token | `https://littleskin.cn/api/auth/refresh`   |
+| API 端点 Endpoint      | URL                                      |
+| ---------------------- | ---------------------------------------- |
+| 授权 Authorize         | `https://littleskin.cn/oauth/authorize`  |
+| 令牌 Token             | `https://littleskin.cn/oauth/token`      |
+| 用户信息 User Info     | `https://littleskin.cn/api/user`         |
+| 刷新令牌 Refresh Token | `https://littleskin.cn/api/auth/refresh` |
 
 ### 支持的 Scope
 
@@ -55,7 +55,7 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 
 客户端构造 Authorize URL 并引导用户在**浏览器**中访问。
 
-``` http
+```http
 GET https://littleskin.cn/oauth/authorize
     ?client_id={client_id}
     &redirect_uri={redirect_uri}
@@ -80,7 +80,7 @@ GET https://littleskin.cn/oauth/authorize
 
 客户端构造 URL 并发起 POST 请求。
 
-``` http
+```http
 POST https://littleskin.cn/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
@@ -103,19 +103,18 @@ Content-Type: application/x-www-form-urlencoded
 
 请求成功后将返回 JSON 响应。
 
-``` json
+```json
 {
-    "access_token": "***J.W.T***",
-    "token_type": "Bearer",
-    "expires_in": 31622400,
-    "refresh_token": "******"
+  "access_token": "***J.W.T***",
+  "token_type": "Bearer",
+  "expires_in": 31622400,
+  "refresh_token": "******"
 }
 ```
 
-
 | 值              | 解释                      |
 | --------------- | ------------------------- |
-| `access_token`  | Access Token  (JWT 格式)  |
+| `access_token`  | Access Token (JWT 格式)   |
 | `token_type`    | 令牌类型，固定值 `Bearer` |
 | `expires_in`    | 令牌的有效时间（秒）      |
 | `refresh_token` | 刷新令牌                  |
@@ -124,7 +123,7 @@ Content-Type: application/x-www-form-urlencoded
 
 在此使用 Access Token 获取用户基本信息。
 
-``` http
+```http
 GET https://littleskin.cn/api/user
 Authorization: Bearer {access_token}
 ```
@@ -137,19 +136,19 @@ Authorization: Bearer {access_token}
 
 为了在刷新 Access Token 的过期时间，可在 Access Token 有效期内请求更新有效期。
 
-``` http
+```http
 POST https://littleskin.cn/api/auth/refresh
 Authorization: Bearer {access_token}
 ```
 
 请求成功后将返回 JSON 响应。
 
-``` jsonc
+```jsonc
 {
-    "token": "***J.W.T***"
+  "token": "***J.W.T***"
 }
 ```
 
-| 值      | 解释                          |
-| ------- | ----------------------------- |
-| `token` | 新的 Access Token  (JWT 格式) |
+| 值      | 解释                         |
+| ------- | ---------------------------- |
+| `token` | 新的 Access Token (JWT 格式) |
