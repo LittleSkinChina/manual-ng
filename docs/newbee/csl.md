@@ -169,5 +169,5 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 
 你可以在以下网站获取到关于 CompatibilityLayerForCustomSkinLoader 的更多信息。
 
-- [MC 百科 (mcmod.cn)](https://www.mcmod.cn/class/4160.html)
+- [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/4160.html)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/compatibilitylayerforcustomskinloader)
