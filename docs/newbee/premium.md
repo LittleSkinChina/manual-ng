@@ -35,8 +35,8 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 但是，绑定正版 Minecraft 可能并没有你想象中的那么好，它仍然存在以下这些限制：
 
 - ❌ 你**始终无法**使用 LittleSkin 的外置登录功能进入需要正版 Minecraft 账号的服务器，无论是否绑定了正版 Minecraft
-- ❌ 你**无法**在 LittleSkin 中自动得到你在正版 Minecraft 账号上设置的皮肤或披风
-- ❌ 你在 LittleSkin 网站上设置的皮肤或披风**不会**被自动同步至你的正版 Minecraft 账号
+- ❌ 你**无法**在 LittleSkin 中<mark>自动得到你在正版 Minecraft 账号上设置的皮肤或披风</mark>
+- ❌ 你在 LittleSkin 网站上设置的皮肤或披风**不会**<mark>被自动同步至你的正版 Minecraft 账号</mark>
 
 ## 绑定前的准备工作
 
@@ -72,7 +72,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 
 ## 更新绑定
 
-在以下情况时，你可以 <BSButton>更新绑定角色</BSButton>
+在以下情况时，你可以在 [<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>](https://littleskin.cn/user/player) 页面的下方点击 <BSButton>更新绑定角色</BSButton> 按钮
 
 - 你的正版 Minecraft 账号的 ID 发生变化
 - 删除对应角色后想要重新创建
