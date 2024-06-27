@@ -72,7 +72,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 
 ## 更新绑定
 
-在以下情况时，你可以在 [<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>](https://littleskin.cn/user/player) 页面的下方点击 <BSButton>更新绑定角色</BSButton> 按钮
+在以下情况时，你可以在 [<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>](https://littleskin.cn/user/player) 页面的下方点击 <BSButton>更新绑定角色</BSButton> 按钮：
 
 - 你的正版 Minecraft 账号的 ID 发生变化
 - 删除对应角色后想要重新创建

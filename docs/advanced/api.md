@@ -38,7 +38,7 @@ GET https://littleskin.cn/api/announcements
 
 返回站点公告的列表。
 
-将来将遵守启动器联盟规范。<Badge type="info" text="不成熟的" />
+未来将遵守启动器联盟规范。<Badge type="info" text="不成熟的" />
 
 ::: details 说明
 

@@ -21,9 +21,9 @@ outline: [2, 3]
 
 如果你想要在 Minecraft 1.7.10 中加载 Alex 模型的皮肤，你需要使用 SkinPort。
 
-你可以在以下网站获取到关于 SkinPort 的更多信息
+你可以在以下网站获取到关于 SkinPort 的更多信息。
 
-- [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/2700.html)
+- [MC 百科 (mcmod.cn)](https://www.mcmod.cn/class/2700.html)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/skinport)
 - [GitHub Release](https://github.com/zlainsama/SkinPort/releases/latest)
 
@@ -41,11 +41,11 @@ SkinPort 仅适用于 Minecraft 1.7.10。对于更低版本，目前没有方法
 
 配置文件位于 `.minecraft/config/skinport.cfg`。请使用记事本或者任意代码编辑器将其打开，将原有的所有内容替换成以下内容：
 
-``` java:line-numbers
+```java:line-numbers
 client {
     S:hostCustomServer=http://example.com
-    S:hostCustomServer2Cape=https://littleskin.cn/cape/%name%.png  // [!code focus] 
-    S:hostCustomServer2Skin=https://littleskin.cn/skin/%name%.png  // [!code focus] 
+    S:hostCustomServer2Cape=https://littleskin.cn/cape/%name%.png  // [!code focus]
+    S:hostCustomServer2Skin=https://littleskin.cn/skin/%name%.png  // [!code focus]
     B:useCrafatar=false
     B:useCustomServer=false
     B:useCustomServer2=true
@@ -57,7 +57,7 @@ client {
 
 ## 传统加载 API
 
-``` http
+```http
 # 皮肤查询 API
 https://littleskin.cn/skin/{playername}.png
 # 披风查询 API
