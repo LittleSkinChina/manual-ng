@@ -1,6 +1,6 @@
 <script setup lang="ts">
 // @ts-ignore: 2307
-import { withDefaults } from 'vue'
+import { withDefaults, defineProps } from 'vue'
 const props = withDefaults(
     // @ts-ignore: 2307
     defineProps<{
