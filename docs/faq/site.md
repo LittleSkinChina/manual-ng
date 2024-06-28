@@ -23,7 +23,7 @@ import { faUser, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 如果你短时间内反复发送验证邮件，你的邮箱可能会被我们的邮件服务提供商封禁，这种情况下请向我们寻求帮助。
 
-如果你确定你绑定的邮箱正确，并且验证邮件不在你的邮箱的垃圾箱里，请加入我们的 [官方用户交流群](/user-group) 或 [发送邮件工单](/email)，联系站点管理员处理。
+<Helpme>如果你确定你绑定的邮箱正确，并且验证邮件不在你的邮箱的垃圾箱里，请联系我们排查问题。</Helpme>
 
 > [!IMPORTANT] 常见的错误邮箱
 > 我们经常遇到有用户填写了错误的邮箱，<mark>检查一下你是否犯了同样的错误</mark>。
@@ -73,7 +73,7 @@ import { faUser, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 我们的紧迫感与你同样强烈，都在期待着尽快恢复正常服务。
 
-若在等待一段时间后依旧无法访问 LittleSkin 网站，你可以加入 [官方用户交流群](/user-group)，以便获取最新的进展情况和相互支持。
+<Helpme>若在等待一段时间后依旧无法访问 LittleSkin 网站，你可以通过以下方式获取最新的进展情况和相互支持。</Helpme>
 
 ## 注册账号时失败 {#ip-limit}
 
@@ -93,15 +93,21 @@ import { faUser, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 保险起见，建议使用官方启动器启动一次最新版本的 Minecraft 再尝试绑定正版账号。
 
-::: tip 提示
-Microsoft 服务器在中国大陆部分地区的连接质量较差，验证时可能会遇到网络问题，你可以等待一段时间再重新尝试或者切换一下网络环境。
-:::
+> [!NOTE] 提示
+> Microsoft 服务器在中国大陆少数地区的连接质量较差，验证时可能会遇到网络问题。你可以等待一段时间再重新尝试或者切换一下网络环境。
 
-::: warning 注意
-由于 Mojang 账号已全面迁移至 Microsoft 账号，我们已不再支持通过 Mojang 账号绑定正版 Minecraft 账号。
-:::
+> [!WARNING] 注意
+> 由于 Mojang 账号已全面迁移至 Microsoft 账号，我们已不再支持通过 Mojang 账号绑定正版 Minecraft 账号。
 
-如果你确定你购买了正版 Minecraft，并且你可以通过官方启动器启动最新版本的 Minecraft，但仍然无法在 LittleSkin 绑定正版账号，请加入我们的 [官方用户交流群](/user-group) 或 [发送邮件工单](/email)，向站点管理员反馈。
+<Helpme>
+
+如果你确定你购买了正版 Minecraft，并且你可以通过官方启动器启动最新版本的 Minecraft，但仍然无法在 LittleSkin 绑定正版账号，请向我们反馈。
+
+<NCard title="🗝️ 关于正版绑定" link="/premium" >
+了解绑定正版 Microsoft 账号的完整步骤和详细说明
+</NCard>
+
+</Helpme>
 
 ## 无法正常显示某些页面 / 图片？ {#broken-webpage}
 
@@ -119,7 +125,7 @@ Microsoft 服务器在中国大陆部分地区的连接质量较差，验证时�
 
 在极少数情况下，你使用的设备的显卡不支持 LittleSkin 页面中的使用的技术（如 WebGL）也会导致此问题。你可能需要更新显卡驱动或更换至新的显卡才能彻底解决。
 
-如果你还是没有什么头绪，请加入我们的 [官方用户交流群](/user-group) 或 [发送邮件工单](/email)，向站点管理员反馈。
+<Helpme>如果你还是没有什么头绪，请向站点管理员反馈。</Helpme>
 
 ## 不是有效的披风文件 {#invalid-cape}
 
@@ -133,7 +139,7 @@ LittleSkin 对材质格式有着严格的要求，请按照 Minecraft 官方的�
 
 错误可能是临时性的，你可以稍等一会儿再试试看。
 
-如果长时间等待后错误仍未解决，请将其截图并加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email)，联系站点管理员处理。
+<Helpme>如果长时间等待后错误仍未解决，请将其截图，联系站点管理员处理。</Helpme>
 
 ## 什么时候会举办活动呀？活动的内容有什么呢？ {#activities}
 
@@ -143,6 +149,6 @@ LittleSkin 会不定期举办站内活动。具体何时举办活动以及活动
 
 ## 我被封禁了，可以解封吗？ {#banned}
 
-不可以。封禁是永久性的，除非是误封，就算你大额捐助并且手写书面保证书也不能给你解封。
+不可以。封禁是永久性的，<mark>除非是误封</mark>，就算你大额捐助并且手写书面保证书也不能给你解封。
 
-如果你确定是误封，请加入 [官方用户交流群](/user-group.md) 或 [发送邮件工单](/email)，联系站点管理员处理。
+<Helpme>如果你确定是误封，请联系站点管理员处理。</Helpme>
