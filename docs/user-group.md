@@ -34,7 +34,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 加入 QQ 群组需要提供你的 **UID**，请在 LittleSkin 用户中心的 [<BSSection><FA :icon="faUser" /> 个人资料</BSSection>](https://littleskin.cn/user/profile) 页面寻找。
 
 > [!IMPORTANT] 🧐 准确填写 UID
-> 你的 UID 将会用于我们**验证用户身份**，更会在接下来我们对你的帮助时起到**至关重要**的作用，请不要填写其它内容或是乱填。
+> 你的 UID 将会<mark>用于我们**验证用户身份**，更会在接下来我们对你的帮助时起到**至关重要**的作用</mark>，请不要填写其它内容或是乱填。
 
 - 若你的入群申请的答案被我们认为是错误的，我们会拒绝你的入群申请；
 
