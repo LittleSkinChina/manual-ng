@@ -32,12 +32,22 @@ head:
 
 ## <Badge type="info">皮肤 Mod</Badge> <Badge type="tip" text="常见" /> 为什么我在网站上设置好了材质，但是在游戏中不显示 / 没更新？ {#no-skin}
 
-> [!TIP] 需要重新进入游戏
+> [!IMPORTANT] 仅皮肤 Mod（如 CustomSkinLoader）
+> 以下内容仅针对使用皮肤 Mod 加载材质的用户。
+
+> [!NOTE] 需要重新进入游戏
 > 当你在 LittleSkin 中更新了角色的材质，大多数的皮肤 Mod 都需要重新进入游戏。
 >
 > 只有这样，Mod 才会重新从 LittleSkin 获取角色的材质信息。
 >
 > 除此之外，皮肤 Mod 还可能会将你的材质信息进行缓存，这种情况请参考下方的解决方案。
+
+> [!NOTE] 与正版玩家重名的情况
+> 如果有正版玩家的玩家名与你在 LittleSkin 上的角色名相同，在没有对 CustomSkinLoader 进行调整的情况下，你就会看到正版玩家的皮肤。
+>
+> 若正版玩家没有设置皮肤，你将会看到 Steve 或 Alex 的皮肤。这非常容易让人产生困惑和误解。
+>
+> 这种情况下，你应该参考上方的 [# <Badge type="info">皮肤 Mod</Badge> <Badge type="tip" text="常见" /> 这不是我自己设置的皮肤](#not-my-skin)。
 
 对于使用皮肤 Mod 加载材质的用户，这是个很常见的问题。大多数情况下，这个问题是以下四个原因引起的：
 
