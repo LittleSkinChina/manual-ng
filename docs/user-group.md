@@ -12,6 +12,9 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 当前 LittleSkin 官方用户交流群分为主用户群和闲聊群（穗香咖啡馆），两群均有 QQ 群和 Telegram 群组。
 
+<NCard title="🤔 常见问题解答 / FAQ" link="/faq/">
+看看这个，说不定就有你正在努力寻找的答案。
+</NCard>
 <NCard title="📬️ 通过邮件发送工单" link="/email" >
 除了加入用户交流群，你还可以给我们发送邮件工单
 </NCard>
