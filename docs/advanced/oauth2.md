@@ -63,12 +63,12 @@ GET https://littleskin.cn/oauth/authorize
     &scope=
 ```
 
-| 参数            | 值                             |
-| --------------- | ------------------------------ |
-| `client_id`     | ...                            |
-| `redirect_uri`  | ...                            |
-| `response_type` | 固定值 `code`                  |
-| `scope`         | 支持的 scope 列表，以 `,` 分隔 |
+| 参数            | 值                      |
+| --------------- | ----------------------- |
+| `client_id`     | ...                     |
+| `redirect_uri`  | ...                     |
+| `response_type` | 固定值 `code`           |
+| `scope`         | scope 列表，以 `,` 分隔 |
 
 若 `scope` 参数为空，则服务器默认为 `User.Read`。
 
@@ -137,18 +137,40 @@ Authorization: Bearer {access_token}
 为了在刷新 Access Token 的过期时间，可在 Access Token 有效期内请求更新有效期。
 
 ```http
-POST https://littleskin.cn/api/auth/refresh
-Authorization: Bearer {access_token}
-```
+POST https://littleskin.cn/oauth/token
+Content-Type: application/x-www-form-urlencoded
 
-请求成功后将返回 JSON 响应。
-
-```jsonc
 {
-  "token": "***J.W.T***"
+    "grant_type": "refresh_token",
+    "refresh_token": "{refresh_token}"
+    "client_id": "{client_id}",
+    "client_secret": "{client_secret}",
+    "scope": "{scope}"
 }
 ```
 
-| 值      | 解释                         |
-| ------- | ---------------------------- |
-| `token` | 新的 Access Token (JWT 格式) |
+| 参数            | 值                      |
+| --------------- | ----------------------- |
+| `grant_type`    | 固定值 `refresh_token`  |
+| `refresh_token` | 先前获取到的刷新令牌    |
+| `client_id`     | ...                     |
+| `client_secret` | ...                     |
+| `scope`         | scope 列表，以 `,` 分隔 |
+
+请求成功后将返回 JSON 响应。
+
+```json
+{
+  "access_token": "***J.W.T***",
+  "token_type": "Bearer",
+  "expires_in": 31622400,
+  "refresh_token": "******"
+}
+```
+
+| 值              | 解释                      |
+| --------------- | ------------------------- |
+| `access_token`  | Access Token (JWT 格式)   |
+| `token_type`    | 令牌类型，固定值 `Bearer` |
+| `expires_in`    | 令牌的有效时间（秒）      |
+| `refresh_token` | 刷新令牌                  |
