@@ -39,7 +39,6 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 | 授权 Authorize         | `https://littleskin.cn/oauth/authorize`  |
 | 令牌 Token             | `https://littleskin.cn/oauth/token`      |
 | 用户信息 User Info     | `https://littleskin.cn/api/user`         |
-| 刷新令牌 Refresh Token | `https://littleskin.cn/api/auth/refresh` |
 
 ### 支持的 Scope
 
