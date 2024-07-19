@@ -77,7 +77,7 @@ https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redire
 
 ```http
 POST https://littleskin.cn/oauth/token
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
 {
     "grant_type": "authorization_code",
@@ -141,7 +141,7 @@ curl -X GET -H "Authorization: Bearer {access_token}" "https://littleskin.cn/api
 
 ```http
 POST https://littleskin.cn/oauth/token
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
 {
     "grant_type": "refresh_token",
