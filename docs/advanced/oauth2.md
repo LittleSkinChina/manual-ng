@@ -91,7 +91,7 @@ Content-Type: application/x-www-form-urlencoded
 ```bash
 curl -X POST \ 
   --url "https://littleskin.cn/oauth/token" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
+  --header "Content-Type: application/x-www-form-urlencoded" \
   --data "grant_type=authorization_code" \
   --data "client_id={client_id}" \
   --data "client_secret={client_secret}" \
@@ -137,7 +137,7 @@ Authorization: Bearer {access_token}
 ```bash
 curl -X GET \
   --url "https://littleskin.cn/api/user" \
-  -H "Authorization: Bearer {access_token}"
+  --header "Authorization: Bearer {access_token}"
 ```
 
 如果一切在预料之中，这个请求会正确地返回用户的基本信息。
@@ -164,7 +164,7 @@ Content-Type: application/x-www-form-urlencoded
 ```bash
 curl -X POST \
   --url "https://littleskin.cn/oauth/token" \
-  -H "Content-Type: application/x-www-form-urlencoded" \
+  --header "Content-Type: application/x-www-form-urlencoded" \
   --data "grant_type=refresh_token" \
   --data "refresh_token={refresh_token}" \
   --data "client_id={client_id}" \
