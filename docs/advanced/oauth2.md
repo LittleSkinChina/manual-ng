@@ -34,11 +34,11 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 
 ### API 端点
 
-| API 端点 Endpoint      | URL                                      |
-| ---------------------- | ---------------------------------------- |
-| 授权 Authorize         | `https://littleskin.cn/oauth/authorize`  |
-| 令牌 Token             | `https://littleskin.cn/oauth/token`      |
-| 用户信息 User Info     | `https://littleskin.cn/api/user`         |
+| API 端点 Endpoint  | URL                                     |
+| ------------------ | --------------------------------------- |
+| 授权 Authorize     | `https://littleskin.cn/oauth/authorize` |
+| 令牌 Token         | `https://littleskin.cn/oauth/token`     |
+| 用户信息 User Info | `https://littleskin.cn/api/user`        |
 
 ### 支持的 Scope
 
@@ -54,7 +54,7 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 
 客户端拼接 Authorize URL 并引导用户在**浏览器**中访问。
 
-```
+```plain
 https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&response_type=code&scope={scope}
 ```
 
@@ -91,13 +91,12 @@ Content-Type: application/x-www-form-urlencoded
 ```bash
 curl -X POST \ 
   --url "https://littleskin.cn/oauth/token" \
-  --json '{
-    "grant_type": "authorization_code",
-    "client_id": "{client_id}",
-    "client_secret": "{client_secret}",
-    "redirect_uri": "{redirect_uri}",
-    "code": "{code}"
-}'
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  --data "grant_type=authorization_code" \
+  --data "client_id={client_id}" \
+  --data "client_secret={client_secret}" \
+  --data "redirect_uri={redirect_uri}" \
+  --data "code={code}"
 ```
 
 | 参数            | 值                          |
@@ -147,7 +146,7 @@ curl -X GET \
 
 ### 刷新 Access Token
 
-为了在刷新 Access Token 的过期时间，可在 Access Token 有效期内请求更新有效期。
+为了延长 Access Token 的过期时间，可在 Access Token 有效期内请求更新有效期。
 
 ```http
 POST https://littleskin.cn/oauth/token
@@ -165,13 +164,12 @@ Content-Type: application/x-www-form-urlencoded
 ```bash
 curl -X POST \
   --url "https://littleskin.cn/oauth/token" \
-  --json '{
-    "grant_type": "refresh_token",
-    "refresh_token": "{refresh_token}"
-    "client_id": "{client_id}",
-    "client_secret": "{client_secret}",
-    "scope": "{scope}"
-}'
+  -H "Content-Type: application/x-www-form-urlencoded" \
+  --data "grant_type=refresh_token" \
+  --data "refresh_token={refresh_token}" \
+  --data "client_id={client_id}" \
+  --data "client_secret={client_secret}" \
+  --data "scope={scope}"
 ```
 
 | 参数            | 值                      |
