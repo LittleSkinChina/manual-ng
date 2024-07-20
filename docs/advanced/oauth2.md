@@ -88,8 +88,16 @@ Content-Type: application/json
 }
 ```
 
-```pwsh
-curl -X POST --json '{"grant_type":"authorization_code","client_id":"{client_id}","client_secret":"{client_secret}","redirect_uri":"{redirect_uri}","code":"{code}"}' "https://littleskin.cn/oauth/token"
+```bash
+curl -X POST \ 
+  --url "https://littleskin.cn/oauth/token" \
+  --json '{
+    "grant_type": "authorization_code",
+    "client_id": "{client_id}",
+    "client_secret": "{client_secret}",
+    "redirect_uri": "{redirect_uri}",
+    "code": "{code}"
+}'
 ```
 
 | 参数            | 值                          |
@@ -127,8 +135,10 @@ GET https://littleskin.cn/api/user
 Authorization: Bearer {access_token}
 ```
 
-```pwsh
-curl -X GET -H "Authorization: Bearer {access_token}" "https://littleskin.cn/api/user"
+```bash
+curl -X GET \
+  --url "https://littleskin.cn/api/user" \
+  -H "Authorization: Bearer {access_token}"
 ```
 
 如果一切在预料之中，这个请求会正确地返回用户的基本信息。
@@ -152,8 +162,16 @@ Content-Type: application/json
 }
 ```
 
-```pwsh
-curl -X POST --json '{"grant_type":"refresh_token","refresh_token":"{refresh_token}""client_id":"{client_id}","client_secret":"{client_secret}","scope":"{scope}"}' "https://littleskin.cn/oauth/refresh"
+```bash
+curl -X POST \
+  --url "https://littleskin.cn/oauth/token" \
+  --json '{
+    "grant_type": "refresh_token",
+    "refresh_token": "{refresh_token}"
+    "client_id": "{client_id}",
+    "client_secret": "{client_secret}",
+    "scope": "{scope}"
+}'
 ```
 
 | 参数            | 值                      |
