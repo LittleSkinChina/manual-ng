@@ -52,14 +52,10 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 
 ### 授权
 
-客户端构造 Authorize URL 并引导用户在**浏览器**中访问。
+客户端拼接 Authorize URL 并引导用户在**浏览器**中访问。
 
-```http
-GET https://littleskin.cn/oauth/authorize
-    ?client_id={client_id}
-    &redirect_uri={redirect_uri}
-    &response_type=code
-    &scope=
+```
+https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&response_type=code&scope={scope}
 ```
 
 | 参数            | 值                      |
@@ -81,7 +77,7 @@ GET https://littleskin.cn/oauth/authorize
 
 ```http
 POST https://littleskin.cn/oauth/token
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
 {
     "grant_type": "authorization_code",
@@ -90,6 +86,18 @@ Content-Type: application/x-www-form-urlencoded
     "redirect_uri": "{redirect_uri}",
     "code": "{code}"
 }
+```
+
+```bash
+curl -X POST \ 
+  --url "https://littleskin.cn/oauth/token" \
+  --json '{
+    "grant_type": "authorization_code",
+    "client_id": "{client_id}",
+    "client_secret": "{client_secret}",
+    "redirect_uri": "{redirect_uri}",
+    "code": "{code}"
+}'
 ```
 
 | 参数            | 值                          |
@@ -127,6 +135,12 @@ GET https://littleskin.cn/api/user
 Authorization: Bearer {access_token}
 ```
 
+```bash
+curl -X GET \
+  --url "https://littleskin.cn/api/user" \
+  -H "Authorization: Bearer {access_token}"
+```
+
 如果一切在预料之中，这个请求会正确地返回用户的基本信息。
 
 欲了解更多内容，请访问 [参考文档](#参考文档) 及 [LittleSkin API](./api.md)。
@@ -137,7 +151,7 @@ Authorization: Bearer {access_token}
 
 ```http
 POST https://littleskin.cn/oauth/token
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
 {
     "grant_type": "refresh_token",
@@ -146,6 +160,18 @@ Content-Type: application/x-www-form-urlencoded
     "client_secret": "{client_secret}",
     "scope": "{scope}"
 }
+```
+
+```bash
+curl -X POST \
+  --url "https://littleskin.cn/oauth/token" \
+  --json '{
+    "grant_type": "refresh_token",
+    "refresh_token": "{refresh_token}"
+    "client_id": "{client_id}",
+    "client_secret": "{client_secret}",
+    "scope": "{scope}"
+}'
 ```
 
 | 参数            | 值                      |
