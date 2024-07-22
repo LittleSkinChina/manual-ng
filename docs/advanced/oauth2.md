@@ -79,13 +79,12 @@ https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redire
 POST https://littleskin.cn/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
-{
-    "grant_type": "authorization_code",
-    "client_id": "{client_id}",
-    "client_secret": "{client_secret}",
-    "redirect_uri": "{redirect_uri}",
-    "code": "{code}"
-}
+grant_type = authorization_code &
+client_id = {{client_id}} &
+client_secret = {{client_secret}} &
+redirect_uri = {{redirect_uri}} &
+code = {{code}}
+
 ```
 
 ```bash
@@ -93,10 +92,10 @@ curl -X POST \
   --url "https://littleskin.cn/oauth/token" \
   --header "Content-Type: application/x-www-form-urlencoded" \
   --data "grant_type=authorization_code" \
-  --data "client_id={client_id}" \
-  --data "client_secret={client_secret}" \
-  --data "redirect_uri={redirect_uri}" \
-  --data "code={code}"
+  --data "client_id={{client_id}}" \
+  --data "client_secret={{client_secret}}" \
+  --data "redirect_uri={{redirect_uri}}" \
+  --data "code={{code}}"
 ```
 
 | 参数            | 值                          |
@@ -111,18 +110,18 @@ curl -X POST \
 
 ```json
 {
-  "access_token": "***J.W.T***",
   "token_type": "Bearer",
   "expires_in": 31622400,
+  "access_token": "***J.W.T***",
   "refresh_token": "******"
 }
 ```
 
 | 值              | 解释                      |
 | --------------- | ------------------------- |
-| `access_token`  | Access Token (JWT 格式)   |
 | `token_type`    | 令牌类型，固定值 `Bearer` |
 | `expires_in`    | 令牌的有效时间（秒）      |
+| `access_token`  | Access Token (JWT 格式)   |
 | `refresh_token` | 刷新令牌                  |
 
 ### 使用 Access Token
@@ -131,13 +130,13 @@ curl -X POST \
 
 ```http
 GET https://littleskin.cn/api/user
-Authorization: Bearer {access_token}
+Authorization: Bearer {{access_token}}
 ```
 
 ```bash
 curl -X GET \
   --url "https://littleskin.cn/api/user" \
-  --header "Authorization: Bearer {access_token}"
+  --header "Authorization: Bearer {{access_token}}"
 ```
 
 如果一切在预料之中，这个请求会正确地返回用户的基本信息。
@@ -152,13 +151,11 @@ curl -X GET \
 POST https://littleskin.cn/oauth/token
 Content-Type: application/x-www-form-urlencoded
 
-{
-    "grant_type": "refresh_token",
-    "refresh_token": "{refresh_token}"
-    "client_id": "{client_id}",
-    "client_secret": "{client_secret}",
-    "scope": "{scope}"
-}
+grant_type = refresh_token &
+refresh_token = {{refresh_token}} &
+client_id = {{client_id}} &
+client_secret = {{client_secret}} &
+scope = {{scope}}
 ```
 
 ```bash
@@ -166,10 +163,10 @@ curl -X POST \
   --url "https://littleskin.cn/oauth/token" \
   --header "Content-Type: application/x-www-form-urlencoded" \
   --data "grant_type=refresh_token" \
-  --data "refresh_token={refresh_token}" \
-  --data "client_id={client_id}" \
-  --data "client_secret={client_secret}" \
-  --data "scope={scope}"
+  --data "refresh_token={{refresh_token}}" \
+  --data "client_id={{client_id}}" \
+  --data "client_secret={{client_secret}}" \
+  --data "scope={{scope}}"
 ```
 
 | 参数            | 值                      |
@@ -184,16 +181,16 @@ curl -X POST \
 
 ```json
 {
-  "access_token": "***J.W.T***",
   "token_type": "Bearer",
   "expires_in": 31622400,
+  "access_token": "***J.W.T***",
   "refresh_token": "******"
 }
 ```
 
 | 值              | 解释                      |
 | --------------- | ------------------------- |
-| `access_token`  | Access Token (JWT 格式)   |
 | `token_type`    | 令牌类型，固定值 `Bearer` |
 | `expires_in`    | 令牌的有效时间（秒）      |
+| `access_token`  | Access Token (JWT 格式)   |
 | `refresh_token` | 刷新令牌                  |
