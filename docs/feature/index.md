@@ -3,7 +3,7 @@ title: 新特性介绍
 titleTemplate: LittleSkin Feature Introduction
 description: 在 LittleSkin 引入的尚不成熟的功能，将在这里进行介绍。
 head:
-  - - meta
+  - meta
 
 outline: false
 ---
