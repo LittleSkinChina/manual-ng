@@ -12,7 +12,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 ### 管理当前密钥
 
-进入[仪表盘](https://littleskin.cn/user)，点击 [<BSSection style="background-color:#343a40; color:#ffffff; border: none"><FA :icon="faUser" />个人资料</BSSection>](https://littleskin.cn/user/profile) ，找到底部的 [<BSSection style="background-color:#007bff; color:#ffffff; border: none">管理通行密钥</BSSection>](https://littleskin.cn/user/passkey) ，进入通行密钥管理页面。
+进入 [<BSSection>仪表盘</BSSection>](https://littleskin.cn/user) ，点击 [<BSSection style="background-color:#343a40; color:#ffffff; border: none"><FA :icon="faUser" />个人资料</BSSection>](https://littleskin.cn/user/profile) ，找到底部的 [<BSSection style="background-color:#007bff; color:#ffffff; border: none">管理通行密钥</BSSection>](https://littleskin.cn/user/passkey) ，进入通行密钥管理页面。
 
 下图是页面中各信息点的详解：
 
