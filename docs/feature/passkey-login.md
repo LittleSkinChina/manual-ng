@@ -34,7 +34,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 ![删除确认](./assets/passkey-login/delete-confirm.png)
 
-按提示信息输入后，即可删除密钥。
+按提示信息输入，点击确认后，即可删除密钥。
 
 删除后，该密钥不能在[登录页面](https://littleskin.cn/auth/login)内用于 Passkey 快速登录。
 

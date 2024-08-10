@@ -166,6 +166,13 @@ export default defineConfig({
                 }
               ]
             },
+            {
+              text: '新特性介绍',
+              link: '/feature/',
+              items: [
+                { text: 'Passkey 登录', link: '/feature/passkey-login' },
+              ]
+            }
           ]
         },
         {
