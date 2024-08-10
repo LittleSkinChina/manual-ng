@@ -6,6 +6,12 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 <!--@include: ./feature-tip.template.md-->
 
+摘自 [fido Alliance 的介绍](https://fidoalliance.org/passkeys/)：
+
+> 通行密钥基于 FIDO 标准，是密码的替代品，能让用户在各种设备上更快、更方便、更安全地登录网站和应用程序。与密码不同，通行密钥始终保持强大功能，并可抵御网络钓鱼。
+>
+> 通行密钥简化了应用程序和网站的账户注册，易于使用，可在用户的大多数设备上使用，甚至可在物理距离较近的其他设备上使用。
+
 [[toc]]
 
 ## 详解
