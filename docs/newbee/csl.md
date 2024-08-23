@@ -168,7 +168,7 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 :::
 
 ::: details 4. 默认配置 & Mojang 上有同名角色 & 尝试加载全部材质
-若 Mojang 中的同名角色设置了皮肤但未设置皮肤，CustomSkinLoader 会尝试从后续的服务器加载披风。
+若 Mojang 中的同名角色设置了皮肤但未设置披风，CustomSkinLoader 会尝试从后续的服务器加载披风。
 
 ![默认配置，尝试加载全部材质时的加载流程](./assets/mods/flow-loadall.webp)
 :::
