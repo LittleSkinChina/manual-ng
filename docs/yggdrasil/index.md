@@ -44,7 +44,7 @@ LittleSkin 已在全站启用 authlib-injector 的 API 地址指示（ALI）功�
 - 🏴‍☠️ 玩家只需要用户名即可进入服务端，服务端并不会验证进服玩家身份的合法性;  
 - 😕 玩家在游戏中的样貌只能是 Steve 或 Alex 之类的默认皮肤，而不能是自定义的材质。
 
-为了在游戏中能让玩家们欣赏到各自的皮肤，CustomSkinLoader 和 SkinsRestorer 等 Mod 或插件被广泛使用。
+为了让玩家在游戏中能欣赏到各自的皮肤，CustomSkinLoader 和 SkinsRestorer 等 Mod 或插件被广泛使用。
 
 但离线登录的鉴权机制给予了恶意玩家们极大的发挥空间。他们会冒充其他玩家进入服务器行偷鸡摸狗之事，零成本的批量账号更是轰炸小型服务器的绝妙武器。
 
