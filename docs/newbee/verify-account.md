@@ -8,7 +8,7 @@
 
 以QQ邮箱(网页版新版)为例
 1.打开 [<BSSection><FA :icon="faEnvelope" /> QQ邮箱官网</BSSection>](https://mail.qq.com) 页面并登录你的QQ账号，点击邮件主题为 <BSSection>LittleSkin</BSSection> 的信件
-![open-page](./assets/mailverify/QQMail-MainPage-New.webp)
+![open-page](./assets/verify-account/QQMail-MainPage-New.webp)
 
 ::: warning 注意
 LittleSkin发送的验证信如果没有在 **收件箱** 发现，有可能是邮件系统将信件放入到了 **垃圾箱** (上图框中区域为垃圾箱入口)，请去垃圾箱找到此信件进行下一步操作
