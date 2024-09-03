@@ -4,7 +4,7 @@
 
 看到此处你肯定已经注册了LittleSkin账号！
 
-但你离创建角色-进入游戏的过程还差最后一步:验证你的邮箱！
+但你离创建角色-进入游戏的过程还差最后一步:**验证你的邮箱！**
 
 以QQ邮箱(网页版新版)为例
 1.打开 [<BSSection><FA :icon="faEnvelope" /> QQ邮箱官网</BSSection>](https://mail.qq.com) 页面并登录你的QQ账号，点击邮件主题为 <BSSection>LittleSkin</BSSection> 的信件
