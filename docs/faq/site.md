@@ -152,3 +152,17 @@ LittleSkin 会不定期举办站内活动。具体何时举办活动以及活动
 不可以。封禁是永久性的，<mark>除非是误封</mark>，就算你大额捐助并且手写书面保证书也不能给你解封。
 
 <Helpme>如果你确定是误封，请联系站点管理员处理。</Helpme>
+
+## 忘记密码了？想修改自己的密码？ {#forgot-password}
+
+1.如果你知道密码:
+请在 [<BSSection><FA :icon="faTachometer" /> 仪表盘</BSSection>](https://littleskin.cn/user) 页面找到 [<BSSection><FA :icon="faUser" /> 个人资料</BSSection>](https://littleskin.cn/user/profile) (点此按钮即可进入对应页面)，找到 <BSSection>修改密码</BSSection> 栏目进行修改
+
+2.如果你不知道密码
+点击登录，然后在跳转的页面点击 <BSSection>忘记密码</BSSection>，然后输入对应忘记密码的邮箱账户与随机验证码，然后点击 <BSSection>发送</BSSection>，在邮箱寻找来自 <BSSection>LittleSkin</BSSection> 发送的 重置密码 的邮件进行修改自己的账号密码
+
+> [!NOTE] 如果你在登录状态下
+> 回到 [<BSSection>LittleSkin</BSSection>](https://littleskin.cn/) 主页，然后点击右上角头像，然后点击登出
+
+> [!IMPORTANT] 注意
+> 邮箱客户端用户请把 **链接** 复制到 **第三方浏览器**，请**不要**使用邮箱APP的内置浏览器！！！
