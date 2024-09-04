@@ -125,11 +125,17 @@ head:
 
 由于一些技术上的原因，LittleSkin 自 2020 年 1 月起不再支持 UniSkinAPI。你仍然可以通过传统加载方式加载材质，但我们建议使用 Universal Skin Mod 加载材质的用户尽快更换到 CustomSkinLoader。
 
-## <Badge type="info" text="外置登录" /> 启动器下载 authlib-injector 失败  {#authlib-injector-failed-to-download}
+## <Badge type="info" text="外置登录" /> 启动器下载 authlib-injector 失败  {#authlib-injector-missing}
 
-此问题比较罕见，但一般都是网络原因引起的，请在启动器中更换下载源后再试。
+正版或离线可以正常启动游戏，但是外置登录启动就会直接崩溃
 
-如果你使用 HMCL 3，如果更换下载源后仍然报错，请手动下载 authlib-injector，将其放入 `%appdata%\.hmcl\`（Windows）或 `$HOME/.hmcl/`（Linux 和 macOS）中并重命名为 `authlib-injector.jar`。使用其他启动器的用户请咨询启动器作者。
+日志通常会显示`Error opening zip file or JAR manifest missing : %应用数据目录%/authlib-injector.jar`
+
+此问题比较罕见，但一般都是网络原因引起的，请在启动器中更换下载源后**重启启动器**再试。
+
+如果更换下载源后仍然报错，请[手动下载 authlib-injector](https://manual.littlesk.in/yggdrasil/authlib-injector)将其名称修改为`authlib-injector.jar`后放入 %应用数据目录% 中并重新尝试启动
+
+🛠️ 此日志一般在游戏崩溃时可以通过启动器自动弹出的“导出启动器日志”功能获取，文件名一般为`latest.log`
 
 ## LittleSkin 支持 Minecraft 中国版（国服）吗？ {#about-netease}
 
