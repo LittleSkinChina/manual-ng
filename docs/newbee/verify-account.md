@@ -15,7 +15,7 @@
 前去查看关于验证邮件无法收到的解决办法
 </NCard>
 
-2. 点击以 <BSSection>LittleSkin</BSSection> 为邮件主题的文件，然后点击邮件里提供的**链接**进入 <BSSection>LittleSkin</BSSection> 的邮箱验证网站
+2. 点击以 **LittleSkin** 为邮件主题的文件，然后点击邮件里的链接进入 LittleSkin 的邮箱验证页面
 
 > [!IMPORTANT] 注意
 > 请始终使用浏览器访问邮件中的链接。
