@@ -17,9 +17,10 @@
 
 2. 点击以 <BSSection>LittleSkin</BSSection> 为邮件主题的文件，然后点击邮件里提供的**链接**进入 <BSSection>LittleSkin</BSSection> 的邮箱验证网站
 
-::: warning 注意
-客户端用户请把 **链接** 复制到 **第三方浏览器**，请**不要**使用邮箱APP的内置浏览器！！！
-:::
+> [!IMPORTANT] 注意
+> 请始终使用浏览器访问邮件中的链接。
+>
+> 从手机 QQ 或 QQ 邮箱 APP 内置的浏览器中直接访问链接可能会产生错误。
 
 3. 输入你注册 <BSSection>LittleSkin</BSSection> 对应的邮箱账号，然后点击<BSSection>提交</BSSection>
 
