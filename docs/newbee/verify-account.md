@@ -9,7 +9,7 @@
 ## 以QQ邮箱(网页版新版):
 
 ![open-page](./assets/verify-account/QQMail-MainPage-New.webp)
-1. 打开 [<BSSection><FA :icon="faEnvelope" /> QQ邮箱官网</BSSection>](https://mail.qq.com) 页面并登录你的QQ账号，点击查看主题为 <BSSection>LittleSkin</BSSection> 的邮件
+1. 打开 [<BSSection><FA :icon="faEnvelope" /> QQ 邮箱官网</BSSection>](https://mail.qq.com) 页面并登录你的 QQ 账号，点击查看主题为 **LittleSkin** 的邮件
 
 <NCard title="😢 收不到验证邮件？" link="/faq/site#no-email" >
 前去查看关于验证邮件无法收到的解决办法
