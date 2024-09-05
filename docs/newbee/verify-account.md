@@ -24,9 +24,11 @@
 
 3. 输入你注册 <BSSection>LittleSkin</BSSection> 对应的邮箱账号，然后点击<BSSection>提交</BSSection>
 
-4. 大功告成🎉你已成功验证账号！
+4. 大功告成🎉
 
-   你现在可以进行 [<BSSection><FA :icon="faUsers" /> 创建角色</BSSection>](https://littleskin.cn/user/player) 的步骤啦！
+  你已成功验证账号！
+
+你现在可以进行 [<BSSection><FA :icon="faUsers" /> 创建角色</BSSection>](https://littleskin.cn/user/player) 的步骤啦！
 
 ## 其他邮件网页版/客户端
 
