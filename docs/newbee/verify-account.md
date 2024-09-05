@@ -32,7 +32,7 @@
 
 ## 其他邮件网页版/客户端
 
-与上图操作相似，请在各自邮箱网页/APP的 **收件箱** 和 **垃圾箱** 寻找由 <BSSection>LittleSkin</BSSection> 发出来的验证邮件
+与上述操作相似，请在各自邮箱提供商的网页或 APP 的 **收件箱** 和 **垃圾箱** 寻找由 **LittleSkin** 发出的验证邮件
 
 <NCard title="😢 忘记密码了怎么办？" link="/faq/site#reset-password" >
 前去了解如何重置自己的密码
