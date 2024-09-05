@@ -6,7 +6,7 @@
 
 但你离创建角色到进入游戏的过程还差最后一步：验证你的邮箱。
 
-## 以QQ邮箱(网页版新版):
+## 以 QQ 邮箱为例
 
 ![open-page](./assets/verify-account/QQMail-MainPage-New.webp)
 1. 打开 [<BSSection><FA :icon="faEnvelope" /> QQ 邮箱官网</BSSection>](https://mail.qq.com) 页面并登录你的 QQ 账号，点击查看主题为 **LittleSkin** 的邮件
