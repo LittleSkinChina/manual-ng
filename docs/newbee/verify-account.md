@@ -35,5 +35,5 @@
 与上图操作相似，请在各自邮箱网页/APP的 **收件箱** 和 **垃圾箱** 寻找由 <BSSection>LittleSkin</BSSection> 发出来的验证邮件
 
 <NCard title="😢 忘记密码了怎么办？" link="/faq/site#reset-password" >
-前去查看如何重设自己的密码
+前去了解如何重置自己的密码
 </NCard>
