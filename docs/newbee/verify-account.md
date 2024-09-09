@@ -9,7 +9,7 @@
 ## 以 QQ 邮箱为例
 
 ![open-page](./assets/verify-account/QQMail-MainPage-New.webp)
-1. 打开 [QQ 邮箱官网](https://mail.qq.com) 页面并登录你的 QQ 账号，打开 **收件箱①** 后查看主题为 **LittleSkin②** 的邮件
+1. 打开 [QQ 邮箱官网](https://mail.qq.com) 页面并登录你的 QQ 账号，打开 **收件箱-①** 后查看主题为 **LittleSkin-②** 的邮件
 
 
 <NCard title="😢 收不到验证邮件？" link="/faq/site#no-email" >
