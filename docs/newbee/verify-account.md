@@ -19,11 +19,9 @@
 2. 点击以 **LittleSkin** 为邮件主题的文件，然后点击邮件里的链接进入 LittleSkin 的邮箱验证页面
 
 > [!IMPORTANT] 注意
-> 请始终使用浏览器访问邮件中的链接。
->
-> 从手机 QQ 或 QQ 邮箱 APP 内置的浏览器中直接访问链接可能会产生错误。
->
-> 请认准邮件 **发件人** 为 **LittleSkin (no-reply@littlesk.in)**
+> - 请始终使用浏览器访问邮件中的链接。
+> - 从手机 QQ 或 QQ 邮箱 APP 内置的浏览器中直接访问链接可能会产生错误。
+> - 请认准 **发件人** 为 **LittleSkin (no-reply@littlesk.in)** 的邮件，谨防诈骗邮件。
 
 3. 输入你注册 LittleSkin 时提供的邮箱，然后点击 <BSSection>提交</BSSection> 按钮
 
