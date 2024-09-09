@@ -27,7 +27,7 @@
 
 4. 大功告成🎉
 
-  你已成功验证账号！
+至此，您已成功完成了验证账号的步骤！
 
 你现在可以进行 [<BSSection><FA :icon="faUsers" /> 创建角色</BSSection>](https://littleskin.cn/user/player) 的步骤啦！
 
