@@ -34,6 +34,8 @@ head:
 
 > [!IMPORTANT] 仅皮肤 Mod（如 CustomSkinLoader）
 > 以下内容仅针对使用皮肤 Mod 加载材质的用户。
+>
+> 如果你使用外置登录加载材质，并遇到了如标题所说的问题，请阅读 [下一条目👇](#no-skin-in-server)。
 
 > [!NOTE] 需要重新进入游戏
 > 当你在 LittleSkin 中更新了角色的材质，大多数的皮肤 Mod 都需要重新进入游戏。
@@ -78,10 +80,6 @@ head:
 - 对于 1.7.10，请使用 SkinPort 加载材质。SkinPort 在 1.7.10 上提供了对 Alex 模型的支持。  
   参考 [新手指引 > 配置 Mod > SkinPort](/newbee/mod#skinport) 进行配置。
 - 对于更低版本，目前无解，你只能更换为 Steve 模型的皮肤。
-:::
-
-::: info 使用的是外置登录，但在多人游戏中不显示皮肤？
-如果你使用外置登录的方式加载材质，并遇到了如标题所说的问题，请阅读 [下一条👇](#no-skin-in-server)。
 :::
 
 <Helpme afdian readBeforeAsk>
