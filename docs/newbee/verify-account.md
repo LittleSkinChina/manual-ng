@@ -28,7 +28,7 @@
 
 4. 大功告成🎉
 
-至此，您已成功完成了验证账号的步骤！
+至此，你已成功完成了邮箱验证！
 
 你现在可以进行 [<BSSection><FA :icon="faUsers" /> 创建角色</BSSection>](/newbee/player) 的步骤啦！
 
