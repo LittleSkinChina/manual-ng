@@ -1,6 +1,6 @@
 # 验证邮箱
 
-欢迎加入 LittleSkin 大家庭🎉
+欢迎加入 LittleSkin 大家庭 🎉
 
 看到此处，你应该已经成功注册了 LittleSkin 账号！🎉🎉
 
@@ -29,7 +29,9 @@
 
 至此，你已成功完成了邮箱验证！
 
-你现在可以进行 [<BSSection><FA :icon="faUsers" /> 创建角色</BSSection>](/newbee/player) 的步骤啦！
+<NCard title="➕ 创建角色" link="/newbee/player" >
+你现在可以进行 <BSSection><FA :icon="faUsers" /> 创建角色</BSSection> 的步骤啦！
+</NCard>
 
 ## 其他邮件网页版/客户端
 
