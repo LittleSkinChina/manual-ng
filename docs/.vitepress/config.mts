@@ -142,6 +142,7 @@ export default defineConfig({
               text: '新手指引',
               link: '/newbee/',
               items: [
+                { text: '验证邮箱', link: '/newbee/verify-email' },
                 { text: '创建角色', link: '/newbee/player' },
                 { text: '设定材质', link: '/newbee/textures' },
                 { text: '配置 CustomSkinLoader', link: '/newbee/csl' },
