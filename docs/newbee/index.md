@@ -11,6 +11,9 @@
 ## 准备工作
 <p style="margin-bottom: 2em"></p>
 
+<NCard title="✔️ 验证邮箱" link="./verify-email" >
+确保你的 LittleSkin 账号所绑定的邮箱真实有效
+</NCard>
 <NCard title="👤 创建角色" link="./player" >
 在 LittleSkin 上创建你的角色。这是在游戏中显示你的皮肤和披风的必备条件
 </NCard>
