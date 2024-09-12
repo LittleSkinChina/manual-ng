@@ -58,12 +58,12 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&response_type=code&scope={scope}
 ```
 
-| 参数            | 值                      |
-| --------------- | ----------------------- |
-| `client_id`     | ...                     |
-| `redirect_uri`  | ...                     |
-| `response_type` | 固定值 `code`           |
-| `scope`         | scope 列表，以 `,` 分隔 |
+| 参数            | 值                     |
+| --------------- | ---------------------- |
+| `client_id`     | ...                    |
+| `redirect_uri`  | ...                    |
+| `response_type` | 固定值 `code`          |
+| `scope`         | scope 列表，以空格分隔 |
 
 若 `scope` 参数为空，则服务器默认为 `User.Read`。
 
@@ -169,13 +169,13 @@ curl -X POST \
   --data "scope={{scope}}"
 ```
 
-| 参数            | 值                      |
-| --------------- | ----------------------- |
-| `grant_type`    | 固定值 `refresh_token`  |
-| `refresh_token` | 先前获取到的刷新令牌    |
-| `client_id`     | ...                     |
-| `client_secret` | ...                     |
-| `scope`         | scope 列表，以 `,` 分隔 |
+| 参数            | 值                     |
+| --------------- | ---------------------- |
+| `grant_type`    | 固定值 `refresh_token` |
+| `refresh_token` | 先前获取到的刷新令牌   |
+| `client_id`     | ...                    |
+| `client_secret` | ...                    |
+| `scope`         | scope 列表，以空格分隔 |
 
 请求成功后将返回 JSON 响应。
 
