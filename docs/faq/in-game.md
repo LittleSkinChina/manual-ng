@@ -93,17 +93,14 @@ head:
 
 这种情况往往在使用 Yggdrasil 外置登录进行服务器联机时出现。
 
-由于 Minecraft 的材质加载机制，在多人游戏中，只有正确配置了外置登录（即**同时满足以下全部条件**），才能正常地在多人游戏中显示你在 LittleSkin 上设置的材质：
-
-- 服务端启用了在线模式（`server.properties` 中 `online-mode=true`）
-- [在服务端配置了 Yggdrasil 外置登录](/yggdrasil/server)
+由于 Minecraft 的材质加载机制，在多人游戏中，只有 [在服务端正确配置了 Yggdrasil 外置登录](/yggdrasil/server) 时，才能正常地在多人游戏中显示你在 LittleSkin 上设置的材质。
 
 🛠️ 如果你有在服务器联机中加载材质的需求，并且你是服主，请在服务端正确配置 Yggdrasil 外置登录
 
 > [!IMPORTANT] 😕 只是一个普通的服务器玩家？
 > 如果你并不是服主或服务器管理员，你可能无法在服务端配置 Yggdrasil 外置登录。
 >
-> 这种情况下，<mark>你可以安装皮肤 Mod</mark>，虽然这样只能使你自己看到自己或他人的皮肤。
+> 这种情况下，你可以安装皮肤 Mod，虽然这样只能使你自己看到自己或他人的皮肤。
 >
 > 🛠️ 推荐你<mark>安装 CustomSkinLoader</mark>。此外，你可能还需要<mark>「手动修改配置文件」</mark>。
 >
