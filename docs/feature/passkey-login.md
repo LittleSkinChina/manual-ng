@@ -2,15 +2,15 @@
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 </script>
 
-# 使用 安全密钥 登录 LittleSkin
+# 使用通行密钥登录 LittleSkin
 
 <!--@include: ./feature-tip.template.md-->
 
-摘自 [fido Alliance 的介绍](https://fidoalliance.org/passkeys/)：
+通行密钥（Passkey）是 FIDO 联盟推出的一种更强大的第一方用户身份验证解决方案，可作为密码的替代品，用于注册、登录和多因素认证等需要验证用户身份的场景。相较密码而言，通行密钥使用起来更方便，也更安全。
 
-> 通行密钥基于 FIDO 标准，是密码的替代品，能让用户在各种设备上更快、更方便、更安全地登录网站和应用程序。与密码不同，通行密钥始终保持强大功能，并可抵御网络钓鱼。
->
-> 通行密钥简化了应用程序和网站的账户注册，易于使用，可在用户的大多数设备上使用，甚至可在物理距离较近的其他设备上使用。
+若要了解更多关于通行密钥的信息，请访问 FIDO 联盟的网站：[通行密钥（通行密钥身份验证）](https://fidoalliance.org/passkeys/?lang=zh-hans)
+
+LittleSkin 当前支持使用通行密钥进行登录。
 
 [[toc]]
 
@@ -26,7 +26,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 ### 添加通行密钥
 
-在通行密钥管理页面点击 <BSSection style="background-color:#007bff; color:#ffffff; border: none">添加通行密钥</BSSection> ，唤起系统的验证页面。此时请您按照页面提示操作，操作成功后即可完成添加。
+在通行密钥管理页面点击 <BSSection style="background-color:#007bff; color:#ffffff; border: none">添加通行密钥</BSSection> ，唤起系统的验证页面。此时请按照页面提示操作，操作成功后即可完成添加。
 
 添加后该密钥将可在[登录页面](https://littleskin.cn/auth/login)内用于 Passkey 快速登录。
 
