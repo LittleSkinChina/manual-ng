@@ -23,6 +23,6 @@ import { faUsers, faPlus } from '@fortawesome/free-solid-svg-icons'
 
 <p style="margin-bottom: 2em"></p>
 
-<NCard title="一对一技术支持" link="https://afdian.net/a/tnqzh123" >
+<NCard title="一对一技术支持" link="https://afdian.com/a/tnqzh123" >
 通过 <strong>💰赞助支持</strong> 来获取高质量的一对一技术支持服务
 </NCard>

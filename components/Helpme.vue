@@ -46,7 +46,7 @@ const props = withDefaults(
                 </a>
             </div>
             <div v-if="props.afdian" class="support-card">
-                <a href="https://afdian.net/a/tnqzh123" target="_blank">
+                <a href="https://afdian.com/a/tnqzh123" target="_blank">
                     <div class="support-card-body">
                         <div class="title-text text">
                             🧑‍🔬 1v1 技术支持
