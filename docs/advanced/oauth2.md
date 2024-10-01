@@ -21,12 +21,10 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 - 应用名称（将被展示在用户的授权界面上）
 - 回调 URL / `redirect_uri`
 
-你会被分配到：
+你将会被分配到：
 
 - 客户端 ID / `client_id`
 - 客户端 Secret / `client_secret`
-
-如果你使用 Blessing Skin Server 的 LittleSkin 登录插件，上述信息足矣。
 
 ## 有关 OAuth 2 的详细信息
 
@@ -112,7 +110,7 @@ curl -X POST \
 {
   "token_type": "Bearer",
   "expires_in": 31622400,
-  "access_token": "***J.W.T***",
+  "access_token": "******",
   "refresh_token": "******"
 }
 ```
@@ -121,8 +119,8 @@ curl -X POST \
 | --------------- | ------------------------- |
 | `token_type`    | 令牌类型，固定值 `Bearer` |
 | `expires_in`    | 令牌的有效时间（秒）      |
-| `access_token`  | Access Token (JWT 格式)   |
-| `refresh_token` | 刷新令牌                  |
+| `access_token`  | Access Token            |
+| `refresh_token` | 刷新令牌                 |
 
 ### 使用 Access Token
 
