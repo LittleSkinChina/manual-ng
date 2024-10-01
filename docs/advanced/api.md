@@ -16,10 +16,18 @@ LittleSkin 使用 Blessing Skin 最新开发版本，支持通过 Blessing Skin 
 
 通常来说，此页面列出的大多数 API 均需鉴权。一些无需鉴权即可使用的 API 会被特别标出。
 
-## Blessing Skin Server API 文档
+## Blessing Skin API 文档
 
-按理来说，LittleSkin 的 Blessing Skin Server API 与原版 Blessing Skin Server API 完全一致，
-你可以直接参考 Blessing Skin Server API 的文档：[Blessing Skin 用户手册 - Web API](https://blessing.netlify.app/api/)
+按理来说，LittleSkin 的 Blessing Skin API 与原版 Blessing Skin API 完全一致，你可以直接参考 Blessing Skin API 的文档：[Blessing Skin 用户手册 - Web API](https://blessing.netlify.app/api/)。
+
+除此之外，这里还有一些 Blessing Skin API 的文档中没有提到的，请求部分 API 时可能需要请求用户授予的权限：
+
+| 权限节点                         | 解释                          |
+| -------------------------------- | ----------------------------- |
+| `User.Read`                      | 读取用户基本信息              |
+| `Player.Read` `Player.ReadWrite` | 读取/读写用户的角色和对应材质 |
+| `Closet.Read` `Closet.ReadWrite` | 读取/读写用户的衣柜收藏       |
+| `Notification.Read`              | 读取用户的站内通知            |
 
 ## LittleSkin 特有的 API
 
@@ -80,7 +88,7 @@ GET https://littleskin.cn/api/premium-verification
 
 返回用户正版验证状态。
 
-需要在 [OAuth2](./oauth2.md) 阶段提供 `PremiumVerification.Read` Scope。
+需要在 [OAuth2](./oauth2.md) 授权时请求 `PremiumVerification.Read` 权限。
 
 ::: details 说明
 

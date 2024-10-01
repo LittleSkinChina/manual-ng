@@ -202,7 +202,14 @@ export default defineConfig({
           text: '高级功能',
           link: '/advanced/',
           items: [
-            { text: 'OAuth 2', link: '/advanced/oauth2' },
+            {
+              text: 'OAuth 2',
+              link: '/advanced/oauth2',
+              items: [
+                { text: '授权代码流', link: '/advanced/oauth2/authorization-code-grant' },
+                { text: '设备代码流', link: '/advanced/oauth2/device-authorization-grant' },
+              ]
+            },
             { text: 'LittleSkin API', link: '/advanced/api' },
           ]
         },
