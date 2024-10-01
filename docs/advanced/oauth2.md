@@ -6,7 +6,7 @@ outline: [2, 3]
 
 <!--@include: ./for-experts.template.md-->
 
-LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用 LittleSkin 账户登录」这样的功能。
+LittleSkin 实现了 OAuth 2 服务端。你可以在你的应用中集成「使用 LittleSkin 账户登录」这样的功能。
 
 ## 参考文档
 
@@ -85,6 +85,8 @@ code = {{code}}
 
 ```
 
+::: details curl 示例
+
 ```bash
 curl -X POST \ 
   --url "https://littleskin.cn/oauth/token" \
@@ -95,6 +97,8 @@ curl -X POST \
   --data "redirect_uri={{redirect_uri}}" \
   --data "code={{code}}"
 ```
+
+:::
 
 | 参数            | 值                          |
 | --------------- | --------------------------- |
@@ -131,11 +135,15 @@ GET https://littleskin.cn/api/user HTTP/1.1
 Authorization: Bearer {{access_token}}
 ```
 
+::: details curl 示例
+
 ```bash
 curl -X GET \
   --url "https://littleskin.cn/api/user" \
   --header "Authorization: Bearer {{access_token}}"
 ```
+
+:::
 
 如果一切在预料之中，这个请求会正确地返回用户的基本信息。
 
@@ -156,6 +164,8 @@ client_secret = {{client_secret}} &
 scope = {{scope}}
 ```
 
+::: details curl 示例
+
 ```bash
 curl -X POST \
   --url "https://littleskin.cn/oauth/token" \
@@ -166,6 +176,8 @@ curl -X POST \
   --data "client_secret={{client_secret}}" \
   --data "scope={{scope}}"
 ```
+
+:::
 
 | 参数            | 值                     |
 | --------------- | ---------------------- |
