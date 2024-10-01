@@ -55,7 +55,7 @@ LittleSkin 支持 OAuth 2 服务端。你可以在你的应用中集成「使用
 客户端拼接 Authorize URL 并引导用户在**浏览器**中访问。
 
 ```plain
-https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redirect_uri}&response_type=code&scope={scope}
+https://littleskin.cn/oauth/authorize?client_id={{client_id}}&redirect_uri={{redirect_uri}}&response_type=code&scope={{scope}}
 ```
 
 | 参数            | 值                     |
@@ -76,7 +76,7 @@ https://littleskin.cn/oauth/authorize?client_id={client_id}&redirect_uri={redire
 客户端构造 URL 并发起 POST 请求。
 
 ```http
-POST https://littleskin.cn/oauth/token
+POST https://littleskin.cn/oauth/token HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 grant_type = authorization_code &
@@ -129,7 +129,7 @@ curl -X POST \
 在此使用 Access Token 获取用户基本信息。
 
 ```http
-GET https://littleskin.cn/api/user
+GET https://littleskin.cn/api/user HTTP/1.1
 Authorization: Bearer {{access_token}}
 ```
 
@@ -148,7 +148,7 @@ curl -X GET \
 为了延长 Access Token 的过期时间，可在 Access Token 有效期内请求更新有效期。
 
 ```http
-POST https://littleskin.cn/oauth/token
+POST https://littleskin.cn/oauth/token HTTP/1.1
 Content-Type: application/x-www-form-urlencoded
 
 grant_type = refresh_token &
