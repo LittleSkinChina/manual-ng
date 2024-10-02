@@ -123,10 +123,10 @@ Content-Type: application/json
 
 以下仅列举了错误响应中的 `error` 参数的部分常见值，更多错误类型和原因请参考 RFC 6749。
 
-| 错误类型          | 原因                                                    |
-| ----------------- | ------------------------------------------------------- |
-| `access_denied`   | 用户拒绝授权                                            |
-| `invalid_client`  | 应用未注册或未申请白名单                                |
-| `invalid_request` | 请求参数有误，如缺少必要参数、参数值不合法等            |
-| `invalid_scope`   | 请求的 scope 不合法，请查阅 [LittleSkin API](../api.md) |
-| `server_error`    | 服务器内部错误，请联系 LittleSkin 运营组                |
+| 错误类型          | 原因                                                        |
+| ----------------- | ---------------------------------------------------------- |
+| `access_denied`   | 用户拒绝授权                                                |
+| `invalid_client`  | 应用未注册或未申请白名单                                      |
+| `invalid_request` | 请求参数有误，如缺少必要参数、参数值不合法等                    |
+| `invalid_scope`   | 请求的 scope 不合法，请查阅 [LittleSkin API](../api.md)       |
+| `server_error`    | 服务器内部错误，请 [联系 LittleSkin 运营组](../../problems.md) |

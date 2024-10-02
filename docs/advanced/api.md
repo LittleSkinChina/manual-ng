@@ -22,12 +22,12 @@ LittleSkin 使用 Blessing Skin 最新开发版本，支持通过 Blessing Skin 
 
 除此之外，这里还有一些 Blessing Skin API 的文档中没有提到的，请求部分 API 时可能需要请求用户授予的权限：
 
-| 权限节点                         | 解释                          |
-| -------------------------------- | ----------------------------- |
-| `User.Read`                      | 读取用户基本信息              |
-| `Player.Read` `Player.ReadWrite` | 读取/读写用户的角色和对应材质 |
-| `Closet.Read` `Closet.ReadWrite` | 读取/读写用户的衣柜收藏       |
-| `Notification.Read`              | 读取用户的站内通知            |
+| 权限节点                           | 解释                          |
+| ---------------------------------- | ----------------------------- |
+| `User.Read`                        | 读取用户基本信息              |
+| `Player.Read` / `Player.ReadWrite` | 读取 / 读写用户的角色和对应材质 |
+| `Closet.Read` / `Closet.ReadWrite` | 读取 / 读写用户的衣柜收藏       |
+| `Notification.Read`                | 读取用户的站内通知            |
 
 ## LittleSkin 特有的 API
 
