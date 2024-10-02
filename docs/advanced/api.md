@@ -7,7 +7,7 @@ outline: [2, 3]
 <!--@include: ./for-experts.template.md-->
 
 ::: warning 注意
-当前 Blessing Skin Server API 和我们的部分 API 正处于试验阶段，API 不稳定并随时可能发生破坏性变更，敬请留意。
+当前 Blessing Skin API 和我们的部分 API 正处于试验阶段，API 不稳定并随时可能发生破坏性变更，敬请留意。
 :::
 
 LittleSkin 使用 Blessing Skin 最新开发版本，支持通过 Blessing Skin Server API 使用 LittleSkin 的各种功能，包括但不限于获取角色信息、更改角色材质等。
