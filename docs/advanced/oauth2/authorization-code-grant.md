@@ -9,7 +9,7 @@ _授权代码授予（Authorization Code Grant）_ 使用 **授权代码流（Au
 > [!NOTE] 适用场景
 >
 > - 有后端服务器
-> - 应用通过后端服务器获取 _访问令牌（Access Token）_
+> - 应用通过后端服务器获取访问令牌
 
 > [!WARNING] ⚠ 部分功能尚未实现
 > 目前 LittleSkin 尚未支持 PKCE。如果你希望在无后端的 SPA 或原生应用中获取访问令牌，请考虑使用 [设备代码流](./device-authorization-grant.md)。
