@@ -1,29 +1,40 @@
 # 通过授权代码流获取 OAuth 访问令牌
 
-授权代码流适用于有后端服务器，且应用通过后端服务器获取访问令牌的场景。
+<!--@include: ../for-experts.template.md-->
 
-目前 LittleSkin 尚未支持 PKCE。
+_授权代码授予（Authorization Code Grant）_ 使用 **授权代码流（Authorization Code Flow）** 获取访问令牌（Access Token），是最常见的 OAuth 2.0 认证流。
 
 若要了解关于 OAuth 2.0 授权代码授予和授权代码流的更多信息，请参阅 [RFC 6749](https://datatracker.ietf.org/doc/html/rfc6749)。
 
+> [!NOTE] 适用场景
+>
+> - 有后端服务器
+> - 应用通过后端服务器获取 _访问令牌（Access Token）_
+
+> [!WARNING] ⚠ 部分功能尚未实现
+> 目前 LittleSkin 尚未支持 PKCE
+
 ## 请求授权代码
 
-客户端需要按以下格式拼接授权 URL，并引导用户在**浏览器**中访问：
+应用需要按以下格式拼接授权 URL，并引导用户在**浏览器**中访问：
 
 ```plain
 https://littleskin.cn/oauth/authorize?client_id={{client_id}}&redirect_uri={{redirect_uri}}&response_type=code&scope={{scope}}
 ```
 
-| 参数            | 值                     |
-| --------------- | ---------------------- |
-| `client_id`     | ...                    |
-| `redirect_uri`  | ...                    |
-| `response_type` | 固定值 `code`          |
+| 参数            | 值                                         |
+| --------------- | ------------------------------------------ |
+| `client_id`     | ...                                        |
+| `redirect_uri`  | ...                                        |
+| `response_type` | 固定值 `code`                              |
 | `scope`         | 要申请的权限列表，多个权限节点间以空格分隔 |
 
-若 `scope` 参数为空，则默认为 `User.Read`。要了解具体的每个 API 要求申请的权限，请参阅 [LittleSkin API](./api.md)。
+若 `scope` 参数为空，则默认为 `User.Read`。
 
-在用户完成授权后，LittleSkin 将会将用户重定向至回调 URL (`redirect_uri`)，并在 Query String 中包含一个名为 `code` 的参数，这个参数的值即为本次授权的授权代码。
+> [!TIP] 了解有效的 scope 权限列表
+> 要了解具体的每个 API 要求申请的权限，请查阅 [LittleSkin API](../api.md)。
+
+在用户完成授权后，LittleSkin 将会将用户重定向至回调 URL (`redirect_uri`)，并在 <mark>URL 的 Query String 中包含一个名为 `code` 的参数</mark>。这个参数的值即为本次授权的授权代码。
 
 ## 兑换访问令牌
 
@@ -74,22 +85,29 @@ Content-Type: application/json
 | --------------- | ------------------------- |
 | `token_type`    | 令牌类型，固定值 `Bearer` |
 | `expires_in`    | 令牌的有效时间（秒）      |
-| `access_token`  | 访问令牌                 |
-| `refresh_token` | 刷新令牌                 |
+| `access_token`  | 访问令牌                  |
+| `refresh_token` | 刷新令牌                  |
 
-至此即完成了授权代码流的所有流程，成功获取到了访问令牌。
+🎉 至此即完成了授权代码流的所有流程，成功获取到了访问令牌。
 
 ## 错误响应
 
 在 OAuth 2 授权过程中，如发生错误，LittleSkin 将返回错误响应。
 
-如错误在授权过程中发生，LittleSkin 会将用户重定向至回调 URL，并在 Query String 中包含 `error` 和 `error_description` 参数：
+错误响应中会包含以下参数，以告知导致错误的原因。这些参数在授权流的不同环节中可能出现于不同位置。
+
+| 参数                | 值                        |
+| ------------------- | ------------------------- |
+| `error`             | RFC 6749 中规定的错误类型 |
+| `error_description` | 人类可读的错误描述文本    |
+
+如错误在授权过程中发生，LittleSkin 会将用户重定向至回调 URL，并在 Query String 中包含上述参数：
 
 ```plain
 https://example.com/oauth/littleskin/callback?error={{error}}&error_description={{error_description}}
 ```
 
-如错误在兑换访问令牌时中发生，LittleSkin 会返回如下错误响应：
+如错误在兑换访问令牌时中发生，LittleSkin 会返回如下错误响应，并在响应体中包含上述参数：
 
 ```http
 HTTP/1.1 400 Bad Request // server_error 时为 500 Internal Error
@@ -101,19 +119,14 @@ Content-Type: application/json
 }
 ```
 
-| 参数                | 值                                    |
-| ------------------- | ------------------------------------- |
-| `error`             | RFC 6749 中规定的错误类型            |
-| `error_description` | 人类可读的错误描述文本                |
-
 ### 错误类型
 
-以下只是列举 LittleSkin 可能返回的常见的错误，更多错误类型和原因请参考 RFC 6749。
+以下仅列举了错误响应中的 `error` 参数的部分常见值，更多错误类型和原因请参考 RFC 6749。
 
-| 错误类型                | 原因                                         |
-| ----------------------- | -------------------------------------------- |
-| `access_denied`         | 用户拒绝授权                                 |
-| `invalid_client`        | 应用未注册或未申请白名单                     |
-| `invalid_request`       | 请求参数有误，如缺少必要参数、参数值不合法等 |
-| `invalid_scope`         | 请求的 scope 不合法                          |
-| `server_error`          | 服务器内部错误，请联系 LittleSkin 运营组      |
+| 错误类型          | 原因                                                    |
+| ----------------- | ------------------------------------------------------- |
+| `access_denied`   | 用户拒绝授权                                            |
+| `invalid_client`  | 应用未注册或未申请白名单                                |
+| `invalid_request` | 请求参数有误，如缺少必要参数、参数值不合法等            |
+| `invalid_scope`   | 请求的 scope 不合法，请查阅 [LittleSkin API](../api.md) |
+| `server_error`    | 服务器内部错误，请联系 LittleSkin 运营组                |

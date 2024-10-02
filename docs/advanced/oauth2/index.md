@@ -1,6 +1,6 @@
 # OAuth 2
 
-<!--@include: ./for-experts.template.md-->
+<!--@include: ../for-experts.template.md-->
 
 LittleSkin 实现了 OAuth 2 服务端。通过 OAuth 2，你可以在你的应用中集成「使用 LittleSkin 账户登录」这样的功能，并请求读取和修改用户在 LittleSkin 上的数据。
 
@@ -23,10 +23,14 @@ LittleSkin 实现了 OAuth 2 服务端。通过 OAuth 2，你可以在你的应�
 
 对于需要鉴权的 API，需要先向用户请求授权，获取到访问令牌（Access Token）后，再向对应 API 发起请求。
 
-LittleSkin 支持授权代码授予（Authorization Code Grant）和设备授权授予（Device Authorization Grant），你可以通过授权代码流和设备代码流请求用户授权。
+LittleSkin 支持以下授权请求方式：
 
-<NCard title="授权代码授予" link="./authorization-code-grant">
-使用授权代码流获取访问令牌，适用于有后端的场景
+<NCard title="授权代码授予（Authorization Code Grant）" link="./authorization-code-grant" target="_blank">
+使用授权代码流（Authorization Code Flow）获取访问令牌，适用于有后端的场景
+</NCard>
+
+<NCard title="设备授权授予（Device Authorization Grant）" link="./device-authorization-grant" target="_blank">
+使用设备代码流（Device Code Flow）获取访问令牌，适用于无后端或其他受限制的场景
 </NCard>
 
 ## 使用访问令牌进行鉴权
