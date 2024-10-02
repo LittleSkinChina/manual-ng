@@ -19,7 +19,7 @@ LittleSkin 实现了 OAuth 2 服务端。通过 OAuth 2，你可以在你的应�
 - 客户端 ID / `client_id`
 - 客户端 Secret / `client_secret`
 
-## 请求用户授权
+## 获取访问令牌
 
 对于需要鉴权的 API，需要先向用户请求授权，获取到访问令牌（Access Token）后，再向对应 API 发起请求。
 
