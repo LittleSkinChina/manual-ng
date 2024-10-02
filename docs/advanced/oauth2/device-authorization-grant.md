@@ -66,7 +66,7 @@ Content-Type: application/json
 | `user_code`                 | string | 用户代码，需要展示给用户，让用户在授权页面输入此代码以授予应用权限 |
 | `device_code`               | string | 设备代码，用于应用轮询授权结果，不应展示给用户           |
 | `verification_uri`          | string | 授权页面 URL，需要将用户引导至此 URL 输入授权代码以进行授权  |
-| `verification_url_complete` | string | 带用户代码的授权页面 URL，如用户访问此 URL，则授权代码将自动代入输入框中，无需用户手动输入 |
+| `verification_uri_complete` | string | 带用户代码的授权页面 URL，如用户访问此 URL，则授权代码将自动代入输入框中，无需用户手动输入 |
 | `expires_in`                | number | 代码对有效期，单位为秒                                       |
 | `interval`                  | number | 应用轮询授权结果时的最小轮询间隔时间，单位为秒               |
 
