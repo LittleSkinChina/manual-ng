@@ -90,6 +90,64 @@ Content-Type: application/json
 
 🎉 至此即完成了授权代码流的所有流程，成功获取到了访问令牌。
 
+## 刷新访问令牌
+
+为了延长单次授权的有效期，可在访问令牌有效期及过期后一段时间内请求刷新访问令牌，以获取一个新的访问令牌。
+
+```http
+POST https://littleskin.cn/oauth/token HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=refresh_token&
+refresh_token={{refresh_token}}&
+client_id={{client_id}}&
+client_secret={{client_secret}}&
+```
+
+::: details curl 示例
+
+```bash
+curl -X POST \
+  --url "https://littleskin.cn/oauth/token" \
+  --header "Content-Type: application/x-www-form-urlencoded" \
+  --data "grant_type=refresh_token" \
+  --data "refresh_token={{refresh_token}}" \
+  --data "client_id={{client_id}}" \
+  --data "client_secret={{client_secret}}" \
+```
+
+:::
+
+| 参数            | 值                     |
+| --------------- | ---------------------- |
+| `grant_type`    | 固定值 `refresh_token` |
+| `refresh_token` | 先前获取到的刷新令牌   |
+| `client_id`     | ...                    |
+| `client_secret` | ...                    |
+
+如果请求成功，将返回如下响应：
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "token_type": "Bearer",
+  "expires_in": 259200,
+  "access_token": "******",
+  "refresh_token": "******"
+}
+```
+
+| 值              | 解释                      |
+| --------------- | ------------------------- |
+| `token_type`    | 令牌类型，固定值 `Bearer` |
+| `expires_in`    | 令牌的有效时间（秒）      |
+| `access_token`  | 新的访问令牌             |
+| `refresh_token` | 新的刷新令牌             |
+
+访问令牌刷新后，原先的访问令牌和刷新令牌将立即失效，之后所有的 API 请求都必须使用新的访问令牌。
+
 ## 错误响应
 
 在 OAuth 2 授权过程中，如发生错误，LittleSkin 将返回错误响应。
