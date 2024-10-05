@@ -172,6 +172,7 @@ export default defineConfig({
               link: '/feature/',
               items: [
                 { text: 'Passkey 登录', link: '/feature/passkey-login' },
+                { text: 'OAuth for Yggdrasil', link: '/feature/oauth-for-yggdrasil' },
               ]
             }
           ]
