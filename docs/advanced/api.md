@@ -117,3 +117,96 @@ Content-Type: application/json
 | `uuid`     | 无符号的正版 UUID，当存在时返回 |
 
 :::
+
+### 获取用户名下所有角色的 Yggdrasil 档案 <Badge type="tip" text="🔒 需要鉴权" />
+
+```http
+GET https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profiles HTTP/1.1
+Accept: application/json
+```
+
+需要在 [OAuth 2 授权](./oauth2/index.md#获取访问令牌) 时请求 `Yggdrasil.PlayerProfiles.Read` 权限。
+
+::: details 响应说明
+
+以下只是对 OpenAPI 文档的额外补充说明。
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+    {
+        "id": "{{uuid}}",
+        "name": "{{name}}",
+        "properties": [
+            {
+                "name": "{{property_name}}",
+                "value": "{{property_value}}"
+            }
+        ]
+    }
+]
+```
+
+| 参数                 | 类型   | 值                                                           |
+| -------------------- | ------ | ------------------------------------------------------------ |
+| （最外层的数组自身） | array  | 用户名下的所有角色列表                                       |
+| `[]`（数组元素）     | object | Yggdrasil 档案（不包含签名），详见 [Yggdrasil 服务端技术规范 - 角色信息的序列化](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83#%E8%A7%92%E8%89%B2%E4%BF%A1%E6%81%AF%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96) |
+
+:::
+
+> [!TIP] 只需要获取已知角色的档案？
+> 在已知角色名或角色 UUID 的情况下，可直接通过请求 Yggdrasil API 获取角色的 Yggdrasil 档案，无需鉴权。请参阅：[Yggdrasil 服务端技术规范 - 角色部分](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83#%E8%A7%92%E8%89%B2%E9%83%A8%E5%88%86)
+
+### 获取 Minecraft 令牌 <Badge type="tip" text="🔒 需要鉴权" />
+
+```http
+POST https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profiles HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+
+{
+    "uuid": "{{uuid}}"
+}
+```
+
+获取一个用于 authlib-injector 外置登录的 Minecraft 令牌（即 Yggdrasil API 中的 Access Token）。
+
+需要在 [OAuth 2 授权](./oauth2/index.md#获取访问令牌) 时请求 `Yggdrasil.MinecraftToken.Create` 权限。
+
+| 参数           | 类型   | 值                                    |
+| -------------- | ------ | ------------------------------------- |
+| `uuid`         | string | 选定的角色的 UUID，无符号               |
+
+通过该 API 创建 Minecraft 令牌时不支持指定 Client Token，只能由服务端随机生成。
+
+::: details 响应说明
+
+以下只是对 OpenAPI 文档的额外补充说明。
+
+```http
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+    "accessToken": "{{access_token}}",
+    "clientToken": "{{client_token}}",
+    "availableProfiles": [
+      {
+        "id": "{{uuid}}",
+        "name": "{{name}}"
+      }
+    ],
+    "selectedProfile": {
+      "id": "{{uuid}}",
+      "name": "{{name}}"
+    }
+}
+```
+
+响应内容（包括错误响应）即是 Yggdrasil API 的登录 API 的响应内容，详见: [Yggdrasil 服务端技术规范 - 登录](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83#%E7%99%BB%E5%BD%95)
+
+此 API 签发的 Minecraft 令牌与 Yggdrasil API 签发的 Minecraft 令牌一致，可直接通过 Yggdrasil API 进行刷新、验证、吊销、加入服务器等操作。同理，通过 Yggdrasil API 执行的登出操作也会使此 API 签发的 Minecraft 令牌被吊销。
+
+:::
