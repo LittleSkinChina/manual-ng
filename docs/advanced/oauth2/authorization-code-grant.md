@@ -1,3 +1,7 @@
+---
+outline: [2, 3]
+---
+
 # 通过授权代码流获取 OAuth 访问令牌
 
 <!--@include: ../for-experts.template.md-->
