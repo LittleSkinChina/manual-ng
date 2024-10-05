@@ -38,7 +38,7 @@ LittleSkin 使用 Blessing Skin 最新开发版本，支持通过 Blessing Skin 
 若 OpenAPI 文档中的表述与此文档不一致，以 OpenAPI 文档为准。
 </NCard>
 
-### 站点公告 Announcements <Badge type="info" text="🔓 无需鉴权" />
+### 站点公告 Announcements <Badge type="info" text="🔓 无需鉴权" /> {get-announcements}
 
 ```http
 GET https://littleskin.cn/api/announcements HTTP/1.1
@@ -84,7 +84,7 @@ Content-Type: application/json
 
 :::
 
-### 查询正版验证状态 PremiumVerification <Badge type="tip" text="🔒 需要鉴权" />
+### 查询正版验证状态 PremiumVerification <Badge type="tip" text="🔒 需要鉴权" /> {premiun-verification}
 
 ```http
 GET https://littleskin.cn/api/premium-verification HTTP/1.1
@@ -118,7 +118,7 @@ Content-Type: application/json
 
 :::
 
-### 获取用户名下所有角色的 Yggdrasil 档案 <Badge type="tip" text="🔒 需要鉴权" />
+### 获取用户名下所有角色的 Yggdrasil 档案 <Badge type="tip" text="🔒 需要鉴权" /> {get-all-yggdrail-profiles-by-username}
 
 ```http
 GET https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profiles HTTP/1.1
@@ -159,7 +159,7 @@ Content-Type: application/json
 > [!TIP] 只需要获取已知角色的档案？
 > 在已知角色名或角色 UUID 的情况下，可直接通过请求 Yggdrasil API 获取角色的 Yggdrasil 档案，无需鉴权。请参阅：[Yggdrasil 服务端技术规范 - 角色部分](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83#%E8%A7%92%E8%89%B2%E9%83%A8%E5%88%86)
 
-### 获取 Minecraft 令牌 <Badge type="tip" text="🔒 需要鉴权" />
+### 获取 Minecraft 令牌 Get Minecraft Token <Badge type="tip" text="🔒 需要鉴权" /> {get-minecraft-token}
 
 ```http
 POST https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profiles HTTP/1.1
