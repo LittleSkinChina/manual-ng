@@ -126,6 +126,10 @@ Content-Type: application/json
 
 至此即完成了设备代码流的所有流程，成功获取到了访问令牌。
 
+> [!NOTE] 不支持刷新令牌
+>
+> 设备代码流目前不支持刷新令牌。如需延长授权的有效期，请重新请求用户授权。
+
 ### 关于 ID 令牌
 
 ID 令牌（ID Token）是 OpenID Connect 规范的内容。OpenID Connect 是由 OpenID Foundation 提出的一种基于 OAuth 2.0 的用户身份验证协议。若要了解更多关于 OpenID Connect 的信息，请访问 [OpenID 官网](https://openid.net)。
