@@ -45,6 +45,8 @@ Accept: application/json
 Authorization: Bearer {{access_token}}
 ```
 
+如访问令牌有效，LittleSkin 将正常返回 API 响应；如访问令牌无效，LittleSkin 将返回 `HTTP 401 Unauthorized` 错误。如应用访问了用户未授权的资源，LittleSkin 将返回 `HTTP 200 OK`，但 JSON 响应中将包含一个 `code` 参数，其值为 `403`。
+
 如要了解更多 API 的用法，请参阅 [LittleSkin API](./api.md)。
 
 > [!IMPORTANT] 建议在请求中添加 Accept 头
