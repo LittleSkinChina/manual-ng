@@ -41,7 +41,13 @@ LittleSkin 支持以下授权请求方式：
 
 ```http
 GET https://littleskin.cn/api/user HTTP/1.1
+Accept: application/json
 Authorization: Bearer {{access_token}}
 ```
 
 如要了解更多 API 的用法，请参阅 [LittleSkin API](./api.md)。
+
+> [!IMPORTANT] 建议在请求中添加 Accept 头
+> 我们建议在请求 API 时在 HTTP 请求中添加 `Accept: application/json` 头。
+>
+> 一般情况下，即使不添加这个头，LittleSkin API 也将返回 JSON 响应，但在部分错误情况下可能会返回意想不到的响应。因此，除文档中特别说明的情况外，请在请求中添加这个头。

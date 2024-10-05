@@ -42,6 +42,7 @@ LittleSkin 使用 Blessing Skin 最新开发版本，支持通过 Blessing Skin 
 
 ```http
 GET https://littleskin.cn/api/announcements HTTP/1.1
+Accept: application/json
 ```
 
 返回站点公告的列表。
@@ -87,6 +88,7 @@ Content-Type: application/json
 
 ```http
 GET https://littleskin.cn/api/premium-verification HTTP/1.1
+Accept: application/json
 ```
 
 返回用户正版验证状态。

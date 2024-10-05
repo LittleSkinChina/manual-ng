@@ -43,6 +43,7 @@ https://littleskin.cn/oauth/authorize?client_id={{client_id}}&redirect_uri={{red
 ```http
 // 请求体中的换行只是为了方便阅读，实际发起请求时不应换行，下同
 POST https://littleskin.cn/oauth/token HTTP/1.1
+Accept: application/json
 Content-Type: application/x-www-form-urlencoded
 
 grant_type=authorization_code&
@@ -57,6 +58,7 @@ code={{code}}
 ```bash
 curl -X POST \ 
   --url "https://littleskin.cn/oauth/token" \
+  --header "Accept: application/json" \
   --header "Content-Type: application/x-www-form-urlencoded" \
   --data "grant_type=authorization_code" \
   --data "client_id={{client_id}}" \
@@ -96,6 +98,7 @@ Content-Type: application/json
 
 ```http
 POST https://littleskin.cn/oauth/token HTTP/1.1
+Accept: application/json
 Content-Type: application/x-www-form-urlencoded
 
 grant_type=refresh_token&
@@ -109,6 +112,7 @@ client_secret={{client_secret}}&
 ```bash
 curl -X POST \
   --url "https://littleskin.cn/oauth/token" \
+  --header "Accept: application/json" \
   --header "Content-Type: application/x-www-form-urlencoded" \
   --data "grant_type=refresh_token" \
   --data "refresh_token={{refresh_token}}" \

@@ -28,6 +28,7 @@
 ```http
 // 请求体中的换行只是为了方便阅读，实际发起请求时不应换行，下同
 POST https://open.littleskin.cn/oauth/device_code HTTP/1.1
+Accept: application/json
 Content-Type: application/x-www-form-urlencoded
 
 client_id={{client_id}}&
@@ -78,6 +79,7 @@ Content-Type: application/json
 
 ```http
 POST https://open.littleskin.cn/oauth/token HTTP/1.1
+Accept: application/json
 Content-Type: application/x-www-form-urlencoded
 
 grant_type=urn:ietf:params:oauth:grant-type:device_code&
