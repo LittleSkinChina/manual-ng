@@ -113,7 +113,6 @@ Content-Type: application/json
     "token_type": "Bearer",
     "expires_in": 259200,
     "access_token": "{{access_token}}",
-    "refresh_token": "{{refresh_token}}",
     "id_token": "{{id_token}}"
 }
 ```
@@ -123,7 +122,6 @@ Content-Type: application/json
 | `token_type`    | string | 访问令牌类型，固定值 Bearer |
 | `expires_in`    | number | 访问令牌的有效期，单位为秒   |
 | `access_token`  | string | 访问令牌                   |
-| `refresh_token` | string | 刷新令牌                   |
 | `id_token`      | string | OpenID Connect 的 ID 令牌 |
 
 至此即完成了设备代码流的所有流程，成功获取到了访问令牌。
