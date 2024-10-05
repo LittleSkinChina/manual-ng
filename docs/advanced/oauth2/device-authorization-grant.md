@@ -45,6 +45,12 @@ scope={{scope}}
 > [!TIP] 了解有效的 scope 权限列表
 > 要了解具体的每个 API 要求申请的权限，请查阅 [LittleSkin API](../api.md)。
 
+> [!NOTE] 在授权时选择角色
+> 对于仅需要单一角色的 Yggdrasil 档案的应用（如启动器），可在请求设备代码对时申请 `Yggdrasil.PlayerProfiles.Select` 权限。
+> 
+> 申请该权限后，用户在授权时会被要求选择角色；用户授权完成后，LittleSkin 会在 ID 令牌中添加 `selectedProfile` 声明，其值即为用户选择的角色的 Yggdrasil 档案。
+>
+> 该特性暂时只在设备代码流中支持。对于授权代码流，请暂时先手动实现角色选择。
 
 如果应用不在白名单内，LittleSkin 会返回 `invalid_client` 错误；如果应用在白名单内，LittleSkin 将返回如下响应：
 
@@ -117,6 +123,33 @@ Content-Type: application/json
 | `id_token`      | string | OpenID Connect 的 ID 令牌 |
 
 至此即完成了设备代码流的所有流程，成功获取到了访问令牌。
+
+### 关于 ID 令牌
+
+ID 令牌（ID Token）是 OpenID Connect 规范的内容。OpenID Connect 是由 OpenID Foundation 提出的一种基于 OAuth 2.0 的用户身份验证协议。若要了解更多关于 OpenID Connect 的信息，请访问 [OpenID 官网](https://openid.net)。
+
+ID 令牌是一个 JWT，其无法作为访问令牌使用，但可用于识别用户身份。当前 LittleSkin 将 ID 令牌作为传递用户身份信息的一种方式，直接对 ID 令牌进行 JWT 验证和解析即可提取出其中包含的用户身份信息：
+
+| 声明              | 类型   | 值                                                          |
+| ----------------- | ------ | ---------------------------------------------------------- |
+| `aud`             | string | JWT 的受众，一般为客户端 ID                                 |
+| `exp`             | number | JWT 的过期时间，UNIX 时间戳                                 |
+| `iat`             | number | JWT 的签发时间，UNIX 时间戳                                 |
+| `iss`             | string | JWT 的签发者，一个 URL                                     |
+| `sub`             | string | JWT 所属的主体，一般为用户的 UID                            |
+| `selectedProfile` | object | 仅在申请了 `Yggdrasil.PlayerProfiles.Select` 权限的情况下包含，其值即是用户选择的角色的 Yggdrasil 档案（不包含签名），详见 [Yggdrasil 服务端技术规范 - 角色信息的序列化](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83#%E8%A7%92%E8%89%B2%E4%BF%A1%E6%81%AF%E7%9A%84%E5%BA%8F%E5%88%97%E5%8C%96) |
+
+> [!NOTE] 注意
+> 当前 LittleSkin 仅在设备代码流中返回 ID 令牌。对于授权代码流，请通过 [Blessing Skin API](../api#blessing-skin-api-文档) 请求用户信息。
+
+#### 获取用于验证 ID 令牌的密钥
+
+LittleSkin 部分实现了 OpenID Connect Discovery。ID 令牌中的 `iss` 声明的值为 JWT 签发者的标识符，是一个 URL。应用可以通过拼接 URL `{iss}/.well-known/openid-configuration` 并向其发起 GET 请求来获取 OpenID Connect Discovery 元数据。
+
+在 OpenID Connect Discovery 元数据中，有一项 `jwks_uri` 属性，其值为一个 URL。向该 URL 发起 GET 请求即可获取到一个 JWKS，其中包含的 JWK 即可用于验证 LittleSkin 签发的 ID 令牌的签名。
+
+> [!TIP] 如果在验证 ID 令牌时出现问题…
+> 当前 JWKS 中仅包含一个 JWK，因此 JWK 中不包含 `kid` 属性。这可能导致部分可以自动验证 JWT 的库在验证 LittleSkin 签发的 ID 令牌时报错。若出现这种情况，请手动导入 JWK，并在验证时手动指定所使用的密钥。
 
 ## 错误响应
 
