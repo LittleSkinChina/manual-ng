@@ -18,7 +18,7 @@ authlib-injector 外置登录利用了 Minecraft 自带的 Yggdrasil 鉴权认�
 
 与 Mojang 一样，我们认为向用户提供统一的身份验证体验的最好的方式就是 OAuth。OAuth 是一项开放且成熟的用户资源授权规范，允许第三方应用（如启动器）在经过用户授权的情况下访问用户所拥有的资源，而无需将用户名和密码直接提供给第三方应用。OAuth 允许用户通过网页授予第三方应用访问权限，以在不同平台上获得统一的用户体验（在这个智能设备横行的时代，随手拿出一台支持网页浏览器的设备几乎易如反掌），还可以通过基于 TOTP 或 [通行密钥](./passkey-login.md) 的二步验证功能（即将推出）保护自己的 LittleSkin 账号和服务器内游戏数据的安全。
 
-为实现这一特性，我们在 LittleSkin API 中添加了两个新的 API：[获取用户名下所有角色的 Yggdrasil 档案](../advanced/api.md#获取用户名下所有角色的-yggdrasil-档案) 和 [获取 Minecraft 令牌](../advanced/api.md#获取-minecraft-令牌)。应用可以在经过用户授权的情况下，通过第一个 API 获取用户名下角色的 Yggdrasil 档案，然后通过第二个 API 轻松获取 Minecraft 令牌，进以获得 Yggdrasil API 的访问权限。
+为实现这一特性，我们在 LittleSkin API 中添加了两个新的 API：[获取用户名下所有角色的 Yggdrasil 档案](../advanced/api.md#get-all-yggdrail-profiles-by-username) 和 [获取 Minecraft 令牌](../advanced/api.md#get-minecraft-token)。应用可以在经过用户授权的情况下，通过第一个 API 获取用户名下角色的 Yggdrasil 档案，然后通过第二个 API 轻松获取 Minecraft 令牌，进以获得 Yggdrasil API 的访问权限。
 
 我们在设计这一特性时充分考虑到了应用的适配难度。我们将第二个 API 的响应设计为与传统 Yggdrasil API 的登录 API 相同的响应，使得应用开发者可以直接重用这部分代码；同时，考虑到需要访问 Yggdrasil API 的应用大多是第三方 Minecraft 启动器，我们为 LittleSkin 添加了符合 [RFC 8628](https://datatracker.ietf.org/doc/html/rfc8628) 的 [OAuth 设备授权授予](../advanced/oauth2/device-authorization-grant.md) 支持——这也是大多数启动器实现微软正版登录的方式。
 
