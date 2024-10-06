@@ -24,7 +24,7 @@ LittleSkin 实现了 OAuth 2 服务端。通过 OAuth 2，你可以在你的应�
 
 ## 获取访问令牌
 
-对于需要鉴权的 API，需要先向用户请求授权，获取到访问令牌（Access Token）后，再向对应 API 发起请求。
+对于需要鉴权的 API，需要先向用户请求授权，获取到访问令牌（Access Token）后，再向对应的 API 发起请求。
 
 LittleSkin 支持以下授权请求方式：
 
@@ -38,7 +38,7 @@ LittleSkin 支持以下授权请求方式：
 
 ## 使用访问令牌进行鉴权
 
-在请求需要鉴权的 API 时，将访问令牌作为 Bearer Token 放入 HTTP 请求的 Authorization 头部中，即可完成鉴权。
+在请求需要鉴权的 API 时，将访问令牌作为 Bearer Token 放入 HTTP 请求的 Authorization 头中，即可完成鉴权。
 
 例如，使用访问令牌请求用户信息：
 

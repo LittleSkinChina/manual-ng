@@ -14,7 +14,6 @@ _设备授权授予（Device Authorization Grant）_ 使用 **设备代码流（
 >
 > - 用户输入受限
 > - 无后端服务器的 SPA 或原生应用
-> - 第三方 Minecraft 启动器（获取 _Yggdrasil 档案_ 和 _Minecraft 令牌_） ✨
 
 > [!NOTE] 其他授权方式
 > 对于有后端服务器，且希望应用通过后端服务器获取访问令牌的场景，建议使用 [授权代码流](./authorization-code-grant.md)。
@@ -69,7 +68,7 @@ scope={{scope}}
 > ⚠️ 该特性暂时只在设备代码流中支持。对于授权代码流，需要在应用内实现角色选择。
 
 ❌ 如果应用不在白名单内，LittleSkin 会返回 `invalid_client` 错误；  
-✅如果应用在白名单内，LittleSkin 将返回如下响应：
+✅ 如果应用在白名单内，LittleSkin 将返回如下响应：
 
 ```http
 HTTP/1.1 200 OK
@@ -96,12 +95,12 @@ Content-Type: application/json
 
 此时即获取到了设备代码对。应用需暂时留存设备代码（`device_code`），并将用户代码（`user_code`）展示给用户。
 
-应用需要引导用户或直接打开/调用浏览器，访问授权页面。授权页面的的 URL 为上方响应中的 `verification_uri` 或 `verification_uri_complete`。
+然后，应用需要引导用户或直接打开 / 调用浏览器，访问授权页面，并按页面提示操作。授权页面的的 URL 为上方响应中的 `verification_uri` 或 `verification_uri_complete`。
 
 > [!NOTE] 授权码
 > 在打开的授权页面中，用户代码（`user_code`）被称为「**授权码**」以帮助用户理解。
 >
-> 尽可能在应用中使用与授权页面上相同的描述。
+> 请尽可能在应用中使用与授权页面上相同的描述。
 
 ## 轮询授权结果
 
