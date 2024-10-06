@@ -16,6 +16,10 @@ LittleSkin 使用 Blessing Skin 最新开发版本，支持通过 Blessing Skin 
 
 通常来说，此页面列出的大多数 API 均需 [鉴权](./oauth2/index.md#使用访问令牌进行鉴权)。一些无需鉴权即可使用的 API 会被特别标出。
 
+---
+
+[[toc]]
+
 ## Blessing Skin API 文档
 
 按理来说，LittleSkin 的 Blessing Skin API 与原版 Blessing Skin API 完全一致，你可以直接参考 Blessing Skin API 的文档：[Blessing Skin 用户手册 - Web API](https://blessing.netlify.app/api/)。
@@ -38,7 +42,7 @@ LittleSkin 使用 Blessing Skin 最新开发版本，支持通过 Blessing Skin 
 若 OpenAPI 文档中的表述与此文档不一致，以 OpenAPI 文档为准。
 </NCard>
 
-### 站点公告 Announcements <Badge type="info" text="🔓 无需鉴权" /> {get-announcements}
+### 站点公告 Announcements <Badge type="info" text="🔓 无需鉴权" /> {#get-announcements}
 
 ```http
 GET https://littleskin.cn/api/announcements HTTP/1.1
@@ -84,7 +88,7 @@ Content-Type: application/json
 
 :::
 
-### 查询正版验证状态 PremiumVerification <Badge type="tip" text="🔒 需要鉴权" /> {premiun-verification}
+### 查询正版验证状态 PremiumVerification <Badge type="tip" text="🔒 需要鉴权" /> {#premiun-verification}
 
 ```http
 GET https://littleskin.cn/api/premium-verification HTTP/1.1
@@ -118,7 +122,7 @@ Content-Type: application/json
 
 :::
 
-### 获取用户名下所有角色的 Yggdrasil 档案 <Badge type="tip" text="🔒 需要鉴权" /> {get-all-yggdrail-profiles-by-username}
+### <Badge type="tip" text="Yggdrasil" /> 获取用户名下所有角色的 Yggdrasil 档案 <Badge type="tip" text="🔒 需要鉴权" /> {#get-all-yggdrail-profiles-of-user}
 
 ```http
 GET https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profiles HTTP/1.1
@@ -159,7 +163,7 @@ Content-Type: application/json
 > [!TIP] 只需要获取已知角色的档案？
 > 在已知角色名或角色 UUID 的情况下，可直接通过请求 Yggdrasil API 获取角色的 Yggdrasil 档案，无需鉴权。请参阅：[Yggdrasil 服务端技术规范 - 角色部分](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83#%E8%A7%92%E8%89%B2%E9%83%A8%E5%88%86)
 
-### 获取 Minecraft 令牌 Get Minecraft Token <Badge type="tip" text="🔒 需要鉴权" /> {get-minecraft-token}
+### <Badge type="tip" text="Yggdrasil" /> 获取 Minecraft 令牌 <Badge type="tip" text="🔒 需要鉴权" /> {#get-minecraft-token}
 
 ```http
 POST https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profiles HTTP/1.1
@@ -205,7 +209,7 @@ Content-Type: application/json
 }
 ```
 
-响应内容（包括错误响应）即是 Yggdrasil API 的登录 API 的响应内容，详见: [Yggdrasil 服务端技术规范 - 登录](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83#%E7%99%BB%E5%BD%95)
+响应内容（包括错误响应）即是 Yggdrasil API 的登录 API 的响应内容，详见：[Yggdrasil 服务端技术规范 - 登录](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83#%E7%99%BB%E5%BD%95)
 
 此 API 签发的 Minecraft 令牌与 Yggdrasil API 签发的 Minecraft 令牌一致，可直接通过 Yggdrasil API 进行刷新、验证、吊销、加入服务器等操作。同理，通过 Yggdrasil API 执行的登出操作也会使此 API 签发的 Minecraft 令牌被吊销。
 

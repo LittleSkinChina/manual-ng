@@ -6,22 +6,31 @@ outline: [2, 3]
 
 <!--@include: ../for-experts.template.md-->
 
-设备代码流一般适用于用户输入受限的设备，但无后端的 SPA 和原生应用也可以使用。
-
-对于有后端服务器，且希望应用通过后端服务器获取访问令牌的场景，建议使用 [授权代码流](./authorization-code-grant.md)。
+_设备授权授予（Device Authorization Grant）_ 使用 **设备代码流（Device Code Flow）** 获取访问令牌（Access Token）。
 
 若要了解关于设备授权授予和设备代码流的更多信息，请参阅 [RFC 8628](https://datatracker.ietf.org/doc/html/rfc8628)。
 
+> [!NOTE] 适用场景
+>
+> - 用户输入受限
+> - 无后端服务器的 SPA 或原生应用
+> - 第三方 Minecraft 启动器（获取 _Yggdrasil 档案_ 和 _Minecraft 令牌_） ✨
+
+> [!NOTE] 其他授权方式
+> 对于有后端服务器，且希望应用通过后端服务器获取访问令牌的场景，建议使用 [授权代码流](./authorization-code-grant.md)。
+
 > [!TIP] 请求 ID
 > 正常情况下，该部分 API 的所有 HTTP 响应中均包含 `X-Yggdralt-Req-ID` 头，其值为本次请求对应的请求 ID。
-> 
+>
 > LittleSkin 运营组可通过请求 ID 快速了解请求详情，因此，在通过 LittleSkin 官方渠道寻求协助时，请务必提供请求 ID。
 
 ## 申请设备代码流白名单
 
 由于公共客户端存在潜在的安全问题，若要使用设备代码流获取访问令牌，需要先为应用申请设备代码流白名单。
 
-请先在 [OAuth 2 应用管理](https://littleskin.cn/user/oauth/manage) 中，将应用的回调 URL 设置为 `https://open.littleskin.cn/oauth/callback`，然后使用你的 LittleSkin 账号绑定的邮箱发送 [邮件工单](../../email.md)，在邮件标题中注明「申请 OAuth 设备代码流白名单」，并在邮件正文中提供你的应用名称和客户端 ID。LittleSkin 运营组会在一周内审核你的申请，视情况将应用添加至白名单中，并通过邮件回复审核结果。
+请先在  [<BSSection>OAuth 2 应用管理</BSSection>](https://littleskin.cn/user/oauth/manage) 中，将应用的回调 URL 设置为 `https://open.littleskin.cn/oauth/callback`，然后使用你的 LittleSkin 账号绑定的邮箱发送 [邮件工单](../../email.md)，在邮件标题中注明「申请 OAuth 设备代码流白名单」，并在邮件正文中提供你的应用名称和客户端 ID。
+
+LittleSkin 运营组会在一周内审核你的申请，视情况将应用添加至白名单中，并通过邮件回复审核结果。
 
 ## 请求设备代码对
 
@@ -49,14 +58,18 @@ scope={{scope}}
 > [!TIP] 了解有效的 scope 权限列表
 > 要了解具体的每个 API 要求申请的权限，请查阅 [LittleSkin API](../api.md)。
 
-> [!NOTE] 在授权时选择角色
+> [!IMPORTANT] 在授权时选择角色
 > 对于仅需要单一角色的 Yggdrasil 档案的应用（如启动器），可在请求设备代码对时申请 `Yggdrasil.PlayerProfiles.Select` 权限。
-> 
-> 申请该权限后，用户在授权时会被要求选择角色；用户授权完成后，LittleSkin 会在 ID 令牌中添加 `selectedProfile` 声明，其值即为用户选择的角色的 Yggdrasil 档案。
 >
-> 该特性暂时只在设备代码流中支持。对于授权代码流，请暂时先手动实现角色选择。
+> 与之相对的，若不申请此权限，则需要在应用内实现角色选择。
+>
+> - 申请该权限后，用户在授权时会被要求选择角色；
+> - 用户授权完成后，LittleSkin 会在 ID 令牌中添加 `selectedProfile` 声明，其值即为用户选择的角色的 Yggdrasil 档案。
+>
+> ⚠️ 该特性暂时只在设备代码流中支持。对于授权代码流，需要在应用内实现角色选择。
 
-如果应用不在白名单内，LittleSkin 会返回 `invalid_client` 错误；如果应用在白名单内，LittleSkin 将返回如下响应：
+❌ 如果应用不在白名单内，LittleSkin 会返回 `invalid_client` 错误；  
+✅如果应用在白名单内，LittleSkin 将返回如下响应：
 
 ```http
 HTTP/1.1 200 OK
@@ -77,15 +90,22 @@ Content-Type: application/json
 | `user_code`                 | string | 用户代码，需要展示给用户，让用户在授权页面输入此代码以授予应用权限 |
 | `device_code`               | string | 设备代码，用于应用轮询授权结果，不应展示给用户           |
 | `verification_uri`          | string | 授权页面 URL，需要将用户引导至此 URL 输入授权代码以进行授权  |
-| `verification_uri_complete` | string | 带用户代码的授权页面 URL，如用户访问此 URL，则授权代码将自动代入输入框中，无需用户手动输入 |
+| `verification_uri_complete` | string | 带用户代码的授权页面 URL，如用户访问此 URL，则授权代码将自动代入输入框中，无需用户手动输入 ✨ |
 | `expires_in`                | number | 代码对有效期，单位为秒                                       |
 | `interval`                  | number | 应用轮询授权结果时的最小轮询间隔时间，单位为秒               |
 
-此时即获取到了设备代码对。应用应暂时保存设备代码（`device_code`），然后将用户代码（`user_code`）展示给用户，引导用户访问授权页面（`verification_url`），在授权页面中输入用户代码后按页面提示操作，以完成授权。
+此时即获取到了设备代码对。应用需暂时留存设备代码（`device_code`），并将用户代码（`user_code`）展示给用户。
+
+应用需要引导用户或直接打开/调用浏览器，访问授权页面。授权页面的的 URL 为上方响应中的 `verification_uri` 或 `verification_uri_complete`。
+
+> [!NOTE] 授权码
+> 在打开的授权页面中，用户代码（`user_code`）被称为「**授权码**」以帮助用户理解。
+>
+> 尽可能在应用中使用与授权页面上相同的描述。
 
 ## 轮询授权结果
 
-获取到设备代码对后，应用应以 `interval` 为间隔，向 LittleSkin 发送如下请求，轮询授权结果：
+在等待用户完成授权时，应用应以 `interval` 为间隔，向 LittleSkin 发送如下请求，轮询授权结果：
 
 ```http
 POST https://open.littleskin.cn/oauth/token HTTP/1.1
@@ -126,7 +146,7 @@ Content-Type: application/json
 
 至此即完成了设备代码流的所有流程，成功获取到了访问令牌。
 
-> [!NOTE] 不支持刷新令牌
+> [!WARNING] 不支持刷新令牌
 >
 > 设备代码流目前不支持刷新令牌。如需延长授权的有效期，请重新请求用户授权。
 
@@ -154,8 +174,10 @@ LittleSkin 部分实现了 OpenID Connect Discovery。ID 令牌中的 `iss` 声�
 
 在 OpenID Connect Discovery 元数据中，有一项 `jwks_uri` 属性，其值为一个 URL。向该 URL 发起 GET 请求即可获取到一个 JWKS，其中包含的 JWK 即可用于验证 LittleSkin 签发的 ID 令牌的签名。
 
-> [!TIP] 如果在验证 ID 令牌时出现问题…
-> 当前 JWKS 中仅包含一个 JWK，因此 JWK 中不包含 `kid` 属性。这可能导致部分可以自动验证 JWT 的库在验证 LittleSkin 签发的 ID 令牌时报错。若出现这种情况，请手动导入 JWK，并在验证时手动指定所使用的密钥。
+> [!NOTE] 如果在验证 ID 令牌时出现问题
+> 当前 JWKS 中仅包含一个 JWK，因此 JWK 中不包含 `kid` 属性。这可能导致部分可以自动验证 JWT 的库在验证 LittleSkin 签发的 ID 令牌时报错。
+>
+> 若出现这种情况，请手动导入 JWK，并在验证时手动指定所使用的密钥。
 
 ## 错误响应
 
