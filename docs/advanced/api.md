@@ -166,7 +166,7 @@ Content-Type: application/json
 ### <Badge type="tip" text="Yggdrasil" /> 获取 Minecraft 令牌 <Badge type="tip" text="🔒 需要鉴权" /> {#get-minecraft-token}
 
 ```http
-POST https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profiles HTTP/1.1
+POST https://littleskin.cn/api/yggdrasil/authserver/oauth HTTP/1.1
 Accept: application/json
 Content-Type: application/json
 
