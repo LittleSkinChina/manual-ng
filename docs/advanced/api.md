@@ -129,6 +129,8 @@ GET https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profiles
 Accept: application/json
 ```
 
+返回用户名下所有角色的 Yggdrasil 档案。
+
 需要在 [OAuth 2 授权](./oauth2/index.md#获取访问令牌) 时请求 `Yggdrasil.PlayerProfiles.Read` 权限。
 
 ::: details 响应说明
@@ -175,7 +177,7 @@ Content-Type: application/json
 }
 ```
 
-获取一个用于 authlib-injector 外置登录的 Minecraft 令牌（即 Yggdrasil API 中的 Access Token）。
+获取一个用于访问 Yggdrasil API 的 Minecraft 令牌（即 Yggdrasil API 中的 Access Token）。
 
 需要在 [OAuth 2 授权](./oauth2/index.md#获取访问令牌) 时请求 `Yggdrasil.MinecraftToken.Create` 权限。
 
@@ -214,3 +216,6 @@ Content-Type: application/json
 此 API 签发的 Minecraft 令牌与 Yggdrasil API 签发的 Minecraft 令牌一致，可直接通过 Yggdrasil API 进行刷新、验证、吊销、加入服务器等操作。同理，通过 Yggdrasil API 执行的登出操作也会使此 API 签发的 Minecraft 令牌被吊销。
 
 :::
+
+> [!TIP] Minecraft 令牌能用来做什么？
+> 请参阅 [Yggdrasil 外置登录](../yggdrasil/index.md)。
