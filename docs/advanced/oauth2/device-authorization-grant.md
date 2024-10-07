@@ -181,6 +181,9 @@ LittleSkin 部分实现了 OpenID Connect Discovery。ID 令牌中的 `iss` 声�
 >
 > 若出现这种情况，请手动导入 JWK，并在验证时手动指定所使用的密钥。
 
+> [!WARNING] ID 令牌的签名算法
+> 除 RS256 外，LittleSkin 还可能会使用 PS256、ES256 和 EdDSA 算法对 ID 令牌进行签名。在验证 ID 令牌之前，请确定你使用的 JWT 库支持这些算法。
+
 ## 错误响应
 
 除 [授权代码流 - 错误响应 - 错误类型](./authorization-code-grant.md#错误类型) 中提到的错误类型外，设备代码流还可能返回以下错误：
