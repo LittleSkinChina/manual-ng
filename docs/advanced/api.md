@@ -133,6 +133,11 @@ Accept: application/json
 
 需要在 [OAuth 2 授权](./oauth2/index.md#获取访问令牌) 时请求 `Yggdrasil.PlayerProfiles.Read` 权限。
 
+> [!WARNING] 存在权限冲突
+> `Yggdrasil.PlayerProfiles.Select` 权限与 `Yggdrasil.PlayerProfiles.Read` 权限冲突，无法同时申请。
+>
+> 如同时申请这两个权限，在设备代码流中，LittleSkin 将返回 `invalid_scope` 错误；在授权代码流中，用户将正常完成授权，但在请求 API 时可能会返回错误。
+
 ::: details 响应说明
 
 以下只是对 OpenAPI 文档的额外补充说明。
