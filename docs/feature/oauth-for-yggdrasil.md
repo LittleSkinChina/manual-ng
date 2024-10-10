@@ -6,7 +6,7 @@ authlib-injector 外置登录利用了 Minecraft 自带的 Yggdrasil 鉴权认�
 
 但传统的 Yggdrasil API 仍然存在设计上的缺陷。Yggdrasil API 的 [登录 API](https://github.com/yushijinhun/authlib-injector/wiki/Yggdrasil-%E6%9C%8D%E5%8A%A1%E7%AB%AF%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83#%E7%99%BB%E5%BD%95) 需要由启动器直接处理用户输入的账号和密码，并将其在 HTTP 请求中明文发送，这给了恶意程序盗取用户机密信息的可乘之机；且该 API 在设计上几乎没有考虑到二步验证，无法良好地保障用户的资产安全。
 
-为解决这一问题，Mojang 在 2020 年 10 月宣布，将原先的 Mojang 账号体系迁移至 Microsoft 账号，以在全平台上提供统一的身份认证体验。并通过 Microsoft 账号体系提供的多因素认证功能保障用户账号安全。这一迁移行动已于 2023 年 12 月完成。
+为解决这一问题，Mojang 在 2020 年 10 月宣布，将原先的 Mojang 账号体系迁移至 Microsoft 账号，以在全平台上提供统一的身份认证体验，并通过 Microsoft 账号体系提供的多因素认证功能保障用户账号安全。这一迁移行动已于 2023 年 12 月完成。
 
 ---
 
