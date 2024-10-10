@@ -176,11 +176,6 @@ LittleSkin 部分实现了 OpenID Connect Discovery。ID 令牌中的 `iss` 声�
 
 在 OpenID Connect Discovery 元数据中，有一项 `jwks_uri` 属性，其值为一个 URL。向该 URL 发起 GET 请求即可获取到一个 JWKS，其中包含的 JWK 即可用于验证 LittleSkin 签发的 ID 令牌的签名。
 
-> [!NOTE] 如果在验证 ID 令牌时出现问题
-> 当前 JWKS 中仅包含一个 JWK，因此 JWK 中不包含 `kid` 属性。这可能导致部分可以自动验证 JWT 的库在验证 LittleSkin 签发的 ID 令牌时报错。
->
-> 若出现这种情况，请手动导入 JWK，并在验证时手动指定所使用的密钥。
-
 > [!WARNING] ID 令牌的签名算法
 > 除 RS256 外，LittleSkin 还可能会使用 PS256、ES256 和 EdDSA 算法对 ID 令牌进行签名。在验证 ID 令牌之前，请确定你使用的 JWT 库支持这些算法。
 
