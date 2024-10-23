@@ -100,6 +100,8 @@ Content-Type: application/json
 
 然后，应用需要引导用户或直接打开 / 调用浏览器，访问授权页面，并按页面提示操作。授权页面的的 URL 为上方响应中的 `verification_uri` 或 `verification_uri_complete`。
 
+![输入授权码界面](../assets/oauth-for-yggdrasil/enter-user-code.png)
+
 > [!NOTE] 授权码
 > 在打开的授权页面中，用户代码（`user_code`）被称为「**授权码**」以帮助用户理解。
 >
