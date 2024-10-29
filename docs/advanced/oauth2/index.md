@@ -54,6 +54,11 @@ Authorization: Bearer {{access_token}}
 
 如要了解更多 API 的用法，请参阅 [LittleSkin API](../api.md)。
 
+> [!WARNING] 不要解码令牌
+> 请不要在代码中解码或验证任何不由你直接签发的令牌，即使其看起来像是某种你熟悉的形式——除非文档中明确说明你可以这么做。
+> 
+> LittleSkin 签发的令牌可以是任何形式，在代码中解码令牌可能导致你的应用在未来无法正常工作。因此，除非文档中明确说明你可以从令牌中获取信息，否则请始终将令牌视为不透明的字符串。
+
 > [!IMPORTANT] 建议在请求中添加 Accept 头
 > 我们建议始终在请求 API 时在 HTTP 请求中添加 `Accept: application/json` 头。
 >
