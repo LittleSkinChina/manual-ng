@@ -18,7 +18,9 @@ LittleSkin 自 CustomSkinLoader 14.7 起被添加到了 CustomSkinLoader 的默�
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/883.html)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/customskinloader)
 
-<GetCSL />
+<ClientOnly>
+    <GetCSL />
+</ClientOnly>
 
 ---
 
