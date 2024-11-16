@@ -60,9 +60,11 @@ head:
 你可以在 [新手指引 > 配置 Mod](/newbee/mod) 中学习如何正确配置皮肤 Mod；
 :::
 
-::: details 2. 你安装的其它 Mod（如 _NonUpdate_）干扰了皮肤 Mod 与 LittleSkin 之间的连接
+::: details 2. 你安装的其它 Mod（如 _NonUpdate / 不再有更新_）干扰了皮肤 Mod 与 LittleSkin 之间的连接
 
 🛠️ 解决方案：删除这些 Mod，或让它们绕过皮肤 Mod 与 LittleSkin 之间的连接。
+
+可参考 [登入失败：身份验证正在停机维护](#authentication-server-is-down) 的解决方案。
 :::
 
 ::: details 3. 你的材质被皮肤 Mod 缓存了 <Badge type="tip" text="🎯 最为常见" />
@@ -106,25 +108,68 @@ head:
 >
 > 幸运的是，这份手册中详细介绍了 [CustomSkinLoader 的配置方法](/newbee/csl)。
 
-## <Badge type="info">外置登录</Badge> <Badge type="tip" text="常见" /> 外置登录进入服务器时提示「无效的会话」/ accessToken 无效  {#invalid-session}
+## <Badge type="info">外置登录</Badge> 登入失败：身份验证正在停机维护  {#authentication-server-is-down}
+
+请检查你是否安装了会阻止网络请求的 Mod，这会影响到外置登录的正常工作。
+
+
+比较常见的 Mod 有：
+
+- [NonUpdate](https://www.curseforge.com/minecraft/mc-mods/non-update) （NU，不再有更新）
+- [NonUpdate Reloaded](https://modrinth.com/mod/non-update-reloaded) （NUR，不再有更新重制版）
+
+🛠️ 通常来说，**直接删除这类 Mod** 是最简单快速的解决方案。但这违背了你安装此类 Mod 的初衷。
+
+👇 此处特别列出上述 Mod 的 **配置方法**，以便在禁用更新的同时不影响 LittleSkin 外置登录的正常工作。
+
+::: details 🛠️ NonUpdate
+将 LittleSkin 的域名添加至 `.minecraft/nu-whitelist.txt`：
+
+```txt
+minecraft.net
+mojang.com
+// ...
+
+littleskin.cn  // [!code ++]
+```
+
+:::
+
+::: details 🛠️ NonUpdate Reloaded
+将 LittleSkin 的域名添加至 `.minecraft/config/nonupdate_reloaded.json`:
+
+```jsonc
+{
+  // ...
+  "whitelist": [
+    "$eminecraftservices.com",
+    "$emojang.com",
+    "$eminecraft.net"
+    "$elittleskin.cn" // [!code ++]
+  ],
+  // ...
+}
+```
+
+:::
+
+## <Badge type="info">外置登录</Badge> 外置登录进入服务器时提示「无效的会话」/ accessToken 无效  {#invalid-session}
 
 🛠️ 请先尝试退出游戏并在启动器中删除账号，然后重新登录。
-
-🛠️ 如果重新登录无法解决问题，请检查你在 LittleSkin <mark>绑定的邮箱中是否存在大写英文字母</mark>，如果有，请将其更改为全小写字母，然后再次在启动器中重新登录。
 
 <Helpme afdian readBeforeAsk>
 如果以上操作均无法解决问题，请在认真仔细阅读下面这个文章后，向我们寻求帮助。
 </Helpme>
-
-## <Badge type="info" text="皮肤 Mod" /> 为什么我无法使用 Universal Skin Mod 加载材质了？ {#universal-skin-mod}
-
-由于一些技术上的原因，LittleSkin 自 2020 年 1 月起不再支持 UniSkinAPI。你仍然可以通过传统加载方式加载材质，但我们建议使用 Universal Skin Mod 加载材质的用户尽快更换到 CustomSkinLoader。
 
 ## <Badge type="info" text="外置登录" /> 启动器下载 authlib-injector 失败  {#authlib-injector-failed-to-download}
 
 此问题比较罕见，但一般都是网络原因引起的，请在启动器中更换下载源后再试。
 
 如果你使用 HMCL 3，如果更换下载源后仍然报错，请手动下载 authlib-injector，将其放入 `%appdata%\.hmcl\`（Windows）或 `$HOME/.hmcl/`（Linux 和 macOS）中并重命名为 `authlib-injector.jar`。使用其他启动器的用户请咨询启动器作者。
+
+## <Badge type="info" text="皮肤 Mod" /> 为什么我无法使用 Universal Skin Mod 加载材质了？ {#universal-skin-mod}
+
+由于一些技术上的原因，LittleSkin 自 2020 年 1 月起不再支持 UniSkinAPI。你仍然可以通过传统加载方式加载材质，但我们建议使用 Universal Skin Mod 加载材质的用户尽快更换到 CustomSkinLoader。
 
 ## LittleSkin 支持 Minecraft 中国版（国服）吗？ {#about-netease}
 
