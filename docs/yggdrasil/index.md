@@ -1,24 +1,24 @@
 # Yggdrasil 外置登录
 
-LittleSkin 提供 Yggdrasil 验证鉴权服务。
+LittleSkin 提供 Yggdrasil 验证鉴权服务，也被简单地称为外置登录。
 
-外置登录需要配合其他技术一起实现。外置登录可以为玩家提供统一的非 Mojang 游戏外登录体验，并在不安装皮肤 Mod 的情况下加载来自 LittleSkin 的材质。
+外置登录可以为玩家提供统一的非 Mojang 游戏外登录体验，并在不安装皮肤 Mod 的情况下加载来自 LittleSkin 的材质。
+
+> [!WARNING] 外置登录不是联机服务
+> LittleSkin 可以在联机时提供皮肤和鉴权服务，但不提供联机服务本身。
 
 ## Yggdrasil API 地址
 
 LittleSkin 的 Yggdrasil API 的地址是：
 
-``` http
+```plain
 https://littleskin.cn/api/yggdrasil
 ```
 
-::: tip API 地址指示
-
-LittleSkin 已在全站启用 authlib-injector 的 API 地址指示（ALI）功能。
-
-因此，在支持此功能的启动器上，直接输入 `littlesk.in` 即可被识别。一下子就简单了很多 :tada:
-
-:::
+> [!NOTE] 😎 简化冗长的地址
+> LittleSkin 已在全站启用 authlib-injector 的 API 地址指示（ALI）功能。
+>
+> 在支持此功能的启动器上，直接输入 `littlesk.in` 即可被识别并自动转化为完整地址。
 
 ---
 
@@ -31,11 +31,11 @@ LittleSkin 已在全站启用 authlib-injector 的 API 地址指示（ALI）功�
 
 ---
 
-::: warning 有点高级
-以下部分是面向开发者和多人游戏服务器管理员的，普通用户可能无法理解。
+> [!WARNING] 有点高级
+> 以下部分是面向开发者和多人游戏服务器管理员的，普通用户可能无法理解。
+>
+> 如果你看不懂下面在说些什么，直接忽略这部分内容即可，这并不会影响你正常使用 LittleSkin 的基础功能。
 
-如果你看不懂下面在说些什么，直接忽略这部分内容即可，这并不会影响你正常使用 LittleSkin 的基础功能。
-:::
 
 ## 什么是外置登录？
 
@@ -69,17 +69,3 @@ LittleSkin 已在全站启用 authlib-injector 的 API 地址指示（ALI）功�
 只有玩家和服务器两端都正确配置后，外置登录才能正常工作。因此外置登录<mark>并不能用来登录至采用正版登录的服务器</mark>。
 
 如果仅仅是单人游戏，无需借助 Mod 即可在游戏内欣赏到自定义的皮肤也是一个不小的亮点。
-
-## authlib-injector
-
-> authlib-injector 为玩家提供统一的非 Mojang 登录体验。大多数的外置登录都使用 authlib-injector 来实现。
-
-你可以在 <https://authlib-injector.yushi.moe/> 下载到最新版本的 authlib-injector。
-
-开发者文档：[GitHub / authlib-injector / wiki](https://github.com/yushijinhun/authlib-injector/wiki)
-
-## MultiLogin
-
-> MultiLogin 是一款服务端插件， 功能是让您的服务器支持正版与多种外置登录共存， 用来连接两个或多个外置验证服务器下的玩家，让他们能在一起玩。
-
-此插件专为服务端设计。服务器管理员可参考此文档：[GitHub / MultiLogin / wiki](https://github.com/CaaMoe/MultiLogin/wiki)
