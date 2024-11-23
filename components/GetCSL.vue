@@ -6,7 +6,7 @@ const updated = ref('')
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 
-fetch('https://csl.littleservice.cn/detail.json').then(r => r.json()).then(r => {
+fetch('https://csl.3-3.dev/detail.json').then(r => r.json()).then(r => {
     latest.value = r.version
     updated.value = new Date(r.timestamp).toLocaleString()
 })
