@@ -8,6 +8,10 @@
 
 这份手册将帮助你了解如何使用 LittleSkin，并解决在此过程中你遇到的各种问题。
 
+---
+
+![LittleSkin 路线图](./assets/routemap.svg)
+
 ## 准备工作
 <p style="margin-bottom: 2em"></p>
 
