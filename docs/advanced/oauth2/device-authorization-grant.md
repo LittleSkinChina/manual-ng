@@ -6,7 +6,9 @@ outline: [2, 3]
 
 <!--@include: ../for-experts.template.md-->
 
-_设备授权授予（Device Authorization Grant）_ 使用 **设备代码流（Device Code Flow）** 获取访问令牌（Access Token）。
+_设备授权授予_ <Badge type="info" text="Device Authorization Grant" /> 使用 **设备代码流 <Badge type="info" text="Device Authorization Grant" />** 获取 _访问令牌_ <Badge type="info" text="Access Token" />。
+
+主要用于各类 Minecraft 启动器实现外置登录。
 
 若要了解关于设备授权授予和设备代码流的更多信息，请参阅 [RFC 8628](https://datatracker.ietf.org/doc/html/rfc8628)。
 
@@ -16,7 +18,7 @@ _设备授权授予（Device Authorization Grant）_ 使用 **设备代码流（
 > - 无后端服务器的 SPA 或原生应用
 
 > [!NOTE] 其他授权方式
-> 对于有后端服务器，且希望应用通过后端服务器获取访问令牌的场景，建议使用 [授权代码流](./authorization-code-grant.md)。
+> 对于有后端服务器，且希望应用通过后端服务器获取访问令牌的场景，建议使用 [授权代码流](./authorization-code-grant.md) <Badge type="info" text="Authorization Code Flow" />。
 
 > [!TIP] 请求 ID
 > 正常情况下，该部分 API 的所有 HTTP 响应中均包含 `X-Yggdralt-Req-ID` 头，其值为本次请求对应的请求 ID。
@@ -27,7 +29,10 @@ _设备授权授予（Device Authorization Grant）_ 使用 **设备代码流（
 
 由于公共客户端存在潜在的安全问题，若要使用设备代码流获取访问令牌，需要先为应用申请设备代码流白名单。
 
-请先在  [<BSSection>OAuth 2 应用管理</BSSection>](https://littleskin.cn/user/oauth/manage) 中，将应用的回调 URL 设置为 `https://open.littleskin.cn/oauth/callback`，然后使用你的 LittleSkin 账号绑定的邮箱发送 [邮件工单](../../email.md)，在邮件标题中注明「申请 OAuth 设备代码流白名单」，并在邮件正文中提供你的应用名称和客户端 ID。如应用需要申请 Yggdrasil 相关权限，还应在邮件正文中提供具体需要申请的 Yggdrasil 相关权限的列表。
+1. 在  [<BSSection>OAuth 2 应用</BSSection> 管理页面](https://littleskin.cn/user/oauth/manage) 中，将应用的回调 URL 设置为 **`https://open.littleskin.cn/oauth/callback`**
+2. 使用你的 LittleSkin 账号绑定的邮箱发送 [邮件工单](../../email.md)，在邮件标题中注明「`申请 OAuth 设备代码流白名单`」，并在邮件正文中提供你的 **应用名称** 和 **客户端 ID**
+
+   如应用需要申请 [Yggdrasil 相关权限](./scopes.md#yggdrasil-权限)，还应在邮件正文中提供具体列表。
 
 LittleSkin 运营组会在一周内审核你的申请，视情况将应用添加至白名单中，并通过邮件回复审核结果。如果运营组长时间未回复，请加入我们的 [官方用户交流群](../../user-group.md)，联系站点管理员处理。
 
@@ -100,7 +105,7 @@ Content-Type: application/json
 
 然后，应用需要引导用户或直接打开 / 调用浏览器，访问授权页面，并按页面提示操作。授权页面的的 URL 为上方响应中的 `verification_uri` 或 `verification_uri_complete`。
 
-![输入授权码界面](../assets/oauth-for-yggdrasil/enter-user-code.png)
+![输入授权码界面](../assets/oauth-for-yggdrasil/yggdrasil-connect-access-grant.webp)
 
 > [!NOTE] 授权码
 > 在打开的授权页面中，用户代码（`user_code`）被称为「**授权码**」以帮助用户理解。
