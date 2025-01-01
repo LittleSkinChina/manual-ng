@@ -7,6 +7,8 @@ import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 CustomSkinLoader 是我们最推荐的皮肤 Mod，也被称为 **CSL** 或 **万用皮肤补丁**。
 
+CustomSkinLoader 以游戏内的玩家名作为标识，按配置文件中设置的顺序依次从各个皮肤服务器尝试获取皮肤。
+
 LittleSkin 自 CustomSkinLoader 14.7 起被添加到了 CustomSkinLoader 的默认加载列表中，加载顺序仅次于正版皮肤。
 
 本文提供了修改 CustomSkinLoader 配置文件的方法，以令其优先从 LittleSkin 加载材质。
@@ -190,3 +192,6 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/4160.html)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/compatibilitylayerforcustomskinloader)
+
+> [!TIP] 提示
+> 你需要同时安装最新版本的 [CustomSkinLoader](#customskinloader) 和 CompatibilityLayerForCustomSkinLoader。
