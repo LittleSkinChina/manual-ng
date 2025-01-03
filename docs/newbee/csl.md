@@ -91,7 +91,7 @@ https://skin.prinzeugen.net/cape/*.png
 
 ---
 
-配置文件: `CustomSkinLoader.json` [<BSButton style="background-color: var(--vp-c-success-3)"><FA :icon="faFileArrowDown" /> 下载此文件 </BSButton>](/CustomSkinLoader.json)
+配置文件: `CustomSkinLoader.json` <a href="/CustomSkinLoader.json" download><BSButton style="background-color: var(--vp-c-success-3)"><FA :icon="faFileArrowDown" /> 下载此文件 </BSButton></a>
 
 > [!IMPORTANT] ✅ 建议直接下载 CustomSkinLoader 配置文件
 > 你可以下载到为 LittleSkin 量身定制的配置文件，此文件的内容与下方代码块的内容一致。
