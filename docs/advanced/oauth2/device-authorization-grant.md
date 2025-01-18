@@ -201,7 +201,6 @@ Content-Type: application/x-www-form-urlencoded
 grant_type=refresh_token&
 refresh_token={{refresh_token}}&
 client_id={{client_id}}&
-client_secret={{client_secret}}&
 ```
 
 | 参数            | 值                     |
@@ -220,7 +219,8 @@ Content-Type: application/json
   "token_type": "Bearer",
   "expires_in": 259200,
   "access_token": "******",
-  "refresh_token": "******"
+  "refresh_token": "******"，
+  "id_token": "******"
 }
 ```
 
