@@ -7,6 +7,8 @@ LittleSkin 提供 Yggdrasil 验证鉴权服务，也被简单地称为外置登�
 > [!WARNING] 外置登录不是联机服务
 > LittleSkin 可以在联机时提供皮肤和鉴权服务，但不提供联机服务本身。
 
+<!-- @include: @/pay-for-minecraft.template.md -->
+
 ## Yggdrasil API 地址
 
 LittleSkin 的 Yggdrasil API 的地址是：
@@ -36,12 +38,13 @@ https://littleskin.cn/api/yggdrasil
 >
 > 如果你看不懂下面在说些什么，直接忽略这部分内容即可，这并不会影响你正常使用 LittleSkin 的基础功能。
 
-
 ## 什么是外置登录？
 
-没有正版 Minecraft 账户的玩家通常都会使用 **离线登录** 来启动游戏，Minecraft 服务端提供了启用离线模式的选项。
+<!-- @include: @/pay-for-minecraft.template.md -->
 
-- 🏴‍☠️ 玩家只需要用户名即可进入服务端，服务端并不会验证进服玩家身份的合法性;  
+暂未购入正版 Minecraft 账户的玩家通常都会使用 **离线登录** 来启动游戏，Minecraft 服务端提供了启用离线模式的选项。
+
+- 🏴‍☠️ 玩家只需要用户名即可进入服务端，服务端并不会验证进服玩家身份的有效性;  
 - 😕 玩家在游戏中的样貌只能是 Steve 或 Alex 之类的默认皮肤，而不能是自定义的材质。
 
 为了让玩家在游戏中能欣赏到各自的皮肤，CustomSkinLoader 和 SkinsRestorer 等 Mod 或插件被广泛使用。
@@ -54,13 +57,13 @@ https://littleskin.cn/api/yggdrasil
 
 上述现象都是离线登录机制导致的。如果使用正版登录，基本不用为之操劳。
 
-而 **外置登录**，如同正版登录一样，可以避开上述问题。
+而 **外置登录**，也可以避开上述问题。
 
 > 其实，在游戏内部，外置登录的工作方式几乎如正版登录一模一样。
 
 如果将正版登录理解为游戏中官方的纯正的「内置登录」的话，那么「外置登录」的意思就很好理解了：
 
-**<mark>将 Minecraft 官方的登录鉴权服务器地址，通过一些手段，替换为第三方的登录鉴权服务器地址。</mark>**
+**<mark>将 Minecraft 官方的登录鉴权服务器地址，替换为第三方的登录鉴权服务器地址。</mark>**
 
 - 🔐 可控的鉴权
 - 👔 自定义皮肤 / 披风

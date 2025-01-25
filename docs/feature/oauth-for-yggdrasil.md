@@ -1,6 +1,25 @@
-# 通过 OAuth 访问 Yggdrasil API
+# Yggdrasil Connect / 通过 OAuth 访问 Yggdrasil API
 
-<!--@include: ../advanced/for-experts.template.md-->
+<!-- @include: @/advanced/for-experts.template.md -->
+<!-- @include: @/pay-for-minecraft.template.md -->
+
+
+---
+
+> [!IMPORTANT] 🔎 草案正在审阅中
+> 此功能是 [Yggdrasil Connect 草案](https://github.com/yushijinhun/authlib-injector/issues/268) 的一部分，处于公开审阅阶段。
+>
+> 我们深知，这份草案绝非简单的几句话就能定夺，它的实现依赖于社区的共同努力.
+>
+> 我们充分尊重且欢迎社区提出的每一条具有建设性的意见。
+
+> [!IMPORTANT] ♻️ 现有的传统 Yggdrasil API 短时间内不会终止服务
+> Yggdrasil Connect 和现有的传统 Yggdrasil API 会同时提供服务，以确保用户始终能够轻松、稳定地使用 LittleSkin 的服务。
+
+> [!WARNING] 🐞 最终的方案可能有所不同
+> 在 Yggdrasil Connect 草案的最终实现方案中，可能会与当前版本有所不同。
+
+---
 
 authlib-injector 外置登录利用了 Minecraft 自带的 Yggdrasil 鉴权认证系统，已经成为了多人游戏中用户身份认证的主流手段之一。
 

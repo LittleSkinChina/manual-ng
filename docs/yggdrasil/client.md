@@ -1,5 +1,7 @@
 # 在客户端配置 Yggdrasil 外置登录
 
+<!-- @include: @/pay-for-minecraft.template.md -->
+
 > [!TIP] 在多人游戏中的提示
 > 为客户端配置 Yggdrasil 外置登录确实能起到「在多人游戏中加载皮肤」的作用，但是这是建立在服务端已经正确配置了外置登录的基础上的。
 >

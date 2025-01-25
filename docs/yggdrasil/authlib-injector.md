@@ -25,6 +25,8 @@ fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.jso
 > [!WARNING] 这不是插件，也不是 Mod
 > authlib-injector 使用方式较为特殊，将其 JAR 文件放入服务端的 `plugins/` 或 `mods/` 目录下不会有任何作用。
 
+<!-- @include: @/pay-for-minecraft.template.md -->
+
 ## 获取 JAR 文件
 
 <GetAuthlibInjector :latest="latest" :updated="updated" :download="download" />

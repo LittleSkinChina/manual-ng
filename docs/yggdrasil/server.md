@@ -8,6 +8,8 @@ import { faUsers, faPlus } from '@fortawesome/free-solid-svg-icons'
 
 # 在服务端配置 Yggdrasil 外置登录
 
+<!-- @include: @/pay-for-minecraft.template.md -->
+
 在 Minecraft 服务端侧，存在多种配置外置登录的方式。
 
 ---
