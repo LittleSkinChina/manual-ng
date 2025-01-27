@@ -7,9 +7,9 @@ outline: [2, 3]
 import { ref } from 'vue'
 import GetAuthlibInjector from '../../components/GetAuthlibInjector.vue'
 
-const latest = ref('')
+const latest = ref('1.2.5')
 const updated = ref('')
-const download = ref('')
+const download = ref('https://authlib-injector.yushi.moe/artifact/53/authlib-injector-1.2.5.jar')
 
 fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.json()).then(r => {
     latest.value = r.version
@@ -31,7 +31,7 @@ fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.jso
 
 <GetAuthlibInjector :latest="latest" :updated="updated" :download="download" />
 
-下载 `authlib-injector-{{ latest }}.jar` 文件后，将其放入 **服务端启动脚本** 或 **服务端文件** 所在的文件夹中。
+📂 下载 `authlib-injector-{{ latest }}.jar` 文件后，将其放入 **服务端启动脚本** 或 **服务端文件** 所在的文件夹中。
 
 ## 配置各类服务端
 
@@ -59,17 +59,19 @@ fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.jso
     ::: code-group
 
     ``` bash-vue [需要添加的内容]
-    -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil
+    -javaagent:authlib-injector-{{ latest }}.jar=littleskin.cn
     ```
 
     ``` bash-vue [完整的启动指令示例]
-    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
+    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ latest }}.jar=littleskin.cn -jar paper-1.20.4-409.jar --nogui
     ```
 
     :::
 
-    - `authlib-injector-{{ latest }}.jar` 为指向 authlib-injector 的 `jar` 的路径或文件名
-    - `https://littleskin.cn/api/yggdrasil` 为 LittleSkin 的 Yggdrasil API 地址
+    | 参数                                | 说明                                                                                                              |
+    | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+    | `authlib-injector-{{ latest }}.jar` | 指向 authlib-injector 的 `jar` 的路径或文件名                                                                     |
+    | `littleskin.cn`                     | 简化后的 LittleSkin 的 Yggdrasil API 地址，authlib-injector 会自动将其补全为 `https://littleskin.cn/api/yggdrasil` |
 
 ### Velocity <Badge type="tip" text="Minecraft 1.13 +" />
 
@@ -93,21 +95,23 @@ Modern forwarding 是 Velocity 支持的一种独创格式。它以高效的二�
     ::: code-group
 
     ``` bash-vue [需要添加的内容]
-    -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil
+    -javaagent:authlib-injector-{{ latest }}.jar=littleskin.cn
     ```
 
     ``` bash-vue [Velocity 完整的启动指令示例]
-    java "-Dauthlibinjector.disableHttpd" -Xms512M -Xmx512M -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar velocity-3.3.0-SNAPSHOT-351.jar 
+    java "-Dauthlibinjector.disableHttpd" -Xms512M -Xmx512M -XX:+UseG1GC -XX:G1HeapRegionSize=4M -XX:+UnlockExperimentalVMOptions -XX:+ParallelRefProcEnabled -XX:+AlwaysPreTouch -javaagent:authlib-injector-{{ latest }}.jar=littleskin.cn -jar velocity-3.3.0-SNAPSHOT-351.jar 
     ```
 
     ``` bash-vue [Paper 子服务器 完整的启动指令示例]
-    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
+    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ latest }}.jar=littleskin.cn -jar paper-1.20.4-409.jar --nogui
     ```
 
     :::
 
-  - `authlib-injector-{{ latest }}.jar` 为指向 authlib-injector 的 `jar` 的路径或文件名
-  - `https://littleskin.cn/api/yggdrasil` 为 LittleSkin 的 Yggdrasil API 地址
+    | 参数                                | 说明                                                                                                              |
+    | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
+    | `authlib-injector-{{ latest }}.jar` | 指向 authlib-injector 的 `jar` 的路径或文件名                                                                     |
+    | `littleskin.cn`                     | 简化后的 LittleSkin 的 Yggdrasil API 地址，authlib-injector 会自动将其补全为 `https://littleskin.cn/api/yggdrasil` |
 
 ### Waterfall / BungeeCord <Badge type="warning" text="不再推荐" />
 
@@ -146,15 +150,15 @@ BungeeCord 和 Waterfall 属于亲兄弟好姐妹，因此，以下配置同时�
     ::: code-group
 
     ``` bash-vue [需要添加的内容]
-    -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil
+    -javaagent:authlib-injector-{{ latest }}.jar=littleskin.cn
     ```
 
     ``` bash-vue [Waterfall / BungeeCord 完整的启动指令示例]
-    java -Xms512M -Xmx512M -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar waterfall-562.jar
+    java -Xms512M -Xmx512M -javaagent:authlib-injector-{{ latest }}.jar=littleskin.cn -jar waterfall-562.jar
     ```
 
     ``` bash-vue [Paper 子服务器 完整的启动指令示例]
-    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ latest }}.jar=https://littleskin.cn/api/yggdrasil -jar paper-1.20.4-409.jar --nogui
+    java -Xms4G -Xmx16G -javaagent:authlib-injector-{{ latest }}.jar=littleskin.cn -jar paper-1.20.4-409.jar --nogui
     ```
 
     :::
