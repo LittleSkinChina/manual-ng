@@ -10,6 +10,8 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 
 > [!TIP] 仅支持 Java 版 Minecraft
 > 我们只能绑定正版的 Java 版 Minecraft 账号，如果你不拥有，则无法绑定。
+>
+> ❌ 仅仅拥有 Bedrock 版 Minecraft 是无法绑定的。
 
 > [!CAUTION] 可选的操作
 > 这并不是一个必须进行的操作，即使不绑定正版 Minecraft 也不会影响你使用 LittleSkin 的基础功能。
