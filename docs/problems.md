@@ -2,80 +2,69 @@
 outline: [2, 4]
 ---
 
-# 遇到问题了咋办
+# 遇到问题的应对方法
 
-> 任何事物都不可能尽善尽美，LittleSkin 也是如此。
+任何事物都不是十全十美的——LittleSkin 也是自然。所以，如果你在使用 LittleSkin 的过程中遇到了任何问题（包括但不限于：材质无法显示、网站出现错误），你可以按照下述内容的指导、逐步找到问题的解决方案。
 
-如果你在使用 LittleSkin 的过程中遇到了任何问题（包括但不限于材质无法显示、网站出现错误等），请认真阅读并充分理解下述内容，这会对你有帮助。
+## 「自检」
 
-## 遇到问题后的第一反应
+绝大多数情况下的 LittleSkin 很稳定。因此，在遇到问题时，你应该尝试「自检」，也就是检查问题是否发生在你的设备上。
 
-<div align="center" style="line-height: 1.5em; font-size: 1.5em; padding: 2em 1em; margin: 2em 0; border: 1px solid var(--vp-c-text-1); border-radius: 8px">不要急，也不要慌，更不要气急败坏。</div>
+👉 网络异常、操作失误甚至你所使用的浏览器都可能导致你无法正常使用 LittleSkin。<mark>请先以自己的经验判断一下，你的问题是否是前几种或类似的因素造成的。</mark>
 
-大部分情况下，LittleSkin 是可以正常运行的。
-
-👉 所以在遇到问题时，你应该**检查一下是不是你自己的问题**，比如：网络错误、操作错误，甚至你自己的浏览器都可能导致你无法正常使用 LittleSkin。所以，<mark>在提问之前，请先以自己的经验判断一下，这是不是你自己的问题</mark>。
-
-👉 其次，你应该**阅读一遍 《常见问题解答 / FAQ》**。<mark>很多情况下你遇到的问题也曾经困扰过很多人，并且已经被总结出了解决方案。</mark>这种情况下，直接查阅这份 FAQ 能更快地解决你的问题。
+👉 如果你难以判断，请**阅读一遍 《常见问题解答 / FAQ》**。<mark>通常有许多人也遇到了和你一样的问题，它们也被总结出了解决方案。</mark>或许 FAQ 就有解决你的问题的方案呢？
 
 <NCard title="🤔 常见问题解答 / FAQ" link="/faq/">
 说不定就有你正在努力寻找的答案。
 </NCard>
 
-如果你确定不是你自己的问题，并且你遇到的问题并未列举在 FAQ 中，你可以着手准备报告问题了。
+如果你「自检」完成并确认问题并不是发生在你的设备上，那么可以着手准备报告问题了。
 
-## 运营团队，或是帮助你的人，并不是神
+## 报告问题
 
-看起来你们大多数人好像都不知道的样子？
+### 不要「闭眼开车」
 
-那就让我们来告诉你们一个真理吧：
+我们相信你总在某个地方看到过这句出自 Apache httpd 文档的句子：
 
-<div align="center" style="padding: 2em; margin: 2em 0; border: 1px solid var(--vp-c-text-1); border-radius: 8px">
-<p align="left">Troubleshooting any problem without the error log is like driving with your eyes closed.</p>
-<p align="right" style="font-size: 1.15em">在没有错误日志的情况下诊断任何问题无异于闭眼开车。</p>
-</div>
+> _Troubleshooting any problem without the error log is like driving with your eyes closed._
+> _（在没有错误日志的情况下诊断问题无异于闭眼开车。）_
+> ——[Apache Getting Started](https://httpd.apache.org/docs/2.4/getting-started.html)
 
-也就是说，不管是谁，都**很难通过只言片语快速定位你的问题**！
+因此，在报告问题之前，<mark>请接受 **只言片语 = 闭眼开车** 这个事实，并且不要让自己成为「闭眼开车」的人。</mark>在没有任何日志或报错截图的辅助下，我们无法通过「皮肤站出错了」、「无法加载皮肤」这种简洁至极的描述去快速定位并解决你的问题。
 
-所以，在每一次报告问题时，<mark>不要只丢下一句「皮肤站出错了」、「无法加载皮肤」就跑了。在没有日志、报错截图等信息的辅助下，我们 **不可能** 知道网线对面的你到底遇到了什么问题。</mark>
+### 我应如何报告问题？
 
-为了得到高效且愉悦的帮助，建议你按照以下步骤来报告问题 :point_down:
+如果你不清楚要如何报告问题，可以尝试根据下述步骤草拟问题报告。
 
-## 我应该提供哪些信息？
+#### 提问的主题
 
-可能需要视情况而定。这里列举几个通用的，重点部分已被我们加粗。
+你是想提问游玩 Minecraft 时遇到的问题，还是使用 LittleSkin 时遇到的问题？
 
-> [!NOTE] 感觉看不懂？
-> 如果你难以判断你需要提供哪些内容，请尽可能详细地描述你的问题，我们的支持团队会指导你提供相关信息。
+如果是前者，很抱歉，这些步骤仅适用于后者。我们也乐意为你提供适用于前者的帮助——前提是你需要在我们的闲聊群 [Honoka Café](https://manual.littlesk.in/user-group#cafe) 提问这些问题。
 
-### 1. 报错截图 <Badge type="info" text="网站" />
+#### 详细的描述
 
-如果是 LittleSkin 网站的问题，发生错误时，网站应该会给出相应的提示。可能是红色的弹窗，也可能是页面上的故障。
+用简短但有力的文字描述你所遇到的问题。这样，纵使你无法第一时间提供相关信息，我们的支持团队也会指导你提供它们。
 
-<mark>**请把相关的提示乃至整个屏幕截图**，并在提问时提供。</mark>
+#### 复现步骤
 
-### 2. 复现步骤 <Badge type="info">网站</Badge><Badge type="info" text="游戏内" />
+提供复现步骤可极大节省我们解决这个问题所耗费的时间。尝试着根据下述两个问题来告诉我们如何复现这个问题：
 
-许多问题**只会在特定的操作下出现**。提供复现步骤可以让我们了解你的问题是在何种操作下出现的，并快速定位问题所在和解决问题。
+1. 你想要做些什么？最终能达成什么？
+2. 截至问题出现，你做了一些什么？_换句话说，是做了什么导致问题的出现？_
 
-你可以从以下四个问题入手：
+#### 环境信息
 
-1. 你想要进行什么操作？为的是达到什么目的？
-2. 在问题发生之前，你分别都进行了哪些操作？
-3. <Badge type="info" text="网站" /> 你正在使用什么浏览器？你的操作系统是什么？网络环境是什么？
-4. <Badge type="info" text="游戏内" /> 你的游戏版本是多少？是单人游戏还是多人游戏？有没有安装特殊的 Mod？
+提供你的环境信息有利于我们更快判断问题所在。
 
-若能在提问时提供上述信息，则将极大提高我们提供精准服务的效率。
+- 若是网站上出现的问题，请告诉我们你的浏览器版本、操作系统版本及网络环境信息；
+- 若是游戏内出现的问题，请告诉我们你的游戏版本、游戏类型（单人游戏或多人游戏）、Mod 列表和 Java 版本。
 
-### 3. 日志 <Badge type="info" text="游戏内" />
+#### 日志文件
 
-日志文件记录了程序在运行过程中的详细信息，包括操作记录、错误提示、警告信息等。
+日志文件记录了程序在运行过程中的详细信息，包括操作记录、错误提示、警告信息等，是侦错时必不可少的信息。如果有，提问时请务必带上这些日志文件。
 
-日志之所以被设计出来，就是因为它可以帮助支持人员快速定位问题的根源，从而提供更准确的解决方案。
-
-各种日志是侦错时不可缺少的信息，所以如果有，提问时请带上这些日志：
-
-> [!NOTE] 关于版本隔离
+> [!NOTE] 注意版本隔离
 > 为了隔离一台设备上的多个 Minecraft 版本、整合包、Mod 等，很多启动器都使用了版本隔离技术，以确保他们之间互不干扰。
 >
 > 考虑到版本隔离的情况，一些文件的将会提供两个路径，以方便查找。
@@ -85,34 +74,37 @@ outline: [2, 4]
 > [!TIP] 启动器提供的便捷功能
 > 许多启动器都带有类似于 <BSSection>打开游戏文件夹</BSSection> 的功能，可以很方便地应对版本隔离的情况。
 
-#### <Badge type="info" text="皮肤 Mod" /> CustomSkinLoader
+##### <Badge type="info" text="皮肤 Mod" /> CustomSkinLoader
 
-CustomSkinLoader 的日志位于 `.minecraft/CustomSkinLoader/CustomSkinLoader.log`，  
-在使用版本隔离的情况下则为 `.minecraft/versions/{versions}/CustomSkinLoader/CustomSkinLoader.log`
+CustomSkinLoader 的日志文件位于 `.minecraft/CustomSkinLoader/CustomSkinLoader.log`，
+
+在使用版本隔离的情况下则为 `.minecraft/versions/{versions}/CustomSkinLoader/CustomSkinLoader.log`。
 
 ::: details 图示：日志文件的具体位置
+
 ![CustomSkinLoader 文件夹所处位置](./newbee/assets/mods/csl-folder.webp)
 
 ![CustomSkinLoader 的配置文件和日志文件](./newbee/assets/mods/csl-files.webp)
+
 :::
 
-#### <Badge type="info" text="外置登录" /> authlib-injector
+##### <Badge type="info" text="外置登录" /> authlib-injector
 
-如果是 Yggdrasil 外置登录的问题，请在添加 JVM 参数 `-Dauthlibinjector.debug` 并复现问题后，提供以下日志：
+如果是 Yggdrasil 外置登录的问题，请在添加 JVM 参数 `-Dauthlibinjector.debug` 并复现问题后，提供以下日志文件：
 
-- 服务端从开始到出错的所有日志（最后一次运行服务端生成的日志位于 `logs/latest.log`）
+- 服务端从开始到出错的日志文件（最后一次运行服务端生成的日志位于 `logs/latest.log`）
 
-- 客户端游戏从开始到出错的所有日志（最后一次游戏生成的日志位于 `.minecraft/logs/latest.log` 或 `.minecraft/versions/{versions}/logs/latest.log`）
+- 客户端游戏从开始到出错的日志文件（最后一次游戏生成的日志位于 `.minecraft/logs/latest.log` 或 `.minecraft/versions/{versions}/logs/latest.log`）
 
-  - 如果有，请优先使用启动器的 <BSSection>测试游戏</BSSection> 功能导出的日志
+  - 如果有，请优先使用启动器的 <BSSection>测试游戏</BSSection> 功能导出日志文件
 
-- 服务端和客户端的 authlib-injector 日志（最后一次生成的日志位于客户端游戏目录或服务端根目录下的 `authlib-injector.log`）
+- 服务端和客户端的 authlib-injector 日志文件（最后一次生成的日志文件位于客户端游戏目录或服务端根目录下的 `authlib-injector.log`）
 
-- 启动器日志（请咨询启动器作者以获取日志位置）
+- 启动器日志文件（请咨询启动器作者以获取日志文件的位置）
 
-<mark>提供日志时，**请直接发送日志文件，而不是提供日志截图**。如果没有这些日志，请在提问时说明清楚；如果你提问后被要求提供更多信息，请提供我们要求的信息以帮助我们查找问题。</mark>
+<mark>提供日志时，**请直接发送日志文件，而不是提供日志截图，更不要拍屏**。如果没有这些日志，请在提问时说明清楚；如果你提问后被要求提供更多信息，请提供我们要求的信息以帮助我们查找问题。</mark>
 
-## 我该去哪里提问？
+### 我应该在哪里提问？
 
 <p style="margin-bottom: 2em"></p>
 
@@ -125,3 +117,4 @@ CustomSkinLoader 的日志位于 `.minecraft/CustomSkinLoader/CustomSkinLoader.l
 <NCard title="🧑‍🔬 一对一技术支持" link="https://afdian.com/a/tnqzh123" >
 也可以通过 <strong>💰赞助支持</strong> 来获取高质量的一对一技术支持服务
 </NCard>
+
