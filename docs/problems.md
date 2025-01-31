@@ -24,11 +24,11 @@ outline: [2, 4]
 
 ### 不要「闭眼开车」
 
-我们相信你总在某个地方看到过这句出自 Apache httpd 文档的句子：
+我们相信，你总在某个地方看到过这句出自 Apache httpd 文档的句子：
 
 > _Troubleshooting any problem without the error log is like driving with your eyes closed._
 > _（在没有错误日志的情况下诊断问题无异于闭眼开车。）_
-> ——[Apache Getting Started](https://httpd.apache.org/docs/2.4/getting-started.html)
+> ——[Apache httpd - Getting Started](https://httpd.apache.org/docs/2.4/getting-started.html)
 
 因此，在报告问题之前，<mark>请接受 **只言片语 = 闭眼开车** 这个事实，并且不要让自己成为「闭眼开车」的人。</mark>在没有任何日志或报错截图的辅助下，我们无法通过「皮肤站出错了」、「无法加载皮肤」这种简洁至极的描述去快速定位并解决你的问题。
 
@@ -60,16 +60,24 @@ outline: [2, 4]
 - 若是网站上出现的问题，请告诉我们你的浏览器版本、操作系统版本及网络环境信息；
 - 若是游戏内出现的问题，请告诉我们你的游戏版本、游戏类型（单人游戏或多人游戏）、Mod 列表和 Java 版本。
 
-#### 日志文件
+#### <Badge type="info" text="网站" />报错截图
 
-日志文件记录了程序在运行过程中的详细信息，包括操作记录、错误提示、警告信息等，是侦错时必不可少的信息。如果有，提问时请务必带上这些日志文件。
+LittleSkin 发生错误时，用户会看到对应的错误提示——可能是红色弹窗，也可能是页面提示。
+
+<mark>请截取出现错误时的网站页面，并在提问时提供截图源文件。**注意：不要拍屏。**</mark>
+
+#### <Badge type="info" text="游戏" />日志文件
+
+日志文件记录了程序在运行过程中的详细信息，包括操作记录、错误提示、警告信息等，是侦错时必不可少的信息。
+
+如果有，提问时请务必带上这些日志文件。
 
 > [!NOTE] 注意版本隔离
 > 为了隔离一台设备上的多个 Minecraft 版本、整合包、Mod 等，很多启动器都使用了版本隔离技术，以确保他们之间互不干扰。
 >
 > 考虑到版本隔离的情况，一些文件的将会提供两个路径，以方便查找。
 >
-> 版本隔离路径中的 `{version}` 只是一个占位符，因人而异，实际路径不需要带大括号。
+> 下述列出的版本隔离路径中的 `{version}` 只是一个占位符，对应你所使用的客户端版本。**实际路径不需要带大括号。**
 
 > [!TIP] 启动器提供的便捷功能
 > 许多启动器都带有类似于 <BSSection>打开游戏文件夹</BSSection> 的功能，可以很方便地应对版本隔离的情况。
@@ -90,19 +98,25 @@ CustomSkinLoader 的日志文件位于 `.minecraft/CustomSkinLoader/CustomSkinLo
 
 ##### <Badge type="info" text="外置登录" /> authlib-injector
 
-如果是 Yggdrasil 外置登录的问题，请在添加 JVM 参数 `-Dauthlibinjector.debug` 并复现问题后，提供以下日志文件：
+如果是 Yggdrasil 外置登录的问题，请在启动游戏时额外添加 JVM 参数 `-Dauthlibinjector.debug` 并尝试复现问题。若问题复现成功，请提供以下日志文件：
 
-- 服务端从开始到出错的日志文件（最后一次运行服务端生成的日志位于 `logs/latest.log`）
+1. 服务端从开始到出错的日志文件；
+  - 最后一次运行服务端生成的日志位于 `logs/latest.log`；
+2. 客户端游戏从开始到出错的日志文件；
+  - 最后一次游戏生成的日志位于 `.minecraft/logs/latest.log` 或 `.minecraft/versions/{versions}/logs/latest.log`；
+  - 一些主流的启动器自带了 <BSSection>测试游戏</BSSection> 功能，请优先使用该功能导出日志文件；
+3. 服务端和客户端的 authlib-injector 日志文件；
+  - 最后一次生成的日志文件位于客户端游戏目录或服务端根目录下的 `authlib-injector.log`；
+4. 启动器日志文件；
+  - 如果不知道启动器日志在哪里，请咨询启动器作者。
 
-- 客户端游戏从开始到出错的日志文件（最后一次游戏生成的日志位于 `.minecraft/logs/latest.log` 或 `.minecraft/versions/{versions}/logs/latest.log`）
+<mark>提问时请提供日志源文件，**不要发送截图甚至拍屏**。如果没有日志文件，请在提问时第一时间说明清楚。</mark>
 
-  - 如果有，请优先使用启动器的 <BSSection>测试游戏</BSSection> 功能导出日志文件
+:::tip 可能需要提供更多信息
 
-- 服务端和客户端的 authlib-injector 日志文件（最后一次生成的日志文件位于客户端游戏目录或服务端根目录下的 `authlib-injector.log`）
+我们会在你提问后要求你提供更多的信息。请提供对应信息以帮助我们定位问题。
 
-- 启动器日志文件（请咨询启动器作者以获取日志文件的位置）
-
-<mark>提供日志时，**请直接发送日志文件，而不是提供日志截图，更不要拍屏**。如果没有这些日志，请在提问时说明清楚；如果你提问后被要求提供更多信息，请提供我们要求的信息以帮助我们查找问题。</mark>
+:::
 
 ### 我应该在哪里提问？
 
