@@ -12,7 +12,11 @@ outline: [2, 3]
 
 <!-- @include: @/pay-for-minecraft.template.md -->
 
-## 单服务端
+## 单服务端<Badge type="warning" text="过时" />
+> [!WARNING] 提示
+> MultiLogin 自 0.6.12 版本后不再分发 Bukkit、Bungee 的本体，且在后续暂停维护
+>
+> 我们建议您 [改用 Velocity](#velocity) 以获得更好的体验。
 
 我们建议直接参考 MultiLogin 的 [GitHub Wiki](https://github.com/CaaMoe/MultiLogin/wiki#%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE)。
 
