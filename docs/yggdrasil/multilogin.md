@@ -12,7 +12,7 @@ outline: [2, 3]
 
 <!-- @include: @/pay-for-minecraft.template.md -->
 
-## 单服务端<Badge type="warning" text="过时" />
+## 单服务端 <Badge type="warning" text="过时" />
 > [!WARNING] 提示
 > MultiLogin 自 0.6.12 版本后不再分发 Bukkit、Bungee 的本体，且在后续暂停维护
 >
