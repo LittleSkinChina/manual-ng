@@ -18,7 +18,7 @@ outline: [2, 3]
 >
 > 我们始终建议你使用 [最新版](https://github.com/CaaMoe/MultiLogin/releases) (Velocity)
 > 
-> Velocity配置教程: [点击这里](#velocity)
+> Velocity 配置教程: [点击这里](#velocity)
 
 我们建议直接参考 MultiLogin 的 [GitHub Wiki](https://github.com/CaaMoe/MultiLogin/wiki#%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE)。
 
