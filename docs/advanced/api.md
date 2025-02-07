@@ -125,7 +125,7 @@ Content-Type: application/json
 ### <Badge type="tip" text="Yggdrasil" /> 获取用户名下所有角色的 Yggdrasil 档案 <Badge type="tip" text="🔒 需要鉴权" /> {#get-all-yggdrail-profiles-of-user}
 
 ```http
-GET https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profiles HTTP/1.1
+GET https://littleskin.cn/api/yggdrasil/sessionserver/session/minecraft/profile HTTP/1.1
 Accept: application/json
 ```
 
