@@ -29,12 +29,30 @@ _设备授权授予_ <Badge type="info" text="Device Authorization Grant" /> 使
 
 由于公共客户端存在潜在的安全问题，若要使用设备代码流获取访问令牌，需要先为应用申请设备代码流白名单。
 
-1. 在  [<BSSection>OAuth 2 应用</BSSection> 管理页面](https://littleskin.cn/user/oauth/manage) 中，将应用的回调 URL 设置为 **`https://open.littleskin.cn/oauth/callback`**
+1. 在 [<BSSection>OAuth 2 应用</BSSection> 管理页面](https://littleskin.cn/user/oauth/manage) 中，将应用的回调 URL 设置为 **`https://open.littleskin.cn/oauth/callback`**
 2. 使用你的 LittleSkin 账号绑定的邮箱发送 [邮件工单](../../email.md)，在邮件标题中注明「`申请 OAuth 设备代码流白名单`」，并在邮件正文中提供你的 **应用名称** 和 **客户端 ID**
 
    如应用需要申请 [Yggdrasil 相关权限](./scopes.md#yggdrasil-权限)，还应在邮件正文中提供具体列表。
 
 LittleSkin 运营组会在一周内审核你的申请，视情况将应用添加至白名单中，并通过邮件回复审核结果。如果运营组长时间未回复，请加入我们的 [官方用户交流群](../../user-group.md)，联系站点管理员处理。
+
+> [!TIP] 参考模板
+>
+> 【收件人】：`support@littlesk.in`
+>
+> 【主题】：申请 OAuth 设备代码流白名单
+>
+> 【正文】：
+>
+> ```plaintext
+> 应用名称（必填）：
+> 客户端 ID（必填）：
+> 申请权限列表（可选，每行一个权限，如不需要可删除）：
+> Yggdrasil.PlayerProfiles.Read
+> Yggdrasil.PlayerProfiles.Select
+> Yggdrasil.Server.Join
+> 申请理由（可选）：
+> ```
 
 > [!WARNING] 测试模式
 > 如无特别说明，初次申请设备代码流白名单的应用将会被设为测试模式，仅允许应用的创建者进行授权。如需投入生产环境使用，请在应用开发完成后再次发送邮件工单，申请解除测试模式。
