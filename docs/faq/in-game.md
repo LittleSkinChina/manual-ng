@@ -125,12 +125,12 @@ head:
 ::: details 🛠️ NonUpdate
 将 LittleSkin 的域名添加至 `.minecraft/nu-whitelist.txt`：
 
-```txt
+```txt{5}
 minecraft.net
 mojang.com
 // ...
 
-littleskin.cn  // [!code ++]
+littleskin.cn
 ```
 
 :::
