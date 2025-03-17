@@ -48,6 +48,7 @@ LittleSkin 运营组会在一周内审核你的申请，视情况将应用添加
 > 应用名称（必填）：
 > 客户端 ID（必填）：
 > 申请权限列表（可选，每行一个权限，如不需要可删除）：
+> Yggdrasil.MinecraftToken.Create
 > Yggdrasil.PlayerProfiles.Read
 > Yggdrasil.PlayerProfiles.Select
 > Yggdrasil.Server.Join
