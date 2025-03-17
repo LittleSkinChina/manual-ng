@@ -59,4 +59,4 @@ OpenID Connect 标准作用域
 ### `Yggdrasil.Server.Join`
 加入 Minecraft 多人游戏服务器
 
-必须同时申请 `Yggdrasil.PlayerProfiles.Select`
+必须同时使用 `Yggdrasil.PlayerProfiles.Select` 或 `Yggdrasil.PlayerProfiles.Read`
