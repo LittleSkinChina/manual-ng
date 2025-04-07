@@ -21,8 +21,8 @@ importers:
         specifier: ^2.16.0
         version: 2.16.0(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
       '@nolebase/vitepress-plugin-highlight-targeted-heading':
-        specifier: ^2.15.1
-        version: 2.15.1(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
+        specifier: ^2.16.0
+        version: 2.16.0(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
       vitepress:
         specifier: 1.5.0
         version: 1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0)
@@ -334,8 +334,8 @@ packages:
     peerDependencies:
       vitepress: ^1.5.0 || ^2.0.0-alpha.1
 
-  '@nolebase/vitepress-plugin-highlight-targeted-heading@2.15.1':
-    resolution: {integrity: sha512-TASUbZOFjfI+Yw1wTr8nXhFkaHFxTVwm9OEODCBptOLujKLkkag06qVgUn3+GbKWKOYpWk6c1t3dtBd3+iE+ug==}
+  '@nolebase/vitepress-plugin-highlight-targeted-heading@2.16.0':
+    resolution: {integrity: sha512-PqXllM4hKRKDtzYm0rCLx0C4g9QsOumTNq70XzmW3BvxSuuVS0hgbYAH9rI5KbuvaCQDo34ao095DhG+vXnozA==}
     peerDependencies:
       vitepress: ^1.5.0 || ^2.0.0-alpha.1
 
@@ -673,11 +673,6 @@ packages:
   is-what@4.1.16:
     resolution: {integrity: sha512-ZhMwEosbFJkA0YhFnNDgTM4ZxDRsS6HqTo7qsZM08fehyRYIYa0yHu5R6mgo1n/8MgaPBXiPimPD77baVFYg+A==}
     engines: {node: '>=12.13'}
-
-  less@4.2.2:
-    resolution: {integrity: sha512-tkuLHQlvWUTeQ3doAqnHbNn8T6WX1KA8yvbKG9x4VtKtIjHsVKQZCH11zRgAfbDAXC2UNIg/K9BYAAcEzUIrNg==}
-    engines: {node: '>=6'}
-    hasBin: true
 
   less@4.3.0:
     resolution: {integrity: sha512-X9RyH9fvemArzfdP8Pi3irr7lor2Ok4rOttDXBhlwDg+wKQsXOXgHWduAJE1EsF7JJx0w0bcO6BC6tCKKYnXKA==}
@@ -1187,9 +1182,9 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@nolebase/vitepress-plugin-highlight-targeted-heading@2.15.1(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))':
+  '@nolebase/vitepress-plugin-highlight-targeted-heading@2.16.0(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))':
     dependencies:
-      less: 4.2.2
+      less: 4.3.0
       vitepress: 1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0)
 
   '@rollup/rollup-android-arm-eabi@4.35.0':
@@ -1543,20 +1538,6 @@ snapshots:
   is-what@3.14.1: {}
 
   is-what@4.1.16: {}
-
-  less@4.2.2:
-    dependencies:
-      copy-anything: 2.0.6
-      parse-node-version: 1.0.1
-      tslib: 2.8.1
-    optionalDependencies:
-      errno: 0.1.8
-      graceful-fs: 4.2.11
-      image-size: 0.5.5
-      make-dir: 2.1.0
-      mime: 1.6.0
-      needle: 3.3.1
-      source-map: 0.6.1
 
   less@4.3.0:
     dependencies:
