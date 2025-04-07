@@ -15,8 +15,8 @@ importers:
         specifier: ^3.0.8
         version: 3.0.8(@fortawesome/fontawesome-svg-core@6.5.2)(vue@3.5.13)
       '@nolebase/vitepress-plugin-enhanced-mark':
-        specifier: ^2.15.1
-        version: 2.15.1(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
+        specifier: ^2.16.0
+        version: 2.16.0(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
       '@nolebase/vitepress-plugin-enhanced-readabilities':
         specifier: ^2.16.0
         version: 2.16.0(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
@@ -324,8 +324,8 @@ packages:
     peerDependencies:
       vitepress: ^1.5.0 || ^2.0.0-alpha.1
 
-  '@nolebase/vitepress-plugin-enhanced-mark@2.15.1':
-    resolution: {integrity: sha512-IJYVbgzpIIXlYfT8RGZw2s6C43gddpL4GMKzE+a3K1UAxjBQ+OpH6lfWr+qn3RSxQxmyTXirTRcnj20ZZau3lg==}
+  '@nolebase/vitepress-plugin-enhanced-mark@2.16.0':
+    resolution: {integrity: sha512-TKHf7TR14D8WTfEcbhctNIWv4x4R/pQVzP2YU13mccM4tH4FQv4/E4/w1jQ6r6KTQo+cyBhh9zhtELjuH23y1Q==}
     peerDependencies:
       vitepress: ^1.5.0 || ^2.0.0-alpha.1
 
@@ -1172,9 +1172,9 @@ snapshots:
     transitivePeerDependencies:
       - typescript
 
-  '@nolebase/vitepress-plugin-enhanced-mark@2.15.1(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))':
+  '@nolebase/vitepress-plugin-enhanced-mark@2.16.0(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))':
     dependencies:
-      less: 4.2.2
+      less: 4.3.0
       vitepress: 1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0)
 
   '@nolebase/vitepress-plugin-enhanced-readabilities@2.16.0(vitepress@1.5.0(@algolia/client-search@5.21.0)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))':
