@@ -18,8 +18,8 @@ importers:
         specifier: ^2.16.0
         version: 2.16.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
       '@nolebase/vitepress-plugin-enhanced-readabilities':
-        specifier: ^2.16.0
-        version: 2.16.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
+        specifier: ^2.17.0
+        version: 2.17.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
       '@nolebase/vitepress-plugin-highlight-targeted-heading':
         specifier: ^2.16.0
         version: 2.16.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
@@ -319,8 +319,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@nolebase/ui@2.16.0':
-    resolution: {integrity: sha512-P/Q5ImarXUfgoqk2bV5FFfSVnHPpONd/HhkUaKxyWlL9TkNF+9PDyn/EztplnwBwzfd0sGX9L7wEP/Zd5PY38A==}
+  '@nolebase/ui@2.17.0':
+    resolution: {integrity: sha512-t0zr9FiUMju7W/iL/BzX+JuZZz0UgAC1ZMN4VKAOtRIUaQhPjE3LZMqfOrrsWhKNT8uTY7CVIcIzSulPuAe1og==}
     peerDependencies:
       vitepress: ^1.5.0 || ^2.0.0-alpha.1
 
@@ -329,8 +329,8 @@ packages:
     peerDependencies:
       vitepress: ^1.5.0 || ^2.0.0-alpha.1
 
-  '@nolebase/vitepress-plugin-enhanced-readabilities@2.16.0':
-    resolution: {integrity: sha512-taiG848UWFQizhJhbvbcpMo1JjA80aL4InepEcSJ9DxN7lNKJvqIOusSB6TjCBkNt8uY6jijSxjTI1tdec+ecg==}
+  '@nolebase/vitepress-plugin-enhanced-readabilities@2.17.0':
+    resolution: {integrity: sha512-3vSSK/sz9X3pnLFxch7o/WdQ7wOtxun16Jw6OnYxyS7tmGc7oLhR1GJaGBMkGCIkz8RX0Dwic4+HaExWZBPM/A==}
     peerDependencies:
       vitepress: ^1.5.0 || ^2.0.0-alpha.1
 
@@ -1152,7 +1152,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@nolebase/ui@2.16.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))':
+  '@nolebase/ui@2.17.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))':
     dependencies:
       '@iconify-json/octicon': 1.2.5
       less: 4.3.0
@@ -1166,11 +1166,11 @@ snapshots:
       less: 4.3.0
       vitepress: 1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0)
 
-  '@nolebase/vitepress-plugin-enhanced-readabilities@2.16.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))':
+  '@nolebase/vitepress-plugin-enhanced-readabilities@2.17.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))':
     dependencies:
       '@iconify-json/carbon': 1.2.8
       '@iconify-json/icon-park-outline': 1.2.2
-      '@nolebase/ui': 2.16.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
+      '@nolebase/ui': 2.17.0(vitepress@1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0))
       less: 4.3.0
       vitepress: 1.6.3(@algolia/client-search@5.23.3)(less@4.3.0)(postcss@8.5.3)(search-insights@2.13.0)
     transitivePeerDependencies:
