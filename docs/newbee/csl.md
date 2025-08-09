@@ -37,7 +37,7 @@ LittleSkin 自 CustomSkinLoader 14.7 起被添加到了 CustomSkinLoader 的默�
 - 显示的是你从**未使用过的陌生皮肤**
 - 只加载了皮肤而没有加载披风 <Badge type="info" text="仅旧版" />
 
-如果出现了上述情况，请参考本文中的 [手动修改配置文件](#edit-csl-config) 部分进行操作，以使其优先从 LittleSkin 加载材质。
+如果出现了上述情况，请参考本文中的 [**# 手动修改配置文件**](#edit-csl-config) 部分进行操作，以使其优先从 LittleSkin 加载材质。
 
 ## 版本：早期 <Badge type="danger" text="👎 不再推荐" />
 
@@ -153,6 +153,14 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 3. Blessing Skin
 4. ...
 
+::: details ✨ `14.25` 更新了加载列表
+自 `14.25` 更新后，CustomSkinLoader 引入了一个新的加载来源，即 *GameProfile*。
+
+*GameProfile* 现在默认拥有最高优先级。在多人游戏中，若服务端下发某玩家的 *GameProfile*，那么客户端会优先从该 *GameProfile* 加载材质，而不会再从 Mojang 官方的服务器（此前最高优先级）加载材质。
+
+如果在多人游戏中使用了皮肤插件之类的技术，那么 CustomSkinLoader 就会遵从，而不是像此前一样有自己的想法。
+:::
+
 有一些流程示意图可帮助你理解加载列表这个机制：
 
 ::: details 1. 默认配置 & Mojang 上不存在同名角色
@@ -177,7 +185,7 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 ![默认配置，尝试加载全部材质时的加载流程](./assets/mods/flow-loadall.webp)
 :::
 
-## CompatibilityLayerForCustomSkinLoader {#clfcsl}
+## CompatibilityLayerForCustomSkinLoader <Badge type="danger" text="仅限 Minecraft 1.7.10" /> {#clfcsl}
 
 > [!NOTE] 介绍
 > CustomSkinLoader 从 14.7 以来就已经放弃对 Minecraft 1.7.10 的支持，但是相较后续的 Minecraft 版本而言，从网络获取皮肤的过程并没有发生太大的变化。
@@ -191,7 +199,10 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 你可以在以下网站获取到关于 CompatibilityLayerForCustomSkinLoader 的更多信息。
 
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/4160.html)
-- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/compatibilitylayerforcustomskinloader)
+- [CurseForge](https://www.curseforge.com/minecraft/mc-mods/compatibilitylayerforcustomskinloader/files/all?page=1&pageSize=20&showAlphaFiles=show)
 
 > [!TIP] 提示
-> 你需要同时安装最新版本的 [CustomSkinLoader](#customskinloader) 和 CompatibilityLayerForCustomSkinLoader。
+> 你需要同时安装 [CustomSkinLoader](#customskinloader) 和 CompatibilityLayerForCustomSkinLoader 这两个 Mod。
+
+> [!IMPORTANT] 💡 来自其他用户的反馈
+> 如果发现加载纤细（Slim / Alex）模型的皮肤时遇到问题，那么请将 CustomSkinLoader 的版本回退至 `ForgeLegacy_14.17`。
