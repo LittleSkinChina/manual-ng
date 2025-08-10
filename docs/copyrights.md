@@ -5,7 +5,7 @@ import { faCopyright, faArchive } from '@fortawesome/free-solid-svg-icons'
 # 版权保护 Copyright Protection
 
 LittleSkin 深知每个材质都是创作者的心血结晶，因此，我们始终坚持尊重和保护创作者的权益。  
-We deeply recognizes that each skin or cape is the labor of love of its creator, and thus, we have always remained committed to respecting and safeguarding creators' rights.
+We deeply recognizes that each texture is the labor of love of its creator, and thus, we have always remained committed to respecting and safeguarding creators' rights.
 
 > [!IMPORTANT] Can't understand Chinese?
 > These documents are only available in Simplified Chinese at present. You may use [Google Translate](https://translate.google.com/?sl=zh-CN&op=websites).
@@ -24,7 +24,7 @@ We deeply recognizes that each skin or cape is the labor of love of its creator,
 <NCard title="🙋 维护作为创作者的权益 Safeguarding Your Rights as a Creator" link="#abuse">
 
 如果你是某个材质的原创作者，且该材质在 LittleSkin 上的存在形式不被你认可，你可以向我们提出异议。  
-If you are the original creator of a skin or cape and its presence on LittleSkin is unauthorized, you can submit a dispute to us.
+If you are the original creator of a texture and its presence on LittleSkin is unauthorized, you can submit a complaint.
 
 </NCard>
 
@@ -76,7 +76,7 @@ If you are the original creator of a skin or cape and its presence on LittleSkin
 <NCard title="🙋 加入用户交流群 Join Our User Group" link="/user-group" >
 
 在入群时可能需要提供账号有关信息，这要求你拥有 LittleSkin 账号  
-You may need to provide account information when joining, which requires you to have a LittleSkin account.
+You may be asked to provide your LittleSkin account info when joining the group.
 
 </NCard>
 <NCard title="📬️ 通过邮件发送工单 Submit Support Tickets via Email" link="/email" >
@@ -87,13 +87,16 @@ When submitting a ticket by email, please provide a detailed description of the 
 </NCard>
 
 一旦我们认可了你的维权申请，你可以选择对现有材质进行以下处理：  
-Once your dispute request is approved, you may choose one of the following actions regarding the texture:
+Once your complaint is accepted, you may choose one of the following actions regarding the texture:
+
 
 - 🗑️ 将该材质从 LittleSkin 中删除  
-  Remove the skin from LittleSkin
+  Delete the texture from LittleSkin
 - 📝 更改该材质的「材质来源」标签  
-  Modify the "Source Attribution" label
+  Modify the "Texture Source" label
+
 - 🔑 将该材质的所有人更改为你自己  
-  Transfer ownership of the skin to your account
+  Transfer ownership of the texture to your account
+
 - 🛠️ 其他你认为适合的处理方式  
   Any other appropriate action you deem necessary

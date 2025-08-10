@@ -14,9 +14,8 @@
 </NCard>
 
 > [!WARNING] 😱 忘记了密码？
-> 有不少用户曾在启动器内配置外置登录时才发现自己忘记了在 LittleSkin 上设置的密码。
->
-> 重置密码并非难事，先在 LittleSkin 网站上点击右上角的头像退出登录，然后你将被重定向到 LittleSkin 的登录页面。页面上有 <BSSection>忘记密码？</BSSection> 的字样，点击后按提示操作即可。
+> 重置密码并非难事，只需要在 LittleSkin 网站上点击右上角的头像退出登录，再在登录页面上找到 <BSSection>忘记密码？</BSSection> 链接，点击后按提示操作即可。
+
 
 ## HMCL 3
 

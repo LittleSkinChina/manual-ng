@@ -16,11 +16,11 @@ import { faArchive, faUpload, faStar } from '@fortawesome/free-solid-svg-icons'
 
 如果你拥有材质的源文件，你可以将其上传到皮肤库中。只有在皮肤库中的材质可以被添加到衣柜。
 
-LittleSkin 支持上传以下材质
+LittleSkin 支持上传以下材质：
 
 - 单层皮肤（大小为 64\*32 或其整数倍）
 - 双层皮肤（大小为 64\*64 或其整数倍）
-- 64\*32 的披风（但不支持 22\*17 的披风），鞘翅的材质应该直接画在披风上。
+- 64\*32 的披风（但不支持 22\*17 的披风），鞘翅的材质应该直接画在披风上
 
 所有材质文件都应该是 PNG 格式的图片。
 
@@ -57,9 +57,9 @@ LittleSkin 支持上传以下材质
 
     ![the-upload-page](./assets/textures/5-the-upload-page.webp)
 
-3. 选择<BSSection>材质来源</BSSection>，即版权声明。
+3. 选择<BSSection>材质来源</BSSection>。
 
-    👉 有关版权声明的详细信息，可参考 [版权保护](../copyrights) 章节。
+    👉 有关版权保护的详细信息，可参考 [版权保护](../copyrights) 章节。
 
 4. 材质信息设置完成后，点击<BSButton style="background-color: #28a745;">确认上传</BSButton>按钮。
 
