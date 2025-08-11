@@ -1,2 +1,6 @@
 https://*.pages.dev/*
   X-Robots-Tag: noindex
+
+https://manual-ng.pages.dev/*
+  X-Robots-Tag: noindex
+
