@@ -215,4 +215,4 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 >
 > - 将 CustomSkinLoader 的版本降级至 [`ForgeLegacy_14.17`](https://www.curseforge.com/minecraft/mc-mods/customskinloader/files/4642232)
 >
-> 此问题由一个 Bug 引起，暂未得到解决。
+> 该问题已被反馈至 CustomSkinLoader 及 CompatibilityLayerForCustomSkinLoader 开发者，正在等待修复。

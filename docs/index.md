@@ -40,4 +40,4 @@ head:
 > 在引用 LittleSkin 用户使用手册中的内容时，请注意遵守许可协议。
 
 > [!NOTE] 声明
-> Minecraft 是 *Microsoft Corporation* 和 *Mojang Synergies AB* 的商标，本站与其没有任何关联。
+> “Minecraft”及“我的世界”是 *Microsoft Corporation* 和 *Mojang Synergies AB* 的商标。LittleSkin 与 Microsoft、Mojang 及网易公司没有从属关系。
