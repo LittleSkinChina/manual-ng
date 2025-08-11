@@ -34,7 +34,10 @@ head:
 >
 > If you can use both Simplified Chinese and your language fluently, you can help us translate these documents if you are willing :-) Please open a Pull Request in our GitHub repository, or contact the administrators by [sending a support ticket](/email.html).
 
-> [!TIP] 提示
+> [!TIP] ©️ CC BY-SA 4.0
 > LittleSkin 用户使用手册中的所有内容，除非特别说明，均以 [知识共享 - 署名 - 相同方式共享 4.0 国际许可协议 / CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh) 授权使用。
 >
 > 在引用 LittleSkin 用户使用手册中的内容时，请注意遵守许可协议。
+
+> [!NOTE] 声明
+> Minecraft 是 *Microsoft Corporation* 和 *Mojang Synergies AB* 的商标，本站与其没有任何关联。
