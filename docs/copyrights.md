@@ -2,9 +2,15 @@
 import { faCopyright, faArchive } from '@fortawesome/free-solid-svg-icons'
 </script>
 
-# 版权保护
+# 版权保护 Copyright Protection
 
-LittleSkin 深知每个材质都是创作者的心血结晶，因此，我们始终坚持尊重和保护创作者的权益。
+LittleSkin 深知每个材质都是创作者的心血结晶，因此，我们始终坚持尊重和保护创作者的权益。  
+We deeply recognizes that each texture is the labor of love of its creator, and thus, we have always remained committed to respecting and safeguarding creators' rights.
+
+> [!IMPORTANT] Can't understand Chinese?
+> These documents are only available in Simplified Chinese at present. You may use [Google Translate](https://translate.google.com/?sl=zh-CN&op=websites).
+
+---
 
 在 <BSSection><FA :icon="faArchive" /> 皮肤库</BSSection>页面中，每个新上传的材质都会 **标注其材质来源**。
 
@@ -15,8 +21,11 @@ LittleSkin 深知每个材质都是创作者的心血结晶，因此，我们始
 >
 > <mark>如需设置材质来源，请通过以下方式联系站点管理员处理。</mark>
 
-<NCard title="🙋 维护作为创作者的权益" link="#abuse">
-如果你是某个材质的原创作者，且该材质在 LittleSkin 上的存在形式不被你认可，你可以向我们提出异议。
+<NCard title="🙋 维护作为创作者的权益 Safeguarding Your Rights as a Creator" link="#abuse">
+
+如果你是某个材质的原创作者，且该材质在 LittleSkin 上的存在形式不被你认可，你可以向我们提出异议。  
+If you are the original creator of a texture and its presence on LittleSkin is unauthorized, you can submit a complaint.
+
 </NCard>
 
 ---
@@ -58,14 +67,36 @@ LittleSkin 深知每个材质都是创作者的心血结晶，因此，我们始
 > [!WARNING] 关于转载与侵权
 > 若你<mark>在未取得原作者许可的情况下进行转载</mark>，则存在收到侵权投诉的风险。
 
-## 维护作为创作者的权益 {#abuse}
+## 维护作为创作者的权益 <br/> Safeguarding Your Rights as a Creator {#abuse}
 
-> [!TIP] ❌ 不要代替他人进行投诉
-我们只会处理由材质创作者本人提起的侵权投诉。
+> [!TIP] ❌ 不要代替他人进行投诉 Do Not Submit Complaints on Behalf of Others
+> 我们只会处理由材质创作者本人提起的侵权投诉。  
+> We only process infringement complaints submitted by the texture's original creator.
 
-<NCard title="🙋 加入用户交流群" link="/user-group" >
-在入群时可能需要提供账号有关信息，这要求你拥有 LittleSkin 账号
+<NCard title="🙋 加入用户交流群 Join Our User Group" link="/user-group" >
+
+在入群时可能需要提供账号有关信息，这要求你拥有 LittleSkin 账号  
+You may be asked to provide your LittleSkin account info when joining the group.
+
 </NCard>
-<NCard title="📬️ 通过邮件发送工单" link="/email" >
-发送邮件工单时，请尽可能详细地描述具体情况
+<NCard title="📬️ 通过邮件发送工单 Submit Support Tickets via Email" link="/email" >
+
+发送邮件工单时，请尽可能详细地描述具体情况  
+When submitting a ticket by email, please provide a detailed description of the specific issue.
+
 </NCard>
+
+一旦我们认可了你的维权申请，你可以选择对现有材质进行以下处理：  
+Once your complaint is accepted, you may choose one of the following actions regarding the texture:
+
+
+- 🗑️ 将该材质从 LittleSkin 中删除  
+  Delete the texture from LittleSkin
+- 📝 更改该材质的「材质来源」标签  
+  Modify the "Texture Source" label
+
+- 🔑 将该材质的所有人更改为你自己  
+  Transfer ownership of the texture to your account
+
+- 🛠️ 其他你认为适合的处理方式  
+  Any other appropriate action you deem necessary

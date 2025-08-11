@@ -13,11 +13,15 @@
 与离线登录的区别 / 基本原理 / 优缺点 / ...
 </NCard>
 
+> [!WARNING] 😱 忘记了密码？
+> 重置密码并非难事，只需要在 LittleSkin 网站上点击右上角的头像退出登录，再在登录页面上找到 <BSSection>忘记密码？</BSSection> 链接，点击后按提示操作即可。
+
+
 ## HMCL 3
 
 ![HMCL 3 操作流程](./assets/hmcl-3-5-5.webp)
 
-> [!TIP] 无需再手动添加认证服务器
+> [!TIP] ✅ 无需再手动添加认证服务器
 > HMCL 3 已将 LittleSkin 添加为默认选项之一，直接点击相关界面中的 LittleSkin 选项即可。
 
 1. 进入账户列表，在左侧菜单中选择 LittleSkin，填写你的邮箱和密码。
@@ -30,8 +34,14 @@
 
     如果你希望添加多个角色，你可以再次添加你的账号来添加其他角色。
 
-:tada: 设置完成啦！你已经可以启动游戏了。
+🎉 设置完成啦！你已经可以启动游戏了。
 
 ## BakaXL
 
-TODO...
+<https://www.bilibili.com/video/BV1W741197Bv>
+
+> [!CAUTION] ‼️ 此视频较为久远，其中展示的验证服务器地址已经严重过时
+>
+> 当前的验证服务器地址为 `https://littleskin.cn/api/yggdrasil`。
+
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=99799339&bvid=BV1W741197Bv&cid=170308127&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%; height: 28rem"></iframe>
