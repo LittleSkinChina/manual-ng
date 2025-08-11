@@ -19,6 +19,7 @@ LittleSkin 自 CustomSkinLoader 14.7 起被添加到了 CustomSkinLoader 的默�
 
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/883.html)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/customskinloader)
+- [Modrinth](https://modrinth.com/mod/customskinloader)
 
 <ClientOnly>
     <GetCSL />
@@ -192,17 +193,26 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 >
 > 此 Mod 可以使 CustomSkinLoader 在 1.7.10 中正常运行。
 
-名称意为 _CustomSkinLoader 兼容层_。
+名称意为 *CustomSkinLoader 兼容层*。
 
-借助此 Mod，你可以<mark>在 Minecraft 1.7.10 中使用新版本的 CustomSkinLoader</mark>（仅限 _ForgeActive_ 通道）。
+借助此 Mod，你可以<mark>在 Minecraft 1.7.10 中使用新版本的 CustomSkinLoader</mark>。
 
 你可以在以下网站获取到关于 CompatibilityLayerForCustomSkinLoader 的更多信息。
 
 - [MC百科 (mcmod.cn)](https://www.mcmod.cn/class/4160.html)
 - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/compatibilitylayerforcustomskinloader/files/all?page=1&pageSize=20&showAlphaFiles=show)
 
-> [!TIP] 提示
-> 你需要同时安装 [CustomSkinLoader](#customskinloader) 和 CompatibilityLayerForCustomSkinLoader 这两个 Mod。
+> [!WARNING] ⚠️ 需要前置 Mod
+> 除了 CompatibilityLayerForCustomSkinLoader 自身外，你还需要安装以下前置 Mod：
+>
+> - [CustomSkinLoader](#customskinloader)
+> - [UniMixins](https://www.mcmod.cn/class/9457.html)
+>
+> 在安装 CustomSkinLoader 时，请下载适用于 Minecraft 1.8 的版本，**其文件名通常带有 `ForgeLegacy` 或 `ForgeV1` 字样**。
 
-> [!IMPORTANT] 💡 来自其他用户的反馈
-> 如果发现加载纤细（Slim / Alex）模型的皮肤时遇到问题，那么请将 CustomSkinLoader 的版本回退至 `ForgeLegacy_14.17`。
+> [!IMPORTANT] 💡 加载纤细皮肤时可能遇到问题
+> 如果加载纤细（Slim / Alex）模型的皮肤时遇到如显示错位之类的问题，可以采取临时措施：
+>
+> - 将 CustomSkinLoader 的版本降级至 [`ForgeLegacy_14.17`](https://www.curseforge.com/minecraft/mc-mods/customskinloader/files/4642232)
+>
+> 此问题由一个 Bug 引起，暂未得到解决。
