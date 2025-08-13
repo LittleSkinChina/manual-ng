@@ -3,9 +3,9 @@ import GetCSL from '../../components/GetCSL.vue'
 import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons'
 </script>
 
-# CustomSkinLoader
+# CustomSkinLoader 万用皮肤补丁
 
-CustomSkinLoader 是我们最推荐的皮肤 Mod，也被称为 **CSL** 或 **万用皮肤补丁**。
+CustomSkinLoader 是我们最推荐的皮肤 Mod，也被简称为 **CSL**。其中文译名 **万用皮肤补丁** 更广为人知。
 
 CustomSkinLoader 以游戏内的玩家名作为标识，按配置文件中设置的顺序依次从各个皮肤服务器尝试获取皮肤。
 
@@ -205,7 +205,7 @@ CustomSkinLoader 有一个加载列表，里面存放和定义着如何加载你
 > [!WARNING] ⚠️ 需要前置 Mod
 > 除了 CompatibilityLayerForCustomSkinLoader 自身外，你还需要安装以下前置 Mod：
 >
-> - [CustomSkinLoader](#customskinloader)
+> - [CustomSkinLoader](#download)
 > - [UniMixins](https://www.mcmod.cn/class/9457.html)
 >
 > 在安装 CustomSkinLoader 时，请下载适用于 Minecraft 1.8 的版本，**其文件名通常带有 `ForgeLegacy` 或 `ForgeV1` 字样**。
