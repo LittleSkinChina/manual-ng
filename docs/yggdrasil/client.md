@@ -16,7 +16,6 @@
 > [!WARNING] 😱 忘记了密码？
 > 重置密码并非难事，只需要在 LittleSkin 网站上点击右上角的头像退出登录，再在登录页面上找到 <BSSection>忘记密码？</BSSection> 链接，点击后按提示操作即可。
 
-
 ## HMCL 3
 
 ![HMCL 3 操作流程](./assets/hmcl-3-5-5.webp)
@@ -45,3 +44,20 @@
 > 当前的验证服务器地址为 `https://littleskin.cn/api/yggdrasil`。
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=99799339&bvid=BV1W741197Bv&cid=170308127&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%; height: 28rem"></iframe>
+
+## 联机 Mod
+
+使用外置登录进行联机时，无需安装如 [CustomSkinLoader 万用皮肤补丁](../newbee/csl) 这样的皮肤 Mod 也可以正常在游戏中加载材质。
+
+通常情况下，所有玩家使用外置登录启动游戏，且发起方启用 <BSSection>对局域网开放</BSSection> 功能，即可完成联机。部分玩家可能会安装联机 Mod，这类 Mod 通常提供更细致的配置菜单和丰富功能。
+
+> [!NOTE] 常见的联机 Mod
+>
+> - [[OL] 开放式联机 OpenLink](https://www.mcmod.cn/class/17345.html)
+> - [[LSP] 自定义局域网联机 Lan Server Properties](https://www.mcmod.cn/class/2754.html)
+> - [[mcwifipnp] 更高级联机设置 LAN World Plug-n-Play](https://www.mcmod.cn/class/4498.html)
+
+> [!IMPORTANT] 需要使用外置登录启动游戏
+> 参与联机的所有玩家都必须使用外置登录启动游戏，否则无法加入联机。
+
+为了确保外置登录能正常工作，请在这些 Mod 的配置菜单中设置 <BSSection>正版验证：开</BSSection> 或 <BSSection>在线模式：开</BSSection> 选项。
