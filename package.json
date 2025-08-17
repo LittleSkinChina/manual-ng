@@ -5,7 +5,7 @@
     "@nolebase/vitepress-plugin-enhanced-mark": "^2.18.1",
     "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.1",
     "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.18.1",
-    "vitepress": "1.6.3"
+    "vitepress": "1.6.4"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
