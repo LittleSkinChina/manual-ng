@@ -8,7 +8,7 @@ LittleSkin 深知每个材质都是创作者的心血结晶，因此，我们始
 We deeply recognizes that each texture is the labor of love of its creator, and thus, we have always remained committed to respecting and safeguarding creators' rights.
 
 > [!IMPORTANT] Can't understand Chinese?
-> These documents are only available in Simplified Chinese at present. You may use [Google Translate](https://translate.google.com/?sl=zh-CN&op=websites).
+> Copyright holders may be located worldwide and speak various languages. However, these documents are only available in Simplified Chinese at present. You may try [Google Translate](https://translate.google.com/?sl=zh-CN&op=websites).
 
 ---
 
@@ -21,7 +21,7 @@ We deeply recognizes that each texture is the labor of love of its creator, and 
 >
 > <mark>如需设置材质来源，请通过以下方式联系站点管理员处理。</mark>
 
-<NCard title="🙋 维护作为创作者的权益 Safeguarding Your Rights as a Creator" link="#abuse">
+<NCard title="🙋 维护作为创作者的权益 Safeguarding Your Rights as a Creator" link="#complain">
 
 如果你是某个材质的原创作者，且该材质在 LittleSkin 上的存在形式不被你认可，你可以向我们提出异议。  
 If you are the original creator of a texture and its presence on LittleSkin is unauthorized, you can submit a complaint.
@@ -67,11 +67,17 @@ If you are the original creator of a texture and its presence on LittleSkin is u
 > [!WARNING] 关于转载与侵权
 > 若你<mark>在未取得原作者许可的情况下进行转载</mark>，则存在收到侵权投诉的风险。
 
-## 维护作为创作者的权益 <br/> Safeguarding Your Rights as a Creator {#abuse}
+## 维护作为创作者的权益 <br/> Safeguarding Your Rights as a Creator {#complain}
 
 > [!TIP] ❌ 不要代替他人进行投诉 Do Not Submit Complaints on Behalf of Others
 > 我们只会处理由材质创作者本人提起的侵权投诉。  
 > We only process infringement complaints submitted by the texture's original creator.
+
+- 如果你的材质最初发布在其他网站或平台上，请提供相应页面的截图，以证明你是该材质的所有者和相关账户的持有者。  
+  If your texture was initially published on another website or platform, please provide screenshots of the relevant pages to verify your ownership of the texture and association with the corresponding account.
+
+- 如果你能提供创作材质时的项目文件、截图或群聊记录等，我们也将予以考虑。  
+  If you can provide project files, screenshots, or group chat logs from the texture creation process, we will also take them into consideration.
 
 <NCard title="🙋 加入用户交流群 Join Our User Group" link="/user-group" >
 
@@ -82,13 +88,15 @@ You may be asked to provide your LittleSkin account info when joining the group.
 <NCard title="📬️ 通过邮件发送工单 Submit Support Tickets via Email" link="/email" >
 
 发送邮件工单时，请尽可能详细地描述具体情况  
-When submitting a ticket by email, please provide a detailed description of the specific issue.
+<Badge>✨ English is supported</Badge> Copyright holders may be located worldwide. If you are not fluent in Chinese, we recommend submitting complaints via email for a smoother and more efficient resolution.
 
+</NCard>
+<NCard title="📋 填写申诉表单" link="https://wj.qq.com/s2/14075170/197c" >
+在提交表单后，我们可能会通过提供的联系方式联系你
 </NCard>
 
 一旦我们认可了你的维权申请，你可以选择对现有材质进行以下处理：  
 Once your complaint is accepted, you may choose one of the following actions regarding the texture:
-
 
 - 🗑️ 将该材质从 LittleSkin 中删除  
   Delete the texture from LittleSkin
