@@ -1,5 +1,5 @@
 <script setup>
-import { faCopyright, faArchive } from '@fortawesome/free-solid-svg-icons'
+import { faCopyright, faArchive, faUpload } from '@fortawesome/free-solid-svg-icons'
 </script>
 
 # 版权保护 Copyright Protection
@@ -32,7 +32,7 @@ LittleSkin 目前将材质来源划分为三类：原创材质、二次创作材
 > [!NOTE] 补充材质来源
 > 只有在上传新的材质时才能设置材质来源。
 >
-> 对于皮肤库中已有的材质，材质来源均为「未设置」状态。
+> 对于皮肤库中早期上传的材质，材质来源均为 `未设置` 状态。
 >
 > <mark>如需设置材质来源，请通过以下方式联系站点管理员处理。</mark>
 
@@ -104,11 +104,15 @@ Once your complaint is accepted, you may choose one of the following actions reg
 
 - 🗑️ 将该材质从 LittleSkin 中删除  
   Delete the texture from LittleSkin
-- 📝 更改该材质的「材质来源」标签  
-  Modify the "Texture Source" label
+
+- 📝 更改该材质的 <BSSection>材质来源</BSSection> 标签  
+  Modify the <BSSection>Texture Source</BSSection> label
 
 - 🔑 将该材质的所有人更改为你自己  
   Transfer ownership of the texture to your account
+
+- 🔒 将材质设为私密，并添加 [版权保护标记](#copyright-protection-flag)  
+  Mark the texture as private, and Apply the [Copyright Protection Flag](#copyright-protection-flag)
 
 - 🛠️ 其他你认为适合的处理方式  
   Any other appropriate action you deem necessary
@@ -123,30 +127,62 @@ LittleSkin 的材质相似度检测算法可对抗大部分简单的修改和二
 
 > [!IMPORTANT] 🙏 堵不如疏，疏不如引，引不如顺
 > 被打上「版权保护标记」的材质仍可被其他用户私密上传，以供上传者自用。
-> 
+>
 > 大部分正常用户上传材质的目的都是自用，没有必要赶尽杀绝。
 
-### 申请「版权保护标记」
+### 申请「版权保护标记」的步骤
 
-申请「版权保护标记」要求你拥有 LittleSkin 账号。
+申请「版权保护标记」要求你拥有 LittleSkin 账号，并按照以下步骤操作：
 
-如需申请「版权保护标记」，请按照以下步骤操作：
+#### 🔒 1. 上传私密材质
 
-1. 将要申请「版权保护标记」的材质上传至 LittleSkin，确保该材质的「材质来源」标签为「原创」，并将其设为私密材质。
-    - 将材质设为私密材质后，只有上传者本人以及站点管理员可以看到该材质，其他用户无法查看，请放心上传。
-2. 使用你的 LittleSkin 账号绑定的邮箱发送 [邮件工单](./email.md)，说明你想要为该材质申请「版权保护标记」，并提供以下信息：
-    - 该材质在 LittleSkin 的 TID（可在材质详情页右侧查看）
-    - 能证明你是该材质的原创作者或该材质的著作权人的相关信息：
-        - 若是已发布在其他平台的材质，请提供：
-            - 该材质在其他平台的原创帖子的链接
-                - 帖子正文内应包含「未经作者允许，禁止上传至其他平台」或同类文本，否则将视为无效证明
-            - 你在材质发布平台的账号信息截图
-                - 截图应能够体现你的账号与发帖者账号的关联性
-                - 如不方便提供账号信息截图，请在帖子正文内留下你的 LittleSkin 账号的 UID
-        - 若是第三方个性化定制的材质，请提供：
-            - 从需求沟通开始至材质交付的所有沟通记录的连贯截图
-            - 如是商单，还需要提供交易记录截图
-              - 如是 LittleSkin 皮肤定制平台的订单，只需提供订单号即可
-        - 若是其它独立制作的原创材质，请提供：
-            - 材质创作过程中产生的工程文件（如 PSD、Blockbench Model 等）的 ZIP 压缩包
-3. LittleSkin 运营组会在收到你的申请后进行审核，并在工单回复时效内通过邮件告知你审核结果。
+在 [<BSSection><FA :icon="faUpload"/> 上传材质</BSSection>](https://littleskin.cn/skinlib/upload) 页面，请将部分选项按以下要求设置：
+
+1. 将材质的 <BSSection>材质来源</BSSection> 标签设置为 **`原创`**
+2. 勾选 **设置为私密材质**
+
+> [!TIP] ☺️ 放心，你的材质是安全的
+> 只有我们的工作人员能看到你的材质。
+>
+> 私密材质不会被展示在皮肤库里，用户也无法查看他人上传的私密材质。
+
+#### 🗂️ 2. 准备证明材料
+
+> [!IMPORTANT] 🔝 一般材料
+>
+> 请提供以下信息以保证我们能够正常处理你的申请：
+>
+> 1. 材质上传至 LittleSkin 后的材质详情 **页面链接** 或 **TID**
+
+👇 然后，根据你的材质的 `原创性归属情形` 选择对应的所需材料。
+
+> [!NOTE] 情形 A：材质已发布在其他平台
+>
+> 1. 提供其他平台的原创帖子链接  
+>
+>    确保该帖子正文包含 **「未经作者允许，禁止上传至其他平台」** 或类似声明
+> 2. 提供能体现你是该帖子的作者的证明
+>    - 提供账户信息截图：清晰显示你在该平台的账号信息，并能直接关联到发帖账号
+>      > <Badge>例</Badge> 对应平台的个人资料页面或账号详情页面的截图
+>    - 如不便截图：在帖子正文内注明你在 LittleSkin 的 UID
+
+> [!NOTE] 情形 B：材质是第三方个性化定制的材质
+>
+> 1. 提供完整沟通记录： 从最初需求讨论到最终材质交付的所有沟通记录的截图
+>    > <Badge>例</Badge> 聊天记录截图等（连贯、并能体现定制过程）
+> 2. 提供交易凭证 <Badge type="warning">如适用</Badge> ：提供支付成功的截图
+>    > <Badge>例</Badge> 平台订单截图、转账记录等
+>
+> > [!IMPORTANT] 🥰 如果你的材质在 LittleSkin 皮肤定制平台上定制
+> > 无需提供沟通记录及交易凭证，仅提供订单号即可
+
+> [!NOTE] 情形 C：材质是其它独立制作的原创材质
+>
+> 1. 提供工程文件压缩包：将材质创作过程中产生的工程文件打包成 ZIP 压缩文件
+>    > <Badge>例</Badge> Photoshop `.psd` 文件、Blockbench `.bbmodel` 文件等
+
+#### 📬️ 3. 提交证明材料
+
+当你准备好所需的材料后，使用 <mark>你的 LittleSkin 账号绑定的邮箱</mark> 向我们发送 [邮件工单](./email.md)。
+
+LittleSkin 运营组会在收到你的申请后进行审核，并在工单回复时效内通过邮件告知你审核结果。
