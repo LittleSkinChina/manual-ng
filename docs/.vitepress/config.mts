@@ -219,6 +219,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/LittleSkinChina/manual-ng' },
+      { icon: 'x', link: 'https://x.com/LittleSkinChina' },
     ],
 
   },
