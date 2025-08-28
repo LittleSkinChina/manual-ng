@@ -13,7 +13,7 @@ import { faUsers } from '@fortawesome/free-solid-svg-icons'
 >
 > ❌ 仅仅拥有 Bedrock 版 Minecraft 是无法绑定的。
 
-> [!CAUTION] 可选的操作
+> [!TIP] 可选的操作
 > 这并不是一个必须进行的操作，即使不绑定正版 Minecraft 也不会影响你使用 LittleSkin 的基础功能。
 
 ## 绑定正版 Minecraft 账号的作用
