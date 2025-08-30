@@ -161,8 +161,7 @@ export default defineConfig({
                   text: '配置服务端',
                   link: '/yggdrasil/server',
                   items: [
-                    { text: 'authlib-injector', link: '/yggdrasil/authlib-injector' },
-                    { text: 'MultiLogin', link: '/yggdrasil/multilogin' }
+                    { text: 'authlib-injector', link: '/yggdrasil/authlib-injector' }
                   ]
                 }
               ]

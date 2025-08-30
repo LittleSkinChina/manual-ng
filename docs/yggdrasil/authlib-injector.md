@@ -20,12 +20,18 @@ fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.jso
 
 # authlib-injector
 
-> authlib-injector 为玩家提供统一的非 Mojang 登录体验。大多数的外置登录都使用 authlib-injector 来实现。
+大多数的外置登录都使用 authlib-injector 来实现。
 
 > [!WARNING] 这不是插件，也不是 Mod
 > authlib-injector 使用方式较为特殊，将其 JAR 文件放入服务端的 `plugins/` 或 `mods/` 目录下不会有任何作用。
 
 <!-- @include: @/pay-for-minecraft.template.md -->
+
+> [!WARNING] ⚠️ 请始终使用单一身份验证服务器
+> 尽管有一些解决方案可以实现同时使用多个身份验证服务器，但是我们不建议这么做。
+>
+> 同时使用多个身份验证服务器会导致许多意想不到的问题。
+
 
 ## 获取 JAR 文件
 
