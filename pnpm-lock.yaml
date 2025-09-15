@@ -12,8 +12,8 @@ importers:
         specifier: ^6.7.2
         version: 6.7.2
       '@fortawesome/vue-fontawesome':
-        specifier: ^3.1.1
-        version: 3.1.1(@fortawesome/fontawesome-svg-core@6.5.2)(vue@3.5.18)
+        specifier: ^3.1.2
+        version: 3.1.2(@fortawesome/fontawesome-svg-core@6.5.2)(vue@3.5.18)
       '@nolebase/vitepress-plugin-enhanced-mark':
         specifier: ^2.18.1
         version: 2.18.1(vitepress@1.6.4(@algolia/client-search@5.35.0)(less@4.4.0)(postcss@8.5.6)(search-insights@2.13.0))
@@ -299,8 +299,8 @@ packages:
     resolution: {integrity: sha512-GsBrnOzU8uj0LECDfD5zomZJIjrPhIlWU82AHwa2s40FKH+kcxQaBvBo3Z4TxyZHIyX8XTDxsyA33/Vx9eFuQA==}
     engines: {node: '>=6'}
 
-  '@fortawesome/vue-fontawesome@3.1.1':
-    resolution: {integrity: sha512-U5azn4mcUVpjHe4JO0Wbe7Ih8e3VbN83EH7OTBtA5/QGw9qcPGffqcmwsLyZYgEkpVkYbq/6dX1Iyl5KUGMp6Q==}
+  '@fortawesome/vue-fontawesome@3.1.2':
+    resolution: {integrity: sha512-mhYnBIuuW8OIMHf31kOjaBmyE7BMrwBorhrOHVud6vTTu+7IPQNWB+DWaHoE75v10dRF5s/dFtcrgE7vKSEWwQ==}
     peerDependencies:
       '@fortawesome/fontawesome-svg-core': ~1 || ~6 || ~7
       vue: '>= 3.0.0 < 4'
@@ -1139,7 +1139,7 @@ snapshots:
     dependencies:
       '@fortawesome/fontawesome-common-types': 6.7.2
 
-  '@fortawesome/vue-fontawesome@3.1.1(@fortawesome/fontawesome-svg-core@6.5.2)(vue@3.5.18)':
+  '@fortawesome/vue-fontawesome@3.1.2(@fortawesome/fontawesome-svg-core@6.5.2)(vue@3.5.18)':
     dependencies:
       '@fortawesome/fontawesome-svg-core': 6.5.2
       vue: 3.5.18
