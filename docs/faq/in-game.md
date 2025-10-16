@@ -112,46 +112,14 @@ head:
 
 请检查你是否安装了会阻止网络请求的 Mod，这会影响到外置登录的正常工作。
 
+比较常见的有：
 
-比较常见的 Mod 有：
+- [NonUpdate](https://www.curseforge.com/minecraft/mc-mods/non-update)（NU，不再有更新）
+- [NonUpdate Reloaded](https://modrinth.com/mod/non-update-reloaded)（NUR，不再有更新重制版）
+- [MuTongCheckFuck](https://wiki.mutong1.com/docs/mutong-wiki/FuckUpdateCheck)
+  - 在部分整合包中该 Mod 名为 FuckConnect
 
-- [NonUpdate](https://www.curseforge.com/minecraft/mc-mods/non-update) （NU，不再有更新）
-- [NonUpdate Reloaded](https://modrinth.com/mod/non-update-reloaded) （NUR，不再有更新重制版）
-
-🛠️ 通常来说，**直接删除这类 Mod** 是最简单快速的解决方案。但这违背了你安装此类 Mod 的初衷。
-
-👇 此处特别列出上述 Mod 的 **配置方法**，以便在禁用更新的同时不影响 LittleSkin 外置登录的正常工作。
-
-::: details 🛠️ NonUpdate
-将 LittleSkin 的域名添加至 `.minecraft/nu-whitelist.txt`：
-
-```txt{5}
-minecraft.net
-mojang.com
-// ...
-
-littleskin.cn
-```
-
-:::
-
-::: details 🛠️ NonUpdate Reloaded
-将 LittleSkin 的域名添加至 `.minecraft/config/nonupdate_reloaded.json`:
-
-```jsonc
-{
-  // ...
-  "whitelist": [
-    "$eminecraftservices.com",
-    "$emojang.com",
-    "$eminecraft.net"
-    "$elittleskin.cn" // [!code ++]
-  ],
-  // ...
-}
-```
-
-:::
+LittleSkin 不建议使用此类 Mod。如果你安装了这些 Mod，请将他们删除，或者修改这些 Mod 的配置文件，使其允许 Minecraft 与 LittleSkin 进行网络通信。
 
 ## <Badge type="info">外置登录</Badge> 外置登录进入服务器时提示「无效的会话」/ accessToken 无效  {#invalid-session}
 
