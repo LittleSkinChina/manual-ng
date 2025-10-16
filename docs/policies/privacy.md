@@ -53,18 +53,20 @@
 - **Algolia**：[Privacy Policy](https://www.algolia.com/policies/privacy/)
   - 我们使用了 Algolia 的文档搜索服务（DocSearch）；
 - **Cloudflare**：[Privacy Policy](https://www.cloudflare.com/privacypolicy/)
-  - 我们使用了 Cloudflare 的域名解析（DNS）服务、网络应用防火墙（WAF）服务、内容分发网络（CDN）服务和性能分析服务（Browser Insights）；
+  - 我们使用了 Cloudflare 的域名解析服务、网络应用防火墙服务、内容分发网络服务、性能分析服务（Browser Insights）、边缘计算服务（Workers）和静态网站托管服务（Pages）；
 - **GitHub**：[隐私声明](https://docs.github.com/github/site-policy/github-privacy-statement)
-  - 我们使用了 GitHub 的代码托管（Git）服务、持续集成（CI）服务和静态网站托管服务（Pages）；
+  - 我们使用了 GitHub 的代码托管服务、持续集成服务（Actions）和静态网站托管服务（Pages）；
 - **Google**：[隐私权和条款](https://policies.google.com/privacy)
   - 我们使用了 Google 的数据分析服务（Analytics）和人机验证服务（reCAPTCHA）；
 - **jsDelivr**：[Privacy Policy - cdn.jsdelivr.net](https://www.jsdelivr.com/privacy-policy-jsdelivr-net)
-  - 我们使用了 jsDelivr 的内容分发网络（CDN）服务；
+  - 我们使用了 jsDelivr 的内容分发网络服务；
 - **Microsoft**：[隐私声明](https://privacy.microsoft.com/privacystatement)
-  - 我们使用了 Microsoft Azure 的内容分发网络（CDN）服务和 Active Directory 中的 OAuth 登录验证服务，还在站点运营工作中使用了 Microsoft 365（包括 Office 365 专业增强版和 Exchange Online 等）服务；
-- **Twilio**：[Privacy Statement](https://www.twilio.com/legal/privacy)
-  - 我们使用了 Twilio 旗下的 SendGrid 的邮件发送服务；
+  - 我们使用了 Microsoft 旗下的 Entra ID 身份验证服务，还在站点运营工作中使用了 Microsoft 365（包括 Office 365 专业增强版和 Exchange Online 等）服务；
+- **Oracle**：[Oracle 一般隐私政策](https://www.oracle.com/cn/legal/privacy/privacy-policy/)
+  - 我们使用了 Oracle 旗下的 Oracle Cloud Infrastructure 的 Email Delivery 邮件发送服务；
 - **Vercel**：[Privacy Policy](https://vercel.com/legal/privacy-policy)
-  - 我们使用了 Vercel 的域名解析（DNS）服务和无服务器函数（Serverless Functions）服务；
+  - 我们使用了 Vercel 的域名解析服务和边缘计算服务（Functions）；
+- **百度智能云**：[隐私政策](https://cloud.baidu.com/doc/Agreements/s/Plr0fi68q)
+  - 我们使用了百度智能云的内容分发网络服务；
 - **腾讯云**：[隐私声明](https://cloud.tencent.com/document/product/301/11470)
-  - 我们使用了腾讯云的域名解析（DNS）服务、内容分发网络（CDN）服务和云对象存储（COS）服务，以及其旗下的 CODING 的代码托管（Git）服务和静态网站托管服务（Pages）。
+  - 我们使用了腾讯云的域名解析服务、内容分发网络服务、云对象存储服务（COS）和数据万象服务（CI）。
