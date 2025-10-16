@@ -103,7 +103,7 @@ import { faUser, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 如果你确定你购买了正版 Minecraft，并且你可以通过官方启动器启动最新版本的 Minecraft，但仍然无法在 LittleSkin 绑定正版账号，请向我们反馈。
 
-<NCard title="🗝️ 关于正版绑定" link="/premium" >
+<NCard title="🗝️ 关于正版绑定" link="/newbee/premium" >
 了解绑定正版 Microsoft 账号的完整步骤和详细说明
 </NCard>
 
