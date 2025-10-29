@@ -12,7 +12,7 @@ We deeply recognizes that each texture is the labor of love of its creator, and 
 
 ---
 
-<NCard title="🙋 维护作为创作者的权益 Safeguarding Your Rights as a Creator" link="#complain">
+<NCard title="🙋 维护作为创作者的权益 Safeguarding Your Rights as a Creator" link="#complaint">
 
 如果你是某个材质的原创作者，且该材质在 LittleSkin 上的存在形式不被你认可，你可以向我们提出异议。  
 If you are the original creator of a texture and its presence on LittleSkin is unauthorized, you can submit a complaint.
@@ -71,33 +71,47 @@ LittleSkin 目前将材质来源划分为三类：原创材质、二次创作材
 > [!WARNING] 关于转载与侵权
 > 若你<mark>在未取得原作者许可的情况下进行转载</mark>，则存在收到侵权投诉的风险。
 
-## 维护作为创作者的权益 <br/> Safeguarding Your Rights as a Creator {#complain}
+## 发起侵权投诉 <br/> File a Copyright Complaint {#complaint}
+
+如果你是某个材质的原创作者或著作权人，且该材质在 LittleSkin 上的存在形式不被你认可，你可以向我们提出侵权投诉。  
+If you are the original creator or copyright holder of a texture and its presence on LittleSkin is unauthorized, you can file a copyright complaint.
 
 > [!TIP] ❌ 不要代替他人进行投诉 Do Not Submit Complaints on Behalf of Others
 > 我们只会处理由材质创作者本人提起的侵权投诉。  
-> We only process infringement complaints submitted by the texture's original creator.
+> We only process copyright complaints filed by the texture's original creator.
 
-- 如果你的材质最初发布在其他网站或平台上，请提供相应页面的截图，以证明你是该材质的所有者和相关账户的持有者。  
-  If your texture was initially published on another website or platform, please provide screenshots of the relevant pages to verify your ownership of the texture and association with the corresponding account.
+你可以通过以下方式发起侵权投诉：  
+You can file a copyright complaint through the following methods:
 
-- 如果你能提供创作材质时的项目文件、截图或群聊记录等，我们也将予以考虑。  
-  If you can provide project files, screenshots, or group chat logs from the texture creation process, we will also take them into consideration.
-
-<NCard title="🙋 加入用户交流群 Join Our User Group" link="/user-group" >
-
-在入群时可能需要提供账号有关信息，这要求你拥有 LittleSkin 账号  
-You may be asked to provide your LittleSkin account info when joining the group.
-
-</NCard>
-<NCard title="📬️ 通过邮件发送工单 Submit Support Tickets via Email" link="/email" >
+<NCard title="📬️ 通过邮件发送工单 Send Support Tickets via Email" link="/email" >
 
 发送邮件工单时，请尽可能详细地描述具体情况  
 <Badge>✨ English is supported</Badge> Copyright holders may be located worldwide. If you are not fluent in Chinese, we recommend submitting complaints via email for a smoother and more efficient resolution.
 
 </NCard>
-<NCard title="📋 填写申诉表单" link="https://wj.qq.com/s2/14075170/197c" >
+<NCard title="📋 填写投诉表单" link="https://wj.qq.com/s2/14075170/197c" >
 在提交表单后，我们可能会通过提供的联系方式联系你
 </NCard>
+
+发起侵权投诉时，请务必提供以下信息，以便我们核实你的身份及投诉内容：  
+When filing a copyright complaint, please provide the following information to help us verify your identity and the content of your complaint:
+
+- 你的 LittleSkin 账号的 UID（如有）  
+  Your LittleSkin account UID (if applicable)
+- 你要投诉的材质在 LittleSkin 的 TID 或链接  
+  The TID or link of the texture you are complaining about on LittleSkin
+- 你认为该材质存在侵权的原因  
+  A description of why you believe the texture is infringing on copyrights
+- 能证明你是该材质原创作者或著作权人的相关证明材料，包括但不限于：  
+  Relevant proof materials demonstrating that you are the original creator or copyright holder of the texture, including but not limited to the following:
+  - 该材质最初发布时的帖子链接等  
+    Original post links where the texture was first published
+  - 创作该材质时的项目文件、截图或聊天记录等  
+    Project files, screenshots, or chat logs from the texture creation process
+  - 其他能够证明你是该材质原创作者或著作权人的材料  
+    Other materials that can prove you are the original creator or copyright holder of the texture
+- 你希望我们对该材质进行的处理方式（见下方）  
+  The action you would like us to take regarding the texture (see below)
 
 一旦我们认可了你的维权申请，你可以选择对现有材质进行以下处理：  
 Once your complaint is accepted, you may choose one of the following actions regarding the texture:
@@ -108,11 +122,8 @@ Once your complaint is accepted, you may choose one of the following actions reg
 - 📝 更改该材质的 <BSSection>材质来源</BSSection> 标签  
   Modify the <BSSection>Texture Source</BSSection> label
 
-- 🔑 将该材质的所有人更改为你自己  
-  Transfer ownership of the texture to your account
-
-- 🔒 将材质设为私密，并添加 [版权保护标记](#copyright-protection-flag)  
-  Mark the texture as private, and Apply the [Copyright Protection Flag](#copyright-protection-flag)
+- 🔑 将该材质转移至你的 LittleSkin 账号下  
+  Transfer ownership of the texture to your LittleSkin account
 
 - 🛠️ 其他你认为适合的处理方式  
   Any other appropriate action you deem necessary
