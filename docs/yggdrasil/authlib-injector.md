@@ -48,6 +48,13 @@ fetch('https://authlib-injector.yushi.moe/artifact/latest.json').then(r => r.jso
 >
 > 有些用户可能无法自行修改服务端启动命令/参数。**请与服务器租赁商沟通，让其帮助你配置。**
 
+> [!IMPORTANT] ‼️ 请务必启用 <code>online-mode</code>
+> `online-mode` 控制的不是「正版验证」，而是「在线模式」的开关。
+>
+> 只有在启用在线模式的情况下，Minecraft 服务端才会向身份验证服务器请求验证玩家的登录信息。
+>
+> 如果在线模式被禁用，你的 Minecraft 服务器将始终处于离线模式，外置登录无法生效，所有人都可以在未经过身份验证的情况下使用任意角色名登录你的服务器。所以，请务必启用 `online-mode`。
+
 ### 单服务端（非群组服）<Badge text="✨ 常用" />
 
 1. 将服务器配置文件 `server.properties` 中 `online-mode` 一项的值设为 `true`
