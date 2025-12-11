@@ -19,7 +19,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 除了加入用户交流群，你还可以给我们发送邮件工单
 </NCard>
 <NCard title="🧑‍🔬 一对一技术支持" link="https://afdian.com/a/tnqzh123" >
-也可以通过 <strong>💰赞助支持</strong> 来获取高质量的一对一技术支持服务
+也可以通过 <strong>💰捐助支持</strong> 来获取高质量的一对一技术支持服务
 </NCard>
 
 ## 加群须知

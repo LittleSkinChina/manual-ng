@@ -65,5 +65,5 @@
 </NCard>
 
 <NCard title="🧑‍🔬 一对一技术支持" link="https://afdian.com/a/tnqzh123" >
-你也可以通过 <strong>💰赞助支持</strong> 来获取高质量的一对一技术支持服务。
+你也可以通过 <strong>💰捐助支持</strong> 来获取高质量的一对一技术支持服务。
 </NCard>

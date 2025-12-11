@@ -47,7 +47,7 @@ export default defineConfig({
     nav: [
       { text: '返回 LittleSkin', link: 'https://littlesk.in/' },
       { text: '社区支持机器人', link: 'https://bot-manual.commspt.littlesk.in/' },
-      { text: '赞助支持', link: 'https://afdian.com/a/tnqzh123' }
+      { text: '捐助支持', link: 'https://afdian.com/a/tnqzh123' }
     ],
 
     docFooter: {
