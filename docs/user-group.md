@@ -94,7 +94,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 <p style="margin-bottom: 2em"></p>
 
-<NCard title="☕ 加入 Honoka Café" link="https://jq.qq.com/?_wv=1027&k=3S0sYT6C" target="_blank">
+<NCard title="☕ 加入 Honoka Café" link="https://qm.qq.com/q/ZC5mHboMAS" target="_blank">
 群名称：<code>Honoka Café</code>，群号 <code>651672723</code>
 </NCard>
 
