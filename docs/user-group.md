@@ -78,7 +78,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 <p style="margin-bottom: 2em"></p>
 
-<NCard title="🥰 加入 [user@LittleSkin ~/group/QQ]$" link="https://jq.qq.com/?_wv=1027&k=5uVljsY" target="_blank">
+<NCard title="🥰 加入 [user@LittleSkin ~/group/QQ]$" link="https://qm.qq.com/q/4fwCRW487" target="_blank">
 群名称：<code>[user@LittleSkin ~/group/QQ]$</code>，群号 <code>586146922</code>
 </NCard>
 
