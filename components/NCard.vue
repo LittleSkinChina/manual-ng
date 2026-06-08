@@ -1,12 +1,17 @@
 <script setup lang="ts">
 // @ts-ignore: 2307
-import { defineProps } from 'vue'
-    
-const props = defineProps<{
-    title: string,
-    link: string,
-    target?: string
-}>
+import { withDefaults, defineProps } from 'vue'
+const props = withDefaults(
+    // @ts-ignore: 2307
+    defineProps<{
+        title: string,
+        link: string,
+        target?: string
+    }>(),
+    {
+        target: '_self'
+    }
+)
 </script>
 
 <template>
