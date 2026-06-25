@@ -122,6 +122,9 @@ CustomSkinLoader 的日志位于 `.minecraft/CustomSkinLoader/CustomSkinLoader.l
 <NCard title="📬️ 通过邮件发送工单" link="/email" >
 也可以给我们发送邮件工单
 </NCard>
+<NCard title="🤖 询问AI工具" link="https://chat.deepseek.com" >
+如果你认为AI可靠，当然可以让AI帮助你解决问题
+</NCard>
 <NCard title="🧑‍🔬 一对一技术支持" link="https://afdian.com/a/tnqzh123" >
 也可以通过 <strong>💰捐助支持</strong> 来获取高质量的一对一技术支持服务
 </NCard>
