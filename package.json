@@ -1,11 +1,13 @@
 {
+  "packageManager": "pnpm@10.34.5+sha512.a4ee05f2f73658255bd6a89859c065a45c28a57daefae2c893a168ee2b73168c37b91e83e57ea67654ad03f03031746430e8bce38e362e042605fb8abc80192e",
+  "type": "module",
   "devDependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/vue-fontawesome": "^3.1.1",
-    "@nolebase/vitepress-plugin-enhanced-mark": "^2.18.1",
-    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.1",
-    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.18.1",
-    "vitepress": "1.6.4"
+    "@fortawesome/free-solid-svg-icons": "^7.3.1",
+    "@fortawesome/vue-fontawesome": "^3.3.3",
+    "@nolebase/vitepress-plugin-enhanced-mark": "^2.18.2",
+    "@nolebase/vitepress-plugin-enhanced-readabilities": "^2.18.2",
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.18.2",
+    "vitepress": "2.0.0-alpha.18"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
