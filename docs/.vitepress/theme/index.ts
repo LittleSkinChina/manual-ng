@@ -6,6 +6,8 @@ import type { Theme as ThemeConfig } from 'vitepress'
 import type { Options } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 import { InjectionKey } from '@nolebase/vitepress-plugin-enhanced-readabilities'
 
+import { enhanceAppWithTabs } from 'vitepress-plugin-tabs/client'
+
 
 import {
     NolebaseEnhancedReadabilitiesMenu,
@@ -42,6 +44,7 @@ export const Theme: ThemeConfig = {
         })
     },
     enhanceApp({ app }) {
+        enhanceAppWithTabs(app)
         app.provide(InjectionKey, {
             layoutSwitch: {
                 defaultMode: 1

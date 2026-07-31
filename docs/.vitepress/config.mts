@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress';
+import { tabsMarkdownPlugin } from 'vitepress-plugin-tabs'
 
 let GTAG_ID = 'G-TBCY5W7YVR';
 
@@ -30,6 +31,9 @@ export default defineConfig({
   markdown: {
     theme: { light: 'catppuccin-latte', dark: 'one-dark-pro' },
     image: { lazyLoading: true },
+    config(md) {
+      md.use(tabsMarkdownPlugin)
+    }
   },
 
   cleanUrls: true,
