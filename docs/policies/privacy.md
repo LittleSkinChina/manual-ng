@@ -61,7 +61,7 @@
 - **jsDelivr**：[Privacy Policy - cdn.jsdelivr.net](https://www.jsdelivr.com/privacy-policy-jsdelivr-net)
   - 我们使用了 jsDelivr 的内容分发网络服务；
 - **Microsoft**：[隐私声明](https://privacy.microsoft.com/privacystatement)
-  - 我们使用了 Microsoft 旗下的 Entra ID 身份验证服务，还在站点运营工作中使用了 Microsoft 365（包括 Office 365 专业增强版和 Exchange Online 等）服务；
+  - 我们使用了 Microsoft 旗下的 Entra ID 身份验证服务和 Clarity 用户行为分析服务，还在站点运营工作中使用了 Microsoft 365（包括 Office 365 专业增强版和 Exchange Online 等）服务；
 - **Oracle**：[Oracle 一般隐私政策](https://www.oracle.com/cn/legal/privacy/privacy-policy/)
   - 我们使用了 Oracle 旗下的 Oracle Cloud Infrastructure 的 Email Delivery 邮件发送服务；
 - **Vercel**：[Privacy Policy](https://vercel.com/legal/privacy-policy)
@@ -69,4 +69,6 @@
 - **百度智能云**：[隐私政策](https://cloud.baidu.com/doc/Agreements/s/Plr0fi68q)
   - 我们使用了百度智能云的内容分发网络服务；
 - **腾讯云**：[隐私声明](https://cloud.tencent.com/document/product/301/11470)
-  - 我们使用了腾讯云的域名解析服务、内容分发网络服务、云对象存储服务（COS）和数据万象服务（CI）。
+  - 我们使用了腾讯云的域名解析服务、内容分发网络服务、云对象存储服务（COS）和数据万象服务（CI）；
+- **极验**：[极验行为验证第三代隐私政策](https://www.geetest.com/Private/sensebot)
+  - 我们使用了极验的人机验证服务（行为验证 3.0）。
