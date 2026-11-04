@@ -12,7 +12,7 @@ We deeply recognizes that each texture is the labor of love of its creator, and 
 
 ---
 
-<NCard title="🙋 维护作为创作者的权益 Safeguarding Your Rights as a Creator" link="#complaint">
+<NCard title="🙋 维护作为创作者的权益" subtitle="Safeguarding Your Rights as a Creator" link="#complaint">
 
 如果你是某个材质的原创作者，且该材质在 LittleSkin 上的存在形式不被你认可，你可以向我们提出异议。  
 If you are the original creator of a texture and its presence on LittleSkin is unauthorized, you can submit a complaint.
