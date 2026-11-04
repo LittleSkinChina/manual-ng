@@ -12,7 +12,7 @@ outline: [2, 3]
 
 <!--@include: ./mod-tips.template.md-->
 
-<NCard title="🗝️ 在寻找 CustomSkinLoader 嘛？" link="./csl" >
+<NCard title="🗝️ 正在寻找 CustomSkinLoader？" link="./csl" >
 <p><mark>CustomSkinLoader 是我们最推荐的皮肤 Mod</mark>，也被称为 <strong>CSL</strong> 或 <strong>万用皮肤补丁</strong>。</p>
 它现如今被单独放在一篇文章中说明，前去查看具体信息 👉
 </NCard>

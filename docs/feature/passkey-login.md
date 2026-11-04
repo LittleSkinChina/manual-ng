@@ -51,9 +51,12 @@ LittleSkin 当前支持使用通行密钥进行登录。
 
 ## 在操作过程中遇到问题？
 
-<NCard title="🙋 加入用户交流群" link="/user-group" >
-你可以加入我们的官方用户交流群来提问
-</NCard>
-<NCard title="📬️ 通过邮件发送工单" link="/email" >
-也可以给我们发送邮件工单
-</NCard>
+<CardGrid>
+    <NCard title="🙋 加入用户交流群" link="/user-group" >
+    你可以加入我们的官方用户交流群来提问
+    </NCard>
+    <NCard title="📬️ 通过邮件发送工单" link="/email" >
+    也可以给我们发送邮件工单
+    </NCard>
+</CardGrid>
+

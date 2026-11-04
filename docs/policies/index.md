@@ -2,14 +2,14 @@
 
 ---
 
-<p style="margin-bottom: 2em"></p>
-
-<NCard title="用户服务条款" link="./tos" >
-阅读我们的用户服务条款
-</NCard>
-<NCard title="隐私政策" link="./privacy" >
-阅读我们的隐私政策
-</NCard>
+<CardGrid>
+    <NCard title="用户服务条款" link="./tos" >
+    阅读我们的用户服务条款
+    </NCard>
+    <NCard title="隐私政策" link="./privacy" >
+    阅读我们的隐私政策
+    </NCard>
+</CardGrid>
 
 ---
 

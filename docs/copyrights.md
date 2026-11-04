@@ -83,7 +83,8 @@ If you are the original creator or copyright holder of a texture and its presenc
 你可以通过以下方式发起侵权投诉：  
 You can file a copyright complaint through the following methods:
 
-<NCard title="📬️ 通过邮件发送工单 Send Support Tickets via Email" link="/email" >
+<CardGrid>
+<NCard title="📬️ 通过邮件发送工单" subtitle="Send Support Tickets via Email" link="/email" >
 
 发送邮件工单时，请尽可能详细地描述具体情况  
 <Badge>✨ English is supported</Badge> Copyright holders may be located worldwide. If you are not fluent in Chinese, we recommend submitting complaints via email for a smoother and more efficient resolution.
@@ -92,6 +93,7 @@ You can file a copyright complaint through the following methods:
 <NCard title="📋 填写投诉表单" link="https://wj.qq.com/s2/14075170/197c" >
 在提交表单后，我们可能会通过提供的联系方式联系你
 </NCard>
+</CardGrid>
 
 发起侵权投诉时，请务必提供以下信息，以便我们核实你的身份及投诉内容：  
 When filing a copyright complaint, please provide the following information to help us verify your identity and the content of your complaint:
@@ -170,16 +172,18 @@ LittleSkin 的材质相似度检测方案可对抗大部分简单的修改和二
 2. 提供你是该帖子的发帖者的证明
    - 提供账户信息截图
      > <Badge>例</Badge> 对应平台的个人资料页面或账号详情页面的截图
-     账户信息截图应能清晰显示你在该平台的登录状态及账号信息，并能直接关联到发帖账号。
+     > 账户信息截图应能清晰显示你在该平台的登录状态及账号信息，并能直接关联到发帖账号。
    - 如不便提供截图，请在帖子正文内注明你的 LittleSkin 账号的 UID
 :::
 
 ::: details 情形 B：材质是第三方个性化定制的材质
 1. 提供完整沟通记录
+
    > <Badge>例</Badge> 聊天记录截图等
-   沟通记录的上下文应当连贯，并能体现从最初需求讨论到最终材质交付的全过程。
+   > 沟通记录的上下文应当连贯，并能体现从最初需求讨论到最终材质交付的全过程。
 
    如截图数量较多，请将所有截图打包为 ZIP 压缩包。
+
 2. 提供交易凭证 <Badge type="warning">如适用</Badge>
    > <Badge>例</Badge> 平台订单截图、转账记录等
 
@@ -190,7 +194,7 @@ LittleSkin 的材质相似度检测方案可对抗大部分简单的修改和二
 ::: details 情形 X：材质是其他独立制作的、不符合上述所有情形的原创材质
 1. 提供工程文件
    > <Badge>例</Badge> Photoshop `.psd` 文件、Blockbench `.bbmodel` 文件等
-   如工程文件数量较多，请将所有工程文件打包为 ZIP 压缩包。
+   > 如工程文件数量较多，请将所有工程文件打包为 ZIP 压缩包。
 :::
 
 #### 📬️ 3. 提交申请

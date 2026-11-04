@@ -12,19 +12,20 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 当前 LittleSkin 官方用户交流群分为主用户群和闲聊群（穗香咖啡馆），两群均有 QQ 群和 Telegram 群组。
 
-<NCard title="🤔 常见问题解答 / FAQ" link="/faq/">
-看看这个，说不定就有你正在努力寻找的答案。
-</NCard>
-<NCard title="📬️ 通过邮件发送工单" link="/email" >
-除了加入用户交流群，你还可以给我们发送邮件工单
-</NCard>
-<NCard title="🧑‍🔬 一对一技术支持" link="https://afdian.com/a/tnqzh123" >
-也可以通过 <strong>💰捐助支持</strong> 来获取高质量的一对一技术支持服务
-</NCard>
+<CardGrid>
+    <NCard title="🤔 常见问题解答 / FAQ" link="/faq/">
+    看看这个，说不定就有你正在努力寻找的答案。
+    </NCard>
+    <NCard title="📬️ 通过邮件发送工单" link="/email" >
+    除了加入用户交流群，你还可以给我们发送邮件工单
+    </NCard>
+    <NCard title="🧑‍🔬 一对一技术支持" link="https://afdian.com/a/tnqzh123" >
+    也可以通过 <strong>💰捐助支持</strong> 来获取高质量的一对一技术支持服务
+    </NCard>
+</CardGrid>
 
 ## 加群须知
 
-<br />
 <NCard title="👀 寻求帮助的正确姿势" link="./problems">
 <strong>喂！先别急着进群提问！</strong>在加群之前，请务必看看这个 👈
 </NCard>
@@ -74,13 +75,14 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 ### 主用户群 {#main}
 
-<p style="margin-bottom: 2em"></p>
-
-<NCard title="🥰 加入 [user@LittleSkin ~/group/QQ]$" link="https://qm.qq.com/q/4fwCRW487" target="_blank">
-群名称：<code>[user@LittleSkin ~/group/QQ]$</code>，群号 <code>586146922</code>
-</NCard>
-
-- Telegram 群组：[@littleskin](https://t.me/littleskin)
+<CardGrid>
+    <NCard title="🐧 加入 QQ 群聊" link="https://qm.qq.com/q/4fwCRW487" target="_blank">
+    群名称：<code>[user@LittleSkin ~/group/QQ]$</code>，群号 <code>586146922</code>
+    </NCard>
+    <NCard title="✈ 加入 Telegram 群组" link="https://t.me/littleskin" target="_blank">
+    群名称：<code>LittleSkin Official</code>，ID <code>littleskin</code>
+    </NCard>
+</CardGrid>
 
 主用户群主要用于解决用户在使用 LittleSkin 时遇到的问题，以及各种反馈和咨询。
 
@@ -90,14 +92,13 @@ import { faUser } from '@fortawesome/free-solid-svg-icons'
 
 ### Honoka Café 穗香咖啡馆 {#cafe}
 
-<p style="margin-bottom: 2em"></p>
+<CardGrid>
+    <NCard title="🐧 加入 QQ 群聊" link="https://qm.qq.com/q/ZC5mHboMAS" target="_blank">
+    群名称：<code>Honoka Café</code>，群号 <code>651672723</code>
+    </NCard>
+    <NCard title="✈ 加入 Telegram 群组" link="https://t.me/honokacafe" target="_blank">
+    群名称：<code>Honoka Café</code>，ID <code>honokacafe</code>
+    </NCard>
+</CardGrid>
 
-<NCard title="☕ 加入 Honoka Café" link="https://qm.qq.com/q/ZC5mHboMAS" target="_blank">
-群名称：<code>Honoka Café</code>，群号 <code>651672723</code>
-</NCard>
-
-- Telegram 群组：[@honokacafe](https://t.me/honokacafe)
-
-咖啡馆作为闲聊群，可以讨论**除一些敏感内容外**的所有话题。
-
-但技术支持和用户反馈等内容还请前往主用户群进行讨论。
+咖啡馆作为闲聊群，可以讨论**除一些敏感内容外**的所有话题。技术支持和用户反馈等内容还请前往主用户群进行讨论。
