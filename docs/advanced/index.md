@@ -4,14 +4,14 @@
 
 ---
 
-<p style="margin-bottom: 2em"></p>
-
+<CardGrid>
 <NCard title="OAuth 2" link="./oauth2" >
 为你的应用集成 LittleSkin 的 OAuth 2 服务
 </NCard>
 <NCard title="LittleSkin API" link="./api" >
 了解 LittleSkin 可用的 Web API
 </NCard>
+</CardGrid>
 
 ---
 

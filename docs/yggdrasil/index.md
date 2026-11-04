@@ -24,12 +24,14 @@ https://littleskin.cn/api/yggdrasil
 
 ---
 
-<NCard title="在客户端使用" link="./client" >
-在 Minecraft 游戏中使用 Yggdrasil 外置登录，进行多人游戏鉴权和材质加载
-</NCard>
-<NCard title="在服务端使用" link="./server" >
-为各类 Minecraft 服务端配置 Yggdrasil 外置登录 <Badge type="tip" text="服务器管理员" />
-</NCard>
+<CardGrid>
+    <NCard title="在客户端使用" link="./client" >
+    在 Minecraft 游戏中使用 Yggdrasil 外置登录，进行多人游戏鉴权和材质加载
+    </NCard>
+    <NCard title="在服务端使用" link="./server" >
+    <Badge type="tip" text="服务器管理员" /> 为各类 Minecraft 服务端配置 Yggdrasil 外置登录 
+    </NCard>
+</CardGrid>
 
 ---
 

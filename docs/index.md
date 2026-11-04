@@ -15,12 +15,15 @@ head:
 ---
 
 <br />
-<NCard title="🧑‍🏫 新手指引" link="/newbee/">
-第一次使用 LittleSkin 而且晕头转向？来看看这份新手指引吧！
-</NCard>
-<NCard title="🤔 遇到问题了？" link="/problems/">
-读读这个，你的问题说不定会迎刃而解。
-</NCard>
+
+<CardGrid>
+  <NCard title="🧑‍🏫 新手指引" link="/newbee/">
+  第一次使用 LittleSkin 而且晕头转向？来看看这份新手指引吧！
+  </NCard>
+  <NCard title="🤔 遇到问题了？" link="/problems/">
+  读读这个，你的问题说不定会迎刃而解。
+  </NCard>
+</CardGrid>
 
 ---
 
@@ -40,4 +43,4 @@ head:
 > 在引用 LittleSkin 用户使用手册中的内容时，请注意遵守许可协议。
 
 > [!NOTE] 声明
-> “Minecraft”及“我的世界”是 *Microsoft Corporation* 和 *Mojang Synergies AB* 的商标。LittleSkin 与 Microsoft、Mojang 及网易公司没有从属关系。
+> “Minecraft”及“我的世界”是 _Microsoft Corporation_ 和 _Mojang Synergies AB_ 的商标。LittleSkin 与 Microsoft、Mojang 及网易公司没有从属关系。

@@ -28,13 +28,14 @@ LittleSkin 实现了 OAuth 2 服务端。通过 OAuth 2，你可以在你的应�
 
 LittleSkin 支持以下授权请求方式：
 
-<NCard title="授权代码授予（Authorization Code Grant）" link="./authorization-code-grant" target="_blank">
-使用授权代码流（Authorization Code Flow）获取访问令牌，适用于有后端的场景
-</NCard>
-
-<NCard title="设备授权授予（Device Authorization Grant）" link="./device-authorization-grant" target="_blank">
-使用设备代码流（Device Code Flow）获取访问令牌，适用于无后端或其他受限制的场景
-</NCard>
+<CardGrid>
+  <NCard title="授权代码授予" subtitle="Authorization Code Grant" link="./authorization-code-grant" target="_blank">
+  使用授权代码流（Authorization Code Flow）获取访问令牌，适用于有后端的场景
+  </NCard>
+  <NCard title="设备授权授予" subtitle="Device Authorization Grant" link="./device-authorization-grant" target="_blank">
+  使用设备代码流（Device Code Flow）获取访问令牌，适用于无后端或其他受限制的场景
+  </NCard>
+</CardGrid>
 
 ## 使用访问令牌进行鉴权
 

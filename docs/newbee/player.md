@@ -18,35 +18,35 @@ LittleSkin 支持的皮肤 Mod 都是通过角色名来识别玩家身份并加�
 
 你可以在用户中心的 [<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>](https://littleskin.cn/user/player) 页面创建和管理你的角色：
 
-1. 点击用户中心左侧菜单栏中的 [<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>](https://littleskin.cn/user/player) ，在打开的页面中点击<BSButton><FA :icon="faPlus" />  添加新角色</BSButton>
+1. 点击用户中心左侧菜单栏中的 [<BSSection><FA :icon="faUsers" /> 角色管理</BSSection>](https://littleskin.cn/user/player) ，在打开的页面中点击<BSButton><FA :icon="faPlus" /> 添加新角色</BSButton>
 
-    ![open-page](./assets/player/1-add-player.webp)
+   ![open-page](./assets/player/1-add-player.webp)
 
 2. 在弹出的窗口中输入你的角色名，点击<BSButton>确定</BSButton>按钮。
 
-    ![input-player-name](./assets/player/2-input-name.webp)
+   ![input-player-name](./assets/player/2-input-name.webp)
 
-    对于角色名，必须满足以下要求：
+   对于角色名，必须满足以下要求：
 
-    - ✅ 使用以下文字和符号：
-      - 中日韩统一表意文字（即中文、日文、韩文字符）
-      - 🔤 大写或小写的英文字母
-      - 🔢 数字
-      - 🔣 部分常见的符号（见下表）
+   - ✅ 使用以下文字和符号：
+     - 中日韩统一表意文字（即中文、日文、韩文字符）
+     - 🔤 大写或小写的英文字母
+     - 🔢 数字
+     - 🔣 部分常见的符号（见下表）
 
-    - ✅ 最短 3 字符，最长不超过 16 字符
+   - ✅ 最短 3 字符，最长不超过 16 字符
 
-    | 符号名称 | 符号 |
-    | -------- | ---- |
-    | 下划线   | `_`  |
-    | 连字符   | `-`  |
-    | 逗号     | `,`  |
-    | 点号     | `.`  |
-    | 方括号   | `[]` |
-    | 花括号   | `{}` |
-    | 加号     | `+`  |
-    | 等号     | `=`  |
-    | 脱字符   | `^`  |
+   | 符号名称 | 符号 |
+   | -------- | ---- |
+   | 下划线   | `_`  |
+   | 连字符   | `-`  |
+   | 逗号     | `,`  |
+   | 点号     | `.`  |
+   | 方括号   | `[]` |
+   | 花括号   | `{}` |
+   | 加号     | `+`  |
+   | 等号     | `=`  |
+   | 脱字符   | `^`  |
 
 ✨ 你的第一个角色就创建好啦~
 
@@ -63,10 +63,11 @@ LittleSkin 支持的皮肤 Mod 都是通过角色名来识别玩家身份并加�
 >
 > 若你不满足上述条件，很遗憾，你无法添加被占用的角色名。
 
-<NCard title="😢 角色被别人占用了怎么办？" link="/faq/site#player-already-exists" >
-前去查看常见问题解答 FAQ 中的相关内容
-</NCard>
-
-<NCard title="🔗 绑定正版 Minecraft" link="./premium" >
-了解如何取回被占用的角色名
-</NCard>
+<CardGrid>
+    <NCard title="😢 角色被别人占用了怎么办？" link="/faq/site#player-already-exists" >
+    前去查看常见问题解答 FAQ 中的相关内容
+    </NCard>
+    <NCard title="🔗 绑定正版 Minecraft" link="./premium" >
+    了解如何取回被占用的角色名
+    </NCard>
+</CardGrid>

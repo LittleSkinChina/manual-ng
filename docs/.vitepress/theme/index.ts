@@ -26,6 +26,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import BSButton from '../../../components/BSButton.vue'
 import BSSection from '../../../components/BSSection.vue'
+import CardGrid from '../../../components/CardGrid.vue'
 import NCard from '../../../components/NCard.vue'
 import Helpme from "../../../components/Helpme.vue"
 
@@ -56,6 +57,7 @@ export const Theme: ThemeConfig = {
             .component('FA', FontAwesomeIcon)
             .component('BSButton', BSButton)
             .component('BSSection', BSSection)
+            .component('CardGrid', CardGrid)
             .component('NCard', NCard)
             .component("Helpme", Helpme)
     }
